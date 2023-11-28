@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from "./Index.module.css"
-import { Box, Typography } from '@mui/material'
+import { Typography } from '@mui/material'
+import { ImgComparisonSlider } from '@img-comparison-slider/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -51,10 +52,27 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id='homeSection' className={styles.bsection}></div>
+        <div id='homeSection' className={styles.bsection}>
+          <div className={styles.boxexam}></div>
+        </div>
         <div id='procSection' className={styles.bsection}></div>
         <div id='auSection' className={styles.bsection}></div>
-        <div id='casesSection' className={styles.bsection}></div>
+        <div id='casesSection' className={styles.ausection}>
+          <div className={styles.bslider}>
+            <ImgComparisonSlider>
+              <div slot="first" className={styles.box1}></div>
+              <div slot="second" className={styles.box2}></div>
+            </ImgComparisonSlider>
+            <ImgComparisonSlider>
+              <div slot="first" className={styles.box1}></div>
+              <div slot="second" className={styles.box2}></div>
+            </ImgComparisonSlider>
+            <ImgComparisonSlider>
+              <div slot="first" className={styles.box1}></div>
+              <div slot="second" className={styles.box2}></div>
+            </ImgComparisonSlider>
+          </div>
+        </div>
       </main>
     </>
   )
