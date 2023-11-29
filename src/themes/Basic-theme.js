@@ -1,11 +1,6 @@
 import { createTheme } from "@mui/material"
 
 export const BasicTheme = createTheme({
-    typography: {
-      h1: {
-        fontSize: "50px",
-      }
-    },
     components: {
     MuiLink: {
       defaultProps: {
@@ -20,9 +15,24 @@ export const BasicTheme = createTheme({
           width: "150px",
           borderRadius: "30px",
           fontWeight: "bold",
-          textTransform: "capitalize"
+          textTransform: "none"
         },
+        sizeMedium: {
+          width: "150px"
+        },
+        sizeLarge: {
+          width: "250px"
+        }
       }
     },
+    h1: {
+      styleOverrides: {
+        root: {
+          fontWeight: "bold",
+          color: "red",
+        }
+      }
+      },
+    }
   }
-});
+);

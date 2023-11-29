@@ -2,18 +2,19 @@ import { ContactForm } from "../EmailForm";
 import styles from "./Index.module.css";
 import { ImgComparisonSlider } from "@img-comparison-slider/react";
 import Image from "next/image";
-import { NavBarOptions } from "../NavBarOptions";
 import { Box, Button, Typography } from "@mui/material";
 
-import { Navbar } from "../Layout/Navbar";
 // import bgHome from "../../../public/assets/Enmascarar_grupo_7.jpg"
 
-  // const backgroundImageStyle = {
-  //   backgroundImage: `url(${backgroundImage.src})`,
-  //   backgroundSize: "cover",
-  //   backgroundPosition: "center",
-  //   height: "100vh"
-  // }
+import { Navbar } from "../Layout/Navbar";
+
+
+// const backgroundImageStyle = {
+//   backgroundImage: `url(${backgroundImage.src})`,
+//   backgroundSize: "cover",
+//   backgroundPosition: "center",
+//   height: "100vh"
+// }
 
 
 
@@ -28,18 +29,18 @@ export const MainPage = () => {
           width={100} // Ancho de la imagen en píxeles
           height={100} // Alto de la imagen en píxeles
           layout="responsive"
-          
+
           className={styles.image}
         />
         <div className={styles.flexHomeSection}>
-          <div>
-            <h1>La sonrisa soñada es posible</h1>
-          </div>
+          <h1>La sonrisa soñada es posible</h1>
           <div>
             <Typography>Te ayudamos a mejorar la calidad de vida, aumentando tu
               confianza, salud y bienestar.</Typography>
           </div>
-          <Button className={styles.buttonHomeSection}> Agenda tu cita </Button>
+          <div className={styles.flexButtonHS}> 
+            <Button className={styles.buttonHomeSection} size="large"> Agenda tu cita </Button>
+          </div>
         </div>
       </Box>
       {/* styles={{backgroundImage: "url(/public/assets/Enmascarar_grupo_7.jpg)"}} */}
