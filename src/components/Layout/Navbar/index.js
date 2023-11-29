@@ -15,7 +15,9 @@ export const Navbar = () => {
           height={65}
         />
       </div>
-      <NavBarOptions />
+      <div className={styles.menuContainer}>
+        <NavBarOptions />
+      </div>
     </div>
   );
 };
