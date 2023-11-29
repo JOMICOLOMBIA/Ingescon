@@ -3,17 +3,12 @@ import styles from "./Index.module.css";
 import { ImgComparisonSlider } from "@img-comparison-slider/react";
 import Image from "next/image";
 import { NavBarOptions } from "../NavBarOptions";
+import { Navbar } from "../Layout/Navbar";
 
 export const MainPage = () => {
-
   return (
     <>
-      <div className={styles.navbar}>
-        <div className={styles.blogo}>
-          <Image fill={true} src="/assets/logowhite.png" alt="SDC logo" className={styles.logonavbar} />
-        </div>
-        <NavBarOptions/>
-      </div>
+      <Navbar />
       <div id="homeSection" className={styles.bsection}>
         <Image
           src="/assets/Enmascarar_grupo_7.jpg" // Ruta relativa a la imagen dentro de la carpeta public
