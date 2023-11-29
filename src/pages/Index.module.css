@@ -4,25 +4,19 @@
     background-color: black;
     display: flex;
     position: sticky;
-    justify-content: space-around;
+    justify-content: space-between;
     top: 0px;
     z-index: 2;
 }
 
 .blogo {
-    width: 50px;
-    height: 30px;
-    background-color: white;   
+    width: 200px;
+    height: 40px;
+    position: relative;
 }
 
-.foptions {
-    display: flex;
-    align-items: center;
-    gap: 80px;
-}
-
-.boptions {
-    width: auto;
+.logonavbar {
+    object-fit: contain;
 }
 
 .bsection {
@@ -63,3 +57,4 @@
     margin: 10px 0;
     padding-top: 30px;
 }
+

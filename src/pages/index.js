@@ -1,29 +1,14 @@
 import Head from 'next/head'
 import styles from "./Index.module.css"
-import { Typography } from '@mui/material'
 import { ImgComparisonSlider } from '@img-comparison-slider/react'
-import Head from "next/head";
-import { Inter } from "next/font/google";
 import { MainPage } from "@/components/MainPage";
+import Image from 'next/image';
+import { NavBarOptions } from '@/components/NavBarOptions';
+import { Button } from '@mui/material';
 
-const inter = Inter({ subsets: ["latin"] });
+
 
 export default function Home() {
-
-
-  const goToSection = (href) => {
-
-    const target = document.getElementById(href);
-    if (target) {
-      const targetOffset = target.offsetTop;
-
-      window.scrollTo({
-        top: targetOffset,
-        behavior: "smooth",
-      });
-    }
-
-  };
 
   return (
     <>
@@ -46,25 +31,13 @@ export default function Home() {
       <main>
         <div className={styles.navbar}>
           <div className={styles.blogo}>
-            <Typography>Hola</Typography>
+            <Image fill={true} src="/logowhite.png" alt="SDC logo" className={styles.logonavbar} />
           </div>
-          <div className={styles.foptions}>
-            <div className={styles.boptions}>
-              <a color={'white'} href='#homeSection' onClick={goToSection}>Inicio</a>
-            </div>
-            <div className={styles.boptions}>
-              <a color={'white'} href='#procSection' onClick={goToSection}>Procedimientos</a>
-            </div>
-            <div className={styles.boptions}>
-              <a color={'white'} href='#auSection' onClick={goToSection}>Acerca de nosotros</a>
-            </div>
-            <div className={styles.boptions}>
-              <a color={'white'} href='#casesSection' onClick={goToSection}>Casos de éxito</a>
-            </div>
-          </div>
+          <NavBarOptions/>
         </div>
         <div id='homeSection' className={styles.bsection}>
           <div className={styles.boxexam}></div>
+          <Button>Agenda tu cita</Button>
         </div>
         <div id='procSection' className={styles.bsection}></div>
         <div id='auSection' className={styles.bsection}></div>
