@@ -1,21 +1,22 @@
 .foptions {
-    display: flex;
-    align-items: center;
-    gap: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .boptionsNotClicked {
-    width: auto;
-    height: 30px;
+  width: auto;
+  height: 30px;
+  margin-right: 2vw;
 }
 .boptionsClicked {
-    width: auto;
-    height: 30px;   
-    border-bottom-width: 5px;
-    border-bottom-color: white;
+  width: auto;
+  height: 30px;
+  border-bottom-width: 5px;
+  border-bottom-color: white;
+  margin-right: 2vw;
 }
 .textNotClicked {
-    color: white;
+  color: white;
 }
 .textClicked {
     color: rgba(255, 217, 0, 0.612);

@@ -4,9 +4,9 @@ import { ImgComparisonSlider } from "@img-comparison-slider/react";
 import Image from "next/image";
 import { NavBarOptions } from "../NavBarOptions";
 import { Box, Button, Typography } from "@mui/material";
-// import bgHome from "../../../public/assets/Enmascarar_grupo_7.jpg"
 
-export const MainPage = () => {
+import { Navbar } from "../Layout/Navbar";
+// import bgHome from "../../../public/assets/Enmascarar_grupo_7.jpg"
 
   // const backgroundImageStyle = {
   //   backgroundImage: `url(${backgroundImage.src})`,
@@ -15,19 +15,13 @@ export const MainPage = () => {
   //   height: "100vh"
   // }
 
+
+
+export const MainPage = () => {
   return (
     <>
-      <div className={styles.navbar}>
-        <div className={styles.blogo}>
-          <Image
-            fill={true}
-            src="/assets/logowhite.png"
-            alt="SDC logo"
-            className={styles.logonavbar} />
-        </div>
-        <NavBarOptions />
-      </div>
-      <Box id="homeSection" className={styles.bsection} >
+      <Navbar />
+      <Box id="homeSection" className={styles.bsection}>
         <Image
           src="/assets/Enmascarar_grupo_7.jpg" // Ruta relativa a la imagen dentro de la carpeta public
           alt="Ejemplo"
