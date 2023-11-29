@@ -1,19 +1,8 @@
 import Head from "next/head";
-
 import { MainPage } from "@/components/MainPage";
 
-export default function Home() {
-  const goToSection = (href) => {
-    const target = document.getElementById(href);
-    if (target) {
-      const targetOffset = target.offsetTop;
 
-      window.scrollTo({
-        top: targetOffset,
-        behavior: "smooth",
-      });
-    }
-  };
+export default function Home() {
 
   return (
     <>
