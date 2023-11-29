@@ -1,49 +1,18 @@
 import { ContactForm } from "../EmailForm";
 import styles from "./Index.module.css";
-import { Typography } from "@mui/material";
 import { ImgComparisonSlider } from "@img-comparison-slider/react";
 import Image from "next/image";
+import { NavBarOptions } from "../NavBarOptions";
 
 export const MainPage = () => {
-  const goToSection = (href) => {
-    const target = document.getElementById(href);
-    if (target) {
-      const targetOffset = target.offsetTop;
 
-      window.scrollTo({
-        top: targetOffset,
-        behavior: "smooth",
-      });
-    }
-  };
   return (
     <>
       <div className={styles.navbar}>
         <div className={styles.blogo}>
-          <Typography>Hola.</Typography>
+          <Image fill={true} src="/assets/logowhite.png" alt="SDC logo" className={styles.logonavbar} />
         </div>
-        <div className={styles.foptions}>
-          <div className={styles.boptions}>
-            <a color={"white"} href="#homeSection" onClick={goToSection}>
-              Inicio
-            </a>
-          </div>
-          <div className={styles.boptions}>
-            <a color={"white"} href="#procSection" onClick={goToSection}>
-              Procedimientos
-            </a>
-          </div>
-          <div className={styles.boptions}>
-            <a color={"white"} href="#auSection" onClick={goToSection}>
-              Acerca de nosotros
-            </a>
-          </div>
-          <div className={styles.boptions}>
-            <a color={"white"} href="#casesSection" onClick={goToSection}>
-              Casos de éxito
-            </a>
-          </div>
-        </div>
+        <NavBarOptions/>
       </div>
       <div id="homeSection" className={styles.bsection}>
         <Image

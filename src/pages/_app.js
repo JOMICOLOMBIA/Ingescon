@@ -1,18 +1,11 @@
-import { CssBaseline, ThemeProvider, createTheme } from '@mui/material'
+import { BasicTheme } from '@/themes'
+import { CssBaseline, ThemeProvider} from '@mui/material'
 
-const defaultTheme = createTheme({
-  components: {
-    MuiLink: {
-      defaultProps: {
-        underline: 'none',
-      },
-    },
-  }
-})
+
 
 export default function App({ Component, pageProps }) {
   return (
-    <ThemeProvider theme={defaultTheme} >
+    <ThemeProvider theme={BasicTheme} >
       <CssBaseline/>
       <Component {...pageProps} />
     </ThemeProvider>
