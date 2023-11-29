@@ -1,20 +1,28 @@
 import { createTheme } from "@mui/material"
 
 export const BasicTheme = createTheme({
-    components: {
-      MuiLink: {
-        defaultProps: {
-          underline: 'none',
-        },
-      },
-      MuiButton: {
-        styleOverrides: {
-          root: {
-            backgroundColor: "white",
-            color: "black",
-            width: "200px",
-          },
-        }
+    typography: {
+      h1: {
+        fontSize: "50px",
       }
-    }
-  });
+    },
+    components: {
+    MuiLink: {
+      defaultProps: {
+        underline: 'none',
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          background: "linear-gradient(rgba(255, 217, 0, 0.612), white)",
+          color: "black",
+          width: "150px",
+          borderRadius: "30px",
+          fontWeight: "bold",
+          textTransform: "capitalize"
+        },
+      }
+    },
+  }
+});

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Typography } from '@mui/material'
+import { Button, Typography } from '@mui/material'
 import styles from "./NavBarOptions.module.css"
 
 
@@ -71,6 +71,7 @@ export const NavBarOptions = () => {
                     <Typography className={elementClasses.cases.text}> Casos de éxito </Typography>
                 </a>
             </div>
+            <Button> Contacto </Button>
         </div>
     );
 }

@@ -18,9 +18,10 @@
     color: white;
 }
 .textClicked {
-    color: gold;
+    color: rgba(255, 217, 0, 0.612);
 }
 
 .linknb {
     text-decoration: none;
 }
+
