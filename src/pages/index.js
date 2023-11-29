@@ -4,6 +4,7 @@ import { MainPage } from "@/components/MainPage";
 import Image from 'next/image';
 import { NavBarOptions } from '@/components/NavBarOptions';
 import { Button } from '@mui/material';
+import { ImgComparisonSlider } from "@img-comparison-slider/react";
 
 
 
