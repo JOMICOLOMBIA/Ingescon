@@ -26,11 +26,27 @@
   visibility: visible; /* Inicialmente oculto */
 }
 
+.menuOptions {
+  margin: auto 10px;
+  visibility: visible; /* Inicialmente oculto */
+}
+
+.menuIcon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
 /* Estilos para pantallas más pequeñas (máximo 768px) */
 @media (max-width: 768px) {
-  .menuContainer {
+  .menuOptions {
     display: none; /* Muestra el menú en pantallas más pequeñas */
-    flex: 1; /* Ocupa todo el espacio disponible en pantallas más pequeñas */
+  }
+
+  .menuIcon {
+    display: block;
+    color: white;
   }
 
   .navbar {
