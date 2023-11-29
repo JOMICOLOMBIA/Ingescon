@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { MainPage } from "@/components/MainPage";
-import styles from "./global-styles.module.css"
 
 
 export default function Home() {
