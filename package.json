@@ -2,6 +2,9 @@
   "name": "lpodonto",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.0.1"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,7 +17,7 @@
     "@emotion/styled": "^11.11.0",
     "@img-comparison-slider/react": "^8.0.1",
     "@mui/material": "^5.14.18",
-    "next": "^13.0.0",
+    "next": "^14.0.3",
     "react": "^18",
     "react-dom": "^18"
   }
