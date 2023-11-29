@@ -41,7 +41,7 @@ export default function Home() {
       <main>
         <div className={styles.navbar}>
           <div className={styles.blogo}>
-            <Typography>Hola</Typography>
+            <Typography>Hola.</Typography>
           </div>
           <div className={styles.foptions}>
             <div className={styles.boptions}>
