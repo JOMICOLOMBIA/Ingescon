@@ -11,9 +11,11 @@
 }
 
 .blogo {
-  width: 210px;
-  height: 45px;
+  width: fit-content;
+  height: fit-content;
   position: relative;
+  zoom: 0.12;
+  margin: auto 0;
 }
 
 /* .logonavbar {
@@ -59,12 +61,6 @@
     justify-content: space-between;
     top: 0px;
     z-index: 2;
-  }
-
-  .blogo {
-    width: 160px;
-    height: 30px;
-    position: relative;
   }
 
   .menuContainer ul {

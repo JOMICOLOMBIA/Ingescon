@@ -1,12 +1,7 @@
-import { createTheme } from "@mui/material"
+import { createTheme } from "@mui/material";
 
 export const BasicTheme = createTheme({
-    components: {
-    MuiLink: {
-      defaultProps: {
-        underline: 'none',
-      },
-    },
+  components: {
     MuiButton: {
       styleOverrides: {
         root: {
@@ -15,24 +10,23 @@ export const BasicTheme = createTheme({
           width: "150px",
           borderRadius: "30px",
           fontWeight: "bold",
-          textTransform: "none"
+          textTransform: "none",
         },
         sizeMedium: {
-          width: "150px"
+          width: "150px",
         },
         sizeLarge: {
-          width: "250px"
-        }
-      }
+          width: "250px",
+        },
+      },
     },
     h1: {
       styleOverrides: {
         root: {
           fontWeight: "bold",
           color: "red",
-        }
-      }
+        },
       },
-    }
-  }
-);
+    },
+  },
+});
