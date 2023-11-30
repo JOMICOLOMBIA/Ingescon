@@ -33,7 +33,7 @@ export const MainPage = () => {
             La sonrisa soñada es posible
           </h1>
           <div>
-            <Typography>
+            <Typography className={styles.flexHomeSectionText}>
               Te ayudamos a mejorar la calidad de vida, aumentando tu confianza,
               salud y bienestar.
             </Typography>
