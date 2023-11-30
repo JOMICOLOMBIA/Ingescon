@@ -4,6 +4,7 @@
   background-color: tomato;
   margin: 10px 0;
   display: flex;
+  zoom: 0.97;
 }
 
 .box1 {
@@ -50,10 +51,11 @@
 .flexHomeSectionTitle {
   font-family: "LastOne";
   font-size: 80px;
+  line-height: 1;
 }
 
 .flexHomeSectionText {
-  font-size: 24px;  
+  font-size: 24px;
 }
 
 .buttonHomeSection {
