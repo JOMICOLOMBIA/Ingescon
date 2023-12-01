@@ -1,14 +1,15 @@
 import { BasicTheme } from "@/themes";
-// import "../styles/global.css";
+
 import { CssBaseline, ThemeProvider } from "@mui/material";
+import "../styles/global.css";
 
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <CssBaseline />
-      <ThemeProvider theme={BasicTheme}>
 
+      <ThemeProvider theme={BasicTheme}>
+        <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>
     </>

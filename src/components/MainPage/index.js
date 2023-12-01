@@ -4,7 +4,6 @@ import { ImgComparisonSlider } from "@img-comparison-slider/react";
 import Image from "next/image";
 import { Box, Button, Typography } from "@mui/material";
 
-// import bgHome from "../../../public/assets/Enmascarar_grupo_7.jpg"
 
 import { Navbar } from "../Layout/Navbar";
 

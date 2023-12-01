@@ -1,12 +1,7 @@
 import { createTheme } from "@mui/material"
 
 export const BasicTheme = createTheme({
-    components: {
-    MuiLink: {
-      defaultProps: {
-        underline: 'none',
-      },
-    },
+  components: {
     MuiButton: {
       styleOverrides: {
         root: {
@@ -32,7 +27,7 @@ export const BasicTheme = createTheme({
           color: "red",
         }
       }
-      },
-    }
+    },
   }
+}
 );
