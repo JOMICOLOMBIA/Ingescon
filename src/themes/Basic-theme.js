@@ -5,28 +5,20 @@ export const BasicTheme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          background: "linear-gradient(rgba(255, 217, 0, 0.612), white)",
+          background: "linear-gradient(rgba(215,173,92,255), rgba(224,190,131,255))",
           color: "black",
           width: "150px",
           borderRadius: "30px",
           fontWeight: "bold",
           textTransform: "none",
         },
-        sizeMedium: {
-          width: "150px",
+        sizeSmall: {
+          width: "135px",
         },
         sizeLarge: {
-          width: "250px",
+          width: "200px",
         },
       },
-    },
-    h1: {
-      styleOverrides: {
-        root: {
-          fontWeight: "bold",
-          color: "red",
-        }
-      }
     },
   }
 }

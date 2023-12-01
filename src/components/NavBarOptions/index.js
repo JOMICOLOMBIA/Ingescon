@@ -13,18 +13,18 @@ export const NavBarOptions = () => {
   const goToSection = (section, e) => {
     const updatedElementClasses = { ...elementClasses };
 
-    updatedElementClasses[section].box = styles.boptionsClicked;
-    updatedElementClasses[section].text = styles.textClicked;
+    if (section) {
+      updatedElementClasses[section].box = styles.boptionsClicked;
+      updatedElementClasses[section].text = styles.textClicked;
 
-    Object.keys(elementClasses).forEach((otherIdentifier) => {
-      if (otherIdentifier !== section) {
-        updatedElementClasses[otherIdentifier].box = styles.boptionsNotClicked;
-        updatedElementClasses[otherIdentifier].text = styles.textNotClicked;
-      }
-    });
-
-    setElementClasses(updatedElementClasses);
-
+      Object.keys(elementClasses).forEach((otherIdentifier) => {
+        if (otherIdentifier !== section) {
+          updatedElementClasses[otherIdentifier].box = styles.boptionsNotClicked;
+          updatedElementClasses[otherIdentifier].text = styles.textNotClicked;
+        }
+      });
+      setElementClasses(updatedElementClasses);
+    }
     const target = document.getElementById(e);
 
     if (target) {
@@ -45,7 +45,10 @@ export const NavBarOptions = () => {
           onClick={(e) => goToSection("home", e)}
           className={styles.linknb}
         >
-          <Typography className={elementClasses.home.text}> Inicio </Typography>
+          <Typography className={elementClasses.home.text}>
+            {" "}
+            Inicio{" "}
+          </Typography>
         </a>
       </div>
       <div className={elementClasses.proc.box}>
@@ -84,7 +87,10 @@ export const NavBarOptions = () => {
           </Typography>
         </a>
       </div>
-      <Button> Contacto </Button>
-    </div>
+      <Button size="small">
+        {" "}
+        Contacto{" "}
+      </Button>
+    </div >
   );
 };

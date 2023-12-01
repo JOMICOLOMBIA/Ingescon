@@ -1,7 +1,17 @@
 .bsection {
   width: 100%;
   height: 100vh;
-  background-color: tomato;
+  background-color: white;
+  margin: 10px 0;
+  display: flex;
+  zoom: 0.97;
+  position: relative;
+}
+
+.bsectionCases {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
   margin: 10px 0;
   display: flex;
   zoom: 0.97;
@@ -12,6 +22,7 @@
   width: 300px;
   height: 300px;
 }
+
 .box2 {
   background-color: blue;
   width: 300px;
@@ -23,6 +34,7 @@
   display: flex;
   gap: 30px;
   justify-content: center;
+  flex-direction: row;
 }
 
 .boxexam {
@@ -31,13 +43,6 @@
   background-color: blue;
 }
 
-.ausection {
-  width: 100%;
-  height: 1000px;
-  background-color: tomato;
-  margin: 10px 0;
-  padding-top: 30px;
-}
 
 .flexHomeSection {
   display: flex;
@@ -50,8 +55,10 @@
 
 .flexHomeSectionTitle {
   font-family: "LastOne";
-  font-size: 80px;
+  font-size: 70px;
   line-height: 1;
+  font-weight: 300;
+  -webkit-line-clamp: 2;
 }
 
 .flexHomeSectionText {
@@ -65,4 +72,118 @@
 .flexButtonHS {
   display: flex;
   justify-content: flex-end;
+}
+
+
+
+.flexProcSection {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardProcSection {
+  display: flex;
+  width: 35vw;
+  height: 150px;
+  border: 3px solid rgba(224, 190, 131, 255);
+  border-radius: 10px;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.boxCardProcSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerCardProcSection {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "LastOne";
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.textCardProcSection {
+  font-size: 18px;
+}
+
+
+.image {
+  object-fit: fill;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.imageFooter {
+  object-fit: cover;
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  .bslider {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .flexHomeSectionTitle {
+    font-size: 23px;
+  }
+
+  .bsection {
+    height: auto;
+  }
+
+  .flexHomeSection {
+    margin: 23vh 12% 0 12%;
+    width: 75vw;
+    justify-content: center;
+    background-color: rgba(252, 251, 251, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .flexHomeSectionText {
+    font-size: 13px;
+  }
+
+  .flexHomeSectionTitle {
+    font-weight: 400;
+  }
+
+  .flexButtonHS {
+    justify-content: center;
+  }
+
+  .buttonHomeSection {
+    margin-top: 15px;
+  }
+
+  .cardProcSection {
+    width: 90vw;
+  }
+
+  .headerCardProcSection {
+    font-size: 17px;
+    margin: 0;
+  }
+
+  .textCardProcSection {
+    font-size: 15px;
+  }
+  .bslider {
+    flex-direction: column;
+  }
+
 }
