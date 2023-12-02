@@ -11,18 +11,18 @@
 }
 
 .blogo {
-  width: fit-content;
-  height: fit-content;
+  width: 150px;
+  height: 60px;
   position: relative;
-  zoom: 0.12;
+
   margin: auto 0;
 }
 
-/* .logonavbar {
+.logonavbar {
   max-width: 100%;
   height: auto;
   object-fit: contain;
-} */
+}
 
 .menuContainer {
   margin: auto 10px;

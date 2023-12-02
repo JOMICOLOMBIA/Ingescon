@@ -1,0 +1,71 @@
+.flexProcSection {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin-top: 80px;
+}
+
+.cardProcSection {
+    display: flex;
+    width: 35vw;
+    height: 150px;
+    border: 4px solid rgba(224, 190, 131, 255);
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 15px;
+}
+
+.boxCardProcSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerCardProcSection {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "LastOne";
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.textCardProcSection {
+    font-size: 18px;
+}
+
+.flexHomeSectionTitle {
+    font-family: "LastOne";
+    font-size: 70px;
+    line-height: 1;
+    font-weight: 300;
+    -webkit-line-clamp: 2;
+}
+
+.gridCardsProc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 60px;
+}
+
+@media (max-width: 576px) {
+    .flexHomeSectionTitle {
+        font-size: 23px;
+    }
+
+    .cardProcSection {
+        width: 90vw;
+    }
+
+    .headerCardProcSection {
+        font-size: 17px;
+        margin: 0;
+    }
+
+    .textCardProcSection {
+        font-size: 15px;
+    }
+}

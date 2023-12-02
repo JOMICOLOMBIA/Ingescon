@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { Button, Typography } from "@mui/material";
+import { Button, Typography, useMediaQuery } from "@mui/material";
 import styles from "./NavBarOptions.module.css";
 
 export const NavBarOptions = () => {
+
+  const screenUpper576 = useMediaQuery("(min-width:576px)");
   const [elementClasses, setElementClasses] = useState({
     home: { box: styles.boptionsNotClicked, text: styles.textNotClicked },
     proc: { box: styles.boptionsNotClicked, text: styles.textNotClicked },
@@ -13,23 +15,25 @@ export const NavBarOptions = () => {
   const goToSection = (section, e) => {
     const updatedElementClasses = { ...elementClasses };
 
-    updatedElementClasses[section].box = styles.boptionsClicked;
-    updatedElementClasses[section].text = styles.textClicked;
+    if (section) {
+      updatedElementClasses[section].box = styles.boptionsClicked;
+      updatedElementClasses[section].text = styles.textClicked;
 
-    Object.keys(elementClasses).forEach((otherIdentifier) => {
-      if (otherIdentifier !== section) {
-        updatedElementClasses[otherIdentifier].box = styles.boptionsNotClicked;
-        updatedElementClasses[otherIdentifier].text = styles.textNotClicked;
-      }
-    });
-
-    setElementClasses(updatedElementClasses);
-
+      Object.keys(elementClasses).forEach((otherIdentifier) => {
+        if (otherIdentifier !== section) {
+          updatedElementClasses[otherIdentifier].box = styles.boptionsNotClicked;
+          updatedElementClasses[otherIdentifier].text = styles.textNotClicked;
+        }
+      });
+      setElementClasses(updatedElementClasses);
+    }
     const target = document.getElementById(e);
 
     if (target) {
       const targetOffset = target.offsetTop;
-      console.log(targetOffset);
+      
+      
+      
       window.scrollTo({
         top: targetOffset,
         behavior: "smooth",
@@ -45,7 +49,10 @@ export const NavBarOptions = () => {
           onClick={(e) => goToSection("home", e)}
           className={styles.linknb}
         >
-          <Typography className={elementClasses.home.text}> Inicio </Typography>
+          <Typography className={elementClasses.home.text}>
+            {" "}
+            Inicio{" "}
+          </Typography>
         </a>
       </div>
       <div className={elementClasses.proc.box}>
@@ -84,7 +91,10 @@ export const NavBarOptions = () => {
           </Typography>
         </a>
       </div>
-      <Button> Contacto </Button>
-    </div>
+      <Button size={screenUpper576 ? "large" : "small" }>
+        {" "}
+        Contacto{" "}
+      </Button>
+    </div >
   );
 };
