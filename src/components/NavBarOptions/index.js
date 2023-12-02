@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { Button, Typography } from "@mui/material";
+import { Button, Typography, useMediaQuery } from "@mui/material";
 import styles from "./NavBarOptions.module.css";
 
 export const NavBarOptions = () => {
+
+  const screenUpper576 = useMediaQuery("(min-width:576px)");
   const [elementClasses, setElementClasses] = useState({
     home: { box: styles.boptionsNotClicked, text: styles.textNotClicked },
     proc: { box: styles.boptionsNotClicked, text: styles.textNotClicked },
@@ -29,7 +31,9 @@ export const NavBarOptions = () => {
 
     if (target) {
       const targetOffset = target.offsetTop;
-      console.log(targetOffset);
+      
+      
+      
       window.scrollTo({
         top: targetOffset,
         behavior: "smooth",
@@ -87,7 +91,7 @@ export const NavBarOptions = () => {
           </Typography>
         </a>
       </div>
-      <Button size="small">
+      <Button size={screenUpper576 ? "large" : "small" }>
         {" "}
         Contacto{" "}
       </Button>
