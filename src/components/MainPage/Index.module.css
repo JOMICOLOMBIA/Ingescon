@@ -75,44 +75,6 @@
 }
 
 
-
-.flexProcSection {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cardProcSection {
-  display: flex;
-  width: 35vw;
-  height: 150px;
-  border: 3px solid rgba(224, 190, 131, 255);
-  border-radius: 10px;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  padding: 15px;
-}
-
-.boxCardProcSection {
-  display: flex;
-  flex-direction: column;
-}
-
-.headerCardProcSection {
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "LastOne";
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.textCardProcSection {
-  font-size: 18px;
-}
-
-
 .image {
   object-fit: cover;
 }
@@ -165,19 +127,6 @@
 
   .buttonHomeSection {
     margin-top: 15px;
-  }
-
-  .cardProcSection {
-    width: 90vw;
-  }
-
-  .headerCardProcSection {
-    font-size: 17px;
-    margin: 0;
-  }
-
-  .textCardProcSection {
-    font-size: 15px;
   }
   .bslider {
     flex-direction: column;

@@ -6,6 +6,7 @@ import { Box, Button, Typography, useMediaQuery } from "@mui/material";
 
 
 import { Navbar } from "../Layout/Navbar";
+import { CardProcGrid } from "../Layout/CardProcGrid";
 
 // const backgroundImageStyle = {
 //   backgroundImage: `url(${backgroundImage.src})`,
@@ -13,6 +14,7 @@ import { Navbar } from "../Layout/Navbar";
 //   backgroundPosition: "center",
 //   height: "100vh"
 // }
+
 
 
 
@@ -59,28 +61,7 @@ export const MainPage = () => {
           layout="responsive"
           className={styles.image}
         /> */}
-        <div className={styles.flexProcSection}>
-          <h1 className={styles.flexHomeSectionTitle}>
-            Nuestros procedimientos
-          </h1>
-          <div className={styles.cardProcSection}>
-            <Image
-              src="/assets/Diente-dorado.svg"
-              alt="Diente dorado"
-              width={80}
-              height={80}
-            />
-            <div className={styles.boxCardProcSection}>
-              <h2 className={styles.headerCardProcSection}>
-                Diseño en cerámica
-              </h2>
-              <Typography className={styles.textCardProcSection}>
-                Hechos con la más alta calidad en nuestro laboratorio,
-                cuentan con tiempo de duración de más de 10 años.
-              </Typography>
-            </div>
-          </div>
-        </div>
+        <CardProcGrid/>
 
       </div>
       <div id="auSection" className={styles.bsection}>
