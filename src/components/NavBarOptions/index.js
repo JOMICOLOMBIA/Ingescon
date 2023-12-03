@@ -32,8 +32,6 @@ export const NavBarOptions = () => {
     if (target) {
       const targetOffset = target.offsetTop;
       
-      
-      
       window.scrollTo({
         top: targetOffset,
         behavior: "smooth",
