@@ -5,6 +5,7 @@
     align-items: center;
     gap: 80px;
     margin-top: 80px;
+    height: auto;
 }
 
 .cardProcSection {
@@ -34,6 +35,7 @@
 
 .textCardProcSection {
     font-size: 18px;
+    text-align: justify;
 }
 
 .flexHomeSectionTitle {
@@ -41,21 +43,49 @@
     font-size: 70px;
     line-height: 1;
     font-weight: 300;
-    -webkit-line-clamp: 2;
 }
 
 .gridCardsProc {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 60px;
+    gap: 40px;
 }
+
+@media (max-width: 900px) and (min-width: 600px) {
+    .flexProcSection {
+        gap: 40px;
+        margin-top: 70px;
+    }
+    .flexHomeSectionTitle {
+      font-size: 35px;
+    }
+    .textCardProcSection {
+      font-size: 15px;
+    }
+    .headerCardProcSection {
+        font-size: 17px;
+    }
+    .cardProcSection {
+        width: 45vw;
+        height: 42vh;
+    }
+  }
 
 @media (max-width: 576px) {
     .flexHomeSectionTitle {
-        font-size: 23px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .flexProcSection {
+        gap: 40px;
+        margin-top: 40px;
     }
 
+    .gridCardsProc {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
     .cardProcSection {
         width: 90vw;
     }

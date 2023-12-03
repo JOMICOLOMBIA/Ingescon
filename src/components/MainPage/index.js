@@ -7,6 +7,7 @@ import { Box, Button, Typography, useMediaQuery } from "@mui/material";
 
 import { Navbar } from "../Layout/Navbar";
 import { CardProcGrid } from "../Layout/CardProcGrid";
+import { CardAboutUsFlex } from "../Layout/CardAboutUsFlex";
 
 // const backgroundImageStyle = {
 //   backgroundImage: `url(${backgroundImage.src})`,
@@ -65,7 +66,7 @@ export const MainPage = () => {
 
       </div>
       <div id="auSection" className={styles.bsection}>
-
+        <CardAboutUsFlex/>
       </div>
       <div id="casesSection" className={styles.bsectionCases}>
         <div className={styles.bslider}>
