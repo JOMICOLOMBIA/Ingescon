@@ -46,16 +46,7 @@ export const MainPage = () => {
         </div>
       </Box>
       <div id="procSection" className={styles.bsection}>
-        {/* <Image
-          src="/assets/our_porocedures.PNG" // Ruta relativa a la imagen dentro de la carpeta public
-          alt="Ejemplo"
-          width={100} // Ancho de la imagen en píxeles
-          height={100} // Alto de la imagen en píxeles
-          layout="responsive"
-          className={styles.image}
-        /> */}
         <CardProcGrid />
-
       </div>
       <div id="auSection" className={styles.bsectionCases}>
         <CardAboutUsFlex />
