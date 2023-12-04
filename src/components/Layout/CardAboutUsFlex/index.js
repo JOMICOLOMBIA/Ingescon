@@ -49,7 +49,7 @@ export const CardAboutUsFlex = () => {
                         </h2>
                         <Typography className={styles.textCardAboutusSection}>
                             Ofrecemos atención personalizada en un ambiente agradable,
-                            comprometidos con el bienestar y la satisfacción de nuestros clientes, que
+                            comprometidos con el bienestar y la satisfacción de nuestros clientes que
                             nos confían su mejor expresión, <strong>su sonrisa</strong>.
                         </Typography>
                     </div>
@@ -63,7 +63,7 @@ export const CardAboutUsFlex = () => {
                         </h2>
                         <Typography className={styles.textCardAboutusSection}>
                             Pretendemos ser referente a seguir dentro del sector, brindando el mejor
-                            servicio y cumpliendo las expectativas a las personass que nos confian su
+                            servicio y cumpliendo las expectativas a las personas que nos confian su
                             salud dental.
                         </Typography>
                     </div>

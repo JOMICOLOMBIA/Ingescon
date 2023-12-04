@@ -1,6 +1,6 @@
 import { ContactForm } from "../EmailForm";
 import styles from "./Index.module.css";
-import { ImgComparisonSlider } from "@img-comparison-slider/react";
+
 import Image from "next/image";
 import { Box, Button, Typography, useMediaQuery } from "@mui/material";
 
@@ -8,15 +8,7 @@ import { Box, Button, Typography, useMediaQuery } from "@mui/material";
 import { Navbar } from "../Layout/Navbar";
 import { CardProcGrid } from "../Layout/CardProcGrid";
 import { CardAboutUsFlex } from "../Layout/CardAboutUsFlex";
-
-// const backgroundImageStyle = {
-//   backgroundImage: `url(${backgroundImage.src})`,
-//   backgroundSize: "cover",
-//   backgroundPosition: "center",
-//   height: "100vh"
-// }
-
-
+import { CasesSliders } from "../Layout/CasesSliders";
 
 
 export const MainPage = () => {
@@ -62,27 +54,14 @@ export const MainPage = () => {
           layout="responsive"
           className={styles.image}
         /> */}
-        <CardProcGrid/>
+        <CardProcGrid />
 
       </div>
-      <div id="auSection" className={styles.bsection}>
-        <CardAboutUsFlex/>
+      <div id="auSection" className={styles.bsectionCases}>
+        <CardAboutUsFlex />
       </div>
-      <div id="casesSection" className={styles.bsectionCases}>
-        <div className={styles.bslider}>
-          <ImgComparisonSlider>
-            <div slot="first" className={styles.box1}></div>
-            <div slot="second" className={styles.box2}></div>
-          </ImgComparisonSlider>
-          <ImgComparisonSlider>
-            <div slot="first" className={styles.box1}></div>
-            <div slot="second" className={styles.box2}></div>
-          </ImgComparisonSlider>
-          <ImgComparisonSlider>
-            <div slot="first" className={styles.box1}></div>
-            <div slot="second" className={styles.box2}></div>
-          </ImgComparisonSlider>
-        </div>
+      <div id="casesSection" className={styles.bsection}>
+        <CasesSliders/>
       </div>
       <div className={styles.bsection}>
         <ContactForm />
