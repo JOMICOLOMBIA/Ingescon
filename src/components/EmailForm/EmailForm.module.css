@@ -7,6 +7,9 @@
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  position: absolute;
+  margin-left: 62vw;
+  margin-top: 25vh;
 }
 
 .field,
@@ -34,4 +37,27 @@
   background-color: #4caf50;
   color: white;
   cursor: pointer;
+}
+
+@media (max-width: 930px) and (min-width: 600px) {
+
+  .contactForm {
+    margin-left: 62vw;
+    margin-top: 23vh;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .contactForm {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;
+    justify-content: center;
+    background-color: rgba(252, 251, 251, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0;
+  }
 }

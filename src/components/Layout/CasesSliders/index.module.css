@@ -1,13 +1,11 @@
-.box1 {
-  background-color: red;
-  width: 20vw;
-  height: 40vh;
-}
 
-.box2 {
-  background-color: blue;
+.box {
   width: 20vw;
   height: 40vh;
+  position: relative;
+}
+.image {
+  object-fit: cover;
 }
 
 .bslider {
@@ -19,7 +17,6 @@
   flex-direction: column;
   background-color: black;
   align-items: center;
-  margin-top: 4vh;
 }
 
 .flexCasesSectionTitle {
@@ -29,6 +26,7 @@
   font-weight: 300;
   -webkit-line-clamp: 2;
   color: white;
+  margin-top: 15vh;
 }
 
 .flexCasesSection {
@@ -40,6 +38,10 @@
   border-radius: 30px;
 }
 
+.buttonCases {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 930px) and (min-width: 600px) {
   .flexCasesSection {
     flex-direction: column;
@@ -47,12 +49,7 @@
 }
 
 @media (max-width: 576px) {
-  .box1 {
-    width: 80vw;
-    height: 40vh;
-  }
-
-  .box2 {
+  .box {
     width: 80vw;
     height: 40vh;
   }
@@ -64,5 +61,9 @@
   .flexCasesSectionTitle {
     font-size: 35px;
     font-weight: 600;
+    margin-top: 7vh;
+  }
+  .bslider {
+    gap: 15px;
   }
 }

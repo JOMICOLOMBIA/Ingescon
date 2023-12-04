@@ -61,9 +61,17 @@ export const MainPage = () => {
         <CardAboutUsFlex />
       </div>
       <div id="casesSection" className={styles.bsection}>
-        <CasesSliders/>
+        <CasesSliders />
       </div>
       <div className={styles.bsection}>
+        <Image
+          src={screenUpper576 ? "/assets/Enmascarar_grupo_10.jpg" : "/assets/Enmascarar_grupo_15.jpg"} // Ruta relativa a la imagen dentro de la carpeta public
+          alt="Mujer sonriendo"
+          width={100} // Ancho de la imagen en píxeles
+          height={100} // Alto de la imagen en píxeles
+          layout="responsive"
+          className={styles.image}
+        />
         <ContactForm />
       </div>
       <div className={styles.footer}>
