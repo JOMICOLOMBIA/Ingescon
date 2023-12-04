@@ -2,21 +2,6 @@ import Image from "next/image";
 import styles from "./index.module.css";
 import { Typography, useMediaQuery, Button } from "@mui/material";
 
-// const componentesCartas = [{
-//     title: "¿Qué somos?",
-//     description: "Somos un grupo de expertos altamente capacitados en mejorar sonrisas y devolverles la confianza para sonreír. Nos apasiona cuidar de tu salud bucal por esta razón todos nuestros servicios están cuidadosamente planificados, lo que garantiza los mejores resultados para ti.",
-//     icon: "personas"
-//   }, {
-//     title: "Diseño en resina",
-//     description: "Tendrás una sonrisa perfecta en una sola sesión, nuestra resina es de alta calidad y tiene una durabilidad de 3 a 5 años.",
-//     icon: "doctor"
-//   }, {
-//     title: "Limpieza dental",
-//     description: "Te brindaremos una limpieza profunda y precisa que eliminará la placa, el sarro y las manchas, dejando tus dientes limpios y relucientes",
-//     icon: "silla"
-//   }]
-
-
 export const CardAboutUsFlex = () => {
 
 
@@ -69,7 +54,7 @@ export const CardAboutUsFlex = () => {
                     </div>
                 </div>
             </div>
-            <Button size="large">
+            <Button size="large" className={styles.button}>
                 {" "}
                 Conoce más{" "}
             </Button>

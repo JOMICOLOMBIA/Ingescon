@@ -1,6 +1,7 @@
 import { ImgComparisonSlider } from "@img-comparison-slider/react";
 import styles from "./index.module.css"
 import { Button } from "@mui/material";
+import Image from "next/image";
 
 
 export const CasesSliders = () => {
@@ -10,30 +11,86 @@ export const CasesSliders = () => {
             <div className={styles.flexCasesSection}>
                 <div className={styles.gridItem}>
                     <ImgComparisonSlider className={styles.containerSlider}> 
-                        <div slot="first" className={styles.box1}></div>
-                        <div slot="second" className={styles.box2}></div>
+                        <div slot="first" className={styles.box}>
+                            <Image 
+                                src="/assets/12.png"
+                                fill={true}
+                                className={styles.image}
+                                alt="Caso 12 antes"
+                            />
+                        </div>
+                        <div slot="second" className={styles.box}>
+                        <Image 
+                                src="/assets/12-12.png"
+                                fill={true}
+                                className={styles.image}
+                                alt="Caso 12 después"
+                            />
+                        </div>
                     </ImgComparisonSlider>
                 </div>
                 <div className={styles.gridItem}>
-                    <ImgComparisonSlider className={styles.containerSlider}>
-                        <div slot="first" className={styles.box1}></div>
-                        <div slot="second" className={styles.box2}></div>
+                    <ImgComparisonSlider className={styles.containerSlider}> 
+                        <div slot="first" className={styles.box}>
+                            <Image 
+                                src="/assets/11.png"
+                                fill={true}
+                                className={styles.image}
+                                alt="Caso 12 antes"
+                            />
+                        </div>
+                        <div slot="second" className={styles.box}>
+                        <Image 
+                                src="/assets/11-11.png"
+                                fill={true}
+                                className={styles.image}
+                                alt="Caso 12 después"
+                            />
+                        </div>
                     </ImgComparisonSlider>
                 </div>
                 <div className={styles.gridItem}>
-                    <ImgComparisonSlider className={styles.containerSlider}>
-                        <div slot="first" className={styles.box1}></div>
-                        <div slot="second" className={styles.box2}></div>
+                    <ImgComparisonSlider className={styles.containerSlider}> 
+                        <div slot="first" className={styles.box}>
+                            <Image 
+                                src="/assets/8.png"
+                                fill={true}
+                                className={styles.image}
+                                alt="Caso 12 antes"
+                            />
+                        </div>
+                        <div slot="second" className={styles.box}>
+                        <Image 
+                                src="/assets/8-8.png"
+                                fill={true}
+                                className={styles.image}
+                                alt="Caso 12 después"
+                            />
+                        </div>
                     </ImgComparisonSlider>
                 </div>
                 <div className={styles.gridItem}>
-                    <ImgComparisonSlider className={styles.containerSlider}>
-                        <div slot="first" className={styles.box1}></div>
-                        <div slot="second" className={styles.box2}></div>
+                    <ImgComparisonSlider className={styles.containerSlider}> 
+                        <div slot="first" className={styles.box}>
+                            <Image 
+                                src="/assets/6.png"
+                                fill={true}
+                                className={styles.image}
+                                alt="Caso 12 antes"
+                            />
+                        </div>
+                        <div slot="second" className={styles.box}>
+                        <Image 
+                                src="/assets/6-6.png"
+                                fill={true}
+                                className={styles.image}
+                                alt="Caso 12 después"
+                            />
+                        </div>
                     </ImgComparisonSlider>
                 </div>
             </div>
-            <Button size="large">
+            <Button size="large" className={styles.buttonCases}>
                 {" "}
                 Ver todos los casos{" "}
             </Button>
