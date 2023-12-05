@@ -10,8 +10,8 @@
 
 .cardProcSection {
     display: flex;
-    width: 35vw;
-    height: 150px;
+    width: 37vw;
+    height: 170px;
     border: 4px solid rgba(224, 190, 131, 255);
     border-radius: 10px;
     flex-direction: row;
@@ -34,13 +34,13 @@
 }
 
 .textCardProcSection {
-    font-size: 18px;
+    font-size: 1.15rem;
     text-align: justify;
 }
 
 .flexHomeSectionTitle {
     font-family: "LastOne";
-    font-size: 70px;
+    font-size: 4.3rem;
     line-height: 1;
     font-weight: 300;
 }

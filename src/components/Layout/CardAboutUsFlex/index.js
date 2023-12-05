@@ -4,6 +4,17 @@ import { Typography, useMediaQuery, Button } from "@mui/material";
 
 export const CardAboutUsFlex = () => {
 
+    const goToContact = () => {
+        const target = document.getElementById("contactSection");
+
+        const targetOffset = target.offsetTop;
+
+        window.scrollTo({
+            top: targetOffset,
+            behavior: "smooth",
+        });
+
+    }
 
     const screenUpper576 = useMediaQuery("(max-width:576px)");
 
@@ -54,7 +65,7 @@ export const CardAboutUsFlex = () => {
                     </div>
                 </div>
             </div>
-            <Button size="large" className={styles.button}>
+            <Button size="large" className={styles.button} onClick={goToContact}>
                 {" "}
                 Conoce más{" "}
             </Button>

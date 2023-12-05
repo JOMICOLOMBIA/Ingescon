@@ -1,12 +1,12 @@
 /* Index.module.css */
 .navbar {
   width: 100%;
-  height: 70px;
+  height: 60px;
   background-color: black;
   display: flex;
   position: sticky;
   justify-content: space-between;
-  top: 0px;
+  top: 0%;
   z-index: 2;
 }
 .materialIcon {
@@ -16,13 +16,13 @@
   width: 150px;
   height: 60px;
   position: relative;
-
   margin: auto 0;
+  display: flex;
 }
 
 .logonavbar {
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%;
+  height: auto; */
   object-fit: contain;
 }
 
