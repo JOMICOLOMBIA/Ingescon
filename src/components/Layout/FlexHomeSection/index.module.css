@@ -1,0 +1,76 @@
+.flexHomeSection {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 62vw;
+    margin-top: 20vh;
+    width: 33vw;
+  }
+  
+  .flexHomeSectionTitle {
+    font-family: "LastOne";
+    font-size: 4.3rem;
+    line-height: 1;
+    font-weight: 300;
+    -webkit-line-clamp: 2;
+  }
+  
+  .flexHomeSectionText {
+    font-size: 24px;
+  }
+  
+  .buttonHomeSection {
+    margin-top: 40px;
+  }
+  
+  .flexButtonHS {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 930px) and (min-width: 600px) {
+    .flexHomeSectionTitle {
+      font-size: 33px;
+    }
+    .flexHomeSectionText {
+      font-size: 20px;
+    }
+    .flexHomeSection {
+      margin-left: 62vw;
+      margin-top: 23vh;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .flexHomeSectionTitle {
+      font-size: 23px;
+    }
+    .flexHomeSection {
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 75vw;
+      justify-content: center;
+      background-color: rgba(252, 251, 251, 0.8);
+      padding: 10px;
+      border-radius: 10px;
+      margin: 0;
+    }
+  
+    .flexHomeSectionText {
+      font-size: 13px;
+    }
+  
+    .flexHomeSectionTitle {
+      font-weight: 600;
+    }
+  
+    .flexButtonHS {
+      justify-content: center;
+    }
+  
+    .buttonHomeSection {
+      margin-top: 15px;
+    }
+  
+  }

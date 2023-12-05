@@ -18,10 +18,11 @@ export const Navbar = () => {
         <Image
           src="/assets/logowhite.png"
           alt="SDC logo"
+          fill={true}
           className={styles.logonavbar}
-          layout="responsive"
-          width={190}
-          height={65}
+          // layout="responsive"
+          // width={100}
+          // height={65}
         />
       </div>
       <div className={styles.menuContainer}>

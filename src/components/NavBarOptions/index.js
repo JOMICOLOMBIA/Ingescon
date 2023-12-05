@@ -12,6 +12,18 @@ export const NavBarOptions = () => {
     cases: { box: styles.boptionsNotClicked, text: styles.textNotClicked },
   });
 
+  const goToContact = () => {
+    const target = document.getElementById("contactSection");
+
+    const targetOffset = target.offsetTop;
+
+    window.scrollTo({
+      top: targetOffset,
+      behavior: "smooth",
+    });
+
+  }
+
   const goToSection = (section, e) => {
     const updatedElementClasses = { ...elementClasses };
 
@@ -31,7 +43,7 @@ export const NavBarOptions = () => {
 
     if (target) {
       const targetOffset = target.offsetTop;
-      
+
       window.scrollTo({
         top: targetOffset,
         behavior: "smooth",
@@ -89,7 +101,7 @@ export const NavBarOptions = () => {
           </Typography>
         </a>
       </div>
-      <Button size={screenUpper576 ? "large" : "small" }>
+      <Button size={screenUpper576 ? "medium" : "small"} onClick={goToContact}>
         {" "}
         Contacto{" "}
       </Button>

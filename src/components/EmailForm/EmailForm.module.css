@@ -1,44 +1,75 @@
 /* src/components/EmailForm/EmailForm.module.css */
 
 .contactForm {
-  max-width: 400px;
-  max-height: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  position: absolute;
-  margin-left: 62vw;
-  margin-top: 25vh;
-}
-
-.field,
-.customField {
-  margin-bottom: 16px;
-}
-
-.label,
-.customLabel {
-  display: block;
-  margin-bottom: 8px;
-}
-
-.input,
-.customInput,
-.textarea,
-.customTextarea {
   width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
+  height: 100%;
+  margin-bottom: 5vh;
 }
 
-.submitButton,
-.customSubmitButton {
-  background-color: #4caf50;
-  color: white;
-  cursor: pointer;
+.flexContactSection {
+  display: flex;
+  width: 35vw;
+  height: 70vh;
+  position: absolute;
+  margin-left: 55vw;
+  margin-top: 5vh;
+  flex-direction: row;
+  gap: 3vw;
+  padding: 10px;
+}
+.flexContactSectionTitle {
+  font-family: "LastOne";
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 300;
+  -webkit-line-clamp: 2;
+}
+.flexContactSectionText {
+  -webkit-line-clamp: 2;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
+.flexContactSectionBoxText {
+  width: 100%;
+}
+
+.divider {
+  width: 1px;
+  height: 100%;
+  background-color: gray
+}
+.formOptionBox {
+  height: auto;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+.formLabel {
+  color: black;
+}
+
+.formInput {
+  width: 100%;
+}
+
+.flexContentContactSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  height: auto;
+  width: auto;
+  justify-content: space-between;
+}
+
+.flexButtonContactS {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formItemBox {
+  margin-bottom: 1.5vh;
+}
 @media (max-width: 930px) and (min-width: 600px) {
 
   .contactForm {

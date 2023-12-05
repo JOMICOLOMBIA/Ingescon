@@ -11,7 +11,7 @@
 
 .flexAboutusSectionTitle {
     font-family: "LastOne";
-    font-size: 70px;
+    font-size: 4.3rem;
     line-height: 1;
     font-weight: 300;
 }
@@ -23,8 +23,8 @@
 
 .cardAboutusSection {
     display: flex;
-    width: 35vw;
-    height: 200px;
+    width: 38vw;
+    height: 210px;
     flex-direction: row;
     align-items: center;
     gap: 40px;
@@ -45,7 +45,7 @@
 }
 
 .textCardAboutusSection {
-    font-size: 18px;
+    font-size: 1.15rem;
     text-align: justify;
 }
 
