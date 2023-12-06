@@ -3,7 +3,6 @@ import { Button, Typography } from "@mui/material";
 import styles from "./index.module.css";
 import { CasesSliders } from "@/components/Layout/CasesSliders";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
 import { PhotoSliderSection } from "@/components/PhotoCarrusel";
 
 const images = ["/assets/12.png", "/assets/12-12.png", "/assets/11.png"];
