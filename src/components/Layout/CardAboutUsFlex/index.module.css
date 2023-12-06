@@ -23,7 +23,7 @@
 
 .cardAboutusSection {
     display: flex;
-    width: 38vw;
+    width: 45vw;
     height: 210px;
     flex-direction: row;
     align-items: center;
@@ -45,8 +45,9 @@
 }
 
 .textCardAboutusSection {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     text-align: justify;
+    line-height: 1;
 }
 
 .divider {
@@ -56,43 +57,50 @@
 }
 
 .button {
-    margin-bottom: 30px;
-  }
+    margin-bottom: 50px;
+}
 
 @media (max-width: 930px) and (min-width: 600px) {
     .flexAboutusSection {
         gap: 40px;
         margin-top: 70px;
     }
+
     .flexAboutusSectionTitle {
-      font-size: 50px;
+        font-size: 50px;
     }
+
     .textCardAboutusSection {
-      font-size: 15px;
+        font-size: 15px;
     }
+
     .headerCardAboutusSection {
         font-size: 17px;
     }
+
     .cardAboutusSection {
         width: 60vw;
         height: 42vh;
     }
-  }
+}
 
 @media (max-width: 576px) {
     .flexAboutusSectionTitle {
         font-size: 30px;
         font-weight: 600;
     }
+
     .flexAboutusSection {
         gap: 30px;
         margin-top: 40px;
     }
+
     .cardAboutusSection {
         width: 90vw;
         margin-bottom: 10px;
         height: fit-content;
     }
+
     .headerCardAboutusSection {
         font-size: 17px;
         margin: 0;
@@ -101,7 +109,11 @@
     .textCardAboutusSection {
         font-size: 14px;
     }
+
     .divider {
         margin-bottom: 15px;
+    }
+    .button {
+        margin-bottom: 5px;
     }
 }
