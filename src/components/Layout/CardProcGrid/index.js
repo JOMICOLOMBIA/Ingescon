@@ -48,7 +48,7 @@ export const CardProcGrid = () => {
         })
         }
       </div>
-      <Button size="large">
+      <Button size="large" className={styles.button}>
         {" "}
         Conoce más{" "}
       </Button>
