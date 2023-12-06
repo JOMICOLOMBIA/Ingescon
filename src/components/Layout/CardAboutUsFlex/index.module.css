@@ -56,9 +56,6 @@
     background-color: #000000;
 }
 
-.button {
-    margin-bottom: 50px;
-}
 
 @media (max-width: 930px) and (min-width: 600px) {
     .flexAboutusSection {
@@ -112,8 +109,5 @@
 
     .divider {
         margin-bottom: 15px;
-    }
-    .button {
-        margin-bottom: 5px;
     }
 }
