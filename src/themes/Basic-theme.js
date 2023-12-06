@@ -12,14 +12,17 @@ export const BasicTheme = createTheme({
           textTransform: "none",
           padding: "5px 20px",
           height: "40px",
-          fontSize: "1rem"
+          fontSize: "1rem",
+          marginBottom: "40px",
         },
         sizeSmall: {
           width: "135px",
+          margin: "0px",
         },
         sizeMedium: {
           width: "140px",
           fontSize: "15px",
+          margin: "0px",
         },
         sizeLarge: {
           width: "250px",

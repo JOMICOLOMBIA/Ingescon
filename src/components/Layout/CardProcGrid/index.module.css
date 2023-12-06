@@ -52,9 +52,6 @@
     grid-template-rows: 1fr 1fr;
     gap: 40px;
 }
-.button {
-    margin-bottom: 50px;
-}
 
 @media (max-width: 930px) and (min-width: 600px) {
     .flexProcSection {
@@ -104,8 +101,5 @@
 
     .textCardProcSection {
         font-size: 16px;
-    }
-    .button {
-        margin-bottom: 5px;
     }
 }
