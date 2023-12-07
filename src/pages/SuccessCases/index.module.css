@@ -1,41 +1,11 @@
 .flexProcSection {
   display: flex;
-  width: 100%;
+  width: 80%;
   flex-direction: column;
   align-items: center;
-  gap: 80px;
-  margin-top: 80px;
+  gap: 9vh;
   height: auto;
-}
-
-.cardProcSection {
-  display: flex;
-  width: 37vw;
-  height: 170px;
-  border: 4px solid rgba(224, 190, 131, 255);
-  border-radius: 10px;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
-  padding: 15px;
-}
-
-.boxCardProcSection {
-  display: flex;
-  flex-direction: column;
-}
-
-.headerCardProcSection {
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "LastOne";
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.textCardProcSection {
-  font-size: 1.15rem;
-  text-align: justify;
+  margin: 0 auto 40px;
 }
 
 .flexHomeSectionTitle {
@@ -45,13 +15,12 @@
   font-weight: 300;
 }
 
-.gridCardsProc {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 40px;
-  margin-top: 30vh;
+.flexPhotoSlider {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
+
 
 @media (max-width: 930px) and (min-width: 600px) {
   .flexProcSection {
@@ -60,16 +29,6 @@
   }
   .flexHomeSectionTitle {
     font-size: 50px;
-  }
-  .textCardProcSection {
-    font-size: 15px;
-  }
-  .headerCardProcSection {
-    font-size: 17px;
-  }
-  .cardProcSection {
-    width: 45vw;
-    height: 50vh;
   }
 }
 
@@ -83,96 +42,5 @@
     gap: 40px;
     margin-top: 40px;
   }
-
-  .gridCardsProc {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .cardProcSection {
-    width: 90vw;
-    height: 26vh;
-    padding: 10px;
-  }
-
-  .headerCardProcSection {
-    font-size: 16px;
-    margin: 0;
-  }
-
-  .textCardProcSection {
-    font-size: 16px;
-  }
 }
 
-.carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.carouselItem {
-  padding: 0 10px;
-}
-
-.carouselArrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  cursor: pointer;
-  color: white;
-  background-color: black;
-  padding: 10px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.prevArrow {
-  left: 10px;
-}
-
-.nextArrow {
-  right: 10px;
-}
-
-.slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-}
-
-.slick-list {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.slick-track {
-  display: flex;
-  justify-content: space-between;
-}
-
-.slick-slide {
-  float: none;
-  display: flex;
-  height: 100%;
-}
-
-.carouselContainer {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 768px) {
-  .carouselContainer {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .textContainer {
-    margin-left: 20px;
-  }
-}

@@ -3,30 +3,55 @@ import { Carousel } from "react-responsive-carousel";
 import { Button, Typography } from "@mui/material";
 import styles from "./index.module.css";
 
-export const PhotoSliderSection = ({ images, componentesCartas }) => {
+const componentesCartaCase = [
+  {
+    title: "Durabilidad",
+    content: "10 a 15 años"
+  },
+  {
+    title: "Tiempo de tratamiento",
+    content: "2 sesiones"
+  },
+  {
+    title: "Procedimiento",
+    content: "Limpieza dental, sin desgaste y sin dolor."
+  }
+]
+
+export const PhotoSliderSection = ({ images, componentesCartas, contenidoCartas }) => {
   return (
     <div className={styles.carouselContainer}>
       <div
-        style={{
-          width: "400px",
-          height: "400px",
-        }}
+        className={styles.boxCarouselImage}
       >
-        <Carousel useKeyboardArrows={true}>
+        <Carousel useKeyboardArrows={true} showThumbs={false}>
           {images.map((URL, index) => (
-            <div className="slide" key={index}>
-              <img alt="sample_file" src={URL} />
+            <div key={index}>
+              <img alt="sample_file" src={URL} className={styles.slideEje} />
             </div>
           ))}
         </Carousel>
       </div>
       <div className={styles.textContainer}>
-        <h2 className={styles.headerCardProcSection}>
-          {componentesCartas[0].title}
+        <h2 className={styles.headerTextContainer}>
+          {componentesCartas.title}
         </h2>
-        <Typography className={styles.textCardProcSection}>
-          {componentesCartas[0].description}
+        <Typography className={styles.textSuccessCasesSection}>
+          {componentesCartas.description}
         </Typography>
+        {
+          contenidoCartas.map((contenido, index) => {
+            return (
+              <>
+                <h3 key={index} className={styles.h3SuccessCases}>
+                  {contenido.title}
+                </h3>
+                <Typography key={index} className={styles.textSuccessCasesSection}>
+                  {contenido.content}
+                </Typography>
+              </>
+            )
+          })}
       </div>
     </div>
   );
