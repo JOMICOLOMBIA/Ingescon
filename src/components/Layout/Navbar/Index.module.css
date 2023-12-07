@@ -44,6 +44,10 @@
   color: white;
 }
 
+.menuIconContainer {
+  display: flex;
+}
+
 /* Estilos para pantallas más pequeñas (máximo 768px) */
 @media (max-width: 768px) {
   .menuOptions {
@@ -51,7 +55,7 @@
   }
 
   .menuIcon {
-    display: block;
+    display: flex;
     color: white;
   }
 

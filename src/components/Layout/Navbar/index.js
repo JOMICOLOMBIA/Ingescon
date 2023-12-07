@@ -33,8 +33,10 @@ export const Navbar = () => {
       <div className={styles.menuContainer}>
         {/* Icono de menú que muestra/oculta el menú desplegable */}
         <div className={styles.menuIcon}>
-          <IconButton onClick={toggleMenu}>
-            <MenuIcon className={styles.materialIcon} />
+          <div  className={styles.menuIconContainer}>
+            <IconButton onClick={toggleMenu}>
+              <MenuIcon className={styles.materialIcon} />
+            </IconButton>
             <div
               style={{
                 color: "white",
@@ -47,7 +49,7 @@ export const Navbar = () => {
             >
               {i18n.language.toUpperCase()}
             </div>
-          </IconButton>
+          </div>
 
           <Menu
             open={menuVisible}
