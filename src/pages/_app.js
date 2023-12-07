@@ -13,7 +13,6 @@ function App({ Component, pageProps }) {
       <CssBaseline />
       <ThemeProvider theme={BasicTheme}>
         <Component {...pageProps} />
-        <Footer />
       </ThemeProvider>
     </>
   );
