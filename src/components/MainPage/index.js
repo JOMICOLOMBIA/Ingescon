@@ -9,6 +9,7 @@ import { CardProcGrid } from "../Layout/CardProcGrid";
 import { CardAboutUsFlex } from "../Layout/CardAboutUsFlex";
 import { CasesSliders } from "../Layout/CasesSliders";
 import { FlexHomeSection } from "../Layout/FlexHomeSection";
+import dynamic from "next/dynamic";
 
 export const MainPage = () => {
   const screenUpper576 = useMediaQuery("(min-width:576px)");

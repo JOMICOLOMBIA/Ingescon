@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button, Typography, useMediaQuery } from "@mui/material";
 import styles from "./NavBarOptions.module.css";
+import { useTranslation } from "react-i18next";
 
-export const NavBarOptions = () => {
-
+export const NavBarOptions = ({ changeLng, i18n }) => {
   const screenUpper576 = useMediaQuery("(min-width:576px)");
   const [elementClasses, setElementClasses] = useState({
     home: { box: styles.boptionsNotClicked, text: styles.textNotClicked },
@@ -21,8 +21,7 @@ export const NavBarOptions = () => {
       top: targetOffset,
       behavior: "smooth",
     });
-
-  }
+  };
 
   const goToSection = (section, e) => {
 
@@ -34,7 +33,8 @@ export const NavBarOptions = () => {
 
       Object.keys(elementClasses).forEach((otherIdentifier) => {
         if (otherIdentifier !== section) {
-          updatedElementClasses[otherIdentifier].box = styles.boptionsNotClicked;
+          updatedElementClasses[otherIdentifier].box =
+            styles.boptionsNotClicked;
           updatedElementClasses[otherIdentifier].text = styles.textNotClicked;
         }
       });
@@ -62,10 +62,7 @@ export const NavBarOptions = () => {
           onClick={(e) => goToSection("home", e)}
           className={styles.linknb}
         >
-          <Typography className={elementClasses.home.text}>
-            {" "}
-            Inicio{" "}
-          </Typography>
+          <Typography className={elementClasses.home.text}> Inicio </Typography>
         </a>
       </div>
       <div className={elementClasses.proc.box}>
@@ -108,6 +105,18 @@ export const NavBarOptions = () => {
         {" "}
         Contacto{" "}
       </Button>
-    </div >
+      <div
+        style={{
+          color: "white",
+          margin: "auto 10px",
+          fontSize: "16px",
+        }}
+        onClick={() => {
+          changeLng();
+        }}
+      >
+        {i18n?.language?.toUpperCase()}
+      </div>
+    </div>
   );
 };
