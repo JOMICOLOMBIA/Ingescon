@@ -25,18 +25,14 @@ export const Navbar = () => {
       <div className={styles.blogo}>
         <Image
           src="/assets/logowhite.png"
-          alt="SDC logo"
+          alt={t("sdcLogo")}
           fill={true}
           className={styles.logonavbar}
-          // layout="responsive"
-          // width={100}
-          // height={65}
         />
       </div>
       <div className={styles.menuContainer}>
         {/* Icono de menú que muestra/oculta el menú desplegable */}
         <div className={styles.menuIcon}>
-          {/* ☰ */}
           <IconButton onClick={toggleMenu}>
             <MenuIcon className={styles.materialIcon} />
             <div
@@ -65,17 +61,16 @@ export const Navbar = () => {
               horizontal: "right",
             }}
           >
-            <MenuItem>Inicio</MenuItem>
-            <MenuItem>Procedimientos</MenuItem>
-            <MenuItem>Acerca de nosotros</MenuItem>
-            <MenuItem>Casos de éxito</MenuItem>
+            <MenuItem>{t("home")}</MenuItem>
+            <MenuItem>{t("procedures")}</MenuItem>
+            <MenuItem>{t("aboutUs2")}</MenuItem>
+            <MenuItem>{t("successCases")}</MenuItem>
           </Menu>
         </div>
 
         {/* Menú desplegable */}
-
         <div className={styles.menuOptions}>
-          <NavBarOptions changeLng={() => changeLng()} i18n={i18n} />
+          <NavBarOptions changeLng={() => changeLng()} i18n={i18n} t={t} />
         </div>
       </div>
     </div>

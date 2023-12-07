@@ -3,7 +3,7 @@ import { Button, Typography, useMediaQuery } from "@mui/material";
 import styles from "./NavBarOptions.module.css";
 import { useTranslation } from "react-i18next";
 
-export const NavBarOptions = ({ changeLng, i18n }) => {
+export const NavBarOptions = ({ changeLng, i18n, t }) => {
   const screenUpper576 = useMediaQuery("(min-width:576px)");
   const [elementClasses, setElementClasses] = useState({
     home: { box: styles.boptionsNotClicked, text: styles.textNotClicked },
@@ -24,7 +24,6 @@ export const NavBarOptions = ({ changeLng, i18n }) => {
   };
 
   const goToSection = (section, e) => {
-
     const updatedElementClasses = { ...elementClasses };
 
     if (section) {
@@ -41,11 +40,10 @@ export const NavBarOptions = ({ changeLng, i18n }) => {
       setElementClasses(updatedElementClasses);
     }
     const target = document.getElementById(e);
-    const navbar = document.getElementById('navbar');
+    const navbar = document.getElementById("navbar");
 
     if (target && navbar) {
       const targetOffset = target.offsetTop;
-
 
       window.scrollTo({
         top: targetOffset,
@@ -62,7 +60,9 @@ export const NavBarOptions = ({ changeLng, i18n }) => {
           onClick={(e) => goToSection("home", e)}
           className={styles.linknb}
         >
-          <Typography className={elementClasses.home.text}> Inicio </Typography>
+          <Typography className={elementClasses.home.text}>
+            {t("home")}{" "}
+          </Typography>
         </a>
       </div>
       <div className={elementClasses.proc.box}>
@@ -73,7 +73,7 @@ export const NavBarOptions = ({ changeLng, i18n }) => {
         >
           <Typography className={elementClasses.proc.text}>
             {" "}
-            Procedimientos{" "}
+            {t("procedures")}{" "}
           </Typography>
         </a>
       </div>
@@ -85,7 +85,7 @@ export const NavBarOptions = ({ changeLng, i18n }) => {
         >
           <Typography className={elementClasses.aboutUs.text}>
             {" "}
-            Acerca de nosotros{" "}
+            {t("aboutUs2")}{" "}
           </Typography>
         </a>
       </div>
@@ -97,13 +97,13 @@ export const NavBarOptions = ({ changeLng, i18n }) => {
         >
           <Typography className={elementClasses.cases.text}>
             {" "}
-            Casos de éxito{" "}
+            {t("successCases")}{" "}
           </Typography>
         </a>
       </div>
       <Button size={screenUpper576 ? "medium" : "small"} onClick={goToContact}>
         {" "}
-        Contacto{" "}
+         {t("Contacto")}{" "}
       </Button>
       <div
         style={{
