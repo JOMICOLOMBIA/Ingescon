@@ -37,5 +37,12 @@
   "email": "Email",
   "phoneNumber": "Numero telefono",
   "message": "Mensaje",
-  "send": "Enviar"
+  "send": "Enviar",
+
+  "sdcLogo": "Logo SDC",
+  "home": "Inicio",
+  "procedures": "Procedimientos",
+  "aboutUs2": "Acerca de nosotros",
+  "successCases": "Casos de éxito",
+  "Contacto": "Contacto"
 }
