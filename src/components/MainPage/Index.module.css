@@ -23,6 +23,18 @@
   display: flex;
   zoom: 0.97;
 }
+.bsectionCases2 {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  zoom: 0.97;
+  position: relative;
+}
+
+.fondoAboutUs {
+  object-fit: cover;
+}
 
 .boxexam {
   width: 300px;

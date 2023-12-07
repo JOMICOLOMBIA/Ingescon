@@ -13,7 +13,7 @@ const Home = () => {
         <title>Smile Design Center</title>
         <meta name="description" content="Experience the difference exceptional dental care can make. Our compassionate team is dedicated to helping you achieve optimal oral health. Schedule a consultation now!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/assets/favicon.ico" />
         <link
           rel="stylesheet"
           type="text/css"

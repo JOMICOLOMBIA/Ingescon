@@ -34,7 +34,13 @@ export const MainPage = () => {
       <div id="procSection" className={styles.bsectionCases}>
         <CardProcGrid />
       </div>
-      <div id="auSection" className={styles.bsectionCases}>
+      <div id="auSection" className={styles.bsectionCases2}>
+        <Image
+        src={"/assets/fondo-au.jpg"}
+        alt="Fondo section"
+        fill={true}
+        className={styles.fondoAboutUs}
+        />
         <CardAboutUsFlex />
       </div>
       <div id="casesSection" className={styles.bsection}>
