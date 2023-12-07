@@ -3,8 +3,9 @@ import styles from "./index.module.css";
 import { Button, Typography } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
 
-const numeroCaso = [12, 11, 8, 6]
+const numeroCaso = [12, 11, 8, 6];
 
 export const CasesSliders = ({
   background = "back",
@@ -12,30 +13,34 @@ export const CasesSliders = ({
   title = true,
 }) => {
   const router = useRouter();
+  const { t } = useTranslation("common");
+
   const handleVerTodosLosCasos = () => {
     // Redirige al usuario a la página /successCases
     router.push("/SuccessCases/");
   };
+
   return (
     <div className={styles.bslider} style={{ background: background }}>
       {title && (
-        <h1 className={styles.flexCasesSectionTitle}>Antes y después</h1>
+        <h1 className={styles.flexCasesSectionTitle}>
+          {t("beforeAfterTitle")}
+        </h1>
       )}
       <div className={styles.flexCasesSection}>
-        {numeroCaso.map((caso, key) => {
-          return (
-            <div className={styles.gridItem} key={key}>
+        {numeroCaso.map((caso, key) => (
+          <div className={styles.gridItem} key={key}>
             <ImgComparisonSlider className={styles.containerSlider}>
               <div slot="first" className={`${styles.box} ${styles.before}`}>
                 <Image
                   src={`/assets/${caso}.png`}
                   fill={true}
                   className={styles.image}
-                  alt={`Caso ${caso} antes`}
+                  alt={t(`caseBeforeAlt`, { caso })}
                 />
                 <figcaption>
                   <Typography className={styles.textLabelSlider}>
-                    Before
+                    {t("beforeLabel")}
                   </Typography>
                 </figcaption>
               </div>
@@ -44,19 +49,18 @@ export const CasesSliders = ({
                   src={`/assets/${caso}-${caso}.png`}
                   fill={true}
                   className={styles.image}
-                  alt={`Caso ${caso} después`}
+                  alt={t(`caseAfterAlt`, { caso })}
                 />
                 <figcaption>
                   <Typography className={styles.textLabelSlider}>
-                    After
+                    {t("afterLabel")}
                   </Typography>
                 </figcaption>
               </div>
             </ImgComparisonSlider>
           </div>
-          )
-        })}
-      </div> 
+        ))}
+      </div>
       {buttonredirect && (
         <Button
           size="large"
@@ -64,7 +68,7 @@ export const CasesSliders = ({
           onClick={handleVerTodosLosCasos}
         >
           {" "}
-          Ver todos los casos{" "}
+          {t("viewAllCasesButton")}{" "}
         </Button>
       )}
     </div>

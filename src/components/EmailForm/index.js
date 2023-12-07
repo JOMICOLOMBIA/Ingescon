@@ -1,9 +1,18 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./EmailForm.module.css";
-import { Button, Typography, FormControl, InputLabel, Input, TextField, useMediaQuery } from "@mui/material";
+import {
+  Button,
+  Typography,
+  FormControl,
+  InputLabel,
+  Input,
+  useMediaQuery,
+} from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 export const ContactForm = () => {
+  const { t } = useTranslation("common");
 
   const screenUpper576 = useMediaQuery("(min-width:930px)");
   const form = useRef();
@@ -30,79 +39,63 @@ export const ContactForm = () => {
 
   return (
     <div className={styles.flexContactSection}>
-      {
-        screenUpper576 &&
-      <div className={styles.divider} />
-    }
+      {screenUpper576 && <div className={styles.divider} />}
       <div className={styles.flexContentContactSection}>
-        <h1 className={styles.flexContactSectionTitle}> Contáctanos </h1>
+        <h1 className={styles.flexContactSectionTitle}> {t("contactUs")} </h1>
         <div className={styles.flexContactSectionBoxText}>
-          <Typography className={styles.flexContactSectionText}>Envíanos un mensaje si deseas obtener información más
-            precisa sobre tu caso.</Typography>
+          <Typography className={styles.flexContactSectionText}>
+            {t("sendMessage")}
+          </Typography>
         </div>
         <form ref={form} onSubmit={sendEmail} className={styles.contactForm}>
           <div className={styles.formItemBox}>
-            <FormControl className={styles.formOptionBox} >
-              <InputLabel
-                htmlFor="from_name"
-                className={styles.formLabel}
-              >
-                Nombre
+            <FormControl className={styles.formOptionBox}>
+              <InputLabel htmlFor="from_name" className={styles.formLabel}>
+                {t("name")}
               </InputLabel>
               <Input
                 type="text"
                 name="from_name"
                 id="from_name"
-                className={styles.formInput} />
+                className={styles.formInput}
+              />
             </FormControl>
           </div>
           <div className={styles.formItemBox}>
             <FormControl className={styles.formOptionBox}>
-              <InputLabel
-                htmlFor="email_id"
-                className={styles.formLabel}
-              >
-                Email
+              <InputLabel htmlFor="email_id" className={styles.formLabel}>
+                {t("email")}
               </InputLabel>
-              <Input
-                type="email"
-                name="email_id"
-                id="email_id" />
+              <Input type="email" name="email_id" id="email_id" />
             </FormControl>
           </div>
           <div className={styles.formItemBox}>
             <FormControl className={styles.formOptionBox}>
-              <InputLabel
-                htmlFor="phone"
-                className={styles.formLabel}
-              >
-                Numero telefono
+              <InputLabel htmlFor="phone" className={styles.formLabel}>
+                {t("phoneNumber")}
               </InputLabel>
-              <Input
-                type="tel"
-                name="phone"
-                id="phone" />
+              <Input type="tel" name="phone" id="phone" />
             </FormControl>
           </div>
           <div className={styles.formItemBox}>
             <FormControl className={styles.formOptionBox}>
-              <InputLabel
-                htmlFor="message"
-                className={styles.formLabel}
-              >
-                Mensaje
+              <InputLabel htmlFor="message" className={styles.formLabel}>
+                {t("message")}
               </InputLabel>
-              <Input
-                type="text"
-                name="message"
-                id="message" />
+              <Input type="text" name="message" id="message" />
             </FormControl>
           </div>
           <div className={styles.flexButtonContactS}>
-            <Button size={screenUpper576 ? "large" : "small"} type="submit" value="Send">Enviar</Button>
+            <Button
+              size={screenUpper576 ? "large" : "small"}
+              type="submit"
+              value="Send"
+            >
+              {t("send")}
+            </Button>
           </div>
         </form>
-      </div >
-    </div >
+      </div>
+    </div>
   );
 };

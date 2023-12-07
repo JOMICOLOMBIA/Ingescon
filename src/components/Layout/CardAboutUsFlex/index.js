@@ -1,11 +1,13 @@
 import Image from "next/image";
 import styles from "./index.module.css";
 import { Typography, useMediaQuery, Button } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 export const CardAboutUsFlex = () => {
+  const { t } = useTranslation("common"); // "common" es el nombre del namespace
+
   const goToContact = () => {
     const target = document.getElementById("contactSection");
-
     const targetOffset = target.offsetTop;
 
     window.scrollTo({
@@ -18,23 +20,21 @@ export const CardAboutUsFlex = () => {
 
   return (
     <div className={styles.flexAboutusSection}>
-      <h1 className={styles.flexAboutusSectionTitle}>Acerca de nosotros</h1>
+      <h1 className={styles.flexAboutusSectionTitle}>{t("aboutUs")}</h1>
       <div className={styles.flexAboutusCards}>
         <div className={styles.cardAboutusSection}>
           <Image
             src="/assets/ico-personas.svg"
-            alt="Icono"
+            alt={t("iconAlt")}
             width={screenUpper576 ? 60 : 80}
             height={screenUpper576 ? 60 : 80}
           />
           <div className={styles.boxCardAboutusSection}>
-            <h2 className={styles.headerCardAboutusSection}>¿Qué somos?</h2>
+            <h2 className={styles.headerCardAboutusSection}>
+              {t("whatWeAre")}
+            </h2>
             <Typography className={styles.textCardAboutusSection}>
-              Somos un grupo de expertos altamente capacitados en mejorar
-              sonrisas y devolverles la confianza para sonreír. Nos apasiona
-              cuidar de tu salud bucal por esta razón todos nuestros servicios
-              están cuidadosamente planificados, lo que garantiza los mejores
-              resultados para ti.
+              {t("whatWeAreDescription")}
             </Typography>
           </div>
         </div>
@@ -42,19 +42,16 @@ export const CardAboutUsFlex = () => {
         <div className={styles.cardAboutusSection}>
           <Image
             src="/assets/ico-doctor.svg"
-            alt="Icono"
+            alt={t("iconAlt")}
             width={screenUpper576 ? 60 : 80}
             height={screenUpper576 ? 60 : 80}
           />
           <div className={styles.boxCardAboutusSection}>
             <h2 className={styles.headerCardAboutusSection}>
-              ¿Cuál es nuestra misión?
+              {t("ourMission")}
             </h2>
             <Typography className={styles.textCardAboutusSection}>
-              Ofrecemos atención personalizada en un ambiente agradable,
-              comprometidos con el bienestar y la satisfacción de nuestros
-              clientes que nos confían su mejor expresión,{" "}
-              <strong>su sonrisa</strong>.
+              {t("ourMissionDescription")}
             </Typography>
           </div>
         </div>
@@ -62,25 +59,22 @@ export const CardAboutUsFlex = () => {
         <div className={styles.cardAboutusSection}>
           <Image
             src="/assets/ico-silla.svg"
-            alt="Icono"
+            alt={t("iconAlt")}
             width={screenUpper576 ? 60 : 80}
             height={screenUpper576 ? 60 : 80}
           />
           <div className={styles.boxCardAboutusSection}>
             <h2 className={styles.headerCardAboutusSection}>
-              ¿A dónde queremos llegar?
+              {t("whereWeWantToGo")}
             </h2>
             <Typography className={styles.textCardAboutusSection}>
-              Pretendemos ser referente a seguir dentro del sector, brindando el
-              mejor servicio y cumpliendo las expectativas a las personas que
-              nos confian su salud dental.
+              {t("whereWeWantToGoDescription")}
             </Typography>
           </div>
         </div>
       </div>
       <Button size="large" className={styles.button} onClick={goToContact}>
-        {" "}
-        Conoce más{" "}
+        {t("learnMore")}
       </Button>
     </div>
   );
