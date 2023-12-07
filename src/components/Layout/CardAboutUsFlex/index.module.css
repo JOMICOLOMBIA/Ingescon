@@ -3,17 +3,17 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 5vh;
-    gap: 2vh;
+    gap: 1vh;
     height: auto;
     background-color: gray;
 }
 
 .flexAboutusSectionTitle {
     font-family: "LastOne";
-    font-size: 4.3rem;
+    font-size: 3.7rem;
     line-height: 1;
     font-weight: 300;
+    margin-top: 70px;
 }
 
 .flexAboutusCards {
@@ -24,7 +24,7 @@
 .cardAboutusSection {
     display: flex;
     width: 45vw;
-    height: 210px;
+    height: 200px;
     flex-direction: row;
     align-items: center;
     gap: 40px;
@@ -89,7 +89,6 @@
 
     .flexAboutusSection {
         gap: 30px;
-        margin-top: 40px;
     }
 
     .cardAboutusSection {

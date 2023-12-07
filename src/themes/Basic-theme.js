@@ -14,13 +14,14 @@ export const BasicTheme = createTheme({
           height: "40px",
           fontSize: "1rem",
           marginBottom: "40px",
+          marginTop:"0px",
         },
         sizeSmall: {
-          width: "135px",
+          width: "140px",
           margin: "0px",
         },
         sizeMedium: {
-          width: "140px",
+          width: "170px",
           fontSize: "15px",
           margin: "0px",
         },

@@ -1,8 +1,9 @@
 .box {
-  width: 20vw;
-  height: 40vh;
+  width: 22vw;
+  height: 42vh;
   position: relative;
 }
+
 .image {
   object-fit: cover;
 }
@@ -37,8 +38,42 @@
   border-radius: 30px;
 }
 
+.before,
+.after {
+  margin: 0;
+}
+
+.before figcaption,
+.after figcaption {
+  background: #a18541;
+  border-radius: 12px;
+  width: 5vw;
+  height: 3vh;
+  position: absolute;
+  top: 93%;
+  transform: translateY(-50%);
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.before figcaption {
+  left: 12px;
+}
+
+.after figcaption {
+  right: 12px;
+}
+
+.textLabelSlider {
+  color: white;
+  font-family: "LastOne";
+  font-size: .8rem;
+}
+
 .buttonCases {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 930px) and (min-width: 600px) {
@@ -62,6 +97,7 @@
     font-weight: 600;
     margin-top: 7vh;
   }
+
   .bslider {
     gap: 15px;
   }
