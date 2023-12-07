@@ -42,7 +42,7 @@ export const ContactForm = () => {
                 htmlFor="from_name"
                 className={styles.formLabel}
               >
-                Name
+                Nombre
               </InputLabel>
               <Input
                 type="text"

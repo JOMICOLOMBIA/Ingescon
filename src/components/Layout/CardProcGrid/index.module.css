@@ -10,14 +10,14 @@
 
 .cardProcSection {
     display: flex;
-    width: 37vw;
+    width: 40vw;
     height: 170px;
     border: 4px solid rgba(224, 190, 131, 255);
     border-radius: 10px;
     flex-direction: row;
     align-items: center;
     gap: 40px;
-    padding: 15px;
+    padding: 10px;
 }
 
 .boxCardProcSection {
@@ -34,8 +34,9 @@
 }
 
 .textCardProcSection {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     text-align: justify;
+    line-height: 1;
 }
 
 .flexHomeSectionTitle {

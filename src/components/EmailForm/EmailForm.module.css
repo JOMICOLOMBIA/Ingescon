@@ -9,13 +9,12 @@
 .flexContactSection {
   display: flex;
   width: 35vw;
-  height: 70vh;
+  height: 75vh;
   position: absolute;
   margin-left: 55vw;
-  margin-top: 5vh;
+  margin-top: 10vh;
   flex-direction: row;
   gap: 3vw;
-  padding: 10px;
 }
 .flexContactSectionTitle {
   font-family: "LastOne";
@@ -23,6 +22,7 @@
   line-height: 1;
   font-weight: 300;
   -webkit-line-clamp: 2;
+  margin: 0;
 }
 .flexContactSectionText {
   -webkit-line-clamp: 2;
@@ -60,11 +60,13 @@
   height: auto;
   width: auto;
   justify-content: space-between;
+  padding: 20px;
 }
 
 .flexButtonContactS {
   display: flex;
   justify-content: flex-end;
+  margin-top: 40px;
 }
 
 .formItemBox {
