@@ -2,14 +2,107 @@
 
 .carouselContainer {
   display: flex;
-  flex-direction: column;
+  gap: 50px;
 }
+.textContainer {
+  width: 45%;
+  height: auto;
+}
+.boxCarouselImage {
+  width: 400px;
+  height: auto;
+}
+.headerTextContainer {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0px;
+}
+
+.carouselItem {
+  padding: 0 10px;
+}
+
+.carouselArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.prevArrow {
+  left: 10px;
+}
+
+.nextArrow {
+  right: 10px;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slick-slide {
+  float: none;
+  display: flex;
+  height: 100%;
+}
+.slideEje {
+  border-radius: 30px;
+}
+
+.textSuccessCasesSection {
+  font-size: 1rem;
+  line-height: 1;
+  text-align: justify;
+}
+.h3SuccessCases {
+  margin-bottom: 0px;
+}
+
 
 @media (min-width: 768px) {
   .carouselContainer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .textContainer {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carouselContainer {
+    flex-direction: row;
+    align-items: center;
   }
 
   .textContainer {
