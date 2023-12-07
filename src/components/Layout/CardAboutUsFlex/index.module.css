@@ -5,7 +5,8 @@
     width: 100%;
     gap: 1vh;
     height: auto;
-    background-color: gray;
+    background-color: transparent;
+    z-index: 1;
 }
 
 .flexAboutusSectionTitle {
