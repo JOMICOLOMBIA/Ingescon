@@ -40,7 +40,7 @@ export const MainPage = () => {
       <div id="casesSection" className={styles.bsection}>
         <CasesSliders />
       </div>
-      <div id="contactSection" className={styles.bsection}>
+      <div id="contactSection" className={styles.bsectionContact}>
         <Image
           src={
             screenUpper576

@@ -1,9 +1,11 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./EmailForm.module.css";
-import { Button, Typography, FormControl, InputLabel, Input, TextField } from "@mui/material";
+import { Button, Typography, FormControl, InputLabel, Input, TextField, useMediaQuery } from "@mui/material";
 
 export const ContactForm = () => {
+
+  const screenUpper576 = useMediaQuery("(min-width:930px)");
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -28,7 +30,10 @@ export const ContactForm = () => {
 
   return (
     <div className={styles.flexContactSection}>
+      {
+        screenUpper576 &&
       <div className={styles.divider} />
+    }
       <div className={styles.flexContentContactSection}>
         <h1 className={styles.flexContactSectionTitle}> Contáctanos </h1>
         <div className={styles.flexContactSectionBoxText}>
@@ -94,7 +99,7 @@ export const ContactForm = () => {
             </FormControl>
           </div>
           <div className={styles.flexButtonContactS}>
-            <Button size="large" type="submit" value="Send">Enviar</Button>
+            <Button size={screenUpper576 ? "large" : "small"} type="submit" value="Send">Enviar</Button>
           </div>
         </form>
       </div >

@@ -24,6 +24,7 @@ export const NavBarOptions = ({ changeLng, i18n }) => {
   };
 
   const goToSection = (section, e) => {
+
     const updatedElementClasses = { ...elementClasses };
 
     if (section) {
@@ -40,9 +41,11 @@ export const NavBarOptions = ({ changeLng, i18n }) => {
       setElementClasses(updatedElementClasses);
     }
     const target = document.getElementById(e);
+    const navbar = document.getElementById('navbar');
 
-    if (target) {
+    if (target && navbar) {
       const targetOffset = target.offsetTop;
+
 
       window.scrollTo({
         top: targetOffset,

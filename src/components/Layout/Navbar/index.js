@@ -21,7 +21,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className={styles.navbar}>
+    <div className={styles.navbar} id="navbar">
       <div className={styles.blogo}>
         <Image
           src="/assets/logowhite.png"

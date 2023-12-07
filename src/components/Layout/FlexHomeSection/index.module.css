@@ -5,7 +5,7 @@
     margin-left: 60vw;
     margin-top: 20vh;
     width: 36vw;
-    gap: 3vh;
+    gap: 5.5vh;
   }
   
   .flexHomeSectionTitle {
@@ -14,6 +14,7 @@
     line-height: 1;
     font-weight: 300;
     -webkit-line-clamp: 2;
+    margin-bottom: 0;
   }
   
   .flexHomeSectionText {
@@ -24,7 +25,7 @@
   }
   
   .buttonHomeSection {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   
   .flexButtonHS {
@@ -47,22 +48,23 @@
 
   @media (max-width: 576px) {
     .flexHomeSectionTitle {
-      font-size: 23px;
+      font-size: 25px;
     }
     .flexHomeSection {
       top: 70%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 75vw;
+      width: 90vw;
       justify-content: center;
       background-color: rgba(252, 251, 251, 0.8);
       padding: 10px;
       border-radius: 10px;
       margin: 0;
+      gap: .2vh;
     }
   
     .flexHomeSectionText {
-      font-size: 13px;
+      font-size: 16px !important;
     }
   
     .flexHomeSectionTitle {

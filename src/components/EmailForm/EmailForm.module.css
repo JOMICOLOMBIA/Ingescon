@@ -73,24 +73,59 @@
   margin-bottom: 1.5vh;
 }
 @media (max-width: 930px) and (min-width: 600px) {
-
+  .flexContactSectionTitle {
+    font-size: 11vh;
+  }
+  .flexContactSectionText {
+    font-size: 11px;
+    text-align: justify;
+  }
   .contactForm {
-    margin-left: 62vw;
-    margin-top: 23vh;
+    margin-bottom: 0;
+  }
+  .formInput {
+    height: 7vh;
+  }
+  .flexButtonContactS {
+    margin-top: 20px;
+  }
+  .flexContactSection {
+    margin-top: 2vh;
+    margin-left: 50vw;
+    width: 40vw;
   }
 }
 
 
 @media (max-width: 576px) {
+
   .contactForm {
+    margin-bottom: 0;
+  }
+  .flexContactSection {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75vw;
+    width: 90vw;
+    height: auto;
     justify-content: center;
     background-color: rgba(252, 251, 251, 0.8);
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     margin: 0;
+    display: block;
+  }
+  .flexContactSectionTitle {
+    font-size: 10vw;
+  }
+
+  .flexContactSectionText {
+    font-size: 11px;
+  }
+  .flexContentContactSection {
+    gap: 2vh;
+  }
+  .flexButtonContactS {
+    margin-top: 20px;
   }
 }

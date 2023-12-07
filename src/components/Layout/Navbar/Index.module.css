@@ -17,6 +17,7 @@
   height: 60px;
   position: relative;
   margin: auto 0;
+  margin-left: 20px;
   display: flex;
 }
 
