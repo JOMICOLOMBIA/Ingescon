@@ -5,7 +5,7 @@
     margin-left: 60vw;
     margin-top: 20vh;
     width: 36vw;
-    gap: 3vh;
+    gap: 5.5vh;
   }
   
   .flexHomeSectionTitle {
@@ -25,7 +25,7 @@
   }
   
   .buttonHomeSection {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   
   .flexButtonHS {
