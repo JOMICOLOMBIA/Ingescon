@@ -56,7 +56,7 @@ export const NavBarOptions = ({ changeLng, i18n, t }) => {
     <div className={styles.foptions}>
       <div className={elementClasses.home.box}>
         <a
-          href="#homeSection"
+          href="/#homeSection"
           onClick={(e) => goToSection("home", e)}
           className={styles.linknb}
         >
@@ -67,7 +67,7 @@ export const NavBarOptions = ({ changeLng, i18n, t }) => {
       </div>
       <div className={elementClasses.proc.box}>
         <a
-          href="#procSection"
+          href="/#procSection"
           onClick={(e) => goToSection("proc", e)}
           className={styles.linknb}
         >
@@ -79,7 +79,7 @@ export const NavBarOptions = ({ changeLng, i18n, t }) => {
       </div>
       <div className={elementClasses.aboutUs.box}>
         <a
-          href="#auSection"
+          href="/#auSection"
           onClick={(e) => goToSection("aboutUs", e)}
           className={styles.linknb}
         >
@@ -91,7 +91,7 @@ export const NavBarOptions = ({ changeLng, i18n, t }) => {
       </div>
       <div className={elementClasses.cases.box}>
         <a
-          href="#casesSection"
+          href="/#casesSection"
           onClick={(e) => goToSection("cases", e)}
           className={styles.linknb}
         >
