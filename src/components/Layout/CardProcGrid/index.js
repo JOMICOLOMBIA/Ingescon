@@ -48,12 +48,14 @@ export const CardProcGrid = () => {
         {procedureComponents.map((component, key) => (
           <div className={styles.gridItem} key={key}>
             <div className={styles.cardProcSection}>
-              <Image
-                src={`/assets/ico-${component.icon}.svg`}
-                alt={t("iconAlt2")}
-                width={80}
-                height={80}
-              />
+              <div className={styles.cardProcImage}>
+                <Image
+                  src={`/assets/ico-${component.icon}.svg`}
+                  alt={t("iconAlt2")}
+                  width={80}
+                  height={80}
+                />
+              </div>
               <div className={styles.boxCardProcSection}>
                 <h2 className={styles.headerCardProcSection}>
                   {component.title}

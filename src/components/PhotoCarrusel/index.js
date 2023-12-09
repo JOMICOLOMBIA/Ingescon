@@ -40,13 +40,13 @@ export const PhotoSliderSection = ({ images, componentesCartas, contenidoCartas 
           {componentesCartas.description}
         </Typography>
         {
-          contenidoCartas.map((contenido, index) => {
+          contenidoCartas.map((contenido, index, index2) => {
             return (
               <>
                 <h3 key={index} className={styles.h3SuccessCases}>
                   {contenido.title}
                 </h3>
-                <Typography key={index} className={styles.textSuccessCasesSection}>
+                <Typography key={index2} className={styles.textSuccessCasesSection}>
                   {contenido.content}
                 </Typography>
               </>
