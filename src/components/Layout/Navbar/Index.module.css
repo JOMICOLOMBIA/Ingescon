@@ -58,25 +58,6 @@
     display: flex;
     color: white;
   }
-
-  .navbar {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    position: sticky;
-    justify-content: space-between;
-    top: 0px;
-    z-index: 2;
-  }
-
-  .menuContainer ul {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .menuContainer li {
-    margin-right: 10px;
-  }
 }
 
 @media (max-width: 576px) {

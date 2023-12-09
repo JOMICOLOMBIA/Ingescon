@@ -66,6 +66,7 @@ export const NavBarOptions = ({
         flexDirection: isSideBar ? "column" : "row",
       }}
     >
+      {!screenUpper576 && 
       <Image
         src="/assets/logowhite.png"
         alt={t("sdcLogo")}
@@ -73,6 +74,7 @@ export const NavBarOptions = ({
         width={145}
         className={styles.logonavbar}
       />
+    }
       <div className={elementClasses.home.box}>
         <a
           href="/#homeSection"
@@ -120,7 +122,7 @@ export const NavBarOptions = ({
           </Typography>
         </a>
       </div>
-      <Button size={screenUpper576 ? "medium" : "small"} onClick={goToContact}>
+      <Button size={screenUpper576 ? "small" : "medium"} onClick={goToContact}>
         {" "}
         {t("Contacto")}{" "}
       </Button>

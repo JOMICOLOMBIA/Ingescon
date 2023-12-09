@@ -1,6 +1,6 @@
 .foptions {
   display: flex;
-  align-items: start;
+  align-items: flex-end;
   gap: 2vw;
 }
 
@@ -26,13 +26,21 @@
   text-decoration: none;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 930px) {
+
   .textNotClicked {
-    font-size: 12px;
+    font-size: 11px !important;
   }
   .textClicked {
-    font-size: 12px;
+    font-size: 11px !important;
   }
+  .foptions {
+    align-items: center;
+  }
+  
+}
+
+@media (max-width: 576px) {
   .boptionsClicked {
     height: 20px;
   }
@@ -42,5 +50,6 @@
 
   .foptions {
     gap: 20px;
+    align-items: start;
   }
 }
