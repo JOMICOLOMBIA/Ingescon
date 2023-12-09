@@ -1,7 +1,7 @@
 .foptions {
   display: flex;
   align-items: flex-end;
-  gap: 2vw;
+  gap: 1vw;
 }
 
 .boptionsNotClicked {
