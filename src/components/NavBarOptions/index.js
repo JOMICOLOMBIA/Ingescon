@@ -9,7 +9,7 @@ export const NavBarOptions = ({
   i18n,
   t,
   isSideBar = false,
-  onMenuItemClick,
+  onMenuItemClick = () => {},
 }) => {
   const screenUpper576 = useMediaQuery("(min-width:576px)");
   const [elementClasses, setElementClasses] = useState({
