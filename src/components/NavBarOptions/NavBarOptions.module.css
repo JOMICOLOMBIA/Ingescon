@@ -26,6 +26,13 @@
   text-decoration: none;
 }
 
+.boptionsNotClicked:hover {
+  width: auto;
+  height: 30px;
+  border-bottom: 2px solid rgba(224, 190, 131, 255);
+  margin-right: 2vw;
+}
+
 @media (min-width: 600px) and (max-width: 930px) {
 
   .textNotClicked {

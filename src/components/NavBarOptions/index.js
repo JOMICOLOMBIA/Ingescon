@@ -17,6 +17,7 @@ export const NavBarOptions = ({
     proc: { box: styles.boptionsNotClicked, text: styles.textNotClicked },
     aboutUs: { box: styles.boptionsNotClicked, text: styles.textNotClicked },
     cases: { box: styles.boptionsNotClicked, text: styles.textNotClicked },
+    moreCases: { box: styles.boptionsNotClicked, text: styles.textNotClicked },
   });
 
   const goToContact = () => {
@@ -33,7 +34,7 @@ export const NavBarOptions = ({
   const goToSection = (section, e) => {
     const updatedElementClasses = { ...elementClasses };
 
-    if (section) {
+    
       updatedElementClasses[section].box = styles.boptionsClicked;
       updatedElementClasses[section].text = styles.textClicked;
 
@@ -45,7 +46,7 @@ export const NavBarOptions = ({
         }
       });
       setElementClasses(updatedElementClasses);
-    }
+    
     const target = document.getElementById(e);
     const navbar = document.getElementById("navbar");
     onMenuItemClick(false);
@@ -117,6 +118,18 @@ export const NavBarOptions = ({
           className={styles.linknb}
         >
           <Typography className={elementClasses.cases.text}>
+            {" "}
+            {t("beforeAfterNav")}{" "}
+          </Typography>
+        </a>
+      </div>
+      <div className={elementClasses.moreCases.box}>
+        <a
+          href="/SuccessCases"
+          onClick={(e) => goToSection("", e)}
+          className={styles.linknb}
+        >
+          <Typography className={elementClasses.moreCases.text}>
             {" "}
             {t("successCases")}{" "}
           </Typography>

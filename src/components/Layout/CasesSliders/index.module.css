@@ -37,6 +37,8 @@
 
 .containerSlider {
   border-radius: 30px;
+  --divider-width: 2px;
+  --default-handle-opacity: 0;
 }
 
 .before,
@@ -69,8 +71,8 @@
 
 .textLabelSlider {
   color: white;
-  font-family: "LastOne";
-  font-size: .8rem;
+  font-family: "LastOne" !important;
+  font-size: .8rem !important;
 }
 
 .buttonCases {

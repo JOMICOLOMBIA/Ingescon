@@ -16,6 +16,7 @@ export const Footer = () => {
       <div className={styles.flexFooter}>
         <Image
           src="/assets/logowhite.png"
+          alt="SDC logo"
           width={100}
           height={100}
           layout="responsive"
@@ -27,9 +28,10 @@ export const Footer = () => {
             {t("our_networks")}{" "}
           </Typography>
           <div className={styles.boxImage}>
-            <a href="https://wa.link/152wbl" target="_blank">
+            <a  href="https://instagram.com/smiledesignc?igshid=YzAwZjE1ZTI0Zg==" target="_blank">
             <Image
               src="/assets/ico-instagram.svg"
+              alt="logo instagram"
               width={100}
               height={100}
               layout="responsive"
@@ -37,9 +39,10 @@ export const Footer = () => {
             </a>
           </div>
           <div className={styles.boxImage}>
-            <a href="https://instagram.com/smiledesignc?igshid=YzAwZjE1ZTI0Zg==" target="_blank">
+            <a  href="https://wa.link/152wbl" target="_blank">
             <Image
               src="/assets/ico-whatsapp.svg"
+              alt="logo whatsapp "
               width={100}
               height={100}
               layout="responsive"
