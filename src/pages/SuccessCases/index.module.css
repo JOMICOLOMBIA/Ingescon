@@ -10,7 +10,7 @@
 
 .flexHomeSectionTitle {
   font-family: "LastOne";
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 1;
   font-weight: 300;
 }
@@ -56,22 +56,50 @@
 @media (max-width: 930px) and (min-width: 600px) {
   .flexProcSection {
     gap: 40px;
-    margin-top: 70px;
+    margin-top: 50px;
+    width: 90vw;
   }
   .flexHomeSectionTitle {
     font-size: 50px;
+  }
+  .cardProcSection {
+    width: 90vw;
+    height: 45vh;
+    margin-top: 20px;
+  }
+  .headerCardProcSection {
+    font-size: 2rem;
+  }
+  .textCardProcSection {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 576px) {
   .flexHomeSectionTitle {
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 600;
     text-align: center;
+    -webkit-line-clamp: 1;
   }
   .flexProcSection {
     gap: 40px;
     margin-top: 40px;
+    padding: 10px;
+    width: 90vw;
+  }
+  .cardProcSection {
+    width: 90vw;
+    height: 25vh;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .textCardProcSection {
+    font-size: .8rem;
+  }
+  .headerCardProcSection {
+    font-size: 1.2rem;
   }
 }
 

@@ -24,7 +24,7 @@ export const PhotoSliderSection = ({ images, componentesCartas, contenidoCartas 
       <div
         className={styles.boxCarouselImage}
       >
-        <Carousel useKeyboardArrows={true} showThumbs={false}>
+        <Carousel useKeyboardArrows={true} showThumbs={false} showStatus={false}>
           {images.map((URL, index) => (
             <div key={index}>
               <img alt="sample_file" src={URL} className={styles.slideEje} />

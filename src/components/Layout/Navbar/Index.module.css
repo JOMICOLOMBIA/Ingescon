@@ -7,7 +7,7 @@
   position: sticky;
   justify-content: space-between;
   top: 0%;
-  z-index: 2;
+  z-index: 3;
   align-items: center;
 }
 .materialIcon {

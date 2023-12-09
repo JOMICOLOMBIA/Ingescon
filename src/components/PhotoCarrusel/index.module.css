@@ -1,9 +1,9 @@
 .carouselContainer {
   display: flex;
-  gap: 50px;
+  justify-content: space-evenly;
 }
 .textContainer {
-  width: 45%;
+  width: 35%;
   height: auto;
 }
 .boxCarouselImage {
@@ -13,6 +13,8 @@
 .headerTextContainer {
   margin-top: 0px;
   margin-bottom: 30px;
+  font-family: "LastOne";
+  font-size: 2rem;
 }
 
 .carousel {
@@ -58,18 +60,8 @@
 }
 .h3SuccessCases {
   margin-bottom: 0px;
-}
-
-@media (min-width: 768px) {
-  .carouselContainer {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .textContainer {
-    margin-left: 20px;
-  }
+  font-family: "LastOne";
+  font-size: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -78,7 +70,44 @@
     align-items: center;
   }
 
-  .textContainer {
-    margin-left: 20px;
+}
+
+@media (max-width: 930px) and (min-width: 600px) {
+  .boxCarouselImage {
+    width: 45vw;
   }
+  .textContainer {
+    height: auto;
+    width: 30vw;
+  }
+  .carouselContainer {
+    gap: 30px;
+  }
+  .headerTextContainer {
+    margin-bottom: 10px;
+    font-size: x-large;
+  }
+}
+
+@media (max-width: 600px) {
+  .carouselContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .textContainer {
+    width: 85vw;
+  }
+
+  .boxCarouselImage {
+    width: 90vw;
+  }
+  .headerTextContainer {
+    text-align: center;
+    margin: 0;
+  }
+  .textSuccessCasesSection {
+    font-size: .9rem;
+  }
+
 }

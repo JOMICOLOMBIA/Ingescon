@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { PhotoSliderSection } from "@/components/PhotoCarrusel";
 import { Navbar } from "@/components/Layout/Navbar";
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 
 const images = [["/assets/12.png", "/assets/12-12.png", "/assets/11.png"], ["/assets/12.png", "/assets/12-12.png", "/assets/11.png"]];
 
@@ -52,6 +52,8 @@ const contenidoCartas = [
 ]
 
 const SuccessCases = () => {
+
+  const screenUpper576 = useMediaQuery("max-width: 576px");
   return (
     <>
       <Navbar />
@@ -74,8 +76,8 @@ const SuccessCases = () => {
             <Image
               src={"/assets/ico-personas.svg"}
               alt={"icono"}
-              width={100}
-              height={100}
+              width={screenUpper576 ? 40 : 80 }
+              height={screenUpper576 ? 40 : 80}
             />
             <div className={styles.boxCardProcSection}>
               <h2 className={styles.headerCardProcSection}>

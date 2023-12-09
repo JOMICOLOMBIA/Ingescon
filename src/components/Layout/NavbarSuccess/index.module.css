@@ -21,3 +21,9 @@
 .textNotClicked {
     color: white;
 }
+
+@media (max-width: 576px) {
+    .textNotClicked {
+        font-size: .8rem;
+    }
+}
