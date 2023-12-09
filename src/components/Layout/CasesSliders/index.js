@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
 
-const numeroCaso = [12, 11, 8, 6];
+const numeroCaso = [9, 11, 8, 6];
 
 export const CasesSliders = ({
   background = "back",

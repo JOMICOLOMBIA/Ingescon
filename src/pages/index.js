@@ -6,6 +6,7 @@ import { Suspense, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import NoSSR from "react-no-ssr";
 import { Footer } from "@/components/Layout/Footer";
+import { BotonFlotante } from "@/components/Layout/BotonFlotante";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
         <NoSSR>
           <Navbar />
           <MainPage />
+          <BotonFlotante/>
           <Footer />
         </NoSSR>
       </main>

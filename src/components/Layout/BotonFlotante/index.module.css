@@ -1,0 +1,12 @@
+
+
+.boxButton {
+    position: fixed;
+    top: 50%;
+    left: -20px;
+    z-index: 3;
+    width: 5vw;
+}
+.image {
+    object-fit: contain;
+}
