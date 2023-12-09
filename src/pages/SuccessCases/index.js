@@ -5,8 +5,9 @@ import { PhotoSliderSection } from "@/components/PhotoCarrusel";
 import { Navbar } from "@/components/Layout/Navbar";
 import { Typography, useMediaQuery } from "@mui/material";
 import { Footer } from "@/components/Layout/Footer";
+import { BotonFlotante } from "@/components/Layout/BotonFlotante";
 
-const images = [["/assets/8.png", "/assets/8-8.png", "/assets/12.png", "/assets/12-12.png", "/assets/11.png",  "/assets/11-11.png" ], ["/assets/7.png", "/assets/7-7.png", "/assets/1.png", "/assets/1-1.png", "/assets/13.png",  "/assets/13-13.png"]];
+const images = [["/assets/cera-1.jpeg", "/assets/cera-2.jpeg", "/assets/cera-3.jpeg", "/assets/cera-4.jpeg", "/assets/cera-5.jpeg" ], ["/assets/resi-1.jpeg", "/assets/resi-2.jpeg", "/assets/resi-3.jpeg", "/assets/resi-4.jpeg", "/assets/resi-5.jpeg"]];
 
 const componentesCartas = [
   {
@@ -93,6 +94,7 @@ const SuccessCases = () => {
           </div>
         </div>
       </div>
+      <BotonFlotante></BotonFlotante>
       <Footer/>
     </>
   );
