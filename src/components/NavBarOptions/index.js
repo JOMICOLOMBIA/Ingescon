@@ -9,7 +9,7 @@ export const NavBarOptions = ({
   i18n,
   t,
   isSideBar = false,
-  onMenuItemClick,
+  onMenuItemClick = () => {},
 }) => {
   const screenUpper576 = useMediaQuery("(min-width:576px)");
   const [elementClasses, setElementClasses] = useState({
@@ -66,15 +66,15 @@ export const NavBarOptions = ({
         flexDirection: isSideBar ? "column" : "row",
       }}
     >
-      {!screenUpper576 && 
-      <Image
-        src="/assets/logowhite.png"
-        alt={t("sdcLogo")}
-        height={50}
-        width={145}
-        className={styles.logonavbar}
-      />
-    }
+      {isSideBar && (
+        <Image
+          src="/assets/logowhite.png"
+          alt={t("sdcLogo")}
+          height={50}
+          width={145}
+          className={styles.logonavbar}
+        />
+      )}
       <div className={elementClasses.home.box}>
         <a
           href="/#homeSection"

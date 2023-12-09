@@ -7,6 +7,8 @@ import { useTranslation } from "react-i18next";
 import NoSSR from "react-no-ssr";
 import { Footer } from "@/components/Layout/Footer";
 import { BotonFlotante } from "@/components/Layout/BotonFlotante";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Home = () => {
   return (
@@ -25,8 +27,9 @@ const Home = () => {
         <NoSSR>
           <Navbar />
           <MainPage />
-          <BotonFlotante/>
+          <BotonFlotante />
           <Footer />
+          <ToastContainer />
         </NoSSR>
       </main>
     </Suspense>
