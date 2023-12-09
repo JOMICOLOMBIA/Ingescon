@@ -1,24 +1,40 @@
-import { Typography } from "@mui/material"
-import styles from "./index.module.css"
-import { useState } from "react"
+import { Typography } from "@mui/material";
+import styles from "./index.module.css";
+import { useState } from "react";
 import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
 
-export const NavbarSuccess = () => {
+export const NavbarSuccess = ({ changeLng }) => {
+  const router = useRouter();
+  const { t, i18n } = useTranslation(["common"]);
 
+  const redirectHome = () => {
+    router.push("/");
+  };
 
-    const router = useRouter();
-
-    const redirectHome = () => {
-        router.push("/")
-    };
-
-    return (
-        <>
-            <div className={styles.boptionsNotClicked} onClick={redirectHome}>
-                <Typography className={styles.textNotClicked}>
-                    Volver a la página de inicio
-                </Typography>
-            </div>
-        </>
-    )
-}
+  return (
+    <>
+      <div
+        className={styles.boptionsNotClicked}
+        onClick={redirectHome}
+        style={{ marginLeft: "auto" }}
+      >
+        <Typography className={styles.textNotClicked}>
+          {t("backHome")}
+        </Typography>
+      </div>
+      <div
+        style={{
+          color: "white",
+          margin: "auto 20px",
+          fontSize: "16px",
+        }}
+        onClick={() => {
+          changeLng();
+        }}
+      >
+        {i18n.language.toUpperCase()}
+      </div>
+    </>
+  );
+};

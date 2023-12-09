@@ -14,7 +14,6 @@ export const Navbar = () => {
   const { t, i18n } = useTranslation(["common"]);
   const screenUpper576 = useMediaQuery("(max-width:576px)");
 
-
   let showOptions = false;
   const router = useRouter();
 
@@ -23,7 +22,6 @@ export const Navbar = () => {
   if (currentPath === "/SuccessCases") {
     showOptions = true;
   }
-
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
@@ -36,15 +34,14 @@ export const Navbar = () => {
 
   return (
     <div className={styles.navbar} id="navbar">
-      
-        <Image
-          src="/assets/logowhite.png"
-          alt={t("sdcLogo")}
-          height={screenUpper576 ? 50 :  60 }
-          width={screenUpper576 ? 170 : 200 }
-          className={styles.logonavbar}
-        />
-      {!showOptions &&
+      <Image
+        src="/assets/logowhite.png"
+        alt={t("sdcLogo")}
+        height={screenUpper576 ? 50 : 60}
+        width={screenUpper576 ? 170 : 200}
+        className={styles.logonavbar}
+      />
+      {!showOptions && (
         <div className={styles.menuContainer}>
           {/* Icono de menú que muestra/oculta el menú desplegable */}
           <div className={styles.menuIcon}>
@@ -90,10 +87,8 @@ export const Navbar = () => {
             <NavBarOptions changeLng={() => changeLng()} i18n={i18n} t={t} />
           </div>
         </div>
-      }
-      {showOptions &&
-      <NavbarSuccess/>
-      }
+      )}
+      {showOptions && <NavbarSuccess changeLng={changeLng}/>}
     </div>
   );
 };
