@@ -2,8 +2,15 @@ import { useEffect, useState } from "react";
 import { Button, Typography, useMediaQuery } from "@mui/material";
 import styles from "./NavBarOptions.module.css";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
-export const NavBarOptions = ({ changeLng, i18n, t }) => {
+export const NavBarOptions = ({
+  changeLng,
+  i18n,
+  t,
+  isSideBar = false,
+  onMenuItemClick,
+}) => {
   const screenUpper576 = useMediaQuery("(min-width:576px)");
   const [elementClasses, setElementClasses] = useState({
     home: { box: styles.boptionsNotClicked, text: styles.textNotClicked },
@@ -16,7 +23,7 @@ export const NavBarOptions = ({ changeLng, i18n, t }) => {
     const target = document.getElementById("contactSection");
 
     const targetOffset = target.offsetTop;
-
+    onMenuItemClick(false);
     window.scrollTo({
       top: targetOffset,
       behavior: "smooth",
@@ -41,7 +48,7 @@ export const NavBarOptions = ({ changeLng, i18n, t }) => {
     }
     const target = document.getElementById(e);
     const navbar = document.getElementById("navbar");
-
+    onMenuItemClick(false);
     if (target && navbar) {
       const targetOffset = target.offsetTop;
 
@@ -53,7 +60,19 @@ export const NavBarOptions = ({ changeLng, i18n, t }) => {
   };
 
   return (
-    <div className={styles.foptions}>
+    <div
+      className={styles.foptions}
+      style={{
+        flexDirection: isSideBar ? "column" : "row",
+      }}
+    >
+      <Image
+        src="/assets/logowhite.png"
+        alt={t("sdcLogo")}
+        height={50}
+        width={145}
+        className={styles.logonavbar}
+      />
       <div className={elementClasses.home.box}>
         <a
           href="/#homeSection"
@@ -103,20 +122,22 @@ export const NavBarOptions = ({ changeLng, i18n, t }) => {
       </div>
       <Button size={screenUpper576 ? "medium" : "small"} onClick={goToContact}>
         {" "}
-         {t("Contacto")}{" "}
+        {t("Contacto")}{" "}
       </Button>
-      <div
-        style={{
-          color: "white",
-          margin: "auto 10px",
-          fontSize: "16px",
-        }}
-        onClick={() => {
-          changeLng();
-        }}
-      >
-        {i18n?.language?.toUpperCase()}
-      </div>
+      {!isSideBar && (
+        <div
+          style={{
+            color: "white",
+            margin: "auto 10px",
+            fontSize: "16px",
+          }}
+          onClick={() => {
+            changeLng();
+          }}
+        >
+          {i18n?.language?.toUpperCase()}
+        </div>
+      )}
     </div>
   );
 };
