@@ -19,6 +19,7 @@ export const Footer = () => {
           width={100}
           height={100}
           layout="responsive"
+          className={styles.image}
         />
         <div className={styles.boxRedes}>
           <Typography className={styles.textFooter}>

@@ -3,7 +3,7 @@
     flex-direction: column;
     position: absolute;
     margin-left: 60vw;
-    margin-top: 20vh;
+    margin-top: 23vh;
     width: 36vw;
     gap: 5.5vh;
   }
@@ -60,7 +60,7 @@
       padding: 10px;
       border-radius: 10px;
       margin: 0;
-      gap: .2vh;
+      gap: 1vh;
     }
   
     .flexHomeSectionText {
@@ -69,6 +69,7 @@
   
     .flexHomeSectionTitle {
       font-weight: 600;
+      margin-bottom: 10px;
     }
   
     .flexButtonHS {

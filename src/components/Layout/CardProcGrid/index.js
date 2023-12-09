@@ -6,6 +6,18 @@ import styles from "./index.module.css";
 export const CardProcGrid = () => {
   const { t } = useTranslation("common");
 
+  const goToCases = () => {
+    const target = document.getElementById("casesSection");
+    const navbar = document.getElementById("navbar").offsetHeight;
+
+    const targetOffset = target.offsetTop - navbar;
+
+    window.scrollTo({
+      top: targetOffset,
+      behavior: "smooth",
+    });
+  };
+
   const procedureComponents = [
     {
       title: t("ceramicDesign"),
@@ -54,7 +66,7 @@ export const CardProcGrid = () => {
           </div>
         ))}
       </div>
-      <Button size="large" className={styles.button}>
+      <Button size="large" className={styles.button} onClick={goToCases}>
         {t("learnMore2")}
       </Button>
     </div>
