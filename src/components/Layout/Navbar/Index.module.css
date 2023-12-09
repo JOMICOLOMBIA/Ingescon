@@ -79,3 +79,9 @@
     margin-right: 10px;
   }
 }
+
+@media (max-width: 576px) {
+  .navbar {
+    height: 8vh;
+  }
+}

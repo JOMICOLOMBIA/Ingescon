@@ -66,6 +66,8 @@
   .textFooter {
     font-size: 14px;
   }
-
+  .footer {
+    height: 25vh;
+  }
 
 }
