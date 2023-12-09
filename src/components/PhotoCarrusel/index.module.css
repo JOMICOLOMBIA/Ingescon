@@ -8,7 +8,7 @@
 }
 .boxCarouselImage {
   width: 400px;
-  height: auto;
+  height: 400px;
 }
 .headerTextContainer {
   margin-top: 0px;
@@ -51,6 +51,7 @@
 
 .slideEje {
   border-radius: 30px;
+  object-fit: cover;
 }
 
 .textSuccessCasesSection {
