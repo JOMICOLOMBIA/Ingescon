@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Index.module.css";
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 export const Footer = () => {

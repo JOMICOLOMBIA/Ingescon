@@ -48,23 +48,24 @@
   display: flex;
 }
 
-/* Estilos para pantallas más pequeñas (máximo 768px) */
-@media (max-width: 768px) {
-  .menuOptions {
-    display: none; /* Muestra el menú en pantallas más pequeñas */
-  }
-
-  .menuIcon {
-    display: flex;
-    color: white;
+@media (max-width: 930px ) and (min-width: 600px) {
+  .navbar {
+    height: 60px;
   }
 }
 
 @media (max-width: 576px) {
+  .menuOptions {
+    display: none;
+  }
   .navbar {
     height: 8vh;
   }
   .logonavbar {
     margin-left: 10px;
+  }
+  .menuIcon {
+    display: flex;
+    color: white;
   }
 }

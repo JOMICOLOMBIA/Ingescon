@@ -36,6 +36,13 @@
   }
   .foptions {
     align-items: center;
+    gap: 10px;
+  }
+  .boptionsNotClicked {
+    height: 20px;
+  }
+  .boptionsClicked {
+    height: 20px;
   }
   
 }
