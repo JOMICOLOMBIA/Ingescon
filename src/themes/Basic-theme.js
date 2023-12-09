@@ -17,7 +17,8 @@ export const BasicTheme = createTheme({
           marginTop:"0px",
         },
         sizeSmall: {
-          width: "140px",
+          width: "130px",
+          height: "30px",
           margin: "0px",
         },
         sizeMedium: {

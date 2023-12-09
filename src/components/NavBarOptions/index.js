@@ -122,7 +122,7 @@ export const NavBarOptions = ({
           </Typography>
         </a>
       </div>
-      <Button size={screenUpper576 ? "medium" : "small"} onClick={goToContact}>
+      <Button size={screenUpper576 ? "small" : "medium"} onClick={goToContact}>
         {" "}
         {t("Contacto")}{" "}
       </Button>

@@ -13,7 +13,7 @@ import Sidebar from "@/components/sideBar";
 export const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
   const { t, i18n } = useTranslation(["common"]);
-  const screenUpper576 = useMediaQuery("(max-width:576px)");
+  const screenUpper900 = useMediaQuery("(max-width:900px)");
 
   let showOptions = false;
   const router = useRouter();
@@ -38,8 +38,8 @@ export const Navbar = () => {
       <Image
         src="/assets/logowhite.png"
         alt={t("sdcLogo")}
-        height={screenUpper576 ? 50 : 60}
-        width={screenUpper576 ? 170 : 200}
+        height={100}
+        width={screenUpper900 ? 150 : 190}
         className={styles.logonavbar}
       />
       {!showOptions && (
