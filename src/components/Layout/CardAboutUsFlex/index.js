@@ -8,7 +8,9 @@ export const CardAboutUsFlex = () => {
 
   const goToContact = () => {
     const target = document.getElementById("contactSection");
-    const targetOffset = target.offsetTop;
+    const navbar = document.getElementById("navbar").offsetHeight;
+
+    const targetOffset = target.offsetTop - navbar;
 
     window.scrollTo({
       top: targetOffset,

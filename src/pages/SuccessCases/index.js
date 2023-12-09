@@ -4,8 +4,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { PhotoSliderSection } from "@/components/PhotoCarrusel";
 import { Navbar } from "@/components/Layout/Navbar";
 import { Typography, useMediaQuery } from "@mui/material";
+import { Footer } from "@/components/Layout/Footer";
 
-const images = [["/assets/12.png", "/assets/12-12.png", "/assets/11.png"], ["/assets/12.png", "/assets/12-12.png", "/assets/11.png"]];
+const images = [["/assets/8.png", "/assets/8-8.png", "/assets/12.png", "/assets/12-12.png", "/assets/11.png",  "/assets/11-11.png" ], ["/assets/7.png", "/assets/7-7.png", "/assets/1.png", "/assets/1-1.png", "/assets/13.png",  "/assets/13-13.png"]];
 
 const componentesCartas = [
   {
@@ -92,6 +93,7 @@ const SuccessCases = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

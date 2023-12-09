@@ -12,8 +12,9 @@ export const FlexHomeSection = () => {
 
   const goToContact = () => {
     const target = document.getElementById("contactSection");
+    const navbar = document.getElementById("navbar").offsetHeight;
 
-    const targetOffset = target.offsetTop;
+    const targetOffset = target.offsetTop - navbar;
 
     window.scrollTo({
       top: targetOffset,

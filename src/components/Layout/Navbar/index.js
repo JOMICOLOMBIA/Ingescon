@@ -12,6 +12,9 @@ import { NavbarSuccess } from "../NavbarSuccess";
 export const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(null);
   const { t, i18n } = useTranslation(["common"]);
+  const screenUpper576 = useMediaQuery("(max-width:576px)");
+
+
   let showOptions = false;
   const router = useRouter();
 
@@ -33,14 +36,14 @@ export const Navbar = () => {
 
   return (
     <div className={styles.navbar} id="navbar">
-      <div className={styles.blogo}>
+      
         <Image
           src="/assets/logowhite.png"
           alt={t("sdcLogo")}
-          fill={true}
+          height={screenUpper576 ? 50 :  60 }
+          width={screenUpper576 ? 170 : 200 }
           className={styles.logonavbar}
         />
-      </div>
       {!showOptions &&
         <div className={styles.menuContainer}>
           {/* Icono de menú que muestra/oculta el menú desplegable */}

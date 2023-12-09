@@ -32,6 +32,9 @@
   width: 30px;
   height: 30px;
 }
+.image {
+  object-fit: contain;
+}
 
 @media (max-width: 930px) and (min-width: 600px) {
 
