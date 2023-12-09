@@ -23,7 +23,7 @@ export const NavBarOptions = ({
     const target = document.getElementById("contactSection");
 
     const targetOffset = target.offsetTop;
-
+    onMenuItemClick(false);
     window.scrollTo({
       top: targetOffset,
       behavior: "smooth",
