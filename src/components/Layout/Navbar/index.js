@@ -8,9 +8,10 @@ import { Button, Typography, useMediaQuery } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
 import { NavbarSuccess } from "../NavbarSuccess";
+import Sidebar from "@/components/sideBar";
 
 export const Navbar = () => {
-  const [menuVisible, setMenuVisible] = useState(null);
+  const [menuVisible, setMenuVisible] = useState(false);
   const { t, i18n } = useTranslation(["common"]);
   const screenUpper576 = useMediaQuery("(max-width:576px)");
 
@@ -63,32 +64,21 @@ export const Navbar = () => {
               </div>
             </div>
 
-            <Menu
-              open={menuVisible}
-              onClose={toggleMenu}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-            >
-              <MenuItem>{t("home")}</MenuItem>
-              <MenuItem>{t("procedures")}</MenuItem>
-              <MenuItem>{t("aboutUs2")}</MenuItem>
-              <MenuItem>{t("successCases")}</MenuItem>
-            </Menu>
+            <Sidebar isOpen={menuVisible} onMenuItemClick={setMenuVisible}/>
           </div>
 
           {/* Menú desplegable */}
           <div className={styles.menuOptions}>
-            <NavBarOptions changeLng={() => changeLng()} i18n={i18n} t={t} />
+            <NavBarOptions
+              
+              changeLng={() => changeLng()}
+              i18n={i18n}
+              t={t}
+            />
           </div>
         </div>
       )}
-      {showOptions && <NavbarSuccess changeLng={changeLng}/>}
+      {showOptions && <NavbarSuccess changeLng={changeLng} />}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 .foptions {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 2vw;
 }
 
@@ -12,18 +12,18 @@
 .boptionsClicked {
   width: auto;
   height: 30px;
-  border-bottom: 2px solid rgba(224,190,131,255);
+  border-bottom: 2px solid rgba(224, 190, 131, 255);
   margin-right: 2vw;
 }
 .textNotClicked {
   color: white;
 }
 .textClicked {
-    color: rgba(224,190,131,255);
+  color: rgba(224, 190, 131, 255);
 }
 
 .linknb {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
@@ -44,4 +44,3 @@
     gap: 20px;
   }
 }
-
