@@ -66,13 +66,15 @@ export const NavBarOptions = ({
         flexDirection: isSideBar ? "column" : "row",
       }}
     >
-      <Image
-        src="/assets/logowhite.png"
-        alt={t("sdcLogo")}
-        height={50}
-        width={145}
-        className={styles.logonavbar}
-      />
+      {isSideBar && (
+        <Image
+          src="/assets/logowhite.png"
+          alt={t("sdcLogo")}
+          height={50}
+          width={145}
+          className={styles.logonavbar}
+        />
+      )}
       <div className={elementClasses.home.box}>
         <a
           href="/#homeSection"
