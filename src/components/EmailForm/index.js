@@ -10,8 +10,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 
 export const ContactForm = () => {
   const { t } = useTranslation("common");
@@ -135,7 +134,6 @@ export const ContactForm = () => {
           </div>
         </form>
       </div>
-      <ToastContainer />
     </div>
   );
 };
