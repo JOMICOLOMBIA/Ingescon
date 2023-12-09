@@ -3,8 +3,9 @@ import styles from "./index.module.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { PhotoSliderSection } from "@/components/PhotoCarrusel";
 import { Navbar } from "@/components/Layout/Navbar";
+import { Typography } from "@mui/material";
 
-const images = [[ "/assets/12.png", "/assets/12-12.png", "/assets/11.png"], [ "/assets/12.png", "/assets/12-12.png", "/assets/11.png"]];
+const images = [["/assets/12.png", "/assets/12-12.png", "/assets/11.png"], ["/assets/12.png", "/assets/12-12.png", "/assets/11.png"]];
 
 const componentesCartas = [
   {
@@ -53,6 +54,7 @@ const contenidoCartas = [
 const SuccessCases = () => {
   return (
     <>
+      <Navbar />
       <div className={styles.flexProcSection}>
         <h1 className={styles.flexHomeSectionTitle}>Casos de éxito</h1>
         <div className={styles.flexPhotoSlider}>
@@ -66,6 +68,26 @@ const SuccessCases = () => {
             componentesCartas={componentesCartas[1]}
             contenidoCartas={contenidoCartas[1]}
           />
+        </div>
+        <div>
+          <div className={styles.cardProcSection}>
+            <Image
+              src={"/assets/ico-personas.svg"}
+              alt={"icono"}
+              width={100}
+              height={100}
+            />
+            <div className={styles.boxCardProcSection}>
+              <h2 className={styles.headerCardProcSection}>
+                Recomendaciones
+              </h2>
+              <Typography className={styles.textCardProcSection}>
+                Se recomienda la realización de una limpieza dental profunda previa al inicio del diseño de sonrisa. Finalizado
+                el tratamiento se recomienda la fabricación de una placa protectora para el cuidado de las carillas, evitando
+                así su fractura.
+              </Typography>
+            </div>
+          </div>
         </div>
       </div>
     </>

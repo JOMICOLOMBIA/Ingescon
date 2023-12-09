@@ -8,6 +8,7 @@
   justify-content: space-between;
   top: 0%;
   z-index: 2;
+  align-items: center;
 }
 .materialIcon {
   color: white;

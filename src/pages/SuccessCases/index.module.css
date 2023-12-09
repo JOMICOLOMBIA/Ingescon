@@ -21,6 +21,37 @@
   gap: 60px;
 }
 
+.cardProcSection {
+  display: flex;
+  width: 80vw;
+  height: 30vh;
+  border: 3px solid black;
+  border-radius: 10px;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.boxCardProcSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerCardProcSection {
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-family: "LastOne";
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.textCardProcSection {
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1;
+}
+
 
 @media (max-width: 930px) and (min-width: 600px) {
   .flexProcSection {

@@ -6,10 +6,21 @@ import { IconButton, Menu, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Button, Typography, useMediaQuery } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
+import { NavbarSuccess } from "../NavbarSuccess";
 
 export const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(null);
   const { t, i18n } = useTranslation(["common"]);
+  let showOptions = false;
+  const router = useRouter();
+
+  const currentPath = router.asPath;
+
+  if (currentPath === "/SuccessCases") {
+    showOptions = true;
+  }
+
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
@@ -30,51 +41,56 @@ export const Navbar = () => {
           className={styles.logonavbar}
         />
       </div>
-      <div className={styles.menuContainer}>
-        {/* Icono de menú que muestra/oculta el menú desplegable */}
-        <div className={styles.menuIcon}>
-          <div  className={styles.menuIconContainer}>
-            <IconButton onClick={toggleMenu}>
-              <MenuIcon className={styles.materialIcon} />
-            </IconButton>
-            <div
-              style={{
-                color: "white",
-                margin: "auto 10px",
-                fontSize: "16px",
+      {!showOptions &&
+        <div className={styles.menuContainer}>
+          {/* Icono de menú que muestra/oculta el menú desplegable */}
+          <div className={styles.menuIcon}>
+            <div className={styles.menuIconContainer}>
+              <IconButton onClick={toggleMenu}>
+                <MenuIcon className={styles.materialIcon} />
+              </IconButton>
+              <div
+                style={{
+                  color: "white",
+                  margin: "auto 10px",
+                  fontSize: "16px",
+                }}
+                onClick={() => {
+                  changeLng();
+                }}
+              >
+                {i18n.language.toUpperCase()}
+              </div>
+            </div>
+
+            <Menu
+              open={menuVisible}
+              onClose={toggleMenu}
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "right",
               }}
-              onClick={() => {
-                changeLng();
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "right",
               }}
             >
-              {i18n.language.toUpperCase()}
-            </div>
+              <MenuItem>{t("home")}</MenuItem>
+              <MenuItem>{t("procedures")}</MenuItem>
+              <MenuItem>{t("aboutUs2")}</MenuItem>
+              <MenuItem>{t("successCases")}</MenuItem>
+            </Menu>
           </div>
 
-          <Menu
-            open={menuVisible}
-            onClose={toggleMenu}
-            anchorOrigin={{
-              vertical: "top",
-              horizontal: "right",
-            }}
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "right",
-            }}
-          >
-            <MenuItem>{t("home")}</MenuItem>
-            <MenuItem>{t("procedures")}</MenuItem>
-            <MenuItem>{t("aboutUs2")}</MenuItem>
-            <MenuItem>{t("successCases")}</MenuItem>
-          </Menu>
+          {/* Menú desplegable */}
+          <div className={styles.menuOptions}>
+            <NavBarOptions changeLng={() => changeLng()} i18n={i18n} t={t} />
+          </div>
         </div>
-
-        {/* Menú desplegable */}
-        <div className={styles.menuOptions}>
-          <NavBarOptions changeLng={() => changeLng()} i18n={i18n} t={t} />
-        </div>
-      </div>
+      }
+      {showOptions &&
+      <NavbarSuccess/>
+      }
     </div>
   );
 };
