@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./EmailForm.module.css";
 import {
@@ -10,12 +10,19 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const ContactForm = () => {
   const { t } = useTranslation("common");
 
   const screenUpper576 = useMediaQuery("(min-width:930px)");
-  const form = useRef();
+  const [formData, setFormData] = useState({
+    from_name: "",
+    email_id: "",
+    phone: "",
+    message: "",
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -24,17 +31,29 @@ export const ContactForm = () => {
       .sendForm(
         "service_sj6c4wg",
         "template_jso44yv",
-        form.current,
+        e.target,
         "-a7fLrpzWxm2Mhz4K"
       )
       .then(
         (result) => {
           console.log(result.text);
+          setFormData({
+            from_name: "",
+            email_id: "",
+            phone: "",
+            message: "",
+          });
+          toast.success("¡Correo enviado con éxito!");
         },
         (error) => {
           console.log(error.text);
+          toast.error("¡Error al enviar el correo!");
         }
       );
+  };
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
@@ -47,7 +66,7 @@ export const ContactForm = () => {
             {t("sendMessage")}
           </Typography>
         </div>
-        <form ref={form} onSubmit={sendEmail} className={styles.contactForm}>
+        <form onSubmit={sendEmail} className={styles.contactForm}>
           <div className={styles.formItemBox}>
             <FormControl className={styles.formOptionBox}>
               <InputLabel htmlFor="from_name" className={styles.formLabel}>
@@ -58,6 +77,8 @@ export const ContactForm = () => {
                 name="from_name"
                 id="from_name"
                 className={styles.formInput}
+                value={formData.from_name}
+                onChange={handleInputChange}
               />
             </FormControl>
           </div>
@@ -66,7 +87,13 @@ export const ContactForm = () => {
               <InputLabel htmlFor="email_id" className={styles.formLabel}>
                 {t("email")}
               </InputLabel>
-              <Input type="email" name="email_id" id="email_id" />
+              <Input
+                type="email"
+                name="email_id"
+                id="email_id"
+                value={formData.email_id}
+                onChange={handleInputChange}
+              />
             </FormControl>
           </div>
           <div className={styles.formItemBox}>
@@ -74,7 +101,13 @@ export const ContactForm = () => {
               <InputLabel htmlFor="phone" className={styles.formLabel}>
                 {t("phoneNumber")}
               </InputLabel>
-              <Input type="tel" name="phone" id="phone" />
+              <Input
+                type="tel"
+                name="phone"
+                id="phone"
+                value={formData.phone}
+                onChange={handleInputChange}
+              />
             </FormControl>
           </div>
           <div className={styles.formItemBox}>
@@ -82,7 +115,13 @@ export const ContactForm = () => {
               <InputLabel htmlFor="message" className={styles.formLabel}>
                 {t("message")}
               </InputLabel>
-              <Input type="text" name="message" id="message" />
+              <Input
+                type="text"
+                name="message"
+                id="message"
+                value={formData.message}
+                onChange={handleInputChange}
+              />
             </FormControl>
           </div>
           <div className={styles.flexButtonContactS}>
@@ -96,6 +135,7 @@ export const ContactForm = () => {
           </div>
         </form>
       </div>
+      <ToastContainer />
     </div>
   );
 };

@@ -43,7 +43,25 @@
   "procedures": "Procedures",
   "aboutUs2": "About Us",
   "successCases": "Success Cases",
-  "Contacto": "Contact Us", 
+  "Contacto": "Contact Us",
+  "backHome": "Come back to home",
 
-  "our_networks":"Our newtworks"
+  "title3": "Success Cases",
+  "Ceramic_Design": "Ceramic Design",
+  "ceramicDesignDescription3": "Made with the highest quality in our laboratory, with a lifespan of over 10 years.",
+  "Resin_Design": "Resin Design",
+  "resinDesignDescription3": "You will have a perfect smile in a single session, our resin is of high quality and has a durability of 3 to 5 years.",
+  "Durability": "Durability",
+  "Treatment_Time": "Treatment Time",
+  "Procedure": "Procedure",
+  "dentalCleaningWithoutWear": "Dental cleaning, without wear and painless.",
+  "iconAlt3": "Icon",
+  "years3": "10 to 15 years",
+  "sessions3": "2 sessions",
+  "years4": "3 to 5 years",
+  "sessions4": "1 session",
+  "recommendations3": "Recommendations",
+  "recommendationsText3": "It is recommended to undergo a deep dental cleaning prior to the start of smile design. After the treatment, it is recommended to manufacture a protective plate for the care of the veneers, thus avoiding their fracture.",
+
+  "our_networks": "Our newtworks"
 }
