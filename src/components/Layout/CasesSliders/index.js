@@ -37,6 +37,7 @@ export const CasesSliders = ({
                   fill={true}
                   className={styles.image}
                   alt={t(`caseBeforeAlt`, { caso })}
+                  sizes="(min-width: 576px) 100vw"
                 />
                 <figcaption>
                   <Typography className={styles.textLabelSlider}>
@@ -57,6 +58,9 @@ export const CasesSliders = ({
                   </Typography>
                 </figcaption>
               </div>
+              <svg slot="handle" xmlns="http://www.w3.org/2000/svg" width="80" viewBox="-8 -3 16 6">
+                <path stroke="#fff" d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2" stroke-width="1" fill="#fff" vectorEffect="non-scaling-stroke"></path>
+              </svg>
             </ImgComparisonSlider>
           </div>
         ))}

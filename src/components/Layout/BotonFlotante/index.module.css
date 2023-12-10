@@ -4,9 +4,21 @@
     position: fixed;
     top: 50%;
     left: -20px;
-    z-index: 3;
+    z-index: 2;
     width: 5vw;
 }
 .image {
     object-fit: contain;
+}
+
+@media (min-width: 600px) and (max-width: 930px) {
+    .boxButton {
+        width: 8vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .boxButton {
+        width: 18vw;
+    }
 }

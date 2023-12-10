@@ -37,6 +37,8 @@
 
 .containerSlider {
   border-radius: 30px;
+  --divider-width: 2px;
+  --default-handle-opacity: 0;
 }
 
 .before,
@@ -46,8 +48,8 @@
 
 .before figcaption,
 .after figcaption {
-  background: #a18541;
-  border-radius: 12px;
+  background: rgba(215, 173, 92, 255);
+  border-radius: 10px;
   width: 5vw;
   height: 3vh;
   position: absolute;
@@ -69,8 +71,8 @@
 
 .textLabelSlider {
   color: white;
-  font-family: "LastOne";
-  font-size: .8rem;
+  font-family: "LastOne" !important;
+  font-size: .8rem !important;
 }
 
 .buttonCases {
@@ -80,6 +82,10 @@
 @media (max-width: 930px) and (min-width: 600px) {
   .flexCasesSection {
     flex-direction: column;
+  }
+  .box {
+    width: 40vw;
+    height: 80vh;
   }
 }
 
@@ -101,5 +107,25 @@
 
   .bslider {
     gap: 15px;
+  }
+
+  .before figcaption,
+  .after figcaption {
+    width: 18vw;
+    height: 3vh;
+    align-items: center;
+  }
+
+  .before figcaption {
+    left: 10px;
+  }
+
+  .after figcaption {
+    right: 10px;
+  }
+  .textLabelSlider {
+    color: white;
+    font-family: "LastOne" !important;
+    font-size: .8rem !important;
   }
 }

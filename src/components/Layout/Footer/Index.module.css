@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   height: 27vh;
+  background-color: black;
 }
 
 .flexFooter {
@@ -41,7 +42,6 @@
   .flexFooter {
     width: 200px;
     gap: 10px;
-    left: 15%;
   }
 
   .footer {
@@ -56,9 +56,12 @@
 @media (max-width: 576px) {
 
   .flexFooter {
-    width: 200px;
-    left: 5%;
+    width: 70vw;
+    left: 50%;
     gap: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    top: 50%;
   }
 
   .boxImage {
@@ -72,5 +75,7 @@
   .footer {
     height: 25vh;
   }
-
+  .imageFooter {
+    display: none;
+  }
 }
