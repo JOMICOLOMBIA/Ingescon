@@ -2,8 +2,8 @@ import Head from "next/head";
 import { MainPage } from "@/components/MainPage";
 import "../config/i18next.config";
 import { Navbar } from "@/components/Layout/Navbar";
-import { Suspense, useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import { Suspense } from "react";
+
 import NoSSR from "react-no-ssr";
 import { Footer } from "@/components/Layout/Footer";
 import { BotonFlotante } from "@/components/Layout/BotonFlotante";

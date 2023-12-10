@@ -4,12 +4,10 @@ import styles from "./Index.module.css";
 import Image from "next/image";
 import { Box, useMediaQuery } from "@mui/material";
 
-import { Navbar } from "../Layout/Navbar";
 import { CardProcGrid } from "../Layout/CardProcGrid";
 import { CardAboutUsFlex } from "../Layout/CardAboutUsFlex";
 import { CasesSliders } from "../Layout/CasesSliders";
 import { FlexHomeSection } from "../Layout/FlexHomeSection";
-import dynamic from "next/dynamic";
 
 export const MainPage = () => {
   const screenUpper576 = useMediaQuery("(min-width:576px)");
@@ -36,10 +34,10 @@ export const MainPage = () => {
       </div>
       <div id="auSection" className={styles.bsectionCases2}>
         <Image
-        src={"/assets/fondo-au.jpg"}
-        alt="Fondo section"
-        fill={true}
-        className={styles.fondoAboutUs}
+          src={"/assets/fondo-au.jpg"}
+          alt="Fondo section"
+          fill={true}
+          className={styles.fondoAboutUs}
         />
         <CardAboutUsFlex />
       </div>

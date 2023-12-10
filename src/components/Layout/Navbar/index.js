@@ -1,10 +1,10 @@
 import { NavBarOptions } from "@/components/NavBarOptions";
 import Image from "next/image";
 import styles from "./Index.module.css";
-import { useEffect, useState } from "react";
-import { IconButton, Menu, MenuItem } from "@mui/material";
+import { useState } from "react";
+import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Button, Typography, useMediaQuery } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
 import { NavbarSuccess } from "../NavbarSuccess";
@@ -64,17 +64,12 @@ export const Navbar = () => {
               </div>
             </div>
 
-            <Sidebar isOpen={menuVisible} onMenuItemClick={setMenuVisible}/>
+            <Sidebar isOpen={menuVisible} onMenuItemClick={setMenuVisible} />
           </div>
 
           {/* Menú desplegable */}
           <div className={styles.menuOptions}>
-            <NavBarOptions
-              
-              changeLng={() => changeLng()}
-              i18n={i18n}
-              t={t}
-            />
+            <NavBarOptions changeLng={() => changeLng()} i18n={i18n} t={t} />
           </div>
         </div>
       )}

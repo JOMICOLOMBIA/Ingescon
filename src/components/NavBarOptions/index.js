@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button, Typography, useMediaQuery } from "@mui/material";
 import styles from "./NavBarOptions.module.css";
-import { useTranslation } from "react-i18next";
 import Image from "next/image";
 
 export const NavBarOptions = ({

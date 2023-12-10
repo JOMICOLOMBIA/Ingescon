@@ -1,10 +1,10 @@
 import { Typography } from "@mui/material";
 import styles from "./index.module.css";
-import { useState } from "react";
+
 import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
 
-export const NavbarSuccess = ({ changeLng}) => {
+export const NavbarSuccess = ({ changeLng }) => {
   const router = useRouter();
   const { t, i18n } = useTranslation(["common"]);
 
