@@ -72,17 +72,6 @@ export const NavBarOptions = ({
           className={styles.logonavbar}
         />
       )}
-      <div className={elementClasses.home.box}>
-        <a
-          href="/#homeSection"
-          onClick={(e) => goToSection("home", e)}
-          className={styles.linknb}
-        >
-          <Typography className={elementClasses.home.text}>
-            Inicio{" "}
-          </Typography>
-        </a>
-      </div>
       <div className={elementClasses.proc.box}>
         <a
           href="/#procSection"
@@ -91,7 +80,7 @@ export const NavBarOptions = ({
         >
           <Typography className={elementClasses.proc.text}>
             {" "}
-            Procedimientos{" "}
+            Somos Expertos{" "}
           </Typography>
         </a>
       </div>
@@ -103,7 +92,7 @@ export const NavBarOptions = ({
         >
           <Typography className={elementClasses.aboutUs.text}>
             {" "}
-            Acerca de nosotros{" "}
+            Nuestros Servicios{" "}
           </Typography>
         </a>
       </div>
@@ -115,7 +104,7 @@ export const NavBarOptions = ({
         >
           <Typography className={elementClasses.cases.text}>
             {" "}
-            Antes y después{" "}
+           Proyectos destacados{" "}
           </Typography>
         </a>
       </div>
@@ -127,7 +116,7 @@ export const NavBarOptions = ({
         >
           <Typography className={elementClasses.moreCases.text}>
             {" "}
-            Casos de éxito{" "}
+            Nuestra Trayectoria{" "}
           </Typography>
         </a>
       </div>
