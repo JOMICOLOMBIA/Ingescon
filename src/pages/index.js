@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { MainPage } from "@/components/MainPage";
-import "../config/i18next.config";
+
 import { Navbar } from "@/components/Layout/Navbar";
 import { Suspense } from "react";
 

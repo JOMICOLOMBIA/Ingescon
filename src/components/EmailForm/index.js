@@ -9,11 +9,10 @@ import {
   Input,
   useMediaQuery,
 } from "@mui/material";
-import { useTranslation } from "react-i18next";
 import { toast } from "react-toastify";
 
 export const ContactForm = () => {
-  const { t } = useTranslation("common");
+
 
   const screenUpper576 = useMediaQuery("(min-width:930px)");
   const [formData, setFormData] = useState({
@@ -59,17 +58,17 @@ export const ContactForm = () => {
     <div className={styles.flexContactSection}>
       {screenUpper576 && <div className={styles.divider} />}
       <div className={styles.flexContentContactSection}>
-        <h1 className={styles.flexContactSectionTitle}> {t("contactUs")} </h1>
+        <h1 className={styles.flexContactSectionTitle}> Contáctanos </h1>
         <div className={styles.flexContactSectionBoxText}>
           <Typography className={styles.flexContactSectionText}>
-            {t("sendMessage")}
+            Envíanos un mensaje si deseas obtener información más precisa sobre tu caso.
           </Typography>
         </div>
         <form onSubmit={sendEmail} className={styles.contactForm}>
           <div className={styles.formItemBox}>
             <FormControl className={styles.formOptionBox}>
               <InputLabel htmlFor="from_name" className={styles.formLabel}>
-                {t("name")}
+                Nombre
               </InputLabel>
               <Input
                 type="text"
@@ -84,7 +83,7 @@ export const ContactForm = () => {
           <div className={styles.formItemBox}>
             <FormControl className={styles.formOptionBox}>
               <InputLabel htmlFor="email_id" className={styles.formLabel}>
-                {t("email")}
+                Email
               </InputLabel>
               <Input
                 type="email"
@@ -98,7 +97,7 @@ export const ContactForm = () => {
           <div className={styles.formItemBox}>
             <FormControl className={styles.formOptionBox}>
               <InputLabel htmlFor="phone" className={styles.formLabel}>
-                {t("phoneNumber")}
+                Número de teléfono
               </InputLabel>
               <Input
                 type="tel"
@@ -112,7 +111,7 @@ export const ContactForm = () => {
           <div className={styles.formItemBox}>
             <FormControl className={styles.formOptionBox}>
               <InputLabel htmlFor="message" className={styles.formLabel}>
-                {t("message")}
+                Mensaje
               </InputLabel>
               <Input
                 type="text"
@@ -129,7 +128,7 @@ export const ContactForm = () => {
               type="submit"
               value="Send"
             >
-              {t("send")}
+              Enviar
             </Button>
           </div>
         </form>

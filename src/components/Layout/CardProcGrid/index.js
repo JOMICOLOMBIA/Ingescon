@@ -1,10 +1,8 @@
 import Image from "next/image";
 import { Button, Typography } from "@mui/material";
-import { useTranslation } from "react-i18next";
 import styles from "./index.module.css";
 
 export const CardProcGrid = () => {
-  const { t } = useTranslation("common");
 
   const goToCases = () => {
     const target = document.getElementById("casesSection");
@@ -20,30 +18,30 @@ export const CardProcGrid = () => {
 
   const procedureComponents = [
     {
-      title: t("ceramicDesign"),
-      description: t("ceramicDesignDescription"),
+      title: "Diseño en cerámica",
+      description: "Hechos con la más alta calidad en nuestro laboratorio, cuentan con tiempo de duración de más de 10 años.",
       icon: "diente-dorado",
     },
     {
-      title: t("resinDesign"),
-      description: t("resinDesignDescription"),
+      title: "Diseño en resina",
+      description: "Tendrás una sonrisa perfecta en una sola sesión, nuestra resina es de alta calidad y tiene una durabilidad de 3 a 5 años.",
       icon: "diente-dorado",
     },
     {
-      title: t("dentalCleaning"),
-      description: t("dentalCleaningDescription"),
+      title: "Limpieza dental",
+      description: "Te brindaremos una limpieza profunda y precisa que eliminará la placa, el sarro y las manchas, dejando tus dientes limpios y relucientes",
       icon: "herramientas",
     },
     {
-      title: t("teethWhitening"),
-      description: t("teethWhiteningDescription"),
+      title: "Blanqueamiento dental",
+      description: "Sabemos lo importante que es para ti tener unos dientes más blancos y brillantes, y estamos aquí para hacerlo realidad.",
       icon: "cepillo",
     },
   ];
 
   return (
     <div className={styles.flexProcSection}>
-      <h1 className={styles.flexHomeSectionTitle}>{t("title")}</h1>
+      <h1 className={styles.flexHomeSectionTitle}>Nuestros procedimientos</h1>
       <div className={styles.gridCardsProc}>
         {procedureComponents.map((component, key) => (
           <div className={styles.gridItem} key={key}>
@@ -51,7 +49,7 @@ export const CardProcGrid = () => {
               <div className={styles.cardProcImage}>
                 <Image
                   src={`/assets/ico-${component.icon}.svg`}
-                  alt={t("iconAlt2")}
+                  alt="Icono"
                   width={80}
                   height={80}
                 />
@@ -69,7 +67,7 @@ export const CardProcGrid = () => {
         ))}
       </div>
       <Button size="large" className={styles.button} onClick={goToCases}>
-        {t("learnMore2")}
+      Conoce más
       </Button>
     </div>
   );

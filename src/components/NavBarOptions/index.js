@@ -4,9 +4,6 @@ import styles from "./NavBarOptions.module.css";
 import Image from "next/image";
 
 export const NavBarOptions = ({
-  changeLng,
-  i18n,
-  t,
   isSideBar = false,
   onMenuItemClick = () => {},
 }) => {
@@ -69,7 +66,7 @@ export const NavBarOptions = ({
       {isSideBar && (
         <Image
           src="/assets/logowhite.png"
-          alt={t("sdcLogo")}
+          alt="Logo SDC"
           height={50}
           width={145}
           className={styles.logonavbar}
@@ -82,7 +79,7 @@ export const NavBarOptions = ({
           className={styles.linknb}
         >
           <Typography className={elementClasses.home.text}>
-            {t("home")}{" "}
+            Inicio{" "}
           </Typography>
         </a>
       </div>
@@ -94,7 +91,7 @@ export const NavBarOptions = ({
         >
           <Typography className={elementClasses.proc.text}>
             {" "}
-            {t("procedures")}{" "}
+            Procedimientos{" "}
           </Typography>
         </a>
       </div>
@@ -106,7 +103,7 @@ export const NavBarOptions = ({
         >
           <Typography className={elementClasses.aboutUs.text}>
             {" "}
-            {t("aboutUs2")}{" "}
+            Acerca de nosotros{" "}
           </Typography>
         </a>
       </div>
@@ -118,7 +115,7 @@ export const NavBarOptions = ({
         >
           <Typography className={elementClasses.cases.text}>
             {" "}
-            {t("beforeAfterNav")}{" "}
+            Antes y después{" "}
           </Typography>
         </a>
       </div>
@@ -130,28 +127,14 @@ export const NavBarOptions = ({
         >
           <Typography className={elementClasses.moreCases.text}>
             {" "}
-            {t("successCases")}{" "}
+            Casos de éxito{" "}
           </Typography>
         </a>
       </div>
       <Button size={screenUpper576 ? "small" : "medium"} onClick={goToContact}>
         {" "}
-        {t("Contacto")}{" "}
+        Contacto{" "}
       </Button>
-      {!isSideBar && (
-        <div
-          style={{
-            color: "white",
-            margin: "auto 10px",
-            fontSize: "16px",
-          }}
-          onClick={() => {
-            changeLng();
-          }}
-        >
-          {i18n?.language?.toUpperCase()}
-        </div>
-      )}
     </div>
   );
 };

@@ -3,7 +3,6 @@ import styles from "./index.module.css";
 import { Button, Typography } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useTranslation } from "react-i18next";
 
 const numeroCaso = [9, 11, 8, 6];
 
@@ -13,7 +12,6 @@ export const CasesSliders = ({
   title = true,
 }) => {
   const router = useRouter();
-  const { t } = useTranslation("common");
 
   const handleVerTodosLosCasos = () => {
     // Redirige al usuario a la página /successCases
@@ -24,7 +22,7 @@ export const CasesSliders = ({
     <div className={styles.bslider} style={{ background: background }}>
       {title && (
         <h1 className={styles.flexCasesSectionTitle}>
-          {t("beforeAfterTitle")}
+          Antes y después
         </h1>
       )}
       <div className={styles.flexCasesSection}>
@@ -36,12 +34,12 @@ export const CasesSliders = ({
                   src={`/assets/${caso}.png`}
                   fill={true}
                   className={styles.image}
-                  alt={t(`caseBeforeAlt`, { caso })}
+          $        alt={`Caso ${caso} antes`}
                   sizes="(min-width: 576px) 100vw"
                 />
                 <figcaption>
                   <Typography className={styles.textLabelSlider}>
-                    {t("beforeLabel")}
+                  Antes
                   </Typography>
                 </figcaption>
               </div>
@@ -50,11 +48,11 @@ export const CasesSliders = ({
                   src={`/assets/${caso}-${caso}.png`}
                   fill={true}
                   className={styles.image}
-                  alt={t(`caseAfterAlt`, { caso })}
+                  alt={`Caso ${caso} después`}
                 />
                 <figcaption>
                   <Typography className={styles.textLabelSlider}>
-                    {t("afterLabel")}
+                    Después
                   </Typography>
                 </figcaption>
               </div>
@@ -72,7 +70,7 @@ export const CasesSliders = ({
           onClick={handleVerTodosLosCasos}
         >
           {" "}
-          {t("viewAllCasesButton")}{" "}
+          Ver todos los casos{" "}
         </Button>
       )}
     </div>

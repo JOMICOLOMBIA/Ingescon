@@ -1,12 +1,12 @@
 // components/FlexHomeSection.js
 import { Button, Typography, useMediaQuery } from "@mui/material";
-import { useTranslation } from "react-i18next";
+
 
 import styles from "./index.module.css";
 import { Suspense, useEffect } from "react";
 
 export const FlexHomeSection = () => {
-  const { t, i18n } = useTranslation(["common"]);
+
 
   const screenUpper576 = useMediaQuery("(min-width:576px)");
 
@@ -25,11 +25,11 @@ export const FlexHomeSection = () => {
   return (
     <div className={styles.flexHomeSection}>
       <h1 className={styles.flexHomeSectionTitle}>
-        {t("flexHomeSection.title")}
+      La sonrisa soñada es posible
       </h1>
       <div>
         <Typography className={styles.flexHomeSectionText}>
-          {t("flexHomeSection.text")}
+        Te ayudamos a mejorar la calidad de vida, aumentando tu confianza, salud y bienestar.
         </Typography>
       </div>
       <div className={styles.flexButtonHS}>
@@ -39,7 +39,7 @@ export const FlexHomeSection = () => {
           onClick={goToContact}
         >
           {" "}
-          {t("flexHomeSection.buttonText")}{" "}
+          Agenda tu cita{" "}
         </Button>
       </div>
     </div>

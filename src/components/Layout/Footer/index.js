@@ -1,10 +1,10 @@
 import Image from "next/image";
 import styles from "./Index.module.css";
 import { Typography, useMediaQuery } from "@mui/material";
-import { useTranslation } from "react-i18next";
+
 
 export const Footer = () => {
-  const { t } = useTranslation(["common"]);
+
   return (
     <div className={styles.footer}>
       <Image
@@ -25,7 +25,7 @@ export const Footer = () => {
         <div className={styles.boxRedes}>
           <Typography className={styles.textFooter}>
             {" "}
-            {t("our_networks")}{" "}
+            Nuestras redes{" "}
           </Typography>
           <div className={styles.boxImage}>
             <a  href="https://instagram.com/smiledesignc?igshid=YzAwZjE1ZTI0Zg==" target="_blank">
@@ -42,7 +42,7 @@ export const Footer = () => {
             <a  href="https://wa.link/152wbl" target="_blank">
             <Image
               src="/assets/ico-whatsapp.svg"
-              alt="logo whatsapp "
+              alt="logo whatsapp"
               width={100}
               height={100}
               layout="responsive"
