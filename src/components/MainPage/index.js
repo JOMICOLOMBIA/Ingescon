@@ -36,6 +36,10 @@ export const MainPage = () => {
       <div id="procSection" className={styles.bsectionCases}>
         <CardProcGrid />
       </div>
+      <div id="contactSection" className={styles.bsectionContact}>
+       
+        <ContactForm title={"Cuentanos tu idea"}/>
+      </div>
       <div id="auSection" className={styles.bsectionCases2}>
         <Image
           src={"/assets/fondo-au.jpg"}
@@ -45,6 +49,7 @@ export const MainPage = () => {
         />
         <CardAboutUsFlex />
       </div>
+      
       <div id="casesSection" className={styles.bsection}>
         <CasesSliders />
       </div>

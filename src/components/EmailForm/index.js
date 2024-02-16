@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import { toast } from "react-toastify";
 
-export const ContactForm = () => {
+export const ContactForm = ({title="Contáctanos"}) => {
 
 
   const screenUpper576 = useMediaQuery("(min-width:930px)");
@@ -58,7 +58,7 @@ export const ContactForm = () => {
     <div className={styles.flexContactSection}>
       {screenUpper576 && <div className={styles.divider} />}
       <div className={styles.flexContentContactSection}>
-        <h1 className={styles.flexContactSectionTitle}> Contáctanos </h1>
+        <h1 className={styles.flexContactSectionTitle}> {title} </h1>
         <div className={styles.flexContactSectionBoxText}>
           <Typography className={styles.flexContactSectionText}>
             Envíanos un mensaje si deseas obtener información más precisa sobre tu caso.
