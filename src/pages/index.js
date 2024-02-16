@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <Suspense>
       <Head>
-        <title>Smile Design Center</title>
+        <title>INGES</title>
         <meta
           name="description"
           content="Experience the difference exceptional dental care can make. Our compassionate team is dedicated to helping you achieve optimal oral health. Schedule a consultation now!"

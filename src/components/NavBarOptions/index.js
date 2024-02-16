@@ -120,7 +120,7 @@ export const NavBarOptions = ({
           </Typography>
         </a>
       </div>
-      <Button size={screenUpper576 ? "large" : "medium"} onClick={goToContact} className={styles.buttonNv}>
+      <Button size={"medium"} onClick={goToContact} className={styles.buttonNv}>
         {" "}
         Contacto{" "}
       </Button>

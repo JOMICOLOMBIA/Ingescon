@@ -9,14 +9,13 @@
 
 .bsection3 {
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   background-color: white;
   display: flex;
   zoom: 0.97;
   position: relative;
   top: -14vh;
 }
-
 
 .bsectionContact {
   width: 100%;
@@ -64,6 +63,14 @@
   display: flex;
   flex-direction: row;
   gap: 50px;
+}
+
+.yellowBar {
+  width: 100%;
+  height: 25vh;
+  background-color: rgb(243, 223, 77);
+  position: relative;
+  top: -14vh;
 }
 
 

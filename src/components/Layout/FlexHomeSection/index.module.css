@@ -1,84 +1,101 @@
 .flexHomeSection {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin-left: 60vw;
-    margin-top: 23vh;
-    width: 36vw;
-    gap: 5.5vh;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  width: 32vw;
+  gap: .5vh;
+  margin-left: 5vw;
+}
+
+.boxHomeSection {
+  position: absolute;
+  margin-left: 3vw;
+  margin-top: 28vh;
+  display: flex;
+  gap: 2vh;
+  flex-direction: column;
+}
+
+.flexHomeSectionTitle {
+  font-family: "LastOne";
+  font-size: 1.55rem;
+  line-height: 1;
+  font-weight: 600;
+  -webkit-line-clamp: 2;
+  margin-bottom: 0;
+  color: white;
+}
+
+.flexHomeSectionText {
+  font-size: 1.4rem !important;
+  text-align: justify;
+  line-height: 1;
+  font-weight: 500 !important;
+  color: white
+}
+
+.buttonHomeSection {
+  margin-top: 30px;
+}
+
+.flexButtonHS {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5.5vh;
+}
+
+.image {
+  object-fit: contain;
+}
+
+@media (max-width: 930px) and (min-width: 600px) {
   .flexHomeSectionTitle {
-    font-family: "LastOne";
-    font-size: 3.7rem;
-    line-height: 1;
-    font-weight: 300;
-    -webkit-line-clamp: 2;
-    margin-bottom: 0;
+    font-size: 33px;
   }
-  
+
   .flexHomeSectionText {
-    font-size: 1.2rem !important;
-    text-align: justify;
-    line-height: 1;
-    font-weight: 500 !important;
+    font-size: 20px;
   }
-  
-  .buttonHomeSection {
-    margin-top: 20px;
+
+  .flexHomeSection {
+    margin-left: 62vw;
+    margin-top: 23vh;
   }
-  
+}
+
+@media (max-width: 576px) {
+  .flexHomeSectionTitle {
+    font-size: 25px;
+  }
+
+  .flexHomeSection {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    justify-content: center;
+    background-color: rgba(252, 251, 251, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0;
+    gap: 1vh;
+  }
+
+  .flexHomeSectionText {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+
+  .flexHomeSectionTitle {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
   .flexButtonHS {
-    display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
-  @media (max-width: 930px) and (min-width: 600px) {
-    .flexHomeSectionTitle {
-      font-size: 33px;
-    }
-    .flexHomeSectionText {
-      font-size: 20px;
-    }
-    .flexHomeSection {
-      margin-left: 62vw;
-      margin-top: 23vh;
-    }
+  .buttonHomeSection {
+    margin-top: 15px;
   }
 
-  @media (max-width: 576px) {
-    .flexHomeSectionTitle {
-      font-size: 25px;
-    }
-    .flexHomeSection {
-      top: 70%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 90vw;
-      justify-content: center;
-      background-color: rgba(252, 251, 251, 0.8);
-      padding: 10px;
-      border-radius: 10px;
-      margin: 0;
-      gap: 1vh;
-    }
-  
-    .flexHomeSectionText {
-      font-size: 16px !important;
-      font-weight: 400 !important;
-    }
-  
-    .flexHomeSectionTitle {
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-  
-    .flexButtonHS {
-      justify-content: center;
-    }
-  
-    .buttonHomeSection {
-      margin-top: 15px;
-    }
-  
-  }
+}

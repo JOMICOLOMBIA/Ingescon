@@ -5,16 +5,16 @@ export const BasicTheme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          background: "rgb(251,219,4) !important",
+          background: "rgb(243, 223, 77) !important",
           color: "black",
           borderRadius: "30px",
           fontWeight: "bold",
           textTransform: "none",
-          padding: "5px 20px",
+          padding: "auto",
           height: "40px",
           fontSize: "1rem",
           marginBottom: "40px",
-          marginTop:"0px",
+          marginTop: "0px",
         },
         sizeSmall: {
           width: "130px",
@@ -23,15 +23,31 @@ export const BasicTheme = createTheme({
         },
         sizeMedium: {
           width: "170px",
-          fontSize: "15px",
-          margin: "0px",
-        },
-        sizeLarge: {
-          width: "170px",
           height: "45px",
           fontSize: "1rem",
+        },
+        sizeLarge: {
+          width: "230px",
+          height: "55px",
+          fontSize: "1.3rem",
         }
       },
+      variants: [{
+        props: {variant: 'outlined'},
+        style: {
+          background: "rgba(0,0,0,0) !important",
+          color: "white",
+          borderRadius: "30px",
+          borderWidth: "2px",
+          borderColor: "white",
+          fontWeight: "bold",
+          textTransform: "none",
+          padding: "auto",
+          marginBottom: "40px",
+          marginTop: "0px",
+          fontSize: "1.2rem",
+        }
+      }]
     },
   }
 }

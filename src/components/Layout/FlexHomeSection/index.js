@@ -1,5 +1,6 @@
 // components/FlexHomeSection.js
 import { Button, Typography, useMediaQuery } from "@mui/material";
+import Image from "next/image";
 
 
 import styles from "./index.module.css";
@@ -23,25 +24,43 @@ export const FlexHomeSection = () => {
   };
 
   return (
-    <div className={styles.flexHomeSection}>
-      <h1 className={styles.flexHomeSectionTitle}>
-      La sonrisa soñada es posible
-      </h1>
-      <div>
-        <Typography className={styles.flexHomeSectionText}>
-        Te ayudamos a mejorar la calidad de vida, aumentando tu confianza, salud y bienestar.
-        </Typography>
+    <div className={styles.boxHomeSection}>
+      <Image
+        src="/assets/home-logo.png" // Ruta relativa a la imagen dentro de la carpeta public
+        alt="Mujer sonriendo"
+        width={290} // Ancho de la imagen en píxeles
+        height={290} // Alto de la imagen en píxeles
+        className={styles.image}
+      />
+      <div className={styles.flexHomeSection}>
+        <h1 className={styles.flexHomeSectionTitle}>
+          Descubre el corazón de toda obra civil:
+        </h1>
+        <div>
+          <Typography className={styles.flexHomeSectionText}>
+            Especificaciones diseñadas para garantizar durabilidad y seguridad
+          </Typography>
+        </div>
+        <div className={styles.flexButtonHS}>
+          <Button
+            className={styles.buttonHomeSection}
+            size={"large"}
+            onClick={goToContact}
+          >
+            {" "}
+            Contáctanos{" "}
+          </Button>
+          <Button
+            className={styles.buttonHomeSection}
+            size={"large"}
+            onClick={goToContact}
+            variant="outlined"
+          >
+            {" "}
+            Nuestros Servicios{" "}
+          </Button>
+        </div>
       </div>
-      <div className={styles.flexButtonHS}>
-        <Button
-          className={styles.buttonHomeSection}
-          size={screenUpper576 ? "large" : "medium"}
-          onClick={goToContact}
-        >
-          {" "}
-          Agenda tu cita{" "}
-        </Button>
       </div>
-    </div>
   );
 };
