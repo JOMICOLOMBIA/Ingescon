@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { MainPage } from "@/components/MainPage";
 
-import { Navbar } from "@/components/Layout/Navbar";
 import { Suspense } from "react";
 
 import NoSSR from "react-no-ssr";
@@ -25,7 +24,6 @@ const Home = () => {
       </Head>
       <main>
         <NoSSR>
-          <Navbar />
           <MainPage />
           <BotonFlotante />
           <Footer />

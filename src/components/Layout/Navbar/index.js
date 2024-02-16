@@ -34,7 +34,7 @@ export const Navbar = () => {
       <Image
         src="/assets/logowhite.png"
         alt="Logo SDC"
-        height={100}
+        height={60}
         width={screenUpper900 ? 150 : 190}
         className={styles.logonavbar}
       />

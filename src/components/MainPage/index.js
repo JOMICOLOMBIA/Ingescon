@@ -8,17 +8,20 @@ import { CardProcGrid } from "../Layout/CardProcGrid";
 import { CardAboutUsFlex } from "../Layout/CardAboutUsFlex";
 import { CasesSliders } from "../Layout/CasesSliders";
 import { FlexHomeSection } from "../Layout/FlexHomeSection";
+import { Navbar } from "@/components/Layout/Navbar";
+
 
 export const MainPage = () => {
   const screenUpper576 = useMediaQuery("(min-width:576px)");
 
   return (
     <>
-      <Box id="homeSection" className={styles.bsection}>
+      <Navbar />
+      <Box id="homeSection" className={styles.bsection3}>
         <Image
           src={
             screenUpper576
-              ? "/assets/Enmascarar_grupo_7.jpg"
+              ? "/assets/home-slider-1.jpg"
               : "/assets/Enmascarar_grupo_73.jpg"
           } // Ruta relativa a la imagen dentro de la carpeta public
           alt="Mujer sonriendo"
@@ -59,6 +62,7 @@ export const MainPage = () => {
         />
         <ContactForm />
       </div>
+
     </>
   );
 };

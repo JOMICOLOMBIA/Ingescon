@@ -1,22 +1,24 @@
 .foptions {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
   gap: 1vw;
 }
 
 .boptionsNotClicked {
   width: auto;
   height: 30px;
-  margin-right: 2vw;
+  margin-right: 1.5vw;
 }
 .boptionsClicked {
   width: auto;
   height: 30px;
   border-bottom: 2px solid rgba(224, 190, 131, 255);
-  margin-right: 2vw;
+  margin-right: 1.5vw;
 }
 .textNotClicked {
   color: white;
+  font-weight: 600 !important; 
+  font-size: 14px !important;
 }
 .textClicked {
   color: rgba(224, 190, 131, 255);
@@ -30,7 +32,11 @@
   width: auto;
   height: 30px;
   border-bottom: 2px solid rgba(224, 190, 131, 255);
-  margin-right: 2vw;
+}
+.buttonNv {
+  margin-left: 2vw !important;
+  margin-bottom: 0 !important;
+  box-shadow: 0px 3px 5px #3a3a3b;
 }
 
 @media (min-width: 600px) and (max-width: 930px) {
