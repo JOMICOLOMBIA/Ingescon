@@ -32,7 +32,10 @@ export const MainPage = () => {
         />
         <FlexHomeSection />
       </Box>
-      <div className={styles.yellowBar} />
+      <div className={styles.yellowBar}>
+        <div className={styles.boxCardHome}>
+        </div>
+      </div>
       <div id="procSection" className={styles.bsectionCases}>
         <CardProcGrid />
       </div>

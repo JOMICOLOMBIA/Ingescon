@@ -25,7 +25,7 @@ const Home = () => {
           <main>
             <NoSSR>
               <MainPage />
-              <BotonFlotante />
+              {/* <BotonFlotante /> */}
               <Footer />
               <ToastContainer />
             </NoSSR>

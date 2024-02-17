@@ -9,7 +9,7 @@
 
 .bsection3 {
   width: 100%;
-  height: 130vh;
+  height: 140vh;
   background-color: white;
   display: flex;
   zoom: 0.97;
@@ -71,6 +71,17 @@
   background-color: rgb(243, 223, 77);
   position: relative;
   top: -14vh;
+}
+
+.boxCardHome {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: -80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 
