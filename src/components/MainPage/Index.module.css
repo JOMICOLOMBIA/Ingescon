@@ -32,6 +32,8 @@
   background-color: white;
   display: flex;
   zoom: 0.97;
+  position: relative;
+  top: -14vh;
 }
 .bsectionCases2 {
   width: 100%;
@@ -65,24 +67,7 @@
   gap: 50px;
 }
 
-.yellowBar {
-  width: 100%;
-  height: 25vh;
-  background-color: rgb(243, 223, 77);
-  position: relative;
-  top: -14vh;
-}
 
-.boxCardHome {
-  background-color: white;
-  width: 300px;
-  height: 300px;
-  position: relative;
-  top: -80%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
 
 
 @media (max-width: 930px) and (min-width: 600px) {
