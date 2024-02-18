@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button, Typography } from "@mui/material";
 import styles from "./index.module.css";
 
-export const CardProcGrid = () => {
+export const FlexProyectos = () => {
 
   const goToCases = () => {
     const target = document.getElementById("casesSection");
@@ -41,34 +41,22 @@ export const CardProcGrid = () => {
 
   return (
     <div className={styles.flexProcSection}>
-      <h1 className={styles.flexHomeSectionTitle}>Nuestros procedimientos</h1>
-      <div className={styles.gridCardsProc}>
-        {procedureComponents.map((component, key) => (
-          <div className={styles.gridItem} key={key}>
-            <div className={styles.cardProcSection}>
-              <div className={styles.cardProcImage}>
-                <Image
-                  src={`/assets/ico-${component.icon}.svg`}
-                  alt="Icono"
-                  width={80}
-                  height={80}
-                />
-              </div>
-              <div className={styles.boxCardProcSection}>
-                <h2 className={styles.headerCardProcSection}>
-                  {component.title}
-                </h2>
-                <Typography className={styles.textCardProcSection}>
-                  {component.description}
-                </Typography>
-              </div>
-            </div>
-          </div>
-        ))}
+      <h1 className={styles.flexHomeSectionTitle}>Proyectos Destacados</h1>
+      <div className={styles.boxImage}>
+        <Image
+          src="/assets/yellow-bar.png"
+          alt="Yellow bar"
+          fill={true}
+        />
       </div>
-      <Button size="large" className={styles.button} onClick={goToCases}>
-      Conoce más
-      </Button>
+      <div className={styles.gridCardsProc}>
+        <div className={styles.boxHoverEffect}>
+          <div className={styles.bottomBox}>
+          </div>
+          <div className={styles.topBox}>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

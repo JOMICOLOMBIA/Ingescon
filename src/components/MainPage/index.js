@@ -4,11 +4,16 @@ import styles from "./Index.module.css";
 import Image from "next/image";
 import { Box, useMediaQuery } from "@mui/material";
 
-import { CardProcGrid } from "../Layout/CardProcGrid";
+import { FlexProyectos } from "../Layout/FlexProyectos";
 import { CardAboutUsFlex } from "../Layout/CardAboutUsFlex";
 import { CasesSliders } from "../Layout/CasesSliders";
 import { FlexHomeSection } from "../Layout/FlexHomeSection";
 import { Navbar } from "@/components/Layout/Navbar";
+import YellowBar from "../Layout/YellowBarHome";
+
+
+
+
 
 
 export const MainPage = () => {
@@ -32,16 +37,13 @@ export const MainPage = () => {
         />
         <FlexHomeSection />
       </Box>
-      <div className={styles.yellowBar}>
-        <div className={styles.boxCardHome}>
-        </div>
-      </div>
+      <YellowBar/>
       <div id="procSection" className={styles.bsectionCases}>
-        <CardProcGrid />
+        <FlexProyectos />
       </div>
       <div id="contactSection" className={styles.bsectionContact}>
-       
-        <ContactForm title={"Cuentanos tu idea"}/>
+
+        <ContactForm title={"Cuentanos tu idea"} />
       </div>
       <div id="auSection" className={styles.bsectionCases2}>
         <Image
@@ -52,7 +54,7 @@ export const MainPage = () => {
         />
         <CardAboutUsFlex />
       </div>
-      
+
       <div id="casesSection" className={styles.bsection}>
         <CasesSliders />
       </div>
