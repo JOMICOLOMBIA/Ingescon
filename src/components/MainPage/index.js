@@ -10,6 +10,7 @@ import { CasesSliders } from "../Layout/CasesSliders";
 import { FlexHomeSection } from "../Layout/FlexHomeSection";
 import { Navbar } from "@/components/Layout/Navbar";
 import YellowBar from "../Layout/YellowBarHome";
+import { NuestrosServicios } from "../Layout/NuestrosServicios";
 
 
 
@@ -37,14 +38,17 @@ export const MainPage = () => {
         />
         <FlexHomeSection />
       </Box>
-      <YellowBar/>
+      <YellowBar />
+      <div id="contactSection" className={styles.bsectionContact}>
+        <ContactForm title={"Cuentanos tu idea"} />
+      </div>
+      <div id="casesSection" className={styles.bsection}>
+        <NuestrosServicios/>
+      </div>
       <div id="procSection" className={styles.bsectionCases}>
         <FlexProyectos />
       </div>
-      <div id="contactSection" className={styles.bsectionContact}>
 
-        <ContactForm title={"Cuentanos tu idea"} />
-      </div>
       <div id="auSection" className={styles.bsectionCases2}>
         <Image
           src={"/assets/fondo-au.jpg"}
@@ -52,25 +56,10 @@ export const MainPage = () => {
           fill={true}
           className={styles.fondoAboutUs}
         />
-        <CardAboutUsFlex />
       </div>
-
       <div id="casesSection" className={styles.bsection}>
-        <CasesSliders />
       </div>
       <div id="contactSection" className={styles.bsectionContact}>
-        <Image
-          src={
-            screenUpper576
-              ? "/assets/Enmascarar_grupo_10.jpg"
-              : "/assets/Enmascarar_grupo_15.jpg"
-          } // Ruta relativa a la imagen dentro de la carpeta public
-          alt="Mujer sonriendo"
-          width={100} // Ancho de la imagen en píxeles
-          height={100} // Alto de la imagen en píxeles
-          layout="responsive"
-          className={styles.image}
-        />
         <ContactForm />
       </div>
 

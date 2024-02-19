@@ -9,7 +9,7 @@ export const BotonFlotante = () => {
                 <a href="https://wa.link/152wbl" target="_blank">
                 <Image
                     alt="Icono whatsapp"
-                    src={"/assets/whatsapp.svg"}
+                    src={"/assets/whatsapp.png"}
                     width={100}
                     height={100}
                     layout="responsive"

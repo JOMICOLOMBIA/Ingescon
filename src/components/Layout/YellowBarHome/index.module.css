@@ -8,8 +8,8 @@
   
   .boxCardHome {
     background-color: white;
-    width: 20vw;
-    height: 40vh;
+    width: 22vw;
+    height: 42vh;
     display: flex;
     flex-direction: column;
     padding: auto;
@@ -25,7 +25,11 @@
     justify-content: center;
   }
   .boxTextCardHome {
-    width: 15vw;
+    width: 13vw;
     height: auto;
     text-align: center;
+  }
+
+  .boxTitleCardHome {
+    font-size: 1.3rem;
   }
