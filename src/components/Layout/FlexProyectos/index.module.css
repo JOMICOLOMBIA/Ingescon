@@ -10,13 +10,13 @@
 
 .flexHomeSectionTitle {
     font-family: "LastOne";
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 1;
     font-weight: 300;
-    margin-left: -40%;
+    margin-left: -50%;
 }
 
-.gridCardsProc {
+.flexProyectos {
     display: flex;
     gap: 40px;
     margin-top: 7vh;
@@ -37,23 +37,47 @@
 }
 
 .bottomBox {
-    width: 300px;
-    height: 400px;
-    background-color: yellow;
+    width: 20vw;
+    height: 50vh;
+    position: relative;
+}
+
+.imageProject {
+    object-fit: fill;
+}
+.imageHover {
+    object-fit: cover;
 }
 
 .topBox {
     position: absolute;
-    width: 300px;
-    height: 400px;
-    background-color: black;
+    width: 20vw;
+    height: 50vh;
     z-index: 1;
     opacity: 0;
+    /* zoom: 0.99; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
 }
 
 .topBox:hover {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
+}
+
+.titleCardProyect {
+    color: white;
+    z-index: 2;
+    margin-top: 80px;
+}
+.textCardProyect {
+    color: white;
+    z-index: 2;
+    width: 150px;
+    text-align: center;
 }
 
 @media (max-width: 930px) and (min-width: 600px) {

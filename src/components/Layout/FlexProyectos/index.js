@@ -16,26 +16,21 @@ export const FlexProyectos = () => {
     });
   };
 
-  const procedureComponents = [
+  const proyectComponents = [
     {
-      title: "Diseño en cerámica",
-      description: "Hechos con la más alta calidad en nuestro laboratorio, cuentan con tiempo de duración de más de 10 años.",
-      icon: "diente-dorado",
+      title: "Intersección Sena",
+      description: "Puente en concreto postensado Sena 3 luces",
+      image: 1,
     },
     {
-      title: "Diseño en resina",
-      description: "Tendrás una sonrisa perfecta en una sola sesión, nuestra resina es de alta calidad y tiene una durabilidad de 3 a 5 años.",
-      icon: "diente-dorado",
+      title: "Intersección Sena",
+      description: "Puente en concreto postensado Sena 3 luces",
+      image: 2,
     },
     {
-      title: "Limpieza dental",
-      description: "Te brindaremos una limpieza profunda y precisa que eliminará la placa, el sarro y las manchas, dejando tus dientes limpios y relucientes",
-      icon: "herramientas",
-    },
-    {
-      title: "Blanqueamiento dental",
-      description: "Sabemos lo importante que es para ti tener unos dientes más blancos y brillantes, y estamos aquí para hacerlo realidad.",
-      icon: "cepillo",
+      title: "Intersección Sena",
+      description: "Puente en concreto postensado Sena 3 luces",
+      image: 3,
     },
   ];
 
@@ -49,13 +44,36 @@ export const FlexProyectos = () => {
           fill={true}
         />
       </div>
-      <div className={styles.gridCardsProc}>
-        <div className={styles.boxHoverEffect}>
-          <div className={styles.bottomBox}>
-          </div>
-          <div className={styles.topBox}>
-          </div>
-        </div>
+      <div className={styles.flexProyectos}>
+        {proyectComponents.map((proyect, key) => {
+          return (
+            <div className={styles.boxHoverEffect} key={key}>
+              <div className={styles.bottomBox}>
+                <Image
+                  // src="/assets/proyect-1.png"
+                  src={`/assets/proyect-${proyect.image}.png`}
+                  alt="Foto proyecto"
+                  fill={true}
+                  className={styles.imageProject}
+                />
+              </div>
+              <div className={styles.topBox}>
+              <Image
+                  // src="/assets/proyect-1.png"
+                  src={"/assets/hover-view.png"}
+                  alt="cuadro negro con alfa baja"
+                  fill={true}
+                  className={styles.imageHover}
+                />
+                <h3 className={styles.titleCardProyect}>{proyect.title}</h3>
+                <Typography className={styles.textCardProyect}>
+                  {proyect.description}
+                </Typography>
+              </div>
+            </div>
+          )
+        })
+        }
       </div>
     </div>
   );

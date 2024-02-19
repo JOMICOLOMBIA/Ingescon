@@ -1,10 +1,11 @@
 import { Typography } from "@mui/material";
 import styles from "./index.module.css"
+import Image from "next/image";
 
 const cardContent = [
-    {title: "Productos y servicios", desc: "Ofrecemos propuestas técnicas que se ajustes a las necesidades de la comunidad"},
-    {title: "Cumplimiento", desc: "Excelente calidad de diseño cumpliendo las normativas vigentes"},
-    {title: "Sostenibilidad", desc: "Proyectos que abarquen las tres dimensiones: economía, sociedad y ambiente"}
+    {title: "Productos y servicios", desc: "Ofrecemos propuestas técnicas que se ajustes a las necesidades de la comunidad", icon: "prod"},
+    {title: "Cumplimiento", desc: "Excelente calidad de diseño cumpliendo las normativas vigentes", icon: "cump"},
+    {title: "Sostenibilidad", desc: "Proyectos que abarquen las tres dimensiones: economía, sociedad y ambiente", icon: "sost"}
 ]
 
 
@@ -15,7 +16,13 @@ export default function YellowBar() {
             {
                 cardContent.map((content, key) => (
                     <div className={styles.boxCardHome} key={key}>
-                        <h2>{content.title}</h2>
+                        <Image
+                            src={`/assets/${content.icon}-icon.png`}
+                            width={100}
+                            height={100}
+                            alt="Icon"
+                        />
+                        <h2 className={styles.boxTitleCardHome}>{content.title}</h2>
                         <Typography className={styles.boxTextCardHome}>{content.desc}</Typography>
                     </div>
                 ))
