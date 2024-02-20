@@ -2,7 +2,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from "./index.module.css";
 import Image from "next/image";
-import { IconButton } from "@mui/material";
+import { IconButton, Typography } from "@mui/material";
 
 
 const contentCard = [{ image: 1, title: "Consultorías Técnicas" }, { image: 2, title: "Evaluación de edificaciones existentes" }, { image: 3, title: "Interventoría y supervisión técnica" }]
@@ -27,7 +27,7 @@ const arrowStyles = {
 export const NuestrosServicios = () => {
     return (
         <div className={styles.flexNuestrosSection}>
-            <h1 className={styles.flexNuestrosSectionTitle}>Nuestros Servicios</h1>
+            <p className={styles.flexNuestrosSectionTitle}>Nuestros Servicios</p>
             <div className={styles.boxImage}>
                 <Image
                     src="/assets/yellow-bar.png"

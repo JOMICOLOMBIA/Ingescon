@@ -22,7 +22,7 @@ export default function YellowBar() {
                             height={100}
                             alt="Icon"
                         />
-                        <h2 className={styles.boxTitleCardHome}>{content.title}</h2>
+                        <Typography className={styles.boxTitleCardHome}>{content.title}</Typography>
                         <Typography className={styles.boxTextCardHome}>{content.desc}</Typography>
                     </div>
                 ))

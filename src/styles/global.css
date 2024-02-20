@@ -3,8 +3,8 @@
 @import "tailwindcss/utilities";
 
 @font-face {
-  font-family: "LastOne";
-  src: url("/fonts/LastOne.ttf") format("truetype");
+  font-family: "Exo";
+  src: url("/fonts/Exo-Black.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

@@ -2,6 +2,7 @@
   display: flex;
   align-items: baseline;
   gap: 1vw;
+  zoom: 0.97;
 }
 
 .boptionsNotClicked {

@@ -33,9 +33,9 @@ export const FlexHomeSection = () => {
         className={styles.image}
       />
       <div className={styles.flexHomeSection}>
-        <h1 className={styles.flexHomeSectionTitle}>
+        <Typography className={styles.flexHomeSectionTitle}>
           Descubre el corazón de toda obra civil:
-        </h1>
+        </Typography>
         <div>
           <Typography className={styles.flexHomeSectionText}>
             Especificaciones diseñadas para garantizar durabilidad y seguridad

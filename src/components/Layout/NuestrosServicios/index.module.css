@@ -8,11 +8,9 @@
 }
 
 .flexNuestrosSectionTitle {
-    font-family: "LastOne";
-    font-size: 3rem;
-    line-height: 1;
-    font-weight: 300;
-    margin-left: -50%;
+    font-family: "Exo" !important;
+    font-size: 3.2rem !important;
+    margin-left: -50% !important;
     margin-bottom: 15px;
 }
 
