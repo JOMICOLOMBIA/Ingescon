@@ -38,7 +38,7 @@ export const NuestrosServicios = () => {
             <div
                 className={styles.boxCarousel}
             >
-                <Carousel showThumbs={false} showStatus={false} showIndicators={false}
+                <Carousel swipeable={true} showThumbs={false} showStatus={false} showIndicators={false} emulateTouch={true} swipeScrollTolerance={5} 
                     statusFormatter={(current, total) => `Current slide: ${current} / Total: ${total}`}
                     renderArrowPrev={(onClickHandler, hasPrev, label) =>
                         hasPrev && (
