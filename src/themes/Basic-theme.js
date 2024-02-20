@@ -39,7 +39,7 @@ export const BasicTheme = createTheme({
           color: "white",
           borderRadius: "30px",
           borderWidth: "2px",
-          borderColor: "white",
+          borderColor: "white !important",
           fontWeight: "bold",
           textTransform: "none",
           padding: "auto",

@@ -23,7 +23,7 @@ export const MainPage = () => {
   return (
     <>
       <Navbar />
-      <Box id="homeSection" className={styles.bsection3}>
+      <Box id="homeSection" className={styles.bsectionHome}>
         <Image
           src={
             screenUpper576
