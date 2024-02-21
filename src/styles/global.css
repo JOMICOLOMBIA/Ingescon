@@ -4,7 +4,20 @@
 
 @font-face {
   font-family: "Exo";
-  src: url("/fonts/Exo-Black.ttf") format("truetype");
+  src: url("/fonts/Exo-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo-B";
+  src: url("/fonts/Exo-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Exo-SB";
+  src: url("/fonts/Exo-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

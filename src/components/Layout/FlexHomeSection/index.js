@@ -27,7 +27,7 @@ export const FlexHomeSection = () => {
     <div className={styles.boxHomeSection}>
       <Image
         src="/assets/home-logo.png" // Ruta relativa a la imagen dentro de la carpeta public
-        alt="Mujer sonriendo"
+        alt="Foto obra"
         width={290} // Ancho de la imagen en píxeles
         height={290} // Alto de la imagen en píxeles
         className={styles.image}

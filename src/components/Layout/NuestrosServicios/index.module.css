@@ -8,10 +8,10 @@
 }
 
 .flexNuestrosSectionTitle {
-    font-family: "Exo" !important;
+    font-family: "Exo-B" !important;
     font-size: 3.2rem !important;
     margin-left: -50% !important;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .boxImage {
@@ -26,6 +26,7 @@
     height: 70vh;
     background-color: rgb(252, 252, 252);
     margin-top: 7vh;
+    cursor: pointer;
 }
 
 .boxCarouselContent {
