@@ -9,6 +9,7 @@ export const BasicTheme = createTheme({
           color: "black",
           borderRadius: "30px",
           fontWeight: "bold",
+          fontFamily: "Exo",
           textTransform: "none",
           height: "40px",
           fontSize: "1rem",

@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from "./index.module.css";
 import Image from "next/image";
 import { IconButton, Typography } from "@mui/material";
+import { StickyNote2Sharp } from "@mui/icons-material";
 
 
 const contentCard = [{ image: 1, title: "Consultorías Técnicas" }, { image: 2, title: "Evaluación de edificaciones existentes" }, { image: 3, title: "Interventoría y supervisión técnica" }]
@@ -38,12 +39,10 @@ export const NuestrosServicios = () => {
             <div
                 className={styles.boxCarousel}
             >
-                <Carousel swipeable={true} showThumbs={false} showStatus={false} showIndicators={false} emulateTouch={true} swipeScrollTolerance={5} 
+                <Carousel swipeable={true} showThumbs={false} showStatus={false} showIndicators={false} emulateTouch={true} swipeScrollTolerance={5}
                     statusFormatter={(current, total) => `Current slide: ${current} / Total: ${total}`}
                     renderArrowPrev={(onClickHandler, hasPrev, label) =>
                         hasPrev && (
-                            // <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 15 }}>
-                            // </button>
                             <IconButton type="button" onClick={onClickHandler} title={label} className={styles.carouselArrow}>
                                 <Image
                                     src="/assets/arrow.png"
@@ -80,7 +79,8 @@ export const NuestrosServicios = () => {
 
                                     </div>
                                     <div className="">
-                                        <h2>{content.title}</h2>
+                                        <h2 className={styles.headerCarouselContent}>{content.title}</h2>
+                                        <Typography className={styles.textCarouselContent}></Typography>
                                     </div>
                                 </div>
                             )
