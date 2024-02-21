@@ -10,11 +10,11 @@ export const BasicTheme = createTheme({
           borderRadius: "30px",
           fontWeight: "bold",
           textTransform: "none",
-          padding: "auto",
           height: "40px",
           fontSize: "1rem",
           marginBottom: "40px",
           marginTop: "0px",
+          borderWidth: "2px !important"
         },
         sizeSmall: {
           width: "130px",

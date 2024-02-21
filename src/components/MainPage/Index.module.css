@@ -13,8 +13,13 @@
   background-color: white;
   display: flex;
   zoom: 0.97;
-  position: relative;
+
+
+}
+
+.carouselBox {
   top: -14vh;
+  position: relative;
 }
 
 .bsectionContact {
@@ -54,9 +59,6 @@
   background-color: blue;
 }
 
-.image {
-  object-fit: cover;
-}
 
 .footer {
   position: relative;
