@@ -9,10 +9,9 @@
 
 
 .flexHomeSectionTitle {
-    font-family: "Exo";
-    font-size: 3rem;
+    font-family: "Exo-B";
+    font-size: 3.2rem;
     line-height: 1;
-    font-weight: 300;
     margin-left: -50%;
 }
 
@@ -72,12 +71,14 @@
     color: white;
     z-index: 2;
     margin-top: 80px;
+    font-family: "Exo-B";
 }
 .textCardProyect {
     color: white;
     z-index: 2;
     width: 150px;
     text-align: center;
+    font-family: "Exo" !important;
 }
 
 @media (max-width: 930px) and (min-width: 600px) {
