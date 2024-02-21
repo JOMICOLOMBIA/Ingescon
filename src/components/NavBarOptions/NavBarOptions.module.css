@@ -2,7 +2,7 @@
   display: flex;
   align-items: baseline;
   gap: 1vw;
-  zoom: 0.97;
+  zoom: 0.94;
 }
 
 .boptionsNotClicked {
@@ -10,19 +10,24 @@
   height: 30px;
   margin-right: 1.5vw;
 }
+
 .boptionsClicked {
   width: auto;
   height: 30px;
   border-bottom: 2px solid rgba(224, 190, 131, 255);
   margin-right: 1.5vw;
 }
+
 .textNotClicked {
   color: white;
-  font-weight: 600 !important; 
+  font-weight: 600 !important;
   font-size: .9rem !important;
+  font-family: "Exo-B" !important;
 }
+
 .textClicked {
   color: rgba(224, 190, 131, 255);
+  font-family: "Exo-B" !important;
 }
 
 .linknb {
@@ -34,6 +39,7 @@
   height: 30px;
   border-bottom: 2px solid rgba(224, 190, 131, 255);
 }
+
 .buttonNv {
   margin-left: 2vw !important;
   margin-bottom: 0 !important;
@@ -45,26 +51,31 @@
   .textNotClicked {
     font-size: 11px !important;
   }
+
   .textClicked {
     font-size: 11px !important;
   }
+
   .foptions {
     align-items: center;
     gap: 10px;
   }
+
   .boptionsNotClicked {
     height: 20px;
   }
+
   .boptionsClicked {
     height: 20px;
   }
-  
+
 }
 
 @media (max-width: 576px) {
   .boptionsClicked {
     height: 20px;
   }
+
   .boptionsNotClicked {
     height: 20px;
   }
