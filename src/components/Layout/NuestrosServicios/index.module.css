@@ -27,6 +27,8 @@
     background-color: rgb(252, 252, 252);
     margin-top: 7vh;
     cursor: pointer;
+    border-width: 10px;
+    border-color: red;
 }
 
 .boxCarouselContent {

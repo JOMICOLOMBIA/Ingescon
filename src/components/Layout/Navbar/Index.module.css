@@ -14,8 +14,8 @@
   color: white;
 }
 .blogo {
-  width: 150px;
-  height: 60px;
+  width: 140px;
+  height: 50px;
   position: relative;
   margin: auto 0;
   margin-left: 20px;
@@ -24,7 +24,7 @@
 
 .logonavbar {
   object-fit: contain;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .menuContainer {

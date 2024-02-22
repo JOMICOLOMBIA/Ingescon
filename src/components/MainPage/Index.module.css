@@ -7,20 +7,6 @@
   position: relative;
 }
 
-.bsectionHome {
-  width: 100%;
-  height: 140vh;
-  background-color: white;
-  display: flex;
-  zoom: 0.97;
-
-
-}
-
-.carouselBox {
-  top: -14vh;
-  position: relative;
-}
 
 .bsectionContact {
   width: 100%;

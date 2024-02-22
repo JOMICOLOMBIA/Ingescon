@@ -1,0 +1,22 @@
+.carouselBox {
+    position: relative;
+    display: flex;
+    top: -14vh;
+}
+
+.indicatorCarousel {
+    background: transparent;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin: 0 8px;
+    position: relative;
+    bottom: 32vh;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 2px solid rgb(243, 223, 77);
+}
+.indicatorS {
+    background: rgb(243, 223, 77);
+    border: 0px;
+}
