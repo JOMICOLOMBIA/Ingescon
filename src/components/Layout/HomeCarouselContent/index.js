@@ -20,26 +20,29 @@ const homeContent = [
 ]
 
 
-export const HomeCarouselContent = () => {
+export const HomeCarouselContent = ({pic}) => {
 
     const screenUpper576 = useMediaQuery("(min-width:576px)");
 
 
     return (
         <>
-            <Image
-                src={
-                    screenUpper576
-                        ? "/assets/home-slider-1.jpg"
-                        : "/assets/Enmascarar_grupo_73.jpg"
-                } // Ruta relativa a la imagen dentro de la carpeta public
-                alt="Mujer sonriendo"
-                width={100} // Ancho de la imagen en píxeles
-                height={100} // Alto de la imagen en píxeles
-                layout="responsive"
-                className={styles.image}
-            />
-            <FlexHomeSection />
+            <div className={styles.bsectionHome}>
+                <Image
+                    src={
+                        screenUpper576
+                            ? `/assets/home-slider-${pic}.jpg`
+                            : "/assets/Enmascarar_grupo_73.jpg"
+                    } // Ruta relativa a la imagen dentro de la carpeta public
+                    alt="Mujer sonriendo"
+                    width={100} // Ancho de la imagen en píxeles
+                    height={100} // Alto de la imagen en píxeles
+                    layout="responsive"
+                    className={styles.image}
+                />
+                <FlexHomeSection />
+
+            </div>
         </>
     )
 }

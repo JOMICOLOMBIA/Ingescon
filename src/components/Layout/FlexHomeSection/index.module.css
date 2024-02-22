@@ -48,7 +48,6 @@
 
 .image {
   object-fit: contain;
-  margin-left: -7vw;
 }
 
 @media (max-width: 930px) and (min-width: 600px) {

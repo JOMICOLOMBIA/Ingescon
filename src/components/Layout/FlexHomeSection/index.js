@@ -28,8 +28,8 @@ export const FlexHomeSection = () => {
       <Image
         src="/assets/home-logo.png" // Ruta relativa a la imagen dentro de la carpeta public
         alt="Foto obra"
-        width={290} // Ancho de la imagen en píxeles
-        height={290} // Alto de la imagen en píxeles
+        width={520} // Ancho de la imagen en píxeles
+        height={280} // Alto de la imagen en píxeles
         className={styles.image}
       />
       <div className={styles.flexHomeSection}>

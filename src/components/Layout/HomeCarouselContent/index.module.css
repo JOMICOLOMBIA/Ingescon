@@ -2,7 +2,7 @@
   object-fit: contain;
 }
 
-.boxItem {
-  width: auto;
-  width: auto;
+.bsectionHome {
+  display: flex;
+
 }
