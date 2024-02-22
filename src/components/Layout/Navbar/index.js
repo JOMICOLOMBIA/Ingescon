@@ -6,7 +6,7 @@ import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useMediaQuery } from "@mui/material";
 import { useRouter } from "next/router";
-import { NavbarSuccess } from "../NavbarSuccess";
+
 import Sidebar from "@/components/sideBar";
 
 export const Navbar = () => {
@@ -34,8 +34,8 @@ export const Navbar = () => {
       <Image
         src="/assets/logowhite.png"
         alt="Logo SDC"
-        height={60}
-        width={screenUpper900 ? 150 : 190}
+        height={54}
+        width={143}
         className={styles.logonavbar}
       />
       {!showOptions && (
@@ -57,7 +57,6 @@ export const Navbar = () => {
           </div>
         </div>
       )}
-      {showOptions && <NavbarSuccess />}
     </div>
   );
 };

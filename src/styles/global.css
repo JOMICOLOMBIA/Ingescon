@@ -21,3 +21,9 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Exo-Bl";
+  src: url("/fonts/Exo-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

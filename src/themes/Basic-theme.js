@@ -24,8 +24,8 @@ export const BasicTheme = createTheme({
         },
         sizeMedium: {
           width: "170px",
-          height: "45px",
-          fontSize: "1rem",
+          height: "42px",
+          fontSize: "1.1rem",
         },
         sizeLarge: {
           width: "230px",
