@@ -3,10 +3,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from "./index.module.css";
 import Image from "next/image";
 import { IconButton, Typography } from "@mui/material";
-import { StickyNote2Sharp } from "@mui/icons-material";
 
 
-const contentCard = [{ image: 1, title: "Consultorías Técnicas" }, { image: 2, title: "Evaluación de edificaciones existentes" }, { image: 3, title: "Interventoría y supervisión técnica" }]
+
+const contentCard = [{ image: 1, title: "Consultorías Técnicas", list: ["Diseño hidráulico", "Diseño Geotécnico", "Diseño de vías", "Diseño arquitectónico", "Diseño eléctrico", "Estudios Geotécnicos"]}, { image: 2, title: "Evaluación de edificaciones existentes", list: ["Patología estructural", "Inspección visual detallada por medio de fotogrametría", "Estudio de vulnerabilidad sísmica", "Reforzamiento estructural"]}]
 
 const arrowStyles = {
     position: 'absolute',
@@ -81,11 +81,30 @@ export const NuestrosServicios = () => {
                                     <div className="">
                                         <h2 className={styles.headerCarouselContent}>{content.title}</h2>
                                         <Typography className={styles.textCarouselContent}></Typography>
+                                        <ul>
+                                            {content.list.map((item, key) => 
+                                            <li key={key}>{item}</li>
+                                            )}
+                                        </ul>
                                     </div>
                                 </div>
                             )
                         })
                     }
+                    {/* <div className={styles.boxCarouselContent}>
+
+                        <div className={styles.boxImageCarousel}>
+                            <Image
+                                src={`/assets/ns-${content.image}.jpg`}
+                                fill={true}
+                                alt="imagen proyecto"
+                            />
+                        </div>
+                        <div className="">
+                            <h2 className={styles.headerCarouselContent}>{content.title}</h2>
+                            <Typography className={styles.textCarouselContent}></Typography>
+                        </div>
+                    </div> */}
                 </Carousel>
             </div>
         </div>
