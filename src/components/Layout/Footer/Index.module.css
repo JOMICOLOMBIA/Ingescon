@@ -7,16 +7,21 @@
 }
 
 .flexFooter {
-  width: 250px;
+  width: 90%;
   height: auto;
-  position: absolute;
-  left: 20%;
-  top: 15%;
+  position: relative;
   z-index: 1;
   display: flex;
   flex-direction: row;
   gap: 30px;
   align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.boxLogoFooter {
+  width: 15vw;
+  height: auto
 }
 
 .textFooter {
@@ -35,6 +40,7 @@
   width: 20px;
   height: 20px;
 }
+
 .image {
   object-fit: contain;
 }
@@ -54,24 +60,64 @@
 
 .boxContactFooter {
   display: flex;
-  width: 30vw;
+  width: 22vw;
   height: fit-content;
+  flex-direction: column;
+  gap: 1vh;
 }
 
 .headerBoxContact {
   color: white;
   font-family: "Exo-B" !important;
+  font-size: large !important;
 }
 
 .flexContactInfo {
   display: flex;
-  gap: 1vw;
+  gap: .8vw;
   width: 25vw;
-  height: auto;
+  height: 3vh;
+  align-items: center;
 }
+
 .boxIconContact {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
+}
+
+.textContactInfo {
+  font-family: "Exo";
+  font-size: 0.8rem;
+  color: white;
+}
+
+.boxContactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.textBoxRedes {
+  color: white;
+  font-size: 0.9rem;
+  font-family: "Exo";
+  margin: 0;
+}
+
+.boxRedesFooter {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+
+.boxIconRedes {
+  height: 20px;
+  width: 20px;
+}
+
+.flexIconRedes {
+  display: flex;
+  gap: 1vw;
 }
 
 @media (max-width: 930px) and (min-width: 600px) {
@@ -109,9 +155,11 @@
   .textFooter {
     font-size: 14px;
   }
+
   .footer {
     height: 25vh;
   }
+
   .imageFooter {
     display: none;
   }
