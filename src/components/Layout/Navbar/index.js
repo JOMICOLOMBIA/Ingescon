@@ -1,7 +1,7 @@
 import { NavBarOptions } from "@/components/NavBarOptions";
 import Image from "next/image";
 import styles from "./Index.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useMediaQuery } from "@mui/material";
@@ -26,6 +26,27 @@ export const Navbar = () => {
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbarComp = document.getElementById('navbar');
+      const scrollPosition = window.scrollY;
+
+      const scrollDiff = 50;
+
+      if (scrollPosition > scrollDiff) {
+        navbarComp.style.backgroundColor = 'rgb(0,0,0,.3)';
+        navbarComp.style.backdropFilter = "blur(10px)";
+      } else {
+        navbarComp.style.backgroundColor = 'transparent'; // Reset background color when scrolling up
+      }
+    }
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [])
 
 
 
