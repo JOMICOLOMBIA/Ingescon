@@ -1,40 +1,121 @@
 .footer {
   position: relative;
   width: 100%;
-  height: 27vh;
+  height: 22vh;
   background-color: black;
+  display: flex;
 }
 
 .flexFooter {
-  width: 250px;
+  width: 90%;
   height: auto;
-  position: absolute;
-  left: 20%;
-  top: 15%;
+  position: relative;
   z-index: 1;
   display: flex;
-  flex-direction: column;
-  gap: 30px;
   align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.boxLogoFooter {
+  width: 17vw;
+  height: auto
 }
 
 .textFooter {
   color: white
 }
 
-.boxRedes {
+.boxTexto {
   display: flex;
-  flex-direction: row;
-  gap: 15px;
-  align-items: center;
+  flex-direction: column;
+
+  width: 50vw;
+  height: auto;
 }
 
 .boxImage {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
+
 .image {
   object-fit: contain;
+}
+
+.textRights {
+  font-family: "Exo" !important;
+  font-size: 0.9rem !important;
+  color: white;
+}
+
+.firstBoxFlex {
+  width: 16vw;
+  height: auto;
+  display: flex;
+  gap: 5px;
+}
+
+.boxContactFooter {
+  display: flex;
+  width: 18vw;
+  height: fit-content;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.headerBoxContact {
+  color: white;
+  font-family: "Exo-B" !important;
+  font-size: large !important;
+}
+
+.flexContactInfo {
+  display: flex;
+  gap: .8vw;
+  width: 25vw;
+  height: 3vh;
+  align-items: center;
+}
+
+.boxIconContact {
+  height: 20px;
+  width: 20px;
+}
+
+.textContactInfo {
+  font-family: "Exo";
+  font-size: 0.8rem;
+  color: white;
+}
+
+.boxContactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.textBoxRedes {
+  color: white;
+  font-size: 0.9rem;
+  font-family: "Exo";
+  margin: 0;
+}
+
+.boxRedesFooter {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+
+.boxIconRedes {
+  height: 20px;
+  width: 20px;
+}
+
+.flexIconRedes {
+  display: flex;
+  gap: 1vw;
 }
 
 @media (max-width: 930px) and (min-width: 600px) {
@@ -56,12 +137,7 @@
 @media (max-width: 576px) {
 
   .flexFooter {
-    width: 70vw;
-    left: 50%;
-    gap: 20px;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    top: 50%;
+    flex-direction: column;
   }
 
   .boxImage {
@@ -72,9 +148,11 @@
   .textFooter {
     font-size: 14px;
   }
+
   .footer {
     height: 25vh;
   }
+
   .imageFooter {
     display: none;
   }

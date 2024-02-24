@@ -11,31 +11,27 @@
 .boxHomeSection {
   position: absolute;
   margin-left: 3vw;
-  margin-top: 28vh;
+  margin-top: 30vh;
   display: flex;
   gap: 2vh;
   flex-direction: column;
-  zoom: 0.97;
+  zoom: 0.90;
 }
 
 .flexHomeSectionTitle {
   font-family: "Exo" !important;
-  font-size: 1.50rem !important;
+  font-size: 1.55rem !important;
   line-height: 1.3 !important;
   -webkit-line-clamp: 2;
   margin-bottom: 0;
   color: white;
   text-align: left;
-}
-
-
-.buttonHomeSection {
-  margin-top: 30px;
+  width: 45vw;
 }
 
 .flexButtonHS {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 5.5vh;
 }
 
@@ -44,14 +40,20 @@
 }
 
 .boxImageFlex {
-  width: 55vw;
-  height: 30vh;
+  width: 57vw;
+  height: 33vh;
   position: relative;
   margin-left: -190px;
 }
 
 .boldText {
   font-family: "Exo-Bl";
+  font-size: 1.55rem !important;
+}
+
+.semiBoldText {
+  font-family: "Exo-B";
+  font-size: 1.55rem !important;
 }
 
 @media (max-width: 930px) and (min-width: 600px) {
@@ -71,38 +73,46 @@
 
 @media (max-width: 576px) {
   .flexHomeSectionTitle {
-    font-size: 25px;
+    font-size: 1.1rem !important;
+    zoom: 1.1;
+    width: 95vw !important;
+    height: 15vh;
+  }
+  .boldText {
+    font-size: 1.1rem !important;
+  }
+  
+  .semiBoldText {
+    font-size: 1.1rem !important;
   }
 
   .flexHomeSection {
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90vw;
-    justify-content: center;
-    background-color: rgba(252, 251, 251, 0.8);
-    padding: 10px;
+    width: auto;
     border-radius: 10px;
     margin: 0;
     gap: 1vh;
   }
 
-  .flexHomeSectionText {
-    font-size: 16px !important;
-    font-weight: 400 !important;
-  }
-
-  .flexHomeSectionTitle {
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-
   .flexButtonHS {
-    justify-content: center;
+    justify-content: start;
+    margin-top: 2vh;
+    gap: 5vw;
   }
 
   .buttonHomeSection {
     margin-top: 15px;
   }
 
+  .boxImageFlex {
+    margin: 0;
+    width: 90vw;
+    height: 30vh;
+  }
+
+  .boxHomeSection {
+    transform: translate(-50%, -50%);
+    top: 39%;
+    left: 52%;
+    margin: 0;
+  }
 }

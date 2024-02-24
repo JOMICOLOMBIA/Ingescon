@@ -25,10 +25,10 @@ export const BasicTheme = createTheme({
         sizeMedium: {
           width: "170px",
           height: "42px",
-          fontSize: "1.1rem",
+          fontSize: ".9rem",
         },
         sizeLarge: {
-          width: "230px",
+          width: "240px",
           height: "55px",
           fontSize: "1.3rem",
         }
@@ -42,11 +42,9 @@ export const BasicTheme = createTheme({
           borderWidth: "2px",
           borderColor: "white !important",
           fontWeight: "bold",
-          textTransform: "none",
           padding: "auto",
           marginBottom: "40px",
           marginTop: "0px",
-          fontSize: "1.2rem",
         }
       }]
     },
