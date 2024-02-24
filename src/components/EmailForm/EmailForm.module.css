@@ -1,28 +1,43 @@
 /* src/components/EmailForm/EmailForm.module.css */
 
 .contactForm {
-  width: 100%;
-  height: 100%;
+  
   margin-bottom: 5vh;
 }
 
 .flexContactSection {
   display: flex;
-  width: 35vw;
-  height: 75vh;
+  
   position: absolute;
-  margin-left: 55vw;
-  margin-top: 12vh;
+  /* margin-left: 55vw; */
+  margin-top: 13vh;
   flex-direction: row;
   gap: 3vw;
 }
+
+.flexContactCardSection{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  height: 31vh;
+  width: auto;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius:8px
+
+}
+
 .flexContactSectionTitle {
   font-family: "Exo";
-  font-size: 4rem;
+  font-size: 1.3rem;
   line-height: 1;
-  font-weight: 300;
   -webkit-line-clamp: 2;
   margin: 0;
+  font-weight: bolder;
+
+  width:45vw
+
 }
 .flexContactSectionText {
   -webkit-line-clamp: 2;
@@ -43,6 +58,7 @@
   height: auto;
   width: 100%;
   margin-bottom: 2vh;
+  border: "1pc solid #ccc"
 }
 
 .formLabel {
@@ -65,12 +81,13 @@
 
 .flexButtonContactS {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 40px;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .formItemBox {
   margin-bottom: 1.5vh;
+ 
 }
 @media (max-width: 930px) and (min-width: 600px) {
   .flexContactSectionTitle {

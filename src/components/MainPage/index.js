@@ -12,13 +12,6 @@ import { NuestraTrayectoria } from "../NuestraTrayectoria";
 
 
 
-
-
-
-
-
-
-
 export const MainPage = () => {
 
   return (
@@ -27,7 +20,24 @@ export const MainPage = () => {
       <CarouselHome/>
       <YellowBar />
       <div id="contactSection" className={styles.bsectionContact}>
-        <ContactForm title={"Cuentanos tu idea"} />
+        <div >  <Image
+            src={"/assets/FONDO_DE_NECESITAS_ASESORIA.png"}
+            alt="Fondo section"
+            objectFit="contain"
+            fill={true}
+            quality={100} // Ajusta la calidad de la imagen
+            loading="eager" // Carga la imagen de forma prioritaria
+            style={{ height:""}}
+         
+          /></div>
+    
+        <ContactForm title={"Cuéntanos tu idea"} sendButtontext="Contáctanos" LeftComponent={() => {
+          return(
+            <h2 style={{display:"flex", backgroundColor:"transparent", width:"32vw", color:"white", fontSize:"5vh", fontWeith:"bold", fontFamily:"Exo", margin:"auto 5vw", letterSpacing:"0.1em" }}>
+              ¿Necesitas asesoría para tu proyecto?
+            </h2>
+          )
+        }} cardView={true} />
       </div>
       <div id="casesSection" className={styles.bsection}>
         <NuestrosServicios />
