@@ -12,15 +12,13 @@
   position: relative;
   z-index: 1;
   display: flex;
-  flex-direction: row;
-  gap: 30px;
   align-items: center;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .boxLogoFooter {
-  width: 15vw;
+  width: 17vw;
   height: auto
 }
 
@@ -60,7 +58,7 @@
 
 .boxContactFooter {
   display: flex;
-  width: 22vw;
+  width: 18vw;
   height: fit-content;
   flex-direction: column;
   gap: 1vh;
@@ -139,12 +137,7 @@
 @media (max-width: 576px) {
 
   .flexFooter {
-    width: 70vw;
-    left: 50%;
-    gap: 20px;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    top: 50%;
+    flex-direction: column;
   }
 
   .boxImage {

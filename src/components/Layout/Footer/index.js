@@ -10,21 +10,21 @@ export const Footer = () => {
     <div className={styles.footer}>
       <div className={styles.flexFooter}>
         <div className={styles.boxLogoFooter}>
-        <Image
-          src="/assets/logowhite.png"
-          alt="Ingescon logo"
-          width={100}
-          height={100}
-          layout="responsive"
-          className={styles.image}
-        />
+          <Image
+            src="/assets/logowhite.png"
+            alt="Ingescon logo"
+            width={100}
+            height={100}
+            layout="responsive"
+            className={styles.image}
+          />
         </div>
         <div className={styles.boxTextoFooter}>
           <div className={styles.firstBoxFlex}>
             <div className={styles.boxImage}>
               <Image
                 src="/assets/copyright.png"
-                alt="logo whatsapp "
+                alt="icono copyright"
                 width={100}
                 height={100}
                 layout="responsive"
@@ -59,15 +59,6 @@ export const Footer = () => {
             <div className={styles.flexIconRedes}>
               <div className={styles.boxIconRedes}>
                 <Image
-                  src="/assets/icon-linke.png"
-                  alt="icono linke"
-                  width={100}
-                  height={100}
-                  layout="responsive"
-                />
-              </div>
-              <div className={styles.boxIconRedes}>
-                <Image
                   src="/assets/icon-faceb.png"
                   alt="icono faceb"
                   width={100}
@@ -75,6 +66,16 @@ export const Footer = () => {
                   layout="responsive"
                 />
               </div>
+              <div className={styles.boxIconRedes}>
+                <Image
+                  src="/assets/icon-linke.png"
+                  alt="icono linke"
+                  width={100}
+                  height={100}
+                  layout="responsive"
+                />
+              </div>
+
             </div>
           </div>
         </div>

@@ -99,7 +99,7 @@
 
 .boxCarouselText {
     width: 50%;
-    height: fit-content;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -109,4 +109,75 @@
     height: auto;
     display: flex;
     flex-direction: column;
+}
+
+
+@media (max-width: 576px) {
+    .boxCarouselContent {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        gap: 30px;
+    }
+
+    .boxCarousel {
+        height: auto;
+    }
+
+    .boxParagraph {
+        width: 75vw;
+    }
+
+    .flexNuestrosSection {
+        height: auto;
+    }
+
+    .listCarousel {
+        width: 70vw;
+        font-size: 14px;
+    }
+
+    .boxImageCarousel {
+        width: 87vw;
+        height: 32vh;
+    }
+
+    .boxCarouselText {
+        width: 75%;
+        height: auto;
+    }
+
+    .textCarouselContent {
+        font-size: 14px !important;
+    }
+
+    .textCarouselBold {
+        font-size: 14px !important;
+    }
+
+    .headerCarouselContent {
+        font-size: 1.7rem;
+        margin-bottom: 2vh;
+    }
+
+    .flexNuestrosSectionTitle {
+        font-size: 1.7rem !important;
+        margin-left: -37% !important;
+        margin-bottom: 0;
+    }
+
+    .boxImage {
+        width: 100vw;
+        height: .7vh;
+    }
+
+    .carouselArrow {
+        width: 15px;
+        height: 35px;
+    }
+
+    .carouselArrowR {
+        width: 15px;
+        height: 35px;
+    }
 }

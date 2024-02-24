@@ -127,20 +127,6 @@ export const NuestrosServicios = () => {
 
                         })
                     }
-                    {/* <div className={styles.boxCarouselContent}>
-
-                        <div className={styles.boxImageCarousel}>
-                            <Image
-                                src={`/assets/ns-${content.image}.jpg`}
-                                fill={true}
-                                alt="imagen proyecto"
-                            />
-                        </div>
-                        <div className="">
-                            <h2 className={styles.headerCarouselContent}>{content.title}</h2>
-                            <Typography className={styles.textCarouselContent}></Typography>
-                        </div>
-                    </div> */}
                 </Carousel>
             </div>
         </div>

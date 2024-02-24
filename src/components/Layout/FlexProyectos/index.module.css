@@ -104,11 +104,10 @@
 @media (max-width: 576px) {
     .flexHomeSectionTitle {
         font-size: 2rem;
-        font-weight: 600;
         text-align: center;
     }
     .flexProcSection {
-        gap: 40px;
+        gap: 1vh;
         margin-top: 40px;
     }
 
@@ -130,5 +129,14 @@
 
     .textCardProcSection {
         font-size: 16px;
+    }
+    .boxImage {
+        width: 100vw;
+        height: .7vh;
+    }
+    .flexHomeSectionTitle {
+        font-size: 1.7rem !important;
+        margin-left: -25% !important;
+        margin-bottom: 0;
     }
 }

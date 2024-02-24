@@ -2,12 +2,13 @@
     position: relative;
     display: flex;
     top: -14vh;
+    cursor: pointer;
 }
 
 .indicatorCarousel {
     background: transparent;
-    width: 24px;
-    height: 24px;
+    width: 2vw;
+    height: 4vh;
     display: inline-block;
     margin: 0 8px;
     position: relative;
@@ -16,7 +17,18 @@
     cursor: pointer;
     border: 2px solid rgb(243, 223, 77);
 }
+
 .indicatorS {
     background: rgb(243, 223, 77);
     border: 0px;
+}
+
+@media (max-width: 576px) {
+    .carouselBox {
+        top: -10vh;
+    }
+    .indicatorCarousel {
+        width: 5vw;
+        height: 5vw;
+    }
 }
