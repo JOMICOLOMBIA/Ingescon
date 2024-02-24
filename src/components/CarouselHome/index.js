@@ -38,7 +38,7 @@ export const CarouselHome = () => {
         >
             {carouselContent.map((content, key) => (
 
-                <HomeCarouselContent pic={content.pic} desc={content.desc}/>
+                <HomeCarouselContent pic={content.pic}/>
 
             ))}
         </Carousel>

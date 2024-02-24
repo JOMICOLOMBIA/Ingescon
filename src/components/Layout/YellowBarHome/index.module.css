@@ -15,7 +15,6 @@
     padding: auto;
     box-shadow: 0px 3px 5px #3a3a3b;
     align-items: center;
-    justify-content: center;
     gap: 2vh;
   }
   .flexYellowBar {
@@ -25,6 +24,7 @@
     top: -80%;
     justify-content: center;
   }
+
   .boxTextCardHome {
     width: 13vw;
     height: auto;
@@ -36,4 +36,38 @@
     font-size: 1.2rem !important;
     font-family: "Exo-B" !important;
     font-weight: 400 !important;
+  }
+
+  .boxIconCardHome {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-top: 6vh;
+  }
+  .imageCard {
+    object-fit: contain;
+  }
+
+  @media (max-width: 576px) {
+    .boxCardHome {
+      width: 70vw;
+      height: 35vh;
+      margin: 0 auto;
+    }
+    .flexYellowBar {
+      top: -60%;
+    }
+    .yellowBar {
+      height: 23vh;
+    }
+    .boxTextCardHome {
+      width: 35vw;
+    }
+    .boxIconCardHome {
+      margin-top: 1.2vh;
+    }
+
+    .boxTextCardHome {
+      width: 45vw;
+    }
   }

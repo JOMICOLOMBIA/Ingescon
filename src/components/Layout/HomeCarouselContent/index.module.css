@@ -8,3 +8,23 @@
   height: 140vh;
   position: relative;
 }
+
+.homeImageBox {
+  width: 100%;
+  height: 140vh;
+}
+
+@media (max-width: 576px) {
+  .homeImageBox {
+    width: 100%;
+    height: auto;
+  }
+
+  .bsectionHome {
+    height: 120vh;
+  }
+
+  .image {
+    object-fit: cover;
+  }
+}

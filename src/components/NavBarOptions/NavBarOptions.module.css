@@ -83,5 +83,6 @@
   .foptions {
     gap: 20px;
     align-items: start;
+    background-color: black;
   }
 }

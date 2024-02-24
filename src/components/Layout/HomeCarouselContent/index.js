@@ -6,24 +6,26 @@ import styles from "./index.module.css"
 
 
 
-export const HomeCarouselContent = ({ pic, desc }) => {
+export const HomeCarouselContent = ({ pic }) => {
 
     const screenUpper576 = useMediaQuery("(min-width:576px)");
 
 
     return (
         <div className={styles.bsectionHome}>
+            <div className={styles.homeImageBox}>
             <Image
                 src={
                     screenUpper576
                         ? `/assets/home-slider-${pic}.jpg`
-                        : "/assets/Enmascarar_grupo_73.jpg"
+                        : `/assets/home-slider-${pic}.jpg`
                 } // Ruta relativa a la imagen dentro de la carpeta public
                 alt="Fondo"
                 fill={true}
                 className={styles.image}
             />
-            <FlexHomeSection pic={pic} desc={desc} />
+            </div>
+            <FlexHomeSection pic={pic} />
 
         </div>
     )
