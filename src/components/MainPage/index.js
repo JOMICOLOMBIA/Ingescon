@@ -11,13 +11,6 @@ import { CarouselHome } from "../CarouselHome";
 
 
 
-
-
-
-
-
-
-
 export const MainPage = () => {
 
   return (
@@ -26,7 +19,22 @@ export const MainPage = () => {
       <CarouselHome/>
       <YellowBar />
       <div id="contactSection" className={styles.bsectionContact}>
-        <ContactForm title={"Cuentanos tu idea"} />
+      <Image
+            src={"/assets/FONDO_DE_NECESITAS_ASESORIA.png"}
+            alt="Fondo section"
+            layout="fill"
+            objectFit="cover"
+            fill={true}
+            quality={100} // Ajusta la calidad de la imagen
+            loading="eager" // Carga la imagen de forma prioritaria
+          />
+        <ContactForm title={"Cuéntanos tu idea"} LeftComponent={() => {
+          return(
+            <h2 style={{display:"flex", backgroundColor:"red", width:"30vw", color:"white", fontSize:34, fontWeith:"bold", fontFamily:"Exo", width:"380px", margin:"auto 5vw" }}>
+              ¿Necesitas asesoría para tu proyecto
+            </h2>
+          )
+        }} cardView={true} />
       </div>
       <div id="casesSection" className={styles.bsection}>
         <NuestrosServicios />

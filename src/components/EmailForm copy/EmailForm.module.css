@@ -9,26 +9,13 @@
 .flexContactSection {
   display: flex;
   
+  height: 75vh;
   position: absolute;
   /* margin-left: 55vw; */
   margin-top: 12vh;
   flex-direction: row;
   gap: 3vw;
 }
-
-.flexContactCardSection{
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 4vh;
-  height: 50vh;
-  width: auto;
-  justify-content: space-between;
-  padding: 20px;
-  border-radius:8px
-
-}
-
 .flexContactSectionTitle {
   font-family: "Exo";
   font-size: 4rem;
@@ -87,7 +74,6 @@
 
 .formItemBox {
   margin-bottom: 1.5vh;
- 
 }
 @media (max-width: 930px) and (min-width: 600px) {
   .flexContactSectionTitle {
