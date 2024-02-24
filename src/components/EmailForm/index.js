@@ -8,10 +8,11 @@ import {
   InputLabel,
   Input,
   useMediaQuery,
+  TextField
 } from "@mui/material";
 import { toast } from "react-toastify";
 
-export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, cardView = false}) => {
+export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, cardView = false, sendButtontext="Enviar"}) => {
 
 
   const screenUpper576 = useMediaQuery("(min-width:930px)");
@@ -61,7 +62,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
     
       {screenUpper576 && <div className={styles.divider} />}
       <div className={!cardView ?styles.flexContentContactSection: styles.flexContactCardSection}>
-        <h1 className={styles.flexContactSectionTitle}> {title} </h1>
+        <h1 className={styles.flexContactSectionTitle}  > {title} </h1>
         
           {!cardView &&(<div className={styles.flexContactSectionBoxText}> <Typography className={styles.flexContactSectionText}>
             Envíanos un mensaje si deseas obtener información más precisa sobre tu caso.
@@ -71,14 +72,13 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
         <form onSubmit={sendEmail} className={styles.contactForm}>
           <div className={styles.formItemBox}>
             <FormControl className={styles.formOptionBox}>
-              <InputLabel htmlFor="from_name" className={styles.formLabel}>
-                Nombre
-              </InputLabel>
-              <Input
+            
+              <TextField
+              label={"Nombre y Apellidos*"}
                 type="text"
                 name="from_name"
+                variant="outlined" 
                 id="from_name"
-                className={styles.formInput}
                 value={formData.from_name}
                 onChange={handleInputChange}
               />
@@ -87,31 +87,34 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
           <div style={{display:"flex", gap: "2vw"}}>
           <div className={styles.formItemBox} style={{ width:"50%"}}>
             <FormControl className={styles.formOptionBox}>
-              <InputLabel htmlFor="email_id" className={styles.formLabel}>
-                Email
-              </InputLabel>
-              <Input
-                type="email"
-                name="email_id"
-                id="email_id"
-                value={formData.email_id}
-                onChange={handleInputChange}
-              />
+            <FormControl className={styles.formOptionBox}>
+            
+            <TextField
+            label={"Email*"}
+              type="text"
+              name="emial_id"
+              variant="outlined" 
+              id="email_id"
+              value={formData.email_id}
+              onChange={handleInputChange}
+            />
+          </FormControl>
             </FormControl>
           </div>
           <div className={styles.formItemBox} style={{ width:"50%"}}>
             <FormControl className={styles.formOptionBox}>
-              <InputLabel htmlFor="phone" className={styles.formLabel}>
-                Número de teléfono
-              </InputLabel>
-              <Input
-                type="tel"
-                name="phone"
-                id="phone"
-                value={formData.phone}
-                onChange={handleInputChange}
-              />
-            </FormControl>
+            
+            <TextField
+            label={"Número de teléfono*"}
+              type="text"
+              name="from_name"
+              variant="outlined" 
+              id="from_name"
+              value={formData.from_name}
+              onChange={handleInputChange}
+            />
+          </FormControl>
+         
           </div>
           </div>
           {!cardView &&( <div className={styles.formItemBox}>
@@ -134,8 +137,9 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
               size={screenUpper576 ? "large" : "small"}
               type="submit"
               value="Send"
+              style={{ fontWeight:"bold", height:"4vh"}}
             >
-              Enviar
+             {sendButtontext}
             </Button>
           </div>
         </form>

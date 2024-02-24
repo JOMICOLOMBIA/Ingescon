@@ -19,19 +19,21 @@ export const MainPage = () => {
       <CarouselHome/>
       <YellowBar />
       <div id="contactSection" className={styles.bsectionContact}>
-      <Image
+        <div >  <Image
             src={"/assets/FONDO_DE_NECESITAS_ASESORIA.png"}
             alt="Fondo section"
-            layout="fill"
-            objectFit="cover"
+            objectFit="contain"
             fill={true}
             quality={100} // Ajusta la calidad de la imagen
             loading="eager" // Carga la imagen de forma prioritaria
-          />
-        <ContactForm title={"Cuéntanos tu idea"} LeftComponent={() => {
+            style={{ height:""}}
+         
+          /></div>
+    
+        <ContactForm title={"Cuéntanos tu idea"} sendButtontext="Contáctanos" LeftComponent={() => {
           return(
-            <h2 style={{display:"flex", backgroundColor:"red", width:"30vw", color:"white", fontSize:34, fontWeith:"bold", fontFamily:"Exo", width:"380px", margin:"auto 5vw" }}>
-              ¿Necesitas asesoría para tu proyecto
+            <h2 style={{display:"flex", backgroundColor:"transparent", width:"32vw", color:"white", fontSize:"5vh", fontWeith:"bold", fontFamily:"Exo", margin:"auto 5vw", letterSpacing:"0.1em" }}>
+              ¿Necesitas asesoría para tu proyecto?
             </h2>
           )
         }} cardView={true} />
