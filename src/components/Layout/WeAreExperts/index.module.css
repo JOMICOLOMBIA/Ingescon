@@ -1,0 +1,189 @@
+.flexNuestrosSection {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0vh;
+    height: 80%;
+    top: -18vh;
+    position: relative
+}
+
+.flexNuestrosSectionTitle {
+    font-family: "Exo-B" !important;
+    font-size: 3.2rem !important;
+    margin-left: -50% !important;
+    margin-bottom: 10px;
+}
+
+.boxImage {
+    position: relative;
+    width: 40vw;
+    height: 1vh;
+    margin-left: -80%;
+}
+
+.boxCarousel {
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(252, 252, 252);
+    margin-top: 7vh;
+    cursor: pointer;
+}
+
+.boxCarouselContent {
+    display: flex;
+    width: 90vw;
+    height: 70vh;
+    align-items: center;
+    margin: 0 auto;
+    text-align: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.boxImageCarousel {
+    width: 38vw;
+    height: 52vh;
+    position: relative;
+}
+
+.carouselArrow {
+    position: absolute !important;
+    top: calc(50% - 15px);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+    width: 20px;
+    height: 40px;
+    left: 3%;
+}
+
+.carouselArrowR {
+    position: absolute !important;
+    top: calc(50% - 15px);
+    right: 3%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+    width: 20px;
+    height: 40px;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+}
+
+.headerCarouselContent {
+    font-family: "Exo-B";
+    font-size: 2.3rem;
+    margin-top: -3vh;
+    margin-bottom: 2vh;
+}
+
+.textCarouselContent {
+    font-family: "Exo" !important;
+    font-size: 22px !important;
+    display: inline;
+    border-left: 4px solid rgb(243, 223, 77);
+    padding-left: 30px;
+}
+
+.textCarouselBold {
+    font-family: "Exo-SB" !important;
+    font-size: 22px !important;
+    display: inline;
+}
+
+.listCarousel {
+    margin-top: 3vh;
+    font-family: "Exo";
+    list-style: disc;
+    text-align: start;
+    font-size: 20px;
+}
+
+.boxCarouselText {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.boxParagraph {
+    width: 40vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 576px) {
+    .boxCarouselContent {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        gap: 30px;
+    }
+
+    .boxCarousel {
+        height: auto;
+    }
+
+    .boxParagraph {
+        width: 75vw;
+    }
+
+    .flexNuestrosSection {
+        height: auto;
+    }
+
+    .listCarousel {
+        width: 70vw;
+        font-size: 14px;
+    }
+
+    .boxImageCarousel {
+        width: 87vw;
+        height: 32vh;
+    }
+
+    .boxCarouselText {
+        width: 75%;
+        height: auto;
+    }
+
+    .textCarouselContent {
+        font-size: 14px !important;
+    }
+
+    .textCarouselBold {
+        font-size: 14px !important;
+    }
+
+    .headerCarouselContent {
+        font-size: 1.7rem;
+        margin-bottom: 2vh;
+    }
+
+    .flexNuestrosSectionTitle {
+        font-size: 1.7rem !important;
+        margin-left: -37% !important;
+        margin-bottom: 0;
+    }
+
+    .boxImage {
+        width: 100vw;
+        height: .7vh;
+    }
+
+    .carouselArrow {
+        width: 15px;
+        height: 35px;
+    }
+
+    .carouselArrowR {
+        width: 15px;
+        height: 35px;
+    }
+}

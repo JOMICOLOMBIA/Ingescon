@@ -8,6 +8,7 @@ import { Navbar } from "@/components/Layout/Navbar";
 import YellowBar from "../Layout/YellowBarHome";
 import { NuestrosServicios } from "../Layout/NuestrosServicios";
 import { CarouselHome } from "../CarouselHome";
+import { WeAreExperts } from "../Layout/WeAreExperts";
 
 
 
@@ -18,6 +19,8 @@ export const MainPage = () => {
       <Navbar />
       <CarouselHome/>
       <YellowBar />
+
+      <WeAreExperts />
       <div id="contactSection" className={styles.bsectionContact}>
         <div >  <Image
             src={"/assets/FONDO_DE_NECESITAS_ASESORIA.png"}
