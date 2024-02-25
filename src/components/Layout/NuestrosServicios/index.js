@@ -2,7 +2,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from "./index.module.css";
 import Image from "next/image";
-import { IconButton, Typography } from "@mui/material";
+import { IconButton, Typography, useMediaQuery } from "@mui/material";
 
 
 
@@ -10,6 +10,7 @@ const contentCard = [{ image: 1, title: "Consultorías Técnicas", list: ["Dise�
 
 
 export const NuestrosServicios = () => {
+    const screenUpper900 = useMediaQuery("(max-width: 900px");
     return (
         <div className={styles.flexNuestrosSection}>
             <p className={styles.flexNuestrosSectionTitle}>Nuestros Servicios</p>
@@ -23,7 +24,7 @@ export const NuestrosServicios = () => {
             <div
                 className={styles.boxCarousel}
             >
-                <Carousel swipeable={true} showThumbs={false} showStatus={false} showIndicators={false} emulateTouch={true} swipeScrollTolerance={5}
+                <Carousel swipeable={!screenUpper900 ? true : false} showThumbs={false} showStatus={false} showIndicators={false} emulateTouch={true} swipeScrollTolerance={5}
                     statusFormatter={(current, total) => `Current slide: ${current} / Total: ${total}`}
                     renderArrowPrev={(onClickHandler, hasPrev, label) =>
                         hasPrev && (

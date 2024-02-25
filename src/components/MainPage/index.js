@@ -8,6 +8,7 @@ import { Navbar } from "@/components/Layout/Navbar";
 import YellowBar from "../Layout/YellowBarHome";
 import { NuestrosServicios } from "../Layout/NuestrosServicios";
 import { CarouselHome } from "../CarouselHome";
+import { NuestraTrayectoria } from "../NuestraTrayectoria";
 
 
 
@@ -44,16 +45,8 @@ export const MainPage = () => {
       <div id="procSection" className={styles.bsectionCases}>
         <FlexProyectos />
       </div>
-
-      <div id="auSection" className={styles.bsectionCases2}>
-        <Image
-          src={"/assets/fondo-au.jpg"}
-          alt="Fondo section"
-          fill={true}
-          className={styles.fondoAboutUs}
-        />
-      </div>
       <div id="casesSection" className={styles.bsection}>
+        <NuestraTrayectoria/>
       </div>
       <div id="contactSection" className={styles.bsectionContact}>
         <ContactForm />
