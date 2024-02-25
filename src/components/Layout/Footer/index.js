@@ -22,21 +22,24 @@ export const Footer = () => {
           />
         </div>
         {!screenUpper576 &&
-          <>        <div className={styles.boxTextoFooter}>
-            <div className={styles.firstBoxFlex}>
-              <div className={styles.boxImage}>
-                <Image
-                  src="/assets/copyright.png"
-                  alt="icono copyright"
-                  width={100}
-                  height={100}
-                  layout="responsive"
-                />
+          <>
+            <div className={styles.boxTextoFooter}>
+              <div className={styles.firstBoxFlex}>
+                <div className={styles.boxImage}>
+                  <Image
+                    src="/assets/copyright.png"
+                    alt="icono copyright"
+                    width={100}
+                    height={100}
+                    layout="responsive"
+                  />
+                </div>
+                <Typography className={styles.textRights}>Copyright 2023 por INGES</Typography>
               </div>
-              <Typography className={styles.textRights}>Copyright 2023 por INGES</Typography>
+              <div className={styles.boxTextRights}>
+                <Typography className={styles.textRights}>Todos los derechos reservados</Typography>
+              </div>
             </div>
-            <Typography className={styles.textRights}>Todos los derechos reservados</Typography>
-          </div>
 
             <div className={styles.boxContactFooter}>
               <Typography className={styles.headerBoxContact}>CONTACTANOS</Typography>
@@ -53,7 +56,9 @@ export const Footer = () => {
                           layout="responsive"
                         />
                       </div>
-                      <p className={styles.textContactInfo}>{content.info}</p>
+                      <div className={styles.boxTextContactInfo}>
+                        <p className={styles.textContactInfo}>{content.info}</p>
+                      </div>
                     </div>
                   ))
                 }
