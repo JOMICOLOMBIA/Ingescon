@@ -6,6 +6,8 @@ const contentContact = [{ icon: "tel", info: "(+57) 3159261302" }, { icon: "mail
 
 export const Footer = () => {
 
+
+  const screenUpper576 = useMediaQuery("(max-width:576px)")
   return (
     <div className={styles.footer}>
       <div className={styles.flexFooter}>
@@ -19,66 +21,142 @@ export const Footer = () => {
             className={styles.image}
           />
         </div>
-        <div className={styles.boxTextoFooter}>
-          <div className={styles.firstBoxFlex}>
-            <div className={styles.boxImage}>
-              <Image
-                src="/assets/copyright.png"
-                alt="icono copyright"
-                width={100}
-                height={100}
-                layout="responsive"
-              />
+        {!screenUpper576 &&
+          <>
+            <div className={styles.boxTextoFooter}>
+              <div className={styles.firstBoxFlex}>
+                <div className={styles.boxImage}>
+                  <Image
+                    src="/assets/copyright.png"
+                    alt="icono copyright"
+                    width={100}
+                    height={100}
+                    layout="responsive"
+                  />
+                </div>
+                <Typography className={styles.textRights}>Copyright 2023 por INGES</Typography>
+              </div>
+              <div className={styles.boxTextRights}>
+                <Typography className={styles.textRights}>Todos los derechos reservados</Typography>
+              </div>
             </div>
-            <Typography className={styles.textRights}>Copyright 2023 por INGES</Typography>
-          </div>
-          <Typography className={styles.textRights}>Todos los derechos reservados</Typography>
-        </div>
-        <div className={styles.boxContactFooter}>
-          <Typography className={styles.headerBoxContact}>CONTACTANOS</Typography>
-          <div className={styles.boxContactInfo}>
-            {
-              contentContact.map((content, key) => (
-                <div className={styles.flexContactInfo} key={key}>
-                  <div className={styles.boxIconContact}>
+
+            <div className={styles.boxContactFooter}>
+              <Typography className={styles.headerBoxContact}>CONTACTANOS</Typography>
+              <div className={styles.boxContactInfo}>
+                {
+                  contentContact.map((content, key) => (
+                    <div className={styles.flexContactInfo} key={key}>
+                      <div className={styles.boxIconContact}>
+                        <Image
+                          src={`/assets/icon-${content.icon}.png`}
+                          alt={`icono ${content.icon}`}
+                          width={100}
+                          height={100}
+                          layout="responsive"
+                        />
+                      </div>
+                      <div className={styles.boxTextContactInfo}>
+                        <p className={styles.textContactInfo}>{content.info}</p>
+                      </div>
+                    </div>
+                  ))
+                }
+              </div>
+              <div className={styles.boxRedesFooter}>
+                <p className={styles.textBoxRedes}>Redes sociales: </p>
+                <div className={styles.flexIconRedes}>
+                  <div className={styles.boxIconRedes}>
                     <Image
-                      src={`/assets/icon-${content.icon}.png`}
-                      alt={`icono ${content.icon}`}
+                      src="/assets/icon-faceb.png"
+                      alt="icono faceb"
                       width={100}
                       height={100}
                       layout="responsive"
                     />
                   </div>
-                  <p className={styles.textContactInfo}>{content.info}</p>
-                </div>
-              ))
-            }
-          </div>
-          <div className={styles.boxRedesFooter}>
-            <p className={styles.textBoxRedes}>Redes sociales: </p>
-            <div className={styles.flexIconRedes}>
-              <div className={styles.boxIconRedes}>
-                <Image
-                  src="/assets/icon-faceb.png"
-                  alt="icono faceb"
-                  width={100}
-                  height={100}
-                  layout="responsive"
-                />
-              </div>
-              <div className={styles.boxIconRedes}>
-                <Image
-                  src="/assets/icon-linke.png"
-                  alt="icono linke"
-                  width={100}
-                  height={100}
-                  layout="responsive"
-                />
-              </div>
+                  <div className={styles.boxIconRedes}>
+                    <Image
+                      src="/assets/icon-linke.png"
+                      alt="icono linke"
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                    />
+                  </div>
 
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          </>
+        }
+        {screenUpper576 &&
+          <>
+
+
+            <div className={styles.boxContactFooter}>
+              <Typography className={styles.headerBoxContact}>CONTACTANOS</Typography>
+              <div className={styles.boxContactInfo}>
+                {
+                  contentContact.map((content, key) => (
+                    <div className={styles.flexContactInfo} key={key}>
+                      <div className={styles.boxIconContact}>
+                        <Image
+                          src={`/assets/icon-${content.icon}.png`}
+                          alt={`icono ${content.icon}`}
+                          width={100}
+                          height={100}
+                          layout="responsive"
+                        />
+                      </div>
+                      <p className={styles.textContactInfo}>{content.info}</p>
+                    </div>
+                  ))
+                }
+              </div>
+              <div className={styles.boxRedesFooter}>
+                <p className={styles.textBoxRedes}>Redes sociales: </p>
+                <div className={styles.flexIconRedes}>
+                  <div className={styles.boxIconRedes}>
+                    <Image
+                      src="/assets/icon-faceb.png"
+                      alt="icono faceb"
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                    />
+                  </div>
+                  <div className={styles.boxIconRedes}>
+                    <Image
+                      src="/assets/icon-linke.png"
+                      alt="icono linke"
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                    />
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div className={styles.boxTextoFooter}>
+              <div className={styles.firstBoxFlex}>
+                <div className={styles.boxImage}>
+                  <Image
+                    src="/assets/copyright.png"
+                    alt="icono copyright"
+                    width={100}
+                    height={100}
+                    layout="responsive"
+                  />
+                </div>
+                <Typography className={styles.textRights}>Copyright 2023 por INGES</Typography>
+              </div>
+              <Typography className={styles.textRights}>Todos los derechos reservados</Typography>
+            </div>
+          </>
+        }
+
       </div>
 
 

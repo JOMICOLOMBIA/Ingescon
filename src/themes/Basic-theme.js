@@ -25,12 +25,12 @@ export const BasicTheme = createTheme({
         sizeMedium: {
           width: "170px",
           height: "42px",
-          fontSize: ".9rem",
+          fontSize: ".8rem",
         },
         sizeLarge: {
           width: "240px",
           height: "55px",
-          fontSize: "1.3rem",
+          fontSize: "1.2rem",
         }
       },
       variants: [{
