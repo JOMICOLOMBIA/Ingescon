@@ -138,6 +138,8 @@
 
   .flexFooter {
     flex-direction: column;
+    height: auto;
+    bottom: 10px;
   }
 
   .boxImage {
@@ -150,10 +152,22 @@
   }
 
   .footer {
-    height: 25vh;
+    height: auto;
   }
 
   .imageFooter {
     display: none;
   }
+  .boxIconContact {
+    display: none;
+  }
+  .textBoxRedes {
+    display: none;
+  }
+  .firstBoxFlex {
+    width: 45vw;
+  }
+  /* .textContactInfo {
+    width: ;
+  } */
 }
