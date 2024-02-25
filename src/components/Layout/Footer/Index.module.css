@@ -26,12 +26,12 @@
   color: white
 }
 
-.boxTexto {
+.boxTextoFooter {
   display: flex;
   flex-direction: column;
-
-  width: 50vw;
+  width: 40vw;
   height: auto;
+  align-items: center;
 }
 
 .boxImage {
@@ -117,6 +117,14 @@
   display: flex;
   gap: 1vw;
 }
+.boxTextContactInfo {
+  width: 20vw;
+  height: auto;
+}
+.boxTextRights {
+  margin-left: 0 auto;
+  width: 16vw;
+}
 
 @media (max-width: 930px) and (min-width: 600px) {
 
@@ -139,24 +147,21 @@
   .flexFooter {
     flex-direction: column;
     height: auto;
-    bottom: 10px;
+    justify-content: space-evenly;
   }
-
   .boxImage {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
   }
-
+  .boxLogoFooter {
+    width: 40vw;
+    height: auto;
+  }
   .textFooter {
     font-size: 14px;
   }
-
   .footer {
-    height: auto;
-  }
-
-  .imageFooter {
-    display: none;
+    height: 40vh;
   }
   .boxIconContact {
     display: none;
@@ -167,7 +172,36 @@
   .firstBoxFlex {
     width: 45vw;
   }
-  /* .textContactInfo {
-    width: ;
-  } */
+  .headerBoxContact {
+    font-size: .9rem !important;
+  }
+  .textRights {
+    font-size: .7rem !important;
+    text-wrap: nowrap;
+  }
+  .boxContactFooter {
+    width: 45vw;
+    align-items: center;
+  }
+  .textContactInfo {
+    width: 80vw;
+    text-wrap: nowrap;
+    margin: 0 !important;
+  }
+  .boxTextContactInfo {
+    width: 40vw;
+    height: 10vh;
+  }
+  .flexContactInfo {
+    justify-content: center;
+  }
+  .firstBoxFlex {
+    justify-content: center;
+  }
+  .boxTextoFooter {
+    align-items: center;
+  }
+  .boxContactInfo {
+    gap: .1vh;
+  }
 }
