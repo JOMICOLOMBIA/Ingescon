@@ -10,7 +10,7 @@
 .flexNuestrosSectionTitle {
     font-family: "Exo-B";
     font-size: 3.2rem;
-    margin-left: -100%;
+    margin-left: -55%;
     margin-bottom: 10px;
 }
 
@@ -121,7 +121,7 @@
 
 .yellowBarBox {
     width: 1.5vw;
-    height: 4vh;
+    height: 7vh;
     margin-top: 5vh;
 }
 
@@ -129,15 +129,16 @@
     object-fit: contain;
 }
 
-@media (max-width: 933px) and (min-width: 600px) {
+@media (max-width: 1050px) and (min-width: 600px) {
 
     .flexNuestrosSectionTitle {
         font-size: 2.2rem !important;
         margin-top: 0 !important;
-        margin-left: -90%;
         margin-bottom: 0;
     }
-
+    .boxParagraph {
+        width: 37vw;
+    }
     .boxImage {
         width: 45vw;
         height: 1.5vh;
@@ -145,6 +146,9 @@
 
     .boxCarouselContent {
         height: 120vh;
+    }
+    .flexCarouselText {
+        gap: 1px;
     }
 
     .textCarouselContent {
@@ -172,7 +176,11 @@
     .yellowBar {
         object-fit: contain;
     }
+    .listCarousel {
+        width: 35vw;
+    }
 }
+
 
 
 @media (max-width: 576px) {

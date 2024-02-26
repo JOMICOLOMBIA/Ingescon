@@ -48,7 +48,7 @@
     object-fit: contain;
   }
 
-  @media (max-width: 933px) and (min-width: 600px) {
+  @media (max-width: 1050px) and (min-width: 600px) {
     .boxTextCardHome {
       font-size: .7rem !important;
       width: 15vw;
