@@ -4,7 +4,7 @@ import styles from "./Index.module.css";
 import Image from "next/image";
 
 import { FlexProyectos } from "../Layout/FlexProyectos";
-import { Navbar } from "@/components/Layout/Navbar";
+
 import YellowBar from "../Layout/YellowBarHome";
 import { NuestrosServicios } from "../Layout/NuestrosServicios";
 import { CarouselHome } from "../CarouselHome";
@@ -17,41 +17,41 @@ export const MainPage = () => {
 
   return (
     <>
-      <Navbar />
-      <CarouselHome/>
+      <CarouselHome />
       <YellowBar />
-
       <WeAreExperts />
+
       <div id="contactSection" className={styles.bsectionContact}>
-        <div >  <Image
+        <div >
+          <Image
             src={"/assets/FONDO_DE_NECESITAS_ASESORIA.png"}
             alt="Fondo section"
             objectFit="contain"
             fill={true}
             quality={100} // Ajusta la calidad de la imagen
             loading="eager" // Carga la imagen de forma prioritaria
-            style={{ height:""}}
-         
+            style={{ height: "" }}
+
           /></div>
-    
         <ContactForm title={"Cuéntanos tu idea"} sendButtontext="Contáctanos" LeftComponent={() => {
-          return(
-            <h2 style={{display:"flex", backgroundColor:"transparent", width:"32vw", color:"white", fontSize:"5vh", fontWeith:"bold", fontFamily:"Exo", margin:"auto 5vw", letterSpacing:"0.1em" }}>
+          return (
+            <h2 style={{ display: "flex", backgroundColor: "transparent", width: "32vw", color: "white", fontSize: "5vh", fontWeith: "bold", fontFamily: "Exo", margin: "auto 5vw", letterSpacing: "0.1em" }}>
               ¿Necesitas asesoría para tu proyecto?
             </h2>
           )
         }} cardView={true} />
       </div>
-      <div id="casesSection" className={styles.bsection}>
+
+      <div id="serviciosSection" className={styles.bsection}>
         <NuestrosServicios />
       </div>
-      <div id="procSection" className={styles.bsectionCases}>
+      <div id="proySection" className={styles.bsectionCases}>
         <FlexProyectos />
       </div>
-      <div id="casesSection" className={styles.bsection}>
-        <NuestraTrayectoria/>
+      <div id="trayectoriaSection" className={styles.bsection}>
+        <NuestraTrayectoria />
       </div>
-      <div id="contactSection" className={styles.bsectionContact}>
+      <div id="contactSection2" className={styles.bsectionContact}>
         <ContactForm />
       </div>
     </>

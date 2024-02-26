@@ -11,7 +11,7 @@ const contentCard = [{ image: 1, title: "Consultorías Técnicas", list: ["Dise�
 
 export const WeAreExperts = () => {
     return (
-        <div className={styles.flexNuestrosSection}>
+        <div className={styles.flexNuestrosSection} id="somosExpertos">
           
            
             <div

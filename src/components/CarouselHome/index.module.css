@@ -12,7 +12,7 @@
     display: inline-block;
     margin: 0 8px;
     position: relative;
-    bottom: 32vh;
+    bottom: 31vh;
     border-radius: 100%;
     cursor: pointer;
     border: 2px solid rgb(243, 223, 77);
@@ -22,11 +22,42 @@
     background: #FFDC06;
     border: 0px;
 }
+.boxControlesCarousel {
+    display: flex;
+    position: absolute;
+    width: 13.5vw;
+    height: 4vh;
+    top: calc(100% - 16px);
+    left: 43%;
+    justify-content: space-between;
+}
+.buttonControles {
+    width: inherit;
+    height: inherit;
+}
 
-@media (max-width: 933px) and (min-width: 600px) {
+.boxIconControl {
+    width: 2vw;
+    height: 4.5vh;
+    position: relative;
+}
+.imageButtonControl {
+    object-fit: contain;
+}
+
+@media (max-width: 1050px) and (min-width: 600px) {
     .indicatorCarousel {
         bottom: 35vh;
     }
+    .boxControlesCarousel {
+        top: calc(132.7% - 15px);
+        width: 16.3vw;
+        left: 41.5%;
+    }
+    .boxIconControl {
+        height: 5vh;
+    }
+    
 }
 
 @media (max-width: 576px) {
@@ -36,5 +67,17 @@
     .indicatorCarousel {
         width: 5vw;
         height: 5vw;
+    }
+    .boxControlesCarousel {
+        width: 37vw;
+        top: calc(85.8% - 16px);
+        left: 30.5vw;
+    }
+    .boxIconControl {
+        height: 3vh;
+        width: 3vw;
+    }
+    .imageButtonControl {
+        object-fit: contain;
     }
 }

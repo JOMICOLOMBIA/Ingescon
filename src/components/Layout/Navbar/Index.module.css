@@ -48,7 +48,7 @@
   display: flex;
 }
 
-@media (max-width: 933px ) and (min-width: 600px) {
+@media (max-width: 1050px ) and (min-width: 600px) {
   .navbar {
     height: 13vh !important;
     background-color: black;

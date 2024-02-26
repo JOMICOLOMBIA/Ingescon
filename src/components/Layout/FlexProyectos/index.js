@@ -30,7 +30,12 @@ export const FlexProyectos = () => {
     {
       title: "Intersección Sena",
       description: "Puente en concreto postensado Sena 3 luces",
-      image: 3,
+      image: 2,
+    },
+    {
+      title: "Intersección Sena",
+      description: "Puente en concreto postensado Sena 3 luces",
+      image: 4,
     },
   ];
 

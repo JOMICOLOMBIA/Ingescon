@@ -6,7 +6,7 @@ import styles from "./index.module.css"
 export const BotonFlotante = () => {
     return (
         <div className={styles.boxButton}>
-                <a href="https://wa.link/152wbl" target="_blank">
+                <a href="https://wa.link/7bezyv" target="_blank">
                 <Image
                     alt="Icono whatsapp"
                     src={"/assets/whatsapp.png"}

@@ -10,14 +10,12 @@ const contentCard = [{ image: 1, title: "Consultorías Técnicas", list: ["Dise�
 
 
 export const NuestrosServicios = () => {
-    const screenUpper933 = useMediaQuery("(max-width: 933px");
+    const screenUpper1050px = useMediaQuery("(max-width: 1050px");
     const screenUpper576 = useMediaQuery("(max-width: 576px");
 
     return (
         <div className={styles.flexNuestrosSection}>
-            <div>
             <p className={styles.flexNuestrosSectionTitle}>Nuestros Servicios</p>
-            </div>
             <div className={styles.boxImage}>
                 <Image
                     src="/assets/yellow-bar.png"
@@ -28,7 +26,7 @@ export const NuestrosServicios = () => {
             <div
                 className={styles.boxCarousel}
             >
-                <Carousel swipeable={!screenUpper933 ? true : false} showThumbs={false} showStatus={false} showIndicators={false} emulateTouch={true} swipeScrollTolerance={5}
+                <Carousel swipeable={!screenUpper1050px ? true : false} showThumbs={false} showStatus={false} showIndicators={false} emulateTouch={true} swipeScrollTolerance={5} useKeyboardArrows={true}
                     statusFormatter={(current, total) => `Current slide: ${current} / Total: ${total}`}
                     renderArrowPrev={(onClickHandler, hasPrev, label) =>
                         hasPrev && (
@@ -75,7 +73,7 @@ export const NuestrosServicios = () => {
                                                     <Image 
                                                     src={"/assets/yellow-barV.png"}
                                                     width={10}
-                                                    height={!screenUpper576 ? 180 : 130}
+                                                    height={!screenUpper1050px ? 180 : 140}
                                                     alt="barra amarilla vertical"
                                                     className={styles.yellowBar}
                                                     />
@@ -111,7 +109,7 @@ export const NuestrosServicios = () => {
                                                     <Image 
                                                     src={"/assets/yellow-barV.png"}
                                                     width={10}
-                                                    height={180}
+                                                    height={!screenUpper1050px ? 180 : 140}
                                                     alt="barra amarilla vertical"
                                                     className={styles.yellowBar}
                                                     />
@@ -139,14 +137,15 @@ export const NuestrosServicios = () => {
                                                     src={`/assets/ns-${content.image}.jpg`}
                                                     fill={true}
                                                     alt="imagen proyecto"
+
                                                 />
                                             </div>
                                             <div className={styles.flexCarouselText}>
                                                 <div className={styles.yellowBarBox}>
                                                     <Image 
                                                     src={"/assets/yellow-barV.png"}
+                                                    height={!screenUpper1050px ? 180 : 140}
                                                     width={10}
-                                                    height={180}
                                                     alt="barra amarilla vertical"
                                                     className={styles.yellowBar}
                                                     />

@@ -14,7 +14,7 @@
 .boptionsClicked {
   width: auto;
   height: 30px;
-  border-bottom: 2px solid rgba(224, 190, 131, 255);
+  /* border-bottom: 2px solid rgb(243, 223, 77); */
   margin-right: 1.5vw;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .textClicked {
-  color: rgba(224, 190, 131, 255);
+  color: rgb(243, 223, 77);
   font-family: "Exo-B" !important;
 }
 
@@ -37,7 +37,7 @@
 .boptionsNotClicked:hover {
   width: auto;
   height: 30px;
-  border-bottom: 2px solid rgba(224, 190, 131, 255);
+  /* border-bottom: 2px solid rgba(224, 190, 131, 255); */
 }
 
 .buttonNv {

@@ -61,12 +61,14 @@ export const Navbar = () => {
   return (
     <div className={styles.navbar} id="navbar">
       <div className={styles.blogo}>
-        <Image
-          src="/assets/logowhite.png"
-          alt="Logo SDC"
-          fill={true}
-          className={styles.logonavbar}
-        />
+        <a href="/#homeSection">
+          <Image
+            src="/assets/logowhite.png"
+            alt="Logo SDC"
+            fill={true}
+            className={styles.logonavbar}
+          />
+        </a>
       </div>
       {!showOptions && (
         <div className={styles.menuContainer}>
