@@ -62,14 +62,12 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
     
       {screenUpper576 && <div className={styles.divider} />}
       <div className={!cardView ?styles.flexContentContactSection: styles.flexContactCardSection}>
-        <h1 className={styles.flexContactSectionTitle}  > {title} </h1>
+      <h1 className={styles.flexContactSectionTitle}  >{cardView ? title:null }</h1>
         
-          {!cardView &&(<div className={styles.flexContactSectionBoxText}> <Typography className={styles.flexContactSectionText}>
-            Envíanos un mensaje si deseas obtener información más precisa sobre tu caso.
-          </Typography>
-        </div>  )}
+         
          
         <form onSubmit={sendEmail} className={styles.contactForm}>
+        {cardView && (<>
           <div className={styles.formItemBox}>
             <FormControl className={styles.formOptionBox} required>
             
@@ -115,13 +113,105 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
           </FormControl>
          
           </div>
-          </div>
+          </div></>)}
           {!cardView &&( <div className={styles.formItemBox}>
+            <div style={{display:"flex", gap: "2vw"}}>
+          <div className={styles.formItemBox} style={{ width:"50%"}}>
+          <FormControl className={styles.formOptionBox}  >
+            
+          <InputLabel htmlFor="sent_cellphone_number" className={styles.formLabel} InputLabelProps={{ shrink: true }}>
+                        
+          </InputLabel>
+              <TextField
+            label={"Email*"}
+              type="email"
+              name="sent_email"
+              InputLabelProps={{ shrink: true }}
+              variant="filled"
+           
+              id="sent_email"
+              value={formData.sent_email}
+              onChange={handleInputChange}
+            />
+          </FormControl>
+         
+          </div>
+          
+          <div className={styles.formItemBox} style={{ width:"50%"}}>
+            <FormControl className={styles.formOptionBox}>
+            
+          
+              <TextField
+            label={"Número de teléfono*"}
+              type="number"
+              name="sent_cellphone_number"
+              InputLabelProps={{ shrink: true }}
+              variant="filled"
+              id="sent_cellphone_number"
+              value={formData.sent_cellphone_number}
+              onChange={handleInputChange}
+            />
+          </FormControl>
+         
+          </div> 
+          
+          </div>
+          <div style={{display:"flex", gap: "2vw"}}>
+          <div className={styles.formItemBox} style={{ width:"50%"}}>
+          <FormControl className={styles.formOptionBox}>
+            
+             
+          <TextField
+            label={"Email*"}
+              type="email"
+              name="sent_email"
+              InputLabelProps={{ shrink: true }}
+              variant="filled"
+              id="sent_email"
+              value={formData.sent_email}
+              onChange={handleInputChange}
+            />
+          </FormControl>
+         
+          </div>
+          
+          <div className={styles.formItemBox} style={{ width:"50%"}}>
+            <FormControl className={styles.formOptionBox}>
+            
+           <TextField
+            label={"Correo electrónico*"}
+              type="email"
+              name="sent_email"
+              InputLabelProps={{ shrink: true }}
+              variant="filled"
+              id="sent_email"
+              value={formData.sent_email}
+              onChange={handleInputChange}
+            />
+          </FormControl>
+         
+          </div> 
+          
+          </div>
             <FormControl className={styles.formOptionBox}>
               <InputLabel htmlFor="message" className={styles.formLabel}>
-                Mensaje
+                Escribe tu servicio de interés
               </InputLabel>
               <Input
+                type="text"
+                name="message"
+                id="message"
+                value={formData.message}
+                onChange={handleInputChange}
+              />
+            </FormControl> 
+            
+            <FormControl className={styles.formOptionBox}  style={{marginTop:20}}>
+             
+              <TextField
+              label={"Mensaje"}
+              multiline
+              rows={4} 
                 type="text"
                 name="message"
                 id="message"
