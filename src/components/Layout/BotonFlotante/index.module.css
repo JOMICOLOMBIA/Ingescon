@@ -19,6 +19,7 @@
 
 @media (max-width: 576px) {
     .boxButton {
-        width: 18vw;
+        width: 13vw;
+        top: 70%
     }
 }
