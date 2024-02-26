@@ -7,7 +7,7 @@ export const NavBarOptions = ({
   isSideBar = false,
   onMenuItemClick = () => {},
 }) => {
-  const screenUpper576 = useMediaQuery("(min-width:576px)");
+  const screenUpper933 = useMediaQuery("(min-width:933px)");
   const [elementClasses, setElementClasses] = useState({
     home: { box: styles.boptionsNotClicked, text: styles.textNotClicked },
     proc: { box: styles.boptionsNotClicked, text: styles.textNotClicked },
@@ -120,7 +120,7 @@ export const NavBarOptions = ({
           </Typography>
         </a>
       </div>
-      <Button size={"medium"} onClick={goToContact} className={styles.buttonNv}>
+      <Button size={screenUpper933 ? "medium" : "small"} onClick={goToContact} className={styles.buttonNv}>
         {" "}
         Contacto{" "}
       </Button>

@@ -9,7 +9,7 @@ import styles from "./index.module.css";
 export const FlexHomeSection = ({ pic }) => {
 
 
-  const screenUpper576 = useMediaQuery("(min-width:930px)");
+  const screenUpper933 = useMediaQuery("(min-width:933px)");
 
   const goToContact = () => {
     const target = document.getElementById("contactSection");
@@ -42,7 +42,7 @@ export const FlexHomeSection = ({ pic }) => {
             <div className={styles.flexButtonHS}>
               <Button
                 className={styles.buttonHomeSection}
-                size={screenUpper576 ? "large" : "medium"}
+                size={screenUpper933 ? "large" : "medium"}
                 onClick={goToContact}
               >
                 {" "}
@@ -50,7 +50,7 @@ export const FlexHomeSection = ({ pic }) => {
               </Button>
               <Button
                 className={styles.buttonHomeSection}
-                size={screenUpper576 ? "large" : "medium"}
+                size={screenUpper933 ? "large" : "medium"}
                 onClick={goToContact}
                 variant="outlined"
               >
@@ -78,14 +78,14 @@ export const FlexHomeSection = ({ pic }) => {
             </Typography>
             <div className={styles.flexButtonHS}>
               <Button
-                size={screenUpper576 ? "large" : "medium"}
+                size={screenUpper933 ? "large" : "medium"}
                 onClick={goToContact}
               >
                 {" "}
                 Contáctanos{" "}
               </Button>
               <Button
-                size={screenUpper576 ? "large" : "medium"}
+                size={screenUpper933 ? "large" : "medium"}
                 onClick={goToContact}
                 variant="outlined"
               >
@@ -114,7 +114,7 @@ export const FlexHomeSection = ({ pic }) => {
             <div className={styles.flexButtonHS}>
               <Button
                 className={styles.buttonHomeSection}
-                size={screenUpper576 ? "large" : "medium"}
+                size={screenUpper933 ? "large" : "medium"}
                 onClick={goToContact}
               >
                 {" "}
@@ -122,7 +122,7 @@ export const FlexHomeSection = ({ pic }) => {
               </Button>
               <Button
                 className={styles.buttonHomeSection}
-                size={screenUpper576 ? "large" : "medium"}
+                size={screenUpper933 ? "large" : "medium"}
                 onClick={goToContact}
                 variant="outlined"
               >

@@ -15,11 +15,7 @@ export const HomeCarouselContent = ({ pic }) => {
         <div className={styles.bsectionHome}>
             <div className={styles.homeImageBox}>
             <Image
-                src={
-                    screenUpper576
-                        ? `/assets/home-slider-${pic}.jpg`
-                        : `/assets/home-slider-${pic}.jpg`
-                } // Ruta relativa a la imagen dentro de la carpeta public
+                src={`/assets/home-slider-${pic}.jpg`} // Ruta relativa a la imagen dentro de la carpeta public
                 alt="Fondo"
                 fill={true}
                 className={styles.image}

@@ -9,7 +9,7 @@ const carouselContent = [
 ]
 
 export const CarouselHome = () => {
-    const screenUpper900 = useMediaQuery("(max-width:900px)");
+    const screenUpper900 = useMediaQuery("(max-width:933px)");
     return (
         <Carousel swipeable={!screenUpper900 ? true : false} showThumbs={false} showStatus={false} emulateTouch={true} swipeScrollTolerance={5} showArrows={false} className={styles.carouselBox}
             renderIndicator={(onClickHandler, isSelected, index, label) => {
