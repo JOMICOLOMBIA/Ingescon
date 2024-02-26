@@ -67,6 +67,7 @@ export const Footer = () => {
                 <p className={styles.textBoxRedes}>Redes sociales: </p>
                 <div className={styles.flexIconRedes}>
                   <div className={styles.boxIconRedes}>
+                    <a href=""> 
                     <Image
                       src="/assets/icon-faceb.png"
                       alt="icono faceb"
@@ -74,8 +75,10 @@ export const Footer = () => {
                       height={100}
                       layout="responsive"
                     />
+                    </a>
                   </div>
                   <div className={styles.boxIconRedes}>
+                    <a href="https://www.linkedin.com/company/inges-consultoria-y-dise%C3%B1o/">
                     <Image
                       src="/assets/icon-linke.png"
                       alt="icono linke"
@@ -83,6 +86,7 @@ export const Footer = () => {
                       height={100}
                       layout="responsive"
                     />
+                    </a>
                   </div>
 
                 </div>
@@ -118,6 +122,7 @@ export const Footer = () => {
                 <p className={styles.textBoxRedes}>Redes sociales: </p>
                 <div className={styles.flexIconRedes}>
                   <div className={styles.boxIconRedes}>
+                    <a href="">
                     <Image
                       src="/assets/icon-faceb.png"
                       alt="icono faceb"
@@ -125,8 +130,10 @@ export const Footer = () => {
                       height={100}
                       layout="responsive"
                     />
+                    </a>
                   </div>
                   <div className={styles.boxIconRedes}>
+                    <a href="https://www.linkedin.com/company/inges-consultoria-y-dise%C3%B1o/">
                     <Image
                       src="/assets/icon-linke.png"
                       alt="icono linke"
@@ -134,6 +141,7 @@ export const Footer = () => {
                       height={100}
                       layout="responsive"
                     />
+                    </a>
                   </div>
 
                 </div>

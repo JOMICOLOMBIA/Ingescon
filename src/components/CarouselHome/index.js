@@ -48,7 +48,7 @@ export const CarouselHome = () => {
                 swipeable={false}
                 autoPlay={playCarousel}
                 showThumbs={false}
-                interval={4000}
+                interval={2500}
                 transitionTime={500}
                 showStatus={false}
                 infiniteLoop={true}

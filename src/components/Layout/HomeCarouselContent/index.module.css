@@ -39,5 +39,6 @@
 
   .image {
     object-fit: cover;
+    object-position: -600px;
   }
 }
