@@ -11,9 +11,13 @@ const contentCard = [{ image: 1, title: "Consultorías Técnicas", list: ["Dise�
 
 export const NuestrosServicios = () => {
     const screenUpper933 = useMediaQuery("(max-width: 933px");
+    const screenUpper576 = useMediaQuery("(max-width: 576px");
+
     return (
         <div className={styles.flexNuestrosSection}>
+            <div>
             <p className={styles.flexNuestrosSectionTitle}>Nuestros Servicios</p>
+            </div>
             <div className={styles.boxImage}>
                 <Image
                     src="/assets/yellow-bar.png"
@@ -66,6 +70,16 @@ export const NuestrosServicios = () => {
                                                     alt="imagen proyecto"
                                                 />
                                             </div>
+                                            <div className={styles.flexCarouselText}>
+                                                <div className={styles.yellowBarBox}>
+                                                    <Image 
+                                                    src={"/assets/yellow-barV.png"}
+                                                    width={10}
+                                                    height={!screenUpper576 ? 180 : 130}
+                                                    alt="barra amarilla vertical"
+                                                    className={styles.yellowBar}
+                                                    />
+                                                </div>
                                             <div className={styles.boxCarouselText}>
                                                 <h2 className={styles.headerCarouselContent}>{content.title}</h2>
                                                 <div className={styles.boxParagraph}>
@@ -77,6 +91,7 @@ export const NuestrosServicios = () => {
                                                     )}
                                                 </ul>
                                             </div>
+                                        </div>
                                         </div>
                                     );
                                 case 2:
@@ -91,6 +106,16 @@ export const NuestrosServicios = () => {
                                                 />
 
                                             </div>
+                                            <div className={styles.flexCarouselText}>
+                                                <div className={styles.yellowBarBox}>
+                                                    <Image 
+                                                    src={"/assets/yellow-barV.png"}
+                                                    width={10}
+                                                    height={180}
+                                                    alt="barra amarilla vertical"
+                                                    className={styles.yellowBar}
+                                                    />
+                                                </div>
                                             <div className={styles.boxCarouselText}>
                                                 <h2 className={styles.headerCarouselContent}>{content.title}</h2>
                                                 <div className={styles.boxParagraph}>
@@ -101,6 +126,7 @@ export const NuestrosServicios = () => {
                                                         <li key={key}>{item}</li>
                                                     )}
                                                 </ul>
+                                            </div>
                                             </div>
                                         </div>
                                     );
@@ -115,12 +141,23 @@ export const NuestrosServicios = () => {
                                                     alt="imagen proyecto"
                                                 />
                                             </div>
+                                            <div className={styles.flexCarouselText}>
+                                                <div className={styles.yellowBarBox}>
+                                                    <Image 
+                                                    src={"/assets/yellow-barV.png"}
+                                                    width={10}
+                                                    height={180}
+                                                    alt="barra amarilla vertical"
+                                                    className={styles.yellowBar}
+                                                    />
+                                                </div>
                                             <div className={styles.boxCarouselText}>
                                                 <h2 className={styles.headerCarouselContent}>{content.title}</h2>
                                                 <div className={styles.boxParagraph}>
                                                     <Typography className={styles.textCarouselContent}><Typography className={styles.textCarouselBold}>Interventoría:</Typography> Hacemos seguimiento a los estudios y diseños realizados para un determinado proyecto y/o contrato con el fin de hacer cumplir las especificaciones técnicas y actividades de manera adecuada y oportuna. </Typography>
                                                     <br></br><Typography className={styles.textCarouselContent}><Typography className={styles.textCarouselBold}>Supervisión Técnica:</Typography> Certificamos y comprobamos que los diseños son ejecutados adecuadamente según los diseños y planos realizados por el diseñador estructural</Typography>
                                                 </div>
+                                            </div>
                                             </div>
                                         </div>
                                     )
