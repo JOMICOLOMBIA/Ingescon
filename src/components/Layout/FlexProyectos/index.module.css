@@ -7,11 +7,9 @@
     height: auto;
 }
 
-
 .flexHomeSectionTitle {
     font-family: "Exo-B";
     font-size: 3.2rem;
-    line-height: 1;
     margin-left: -50%;
 }
 
@@ -81,13 +79,18 @@
     font-family: "Exo" !important;
 }
 
-@media (max-width: 930px) and (min-width: 600px) {
+@media (max-width: 933px) and (min-width: 600px) {
     .flexProcSection {
-        gap: 40px;
+        gap: 2px;
         margin-top: 70px;
     }
     .flexHomeSectionTitle {
-      font-size: 50px;
+        font-size: 2.2rem !important;
+        margin-bottom: 0;
+    }
+    .boxImage {
+        width: 45vw;
+        height: 1.5vh;
     }
     .textCardProcSection {
       font-size: 15px;
@@ -98,6 +101,13 @@
     .cardProcSection {
         width: 45vw;
         height: 50vh;
+    }
+    .boxImage {
+        width: 45vw;
+        height: 1.5vh;
+    }
+    .flexProyectos{
+        margin-top: 15vh;
     }
   }
 

@@ -126,19 +126,57 @@
   width: 16vw;
 }
 
-@media (max-width: 930px) and (min-width: 600px) {
+@media (max-width: 933px) and (min-width: 600px) {
 
   .flexFooter {
-    width: 200px;
-    gap: 10px;
+    width: 90vw;
   }
 
   .footer {
-    height: 40vh;
+    height: 35vh;
+  }
+  .boxContactFooter {
+    gap: 2vh;
   }
 
   .textFooter {
     font-size: 14px;
+  }
+  .boxTextoFooter {
+    width: 30vw;
+    align-items: center;
+  }
+  .boxTextRights {
+    width: 25vw;
+  }
+  .firstBoxFlex {
+    width: 25vw;
+  }
+  .textRights {
+    font-size: .7rem !important;
+  }
+  .headerBoxContact {
+    font-size: .9rem !important;
+  }
+  .textContactInfo {
+    font-size: .7rem;
+  }
+  .textBoxRedes {
+    font-size: .7rem;
+  }
+  .footer {
+    height: 32vh;
+  }
+  .boxIconContact {
+    width: 2vw;
+    height: 4vh;
+  }
+  .boxIconRedes {
+    width: 2vw;
+    height: 4vh;
+  }
+  .boxContactInfo {
+    gap: 2vh;
   }
 }
 

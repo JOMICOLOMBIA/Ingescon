@@ -12,7 +12,7 @@ import Sidebar from "@/components/sideBar";
 export const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
 
-  const screenUpper900 = useMediaQuery("(max-width:900px)");
+  const screenUpper900 = useMediaQuery("(max-width:933px)");
 
   let showOptions = false;
   const router = useRouter();

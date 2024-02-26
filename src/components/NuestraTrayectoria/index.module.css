@@ -19,6 +19,33 @@
     height: 1vh;
 }
 
+.boxImageNuestraTrayectoria {
+    position: relative;
+    width: 90vw;
+    height: 100vh;
+    margin-top: 12vh;
+}
+
+.imagenNuestraT {
+    object-fit: contain;
+}
+
+@media (max-width: 933px) and (min-width: 600px) {
+
+    .boxImage {
+        height: 1.5vh;
+        width: 30vw;
+    }
+    .boxImageNuestraTrayectoria {
+        margin-top: 13vh;
+        height: 90vh;
+    }
+    .flexTrayectoriaSectionTitle {
+        font-size: 2.2rem !important;
+    }
+}
+
+
 @media (max-width: 576px) {
     .flexNuestraTrayectoria {
         height: auto;
@@ -30,5 +57,9 @@
     .flexTrayectoriaSectionTitle {
         font-size: 1.7rem !important;
         margin-bottom: 0;
+    }
+    .boxImageNuestraTrayectoria {
+        margin-top: 1vh;
+        height: 80vh;
     }
 }

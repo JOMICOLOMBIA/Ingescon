@@ -18,14 +18,15 @@ export const BasicTheme = createTheme({
           borderWidth: "2px !important"
         },
         sizeSmall: {
-          width: "130px",
+          width: "120px",
           height: "30px",
           margin: "0px",
+          fontSize: ".8rem"
         },
         sizeMedium: {
           width: "170px",
           height: "42px",
-          fontSize: ".8rem",
+          fontSize: ".9rem",
         },
         sizeLarge: {
           width: "240px",

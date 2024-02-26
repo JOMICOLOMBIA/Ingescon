@@ -10,7 +10,7 @@ const contentCard = [{ image: 1, title: "Consultorías Técnicas", list: ["Dise�
 
 
 export const NuestrosServicios = () => {
-    const screenUpper900 = useMediaQuery("(max-width: 900px");
+    const screenUpper933 = useMediaQuery("(max-width: 933px");
     return (
         <div className={styles.flexNuestrosSection}>
             <p className={styles.flexNuestrosSectionTitle}>Nuestros Servicios</p>
@@ -24,7 +24,7 @@ export const NuestrosServicios = () => {
             <div
                 className={styles.boxCarousel}
             >
-                <Carousel swipeable={!screenUpper900 ? true : false} showThumbs={false} showStatus={false} showIndicators={false} emulateTouch={true} swipeScrollTolerance={5}
+                <Carousel swipeable={!screenUpper933 ? true : false} showThumbs={false} showStatus={false} showIndicators={false} emulateTouch={true} swipeScrollTolerance={5}
                     statusFormatter={(current, total) => `Current slide: ${current} / Total: ${total}`}
                     renderArrowPrev={(onClickHandler, hasPrev, label) =>
                         hasPrev && (

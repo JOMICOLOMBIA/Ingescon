@@ -49,11 +49,11 @@
 @media (min-width: 600px) and (max-width: 930px) {
 
   .textNotClicked {
-    font-size: 11px !important;
+    font-size: .6rem !important;
   }
 
   .textClicked {
-    font-size: 11px !important;
+    font-size: .6rem !important;
   }
 
   .foptions {
@@ -62,11 +62,13 @@
   }
 
   .boptionsNotClicked {
-    height: 20px;
+    height: 5vh;
+    margin-top: auto;
   }
 
   .boptionsClicked {
-    height: 20px;
+    height: 5vh;
+    margin-top: auto;
   }
 
 }

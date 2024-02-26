@@ -7,7 +7,6 @@
   margin-top: 4vh;
 }
 
-
 .boxHomeSection {
   position: absolute;
   margin-left: 3vw;
@@ -56,9 +55,16 @@
   font-size: 1.55rem !important;
 }
 
-@media (max-width: 930px) and (min-width: 600px) {
+@media (max-width: 933px) and (min-width: 600px) {
   .flexHomeSectionTitle {
-    font-size: 33px;
+    font-size: 1.1rem !important;
+    width: 60vw !important;
+  }
+  .boldText {
+    font-size: 1.1rem !important;
+  }
+  .semiBoldText {
+    font-size: 1.1rem !important;
   }
 
   .flexHomeSectionText {
@@ -66,8 +72,18 @@
   }
 
   .flexHomeSection {
-    margin-left: 62vw;
-    margin-top: 23vh;
+    margin-top: 3vh;
+    margin-left: -5vw;
+    width: 45vw;
+  }
+  .boxHomeSection {
+    margin-top: 40vh;
+    margin-left: 15vw;
+    zoom: .88;
+  }
+  .boxImageFlex {
+    width: 65vw;
+    height: 46vh;
   }
 }
 

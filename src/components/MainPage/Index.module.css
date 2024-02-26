@@ -35,10 +35,6 @@
   position: relative;
 }
 
-.fondoAboutUs {
-  
-}
-
 .boxexam {
   width: 300px;
   height: 300px;
@@ -58,9 +54,9 @@
 
 
 
-@media (max-width: 930px) and (min-width: 600px) {
+@media (max-width: 933px) and (min-width: 600px) {
   .bsection {
-    height: auto;
+    height: 160vh;
   }
   .bsectionContact {
     height: 100vh;

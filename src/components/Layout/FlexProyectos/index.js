@@ -36,7 +36,7 @@ export const FlexProyectos = () => {
 
   return (
     <div className={styles.flexProcSection}>
-      <h1 className={styles.flexHomeSectionTitle}>Proyectos Destacados</h1>
+      <p className={styles.flexHomeSectionTitle}>Proyectos Destacados</p>
       <div className={styles.boxImage}>
         <Image
           src="/assets/yellow-bar.png"

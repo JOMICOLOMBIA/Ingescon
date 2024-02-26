@@ -23,6 +23,12 @@
     border: 0px;
 }
 
+@media (max-width: 933px) and (min-width: 600px) {
+    .indicatorCarousel {
+        bottom: 35vh;
+    }
+}
+
 @media (max-width: 576px) {
     .carouselBox {
         top: -10vh;
