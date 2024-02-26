@@ -66,11 +66,11 @@ export const Footer = () => {
               <div className={styles.boxRedesFooter}>
                 <p className={styles.textBoxRedes}>Redes sociales: </p>
                 <div className={styles.flexIconRedes}>
-                  <div className={styles.boxIconRedes}>
-                    <a href=""> 
+                  <div className={styles.boxIconRedes2}>
+                    <a href="https://www.instagram.com/inges_consultoria/?hl=en"> 
                     <Image
-                      src="/assets/icon-faceb.png"
-                      alt="icono faceb"
+                      src="/assets/icon-insta.png"
+                      alt="icono instagram"
                       width={100}
                       height={100}
                       layout="responsive"
@@ -121,13 +121,13 @@ export const Footer = () => {
               <div className={styles.boxRedesFooter}>
                 <p className={styles.textBoxRedes}>Redes sociales: </p>
                 <div className={styles.flexIconRedes}>
-                  <div className={styles.boxIconRedes}>
-                    <a href="">
+                  <div className={styles.boxIconRedes2}>
+                    <a href="https://www.instagram.com/inges_consultoria/?hl=en">
                     <Image
-                      src="/assets/icon-faceb.png"
-                      alt="icono faceb"
-                      width={100}
-                      height={100}
+                      src="/assets/icon-insta.png"
+                      alt="icono instagram"
+                      width={110}
+                      height={110}
                       layout="responsive"
                     />
                     </a>
