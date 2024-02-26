@@ -30,13 +30,18 @@ export const FlexProyectos = () => {
     {
       title: "Intersección Sena",
       description: "Puente en concreto postensado Sena 3 luces",
-      image: 3,
+      image: 2,
+    },
+    {
+      title: "Intersección Sena",
+      description: "Puente en concreto postensado Sena 3 luces",
+      image: 4,
     },
   ];
 
   return (
     <div className={styles.flexProcSection}>
-      <h1 className={styles.flexHomeSectionTitle}>Proyectos Destacados</h1>
+      <p className={styles.flexHomeSectionTitle}>Proyectos Destacados</p>
       <div className={styles.boxImage}>
         <Image
           src="/assets/yellow-bar.png"

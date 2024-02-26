@@ -48,9 +48,17 @@
   display: flex;
 }
 
-@media (max-width: 930px ) and (min-width: 600px) {
+@media (max-width: 1050px ) and (min-width: 600px) {
   .navbar {
-    height: 60px;
+    height: 13vh !important;
+    background-color: black;
+  }
+  .blogo {
+    height: 35px;
+    width: 100px;
+  }
+  .logonavbar {
+    object-fit: fill;
   }
 }
 

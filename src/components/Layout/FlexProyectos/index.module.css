@@ -7,18 +7,16 @@
     height: auto;
 }
 
-
 .flexHomeSectionTitle {
     font-family: "Exo-B";
     font-size: 3.2rem;
-    line-height: 1;
     margin-left: -50%;
 }
 
 .flexProyectos {
     display: flex;
     gap: 40px;
-    margin-top: 7vh;
+    margin-top: 9vh;
     align-items: center;
 }
 .boxImage {
@@ -26,6 +24,7 @@
     width: 40vw;
     height: 1vh;
     margin-left: -80%;
+    margin-top: -5vh;
 }
 
 .image {
@@ -81,13 +80,19 @@
     font-family: "Exo" !important;
 }
 
-@media (max-width: 930px) and (min-width: 600px) {
+@media (max-width: 1050px) and (min-width: 600px) {
     .flexProcSection {
-        gap: 40px;
+        gap: 2px;
         margin-top: 70px;
     }
     .flexHomeSectionTitle {
-      font-size: 50px;
+        font-size: 2.2rem !important;
+        margin-bottom: 0;
+    }
+    .boxImage {
+        width: 45vw;
+        height: 1.5vh;
+        margin-top: 0;
     }
     .textCardProcSection {
       font-size: 15px;
@@ -98,6 +103,13 @@
     .cardProcSection {
         width: 45vw;
         height: 50vh;
+    }
+    .boxImage {
+        width: 45vw;
+        height: 1.5vh;
+    }
+    .flexProyectos{
+        margin-top: 15vh;
     }
   }
 
@@ -132,11 +144,21 @@
     }
     .boxImage {
         width: 100vw;
-        height: .7vh;
+        height: .8vh;
+        margin-top: -0.6vh;
     }
     .flexHomeSectionTitle {
         font-size: 1.7rem !important;
-        margin-left: -25% !important;
+        margin-left: -17% !important;
         margin-bottom: 0;
+    }
+    .flexProyectos {
+        flex-direction: column;
+    }
+    .bottomBox {
+        width: 70vw;
+    }
+    .topBox {
+        width: 70vw;
     }
 }

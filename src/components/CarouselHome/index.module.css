@@ -7,12 +7,12 @@
 
 .indicatorCarousel {
     background: transparent;
-    width: 2vw;
-    height: 4vh;
+    width: 1.7vw;
+    height: 3.4vh;
     display: inline-block;
     margin: 0 8px;
     position: relative;
-    bottom: 32vh;
+    bottom: 31.5vh;
     border-radius: 100%;
     cursor: pointer;
     border: 2px solid rgb(243, 223, 77);
@@ -22,6 +22,49 @@
     background: #FFDC06;
     border: 0px;
 }
+.boxControlesCarousel {
+    display: flex;
+    position: absolute;
+    width: 12.8vw;
+    height: 4vh;
+    top: calc(100% - 16px);
+    left: 43.5%;
+    justify-content: space-between;
+}
+.buttonControles {
+    width: inherit;
+    height: inherit;
+}
+
+.boxIconControl {
+    width: 1.7vw;
+    height: 4.2vh;
+    position: relative;
+}
+.boxIconControl:hover {
+    zoom: 1.1;
+    margin-top: -1px;
+}
+.imageButtonControl {
+    object-fit: contain;
+}
+
+@media (max-width: 1050px) and (min-width: 600px) {
+    .indicatorCarousel {
+        bottom: 35vh;
+        width: 1.9vw;
+        height: 3.7vh;
+    }
+    .boxControlesCarousel {
+        top: calc(132.7% - 15px);
+        width: 16.3vw;
+        left: 41.5%;
+    }
+    .boxIconControl {
+        height: 5vh;
+    }
+    
+}
 
 @media (max-width: 576px) {
     .carouselBox {
@@ -30,5 +73,17 @@
     .indicatorCarousel {
         width: 5vw;
         height: 5vw;
+    }
+    .boxControlesCarousel {
+        width: 37vw;
+        top: calc(85.2% - 16px);
+        left: 30.5vw;
+    }
+    .boxIconControl {
+        height: 3.2vh;
+        width: 3vw;
+    }
+    .imageButtonControl {
+        object-fit: contain;
     }
 }

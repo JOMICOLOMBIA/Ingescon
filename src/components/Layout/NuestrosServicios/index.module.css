@@ -8,9 +8,9 @@
 }
 
 .flexNuestrosSectionTitle {
-    font-family: "Exo-B" !important;
-    font-size: 3.2rem !important;
-    margin-left: -50% !important;
+    font-family: "Exo-B";
+    font-size: 3.2rem;
+    margin-left: -55%;
     margin-bottom: 10px;
 }
 
@@ -72,9 +72,10 @@
 
 .headerCarouselContent {
     font-family: "Exo-B";
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     margin-top: -3vh;
     margin-bottom: 2vh;
+    width: 40vw !important;
 }
 
 .textCarouselContent {
@@ -98,7 +99,7 @@
 }
 
 .boxCarouselText {
-    width: 50%;
+    width: 47%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -110,6 +111,76 @@
     display: flex;
     flex-direction: column;
 }
+
+.flexCarouselText {
+    width: 50%;
+    height: auto;
+    display: flex;
+    gap: .7vw;
+}
+
+.yellowBarBox {
+    width: 1.5vw;
+    height: 7vh;
+    margin-top: 5vh;
+}
+
+.yellowBar {
+    object-fit: contain;
+}
+
+@media (max-width: 1050px) and (min-width: 600px) {
+
+    .flexNuestrosSectionTitle {
+        font-size: 2.2rem !important;
+        margin-top: 0 !important;
+        margin-bottom: 0;
+    }
+    .boxParagraph {
+        width: 37vw;
+    }
+    .boxImage {
+        width: 45vw;
+        height: 1.5vh;
+    }
+
+    .boxCarouselContent {
+        height: 120vh;
+    }
+    .flexCarouselText {
+        gap: 1px;
+    }
+
+    .textCarouselContent {
+        font-size: .9rem !important;
+    }
+
+    .textCarouselBold {
+        font-size: .9rem !important;
+    }
+
+    .headerCarouselContent {
+        font-size: 1.6rem !important;
+    }
+
+    .listCarousel {
+        font-size: .9rem;
+    }
+
+    .boxCarouselText {
+        margin-top: -8vh;
+    }
+    .boxCarousel {
+        height: auto;
+    }
+    .yellowBar {
+        object-fit: contain;
+    }
+    .listCarousel {
+        width: 35vw;
+    }
+}
+
 
 
 @media (max-width: 576px) {
@@ -141,6 +212,9 @@
         width: 87vw;
         height: 30vh;
     }
+    .yellowBarBox {
+        margin-top: 8vh;
+    }
 
     .boxCarouselText {
         width: 75%;
@@ -148,23 +222,28 @@
         margin-top: 5vh;
         margin-bottom: 3vh;
     }
+    .flexCarouselText {
+        width: 90vw;
+        gap: 4vw;
+    }
 
     .textCarouselContent {
-        font-size: 14px !important;
+        font-size: 1rem !important;
     }
 
     .textCarouselBold {
-        font-size: 14px !important;
+        font-size: 1rem !important;
     }
 
     .headerCarouselContent {
         font-size: 1.4rem !important;
         margin-bottom: 2vh;
+        width: 70vw !important;
     }
 
     .flexNuestrosSectionTitle {
         font-size: 1.7rem !important;
-        margin-left: -37% !important;
+        margin-left: -28% !important;
         margin-bottom: 0;
     }
 

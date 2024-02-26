@@ -12,7 +12,7 @@ import Sidebar from "@/components/sideBar";
 export const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
 
-  const screenUpper900 = useMediaQuery("(max-width:900px)");
+  const screenUpper900 = useMediaQuery("(max-width:933px)");
 
   let showOptions = false;
   const router = useRouter();
@@ -61,12 +61,14 @@ export const Navbar = () => {
   return (
     <div className={styles.navbar} id="navbar">
       <div className={styles.blogo}>
-        <Image
-          src="/assets/logowhite.png"
-          alt="Logo SDC"
-          fill={true}
-          className={styles.logonavbar}
-        />
+        <a href="/#homeSection">
+          <Image
+            src="/assets/logowhite.png"
+            alt="Logo SDC"
+            fill={true}
+            className={styles.logonavbar}
+          />
+        </a>
       </div>
       {!showOptions && (
         <div className={styles.menuContainer}>
