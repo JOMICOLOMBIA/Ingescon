@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import { toast } from "react-toastify";
 
-export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, cardView = false, sendButtontext="Enviar"}) => {
+export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, cardView = false, sendButtontext="Enviar", integrationKey = null}) => {
 
 
   const screenUpper576 = useMediaQuery("(min-width:930px)");
@@ -28,10 +28,10 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
 
     emailjs
       .sendForm(
-        "service_sj6c4wg",
-        "template_jso44yv",
+       integrationKey?.servie,
+       integrationKey?.template,
         e.target,
-        "-a7fLrpzWxm2Mhz4K"
+        integrationKey?.publicKey
       )
       .then(
         (result) => {
@@ -71,7 +71,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
          
         <form onSubmit={sendEmail} className={styles.contactForm}>
           <div className={styles.formItemBox}>
-            <FormControl className={styles.formOptionBox}>
+            <FormControl className={styles.formOptionBox} required>
             
               <TextField
               label={"Nombre y Apellidos*"}
@@ -86,31 +86,30 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
           </div>
           <div style={{display:"flex", gap: "2vw"}}>
           <div className={styles.formItemBox} style={{ width:"50%"}}>
-            <FormControl className={styles.formOptionBox}>
-            <FormControl className={styles.formOptionBox}>
+          <FormControl className={styles.formOptionBox}>
             
             <TextField
             label={"Email*"}
-              type="text"
-              name="emial_id"
+              type="email"
+              name="sent_email"
               variant="outlined" 
-              id="email_id"
-              value={formData.email_id}
+              id="sent_email"
+              value={formData.sent_email}
               onChange={handleInputChange}
             />
           </FormControl>
-            </FormControl>
+         
           </div>
           <div className={styles.formItemBox} style={{ width:"50%"}}>
             <FormControl className={styles.formOptionBox}>
             
             <TextField
             label={"Número de teléfono*"}
-              type="text"
-              name="from_name"
+              type="number"
+              name="sent_cellphone_number"
               variant="outlined" 
-              id="from_name"
-              value={formData.from_name}
+              id="sent_cellphone_number"
+              value={formData.sent_cellphone_number}
               onChange={handleInputChange}
             />
           </FormControl>
