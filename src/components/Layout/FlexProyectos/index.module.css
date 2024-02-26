@@ -16,7 +16,7 @@
 .flexProyectos {
     display: flex;
     gap: 40px;
-    margin-top: 7vh;
+    margin-top: 9vh;
     align-items: center;
 }
 .boxImage {
@@ -149,7 +149,7 @@
     }
     .flexHomeSectionTitle {
         font-size: 1.7rem !important;
-        margin-left: -25% !important;
+        margin-left: -17% !important;
         margin-bottom: 0;
     }
     .flexProyectos {
