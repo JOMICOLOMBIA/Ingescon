@@ -56,7 +56,7 @@
 
 @media (max-width: 933px) and (min-width: 600px) {
   .bsection {
-    height: 160vh;
+    height: auto;
   }
   .bsectionContact {
     height: 100vh;
