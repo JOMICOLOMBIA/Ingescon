@@ -47,7 +47,7 @@ export const MainPage = () => {
         }} cardView={true} />
       </div>
 
-      <div id="serviciosSection" className={styles.bsection}>
+      <div id="serviciosSection" className={styles.ourServicesSection}>
         <NuestrosServicios />
       </div>
       <div id="proySection" className={styles.bsectionCases}>
@@ -56,7 +56,7 @@ export const MainPage = () => {
       <div id="trayectoriaSection" className={styles.bsection}>
         <NuestraTrayectoria />
       </div>
-      <div id="contactSection" className={styles.bsectionContact}>
+      <div id="contactSection" className={styles.bsectionContact2}>
         <ContactForm LeftComponent={() => {
           return(<div style={{display:"flex", flexDirection:"column",  margin:"20px 5vw", width:"20vw"}}><h2 style={{display:"flex", backgroundColor:"transparent", width:"32vw", color:"black", fontSize:"5vh", fontWeith:"bold", fontFamily:"Exo", letterSpacing:"0.1em" }}>
           HABEMOS DE TU PROYECTO

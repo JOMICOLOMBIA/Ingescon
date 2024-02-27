@@ -10,7 +10,7 @@
   
   position: absolute;
   /* margin-left: 55vw; */
-  margin-top: 13vh;
+  margin-top: 50px;
   flex-direction: row;
   gap: 3vw;
 }
