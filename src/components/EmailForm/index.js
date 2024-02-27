@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./EmailForm.module.css";
 import {
@@ -8,11 +8,27 @@ import {
   InputLabel,
   Input,
   useMediaQuery,
-  TextField
+  TextField, 
+  Select, 
+  MenuItem
 } from "@mui/material";
 import { toast } from "react-toastify";
 
 export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, cardView = false, sendButtontext="Enviar", integrationKey = null}) => {
+
+  const [countries, setCountries] = useState([]);
+
+  useEffect(() => {
+    fetch('https://restcountries.com/v3.1/all')
+      .then(response => response.json())
+      .then(data => {
+        const countryNames = data.map(country => country.name.common).sort((a, b) => a.localeCompare(b));
+        setCountries([...countryNames]);
+      })
+      .catch(error => {
+        console.error('Error fetching countries:', error);
+      });
+  }, []);
 
 
   const screenUpper576 = useMediaQuery("(min-width:930px)");
@@ -54,6 +70,8 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  
 
   return (
     <div className={styles.flexContactSection  }>
@@ -159,19 +177,20 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
           <div style={{display:"flex", gap: "2vw"}}>
           <div className={styles.formItemBox} style={{ width:"50%"}}>
           <FormControl className={styles.formOptionBox}>
-            
-             
-          <TextField
-            label={"Email*"}
-              type="email"
-              name="sent_email"
-              InputLabelProps={{ shrink: true }}
-              variant="filled"
-              id="sent_email"
-              value={formData.sent_email}
-              onChange={handleInputChange}
-            />
-          </FormControl>
+  <InputLabel>País</InputLabel>
+  <Select
+    label="País"
+    name="country"
+    variant="filled"
+    id="country"
+    value={formData.country}
+    onChange={handleInputChange}
+  >
+    {countries.map((country, index) => (
+      <MenuItem key={index} value={country}>{country}</MenuItem>
+    ))}
+  </Select>
+</FormControl>
          
           </div>
           
