@@ -26,7 +26,7 @@ export const MainPage = () => {
           <Image
             src={"/assets/FONDO_DE_NECESITAS_ASESORIA.png"}
             alt="Fondo section"
-            objectFit="contain"
+          
             fill={true}
             quality={100} // Ajusta la calidad de la imagen
             loading="eager" // Carga la imagen de forma prioritaria
@@ -40,7 +40,7 @@ export const MainPage = () => {
         publicKey:"cgAQ725WoCfaP4VLZ"
         }} title={"Cuéntanos tu idea"} sendButtontext="Contáctanos" LeftComponent={() => {
           return(
-            <h2 style={{display:"flex", backgroundColor:"transparent", width:"32vw", color:"white", fontSize:"5vh", fontWeith:"bold", fontFamily:"Exo", margin:"auto 5vw", letterSpacing:"0.1em" }}>
+            <h2 className={styles.customTextContactSection}>
               ¿Necesitas asesoría para tu proyecto?
             </h2>
           )
