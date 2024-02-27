@@ -87,6 +87,25 @@
 }
 
 
+.customContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 5vw;
+  width: 20vw;
+}
+
+.customHeader {
+  display: flex;
+  background-color: transparent;
+  width: 32vw;
+  color: black;
+  font-size: 5vh;
+  font-weight: bold;
+  font-family: Exo;
+  letter-spacing: 0.1em;
+}
+
+
 
 @media (max-width: 1050px) and (min-width: 600px) {
   .bsection {
@@ -94,6 +113,10 @@
   }
   .bsectionContact {
     height: 100vh;
+    justify-content: center;
+  }
+  .customContainer {
+    justify-content: center;
   }
 }
 
@@ -110,15 +133,36 @@
     letter-spacing: 0.1em;
     justify-content: center;
   }
+  .customHeader {
+    width: auto;
+    justify-content: center;
+  }
+
+
 
 }
+
+@media (max-width: 620px) {
+  .bsectionContact {
+    height: 40vh;
+    background-color: rgba(97, 97, 97, 0.514);
+  }
+
+  .bsectionContact2{
+    top:-50vh;
+    padding: 0px 20px;
+  }
+}
+
 
 @media (max-width: 576px) {
   .bsection {
     height: auto;
+   
   }
   .bsectionContact {
-    height: 72vh;
+    height: 30vh;
+    background-color: rgba(97, 97, 97, 0.514);
   }
   .bsectionCases {
     top: 0;
@@ -134,3 +178,4 @@
   }
 
 }
+
