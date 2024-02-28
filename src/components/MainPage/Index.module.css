@@ -152,10 +152,10 @@
 }
 
 @media (max-width: 620px) {
-  .bsectionContact {
+  /* .bsectionContact {
     height: 40vh;
     background-color: rgba(97, 97, 97, 0.514);
-  }
+  } */
 
 
 
@@ -174,7 +174,7 @@
     top: 0;
   }
   .bsectionContact {
-    height: 30vh;
+    height: 40vh;
     background-color: rgba(97, 97, 97, 0.514);
   }
   .bsectionCases {

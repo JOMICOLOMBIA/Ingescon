@@ -22,6 +22,7 @@
     background: #FFDC06;
     border: 0px;
 }
+
 .boxControlesCarousel {
     display: flex;
     position: absolute;
@@ -31,6 +32,7 @@
     left: 43.5%;
     justify-content: space-between;
 }
+
 .buttonControles {
     width: inherit;
     height: inherit;
@@ -41,10 +43,12 @@
     height: 4.2vh;
     position: relative;
 }
+
 .boxIconControl:hover {
     zoom: 1.1;
     margin-top: -1px;
 }
+
 .imageButtonControl {
     object-fit: contain;
 }
@@ -55,35 +59,52 @@
         width: 1.9vw;
         height: 3.7vh;
     }
+
     .boxControlesCarousel {
         top: calc(132.7% - 15px);
         width: 16.3vw;
         left: 41.5%;
     }
+
     .boxIconControl {
         height: 5vh;
     }
-    
+
 }
 
 @media (max-width: 576px) {
     .carouselBox {
         top: -10vh;
     }
+
     .indicatorCarousel {
         width: 5vw;
         height: 5vw;
     }
-    .boxControlesCarousel {
-        width: 37vw;
-        top: calc(85.2% - 16px);
-        left: 30.5vw;
-    }
+
     .boxIconControl {
         height: 3.2vh;
         width: 3vw;
     }
+
     .imageButtonControl {
         object-fit: contain;
+    }
+}
+
+@media (min-width: 394px) and (max-width: 576px) {
+
+    .boxControlesCarousel {
+        width: 37.5vw;
+        top: calc(85.1% - 16px);
+        left: 29vw;
+    }
+}
+
+@media (max-width: 393px) {
+    .boxControlesCarousel {
+        width: 38vw;
+        top: calc(87% - 16px);
+        left: 28.5vw;
     }
 }
