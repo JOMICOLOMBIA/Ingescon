@@ -40,11 +40,12 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
   });
 
   const sendEmail = (e) => {
+    console.log("email", integrationKey);
     e.preventDefault();
 
     emailjs
       .sendForm(
-       integrationKey?.servie,
+       integrationKey?.service,
        integrationKey?.template,
         e.target,
         integrationKey?.publicKey
@@ -141,14 +142,13 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
                         
           </InputLabel>
               <TextField
-            label={"Email*"}
-              type="email"
-              name="sent_email"
+            label={"Nombre completo"}
+              type="text"
+              name="complete_name"
               InputLabelProps={{ shrink: true }}
               variant="filled"
-           
-              id="sent_email"
-              value={formData.sent_email}
+              id="complete_name"
+              value={formData.complete_name}
               onChange={handleInputChange}
             />
           </FormControl>
@@ -218,9 +218,9 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
               </InputLabel>
               <Input
                 type="text"
-                name="message"
-                id="message"
-                value={formData.message}
+                name="interest_service"
+                id="interest_service"
+                value={formData.interest_service}
                 onChange={handleInputChange}
               />
             </FormControl> 

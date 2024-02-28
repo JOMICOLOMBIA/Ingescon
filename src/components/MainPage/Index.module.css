@@ -137,6 +137,15 @@
     width: auto;
     justify-content: center;
   }
+  .ourServicesSection{
+    width: 100%;
+    height: 120vh;
+    background-color: white;
+    display: flex;
+    zoom: 0.97;
+    position: relative;
+    top:0vh
+  }
 
 
 
@@ -152,6 +161,7 @@
     top:-50vh;
     padding: 0px 20px;
   }
+
 }
 
 

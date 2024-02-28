@@ -57,7 +57,11 @@ export const MainPage = () => {
         <NuestraTrayectoria />
       </div>
       <div id="contactSection" className={styles.bsectionContact2}>
-        <ContactForm LeftComponent={() => {
+        <ContactForm integrationKey={{
+        service: "service_r3wz6ok",
+        template:"template_ikmvw7b",
+        publicKey:"cgAQ725WoCfaP4VLZ"
+        }} LeftComponent={() => {
           return(<div className={styles.customHeaderContainer }><h2 className={styles.customHeader}>
           HABLEMOS DE TU PROYECTO
          </h2>

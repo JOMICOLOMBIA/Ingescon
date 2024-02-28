@@ -33,7 +33,7 @@ export const WeAreExperts = () => {
               size={"large" }
               type="submit"
               value="Send"
-              style={{ fontWeight:"bold", width:"20vw"}}
+              style={{ fontWeight:"bold", width:"270px"}}
             >
              {"Conoce nuestros servicios"}
             </Button>
