@@ -152,13 +152,13 @@
 }
 
 @media (max-width: 620px) {
-  .bsectionContact {
+  /* .bsectionContact {
     height: 40vh;
     background-color: rgba(97, 97, 97, 0.514);
-  }
+  } */
 
   .bsectionContact2{
-    top:-50vh;
+    top:0;
     padding: 0px 20px;
   }
 
@@ -168,11 +168,18 @@
 @media (max-width: 576px) {
   .bsection {
     height: auto;
+    top: 0;
    
   }
   .bsectionContact {
     height: 30vh;
     background-color: rgba(97, 97, 97, 0.514);
+  }
+  .bsectionContact {
+    height: auto;
+  }
+  .bsectionContact2 {
+    height: 50vh;
   }
   .bsectionCases {
     top: 0;
@@ -184,7 +191,7 @@
     display: flex;
     zoom: 0.97;
     position: relative;
-    top:0vh
+    top:0vh;
   }
 
 }
