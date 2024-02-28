@@ -87,11 +87,11 @@
 }
 
 
-.customContainer {
+.customHeaderContainer {
   display: flex;
   flex-direction: column;
   margin: 20px 5vw;
-  width: 20vw;
+  
 }
 
 .customHeader {

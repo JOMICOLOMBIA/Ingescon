@@ -59,7 +59,7 @@ export const MainPage = () => {
       <div id="contactSection" className={styles.bsectionContact2}>
         <ContactForm LeftComponent={() => {
           return(<div className={styles.customHeaderContainer }><h2 className={styles.customHeader}>
-          HABEMOS DE TU PROYECTO
+          HABLEMOS DE TU PROYECTO
          </h2>
          <div style={{ borderBottom:"4px solid yellow", paddingBottom:20, marginLeft:20}}>Hablanos de tu ídea, y te mostraremos el camino para hacerla realidad.</div>
          </div> )
