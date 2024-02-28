@@ -58,7 +58,12 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
             email_id: "",
             phone: "",
             message: "",
-          });
+            sent_cellphone_number:"",
+            sent_email:"", 
+            country:"", 
+            interest_service:"", 
+            message:""
+            });
           toast.success("¡Correo enviado con éxito!");
         },
         (error) => {
