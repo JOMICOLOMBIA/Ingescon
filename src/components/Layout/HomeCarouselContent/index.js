@@ -19,6 +19,8 @@ export const HomeCarouselContent = ({ pic }) => {
                 alt="Fondo"
                 fill={true}
                 className={styles.image}
+                priority={true}
+                sizes="(max-width: 728px) 100vw, (max-width: 2000px) 100vw"
             />
             </div>
             <FlexHomeSection pic={pic} />

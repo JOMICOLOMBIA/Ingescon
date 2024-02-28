@@ -96,7 +96,7 @@
 
     .boxControlesCarousel {
         width: 37.5vw;
-        top: calc(85.1% - 16px);
+        top: 83.3%;
         left: 29vw;
     }
 }
@@ -104,7 +104,7 @@
 @media (max-width: 393px) {
     .boxControlesCarousel {
         width: 38vw;
-        top: calc(87% - 16px);
+        top: 84.7%;
         left: 28.5vw;
     }
 }
