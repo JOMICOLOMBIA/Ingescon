@@ -110,13 +110,23 @@
 @media (max-width: 1050px) and (min-width: 600px) {
   .bsection {
     height: auto;
+    top: 0vh;
   }
   .bsectionContact {
     height: 100vh;
     justify-content: center;
   }
+  .bsectionContact2 {
+    top: 0vh;
+  }
   .customContainer {
     justify-content: center;
+  }
+  .ourServicesSection {
+    top: 0vh;
+  }
+  .bsectionCases {
+    top: 0vh;
   }
 }
 
@@ -137,16 +147,6 @@
     width: auto;
     justify-content: center;
   }
-  .ourServicesSection{
-    width: 100%;
-    height: 120vh;
-    background-color: white;
-    display: flex;
-    zoom: 0.97;
-    position: relative;
-    top:0vh
-  }
-
 
 
 }

@@ -49,11 +49,11 @@
 @media (min-width: 600px) and (max-width: 930px) {
 
   .textNotClicked {
-    font-size: .6rem !important;
+    font-size: .5rem !important;
   }
 
   .textClicked {
-    font-size: .6rem !important;
+    font-size: .5rem !important;
   }
 
   .foptions {
@@ -64,6 +64,9 @@
   .boptionsNotClicked {
     height: 5vh;
     margin-top: auto;
+  }
+  .boptionsNotClicked:hover {
+    height: 5vh;
   }
 
   .boptionsClicked {
