@@ -19,6 +19,7 @@ export const HomeCarouselContent = ({ pic }) => {
                 alt="Fondo"
                 fill={true}
                 className={styles.image}
+                priority={true}
             />
             </div>
             <FlexHomeSection pic={pic} />
