@@ -18,10 +18,13 @@
     border: 2px solid rgb(243, 223, 77);
 }
 
-.indicatorS {
+
+
+.indicatorS::after {
     background: #FFDC06;
     border: 0px;
 }
+
 
 .boxControlesCarousel {
     display: flex;
