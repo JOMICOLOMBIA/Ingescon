@@ -146,29 +146,34 @@
 
     .boxCarouselContent {
         height: 120vh;
+        width: 85vw;
     }
     .flexCarouselText {
-        gap: 1px;
+        gap: 2vh;
     }
 
     .textCarouselContent {
-        font-size: .9rem !important;
+        font-size: .8rem !important;
+        text-align: start;
     }
 
     .textCarouselBold {
-        font-size: .9rem !important;
+        font-size: .8rem !important;
+        text-align: start;
     }
 
     .headerCarouselContent {
-        font-size: 1.6rem !important;
+        font-size: 1.5rem !important;
+        text-align: start;
     }
 
     .listCarousel {
-        font-size: .9rem;
+        font-size: .8rem;
     }
 
     .boxCarouselText {
         margin-top: -8vh;
+        width: 50vw;
     }
     .boxCarousel {
         height: auto;

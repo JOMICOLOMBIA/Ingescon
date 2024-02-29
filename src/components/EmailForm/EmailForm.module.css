@@ -90,14 +90,6 @@
  
 }
 
-@media (max-width: 1200px) and (min-width: 600px) {
- 
-  .flexContactSection {
-    zoom:0.9
-  }
-}
-
-
 
 @media (max-width: 1050px) and (min-width: 600px) {
  
@@ -106,16 +98,15 @@
   .flexContactSection {
     zoom:0.8;
     width: 100%;
- 
-   
+    margin-left: 0vw;
   }
 }
 
-@media (max-width: 920px)  {
+/* @media (max-width: 920px)  {
 
   .flexContactSection {
     zoom:0.7;
-    margin-left: 15vw;
+
     width: 95%;
   }
 }
@@ -142,7 +133,7 @@
     zoom:0.5;
     margin-left: 15vw;
   }
-}
+} */
 
 @media (max-width: 620px)  {
   

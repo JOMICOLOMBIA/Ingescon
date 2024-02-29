@@ -21,7 +21,7 @@ export const BasicTheme = createTheme({
           width: "120px",
           height: "30px",
           margin: "0px",
-          fontSize: ".8rem"
+          fontSize: ".75rem"
         },
         sizeMedium: {
           width: "170px",

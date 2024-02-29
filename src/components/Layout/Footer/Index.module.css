@@ -145,7 +145,7 @@
   }
 
   .textFooter {
-    font-size: 14px;
+    font-size: .8rem;
   }
   .boxTextoFooter {
     width: 30vw;
@@ -161,16 +161,16 @@
     font-size: .7rem !important;
   }
   .headerBoxContact {
-    font-size: .9rem !important;
+    font-size: .8rem !important;
   }
   .textContactInfo {
-    font-size: .7rem;
+    font-size: .6rem;
   }
   .textBoxRedes {
-    font-size: .7rem;
+    font-size: .6rem;
   }
   .footer {
-    height: 32vh;
+    height: 32vh6
   }
   .boxIconContact {
     width: 2vw;

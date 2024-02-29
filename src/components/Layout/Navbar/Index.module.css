@@ -60,6 +60,9 @@
   .logonavbar {
     object-fit: fill;
   }
+  .menuContainer {
+    margin: 0 5%;
+  }
 }
 
 @media (max-width: 576px) {

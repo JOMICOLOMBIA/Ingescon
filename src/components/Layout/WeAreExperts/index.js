@@ -2,14 +2,16 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from "./index.module.css";
 import Image from "next/image";
-import { IconButton, Typography, Button } from "@mui/material";
+import { IconButton, Typography, Button, useMediaQuery } from "@mui/material";
 
 
 
 const contentCard = [{ image: 1, title: "Consultorías Técnicas", list: ["Diseño hidráulico", "Diseño Geotécnico", "Diseño de vías", "Diseño arquitectónico", "Diseño eléctrico", "Estudios Geotécnicos"] }, { image: 2, title: "Evaluación de edificaciones existentes", list: ["Patología estructural", "Inspección visual detallada por medio de fotogrametría", "Estudio de vulnerabilidad sísmica", "Reforzamiento estructural"] }, { image: 3, title: "Interventoría y supervisión técnica", list: [] }]
 
 
-export const WeAreExperts = ({onMenuItemClick = () => { }}) => {
+export const WeAreExperts = ({ onMenuItemClick = () => { } }) => {
+
+    const screenUpper933 = useMediaQuery("(max-width: 933px)")
 
     const goToServicios = () => {
         const target = document.getElementById("serviciosSection");
@@ -41,11 +43,12 @@ export const WeAreExperts = ({onMenuItemClick = () => { }}) => {
                             <div className={styles.flexButtonContactS}>
                                 <div style={{ padding: "50px 30px" }}>
                                     <Button
-                                        size={"large"}
+                                        size={screenUpper933 ? "medium" : "small"}
                                         type="submit"
                                         value="Send"
                                         style={{ fontWeight: "bold", width: "270px" }}
                                         onClick={goToServicios}
+
                                     >
                                         {"Conoce nuestros servicios"}
                                     </Button>

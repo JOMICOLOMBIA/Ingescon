@@ -113,17 +113,20 @@
     top: 0vh;
   }
   .bsectionContact {
-    height: 100vh;
+    height: 60vh;
     justify-content: center;
+    top: 0;
   }
   .bsectionContact2 {
     top: 0vh;
+    height: 100vh;
   }
   .customContainer {
     justify-content: center;
   }
   .ourServicesSection {
     top: 0vh;
+    height: auto;
   }
   .bsectionCases {
     top: 0vh;

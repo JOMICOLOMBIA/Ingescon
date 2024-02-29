@@ -117,6 +117,28 @@
     flex-direction: column;
 }
 
+@media (max-width: 1050px) and (min-width: 600px) {
+    .headerCarouselContent {
+        font-size: 1.6rem !important;
+    }
+    .textCarouselContent {
+        font-size: .8rem !important;
+    }
+    .textCarouselBold {
+        font-size: .8rem !important;
+    }
+    .boxCarouselContent {
+        margin-top: 10vh;
+        height: auto;
+    }
+    .flexNuestrosSection {
+        height: auto;
+    }
+    .boxCarousel {
+        height: auto;
+    }
+
+}
 
 @media (max-width: 576px) {
     .boxCarouselContent {

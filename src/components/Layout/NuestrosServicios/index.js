@@ -85,7 +85,7 @@ export const NuestrosServicios = () => {
                                                     <Image
                                                         src={"/assets/yellow-barV.png"}
                                                         width={10}
-                                                        height={!screenUpper1050px ? 180 : 140}
+                                                        height={!screenUpper1050px ? 180 : 120}
                                                         alt="barra amarilla vertical"
                                                         className={styles.yellowBar}
                                                     />

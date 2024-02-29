@@ -13,7 +13,8 @@
 
 @media (min-width: 600px) and (max-width: 930px) {
     .boxButton {
-        width: 8vw;
+        width: 6vw;
+        right: 50px;
     }
 }
 
