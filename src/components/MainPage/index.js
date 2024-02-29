@@ -56,7 +56,7 @@ export const MainPage = () => {
       <div id="trayectoriaSection" className={styles.bsection}>
         <NuestraTrayectoria />
       </div>
-      <div id="contactSection" className={styles.bsectionContact2}>
+      <div id="contactSection2" className={styles.bsectionContact2}>
         <ContactForm integrationKey={{
         service: "service_r3wz6ok",
         template:"template_ikmvw7b",

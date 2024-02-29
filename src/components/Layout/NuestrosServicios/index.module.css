@@ -189,6 +189,7 @@
         flex-wrap: nowrap;
         height: auto;
         gap: 30px;
+        width: 85vw;
     }
 
     .boxCarousel {
@@ -200,7 +201,8 @@
     }
 
     .flexNuestrosSection {
-        height: auto;
+        height: fit-content;
+        margin-top: 0;
     }
 
     .listCarousel {
@@ -209,7 +211,7 @@
     }
 
     .boxImageCarousel {
-        width: 87vw;
+        width: 83vw;
         height: 30vh;
     }
     .yellowBarBox {
@@ -228,11 +230,13 @@
     }
 
     .textCarouselContent {
-        font-size: 1rem !important;
+        font-size: .9rem !important;
+        text-align: start
     }
 
     .textCarouselBold {
-        font-size: 1rem !important;
+        font-size: .9rem !important;
+        text-align: start
     }
 
     .headerCarouselContent {

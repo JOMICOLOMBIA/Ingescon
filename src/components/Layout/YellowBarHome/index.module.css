@@ -82,13 +82,10 @@
       height: 23vh;
     }
     .boxTextCardHome {
-      width: 35vw;
+      width: 45vw;
+      font-size: .9rem !important;
     }
     .boxIconCardHome {
       margin-top: 1.2vh;
-    }
-
-    .boxTextCardHome {
-      width: 45vw;
     }
   }
