@@ -104,8 +104,7 @@
 @media (max-width: 393px) {
     .boxControlesCarousel {
         width: 38vw;
-        top: 100px;
-        margin-top: 77.3vh;
+        top: 84.7%;
         left: 28.5vw;
     }
 }
