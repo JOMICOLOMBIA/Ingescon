@@ -29,10 +29,11 @@ export const FlexHomeSection = ({ pic }) => {
         <div className={styles.boxHomeSection}>
           <div className={styles.boxImageFlex}>
             <Image
-              src={`/assets/home-logo-${pic}.png`} // Ruta relativa a la imagen dentro de la carpeta public
+              src={`/assets/home-logo-${pic}.webp`} // Ruta relativa a la imagen dentro de la carpeta public
               alt="Logo inges"
               fill={true}
               className={styles.image}
+              sizes="(max-width: 728px) 80vw, (max-width: 2000px) 100vw"
             />
           </div>
           <div className={styles.flexHomeSection}>
