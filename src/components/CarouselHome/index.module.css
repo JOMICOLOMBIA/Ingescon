@@ -19,8 +19,7 @@
 }
 
 
-
-.indicatorS::after {
+.indicatorS {
     background: #FFDC06;
     border: 0px;
 }
@@ -107,7 +106,7 @@
 @media (max-width: 393px) {
     .boxControlesCarousel {
         width: 38vw;
-        top: 84.7%;
-        left: 28.5vw;
+        top: 74.7%;
+        left: 18.5vw;
     }
 }

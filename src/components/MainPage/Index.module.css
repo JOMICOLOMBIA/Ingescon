@@ -168,29 +168,31 @@
 @media (max-width: 576px) {
   .bsection {
     height: auto;
-    top: 0vh;
+    top: 35vh;
    
   }
   .bsectionContact2{
     padding: 0px 20px;
     height: 50vh;
-    top: 0;
+    top: 35vh;
   }
   .bsectionContact {
     height: 40vh;
     background-color: rgba(97, 97, 97, 0.514);
   }
   .bsectionCases {
-    top: 0;
+    top: 30vh;
+    margin-top: 5vh;
   }
   .ourServicesSection{
     width: 100%;
-    height: 120vh;
+    height: auto;
     background-color: white;
     display: flex;
     zoom: 0.97;
     position: relative;
-    top:0vh
+    top: 30vh;
+    box-shadow: 0px 3px 5px #3a3a3b;
   }
 
 }

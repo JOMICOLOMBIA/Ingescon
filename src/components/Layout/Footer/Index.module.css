@@ -205,6 +205,7 @@
   }
   .footer {
     height: 40vh;
+    top: 100vh;
   }
   .boxIconContact {
     display: none;

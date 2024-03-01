@@ -72,8 +72,9 @@
   @media (max-width: 576px) {
     .boxCardHome {
       width: 70vw;
-      height: 35vh;
+      height: 33vh;
       margin: 0 auto;
+      gap: 1vh;
     }
     .flexYellowBar {
       top: -60%;
@@ -83,7 +84,7 @@
     }
     .boxTextCardHome {
       width: 45vw;
-      font-size: .9rem !important;
+      font-size: .85rem !important;
     }
     .boxIconCardHome {
       margin-top: 1.2vh;
