@@ -13,6 +13,8 @@
   width: 100%;
   height: inherit;
   position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 1050px) and (min-width: 600px) {
@@ -31,6 +33,8 @@
   .homeImageBox {
     width: 100%;
     height: auto;
+    background-size: cover;
+    background-position: -600px;
   }
 
   .bsectionHome {
