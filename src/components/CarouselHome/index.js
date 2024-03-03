@@ -51,7 +51,7 @@ export const CarouselHome = () => {
                 interval={2500}
                 transitionTime={500}
                 showStatus={false}
-                infiniteLoop={true}
+                // infiniteLoop={true}
                 stopOnHover={false}
                 showArrows={false}
                 id="homeSection"
