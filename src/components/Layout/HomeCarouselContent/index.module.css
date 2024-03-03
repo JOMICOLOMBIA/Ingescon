@@ -32,9 +32,7 @@
 @media (max-width: 576px) {
   .homeImageBox {
     width: 100%;
-    height: auto;
-    background-size: cover;
-    background-position: -600px;
+    height: 115vh;
   }
 
   .bsectionHome {
@@ -42,7 +40,6 @@
   }
 
   .image {
-    object-fit: cover;
-    object-position: -600px;
+    object-fit: fill;
   }
 }
