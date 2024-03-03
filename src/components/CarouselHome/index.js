@@ -1,5 +1,6 @@
 import { HomeCarouselContent } from "../Layout/HomeCarouselContent";
 import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from "./index.module.css"
 import { Button, IconButton, useMediaQuery } from "@mui/material";
 import Image from "next/image";

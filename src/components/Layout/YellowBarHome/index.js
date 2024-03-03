@@ -1,7 +1,6 @@
 import { Typography, useMediaQuery } from "@mui/material";
 import styles from "./index.module.css"
 import Image from "next/image";
-import { Carousel } from "react-responsive-carousel";
 
 const cardContent = [
     { title: "Productos y servicios", desc: "Ofrecemos propuestas técnicas que se ajustes a las necesidades de la comunidad.", icon: "prod" },
