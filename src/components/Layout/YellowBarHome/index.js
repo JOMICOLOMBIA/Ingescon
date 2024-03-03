@@ -16,27 +16,27 @@ export default function YellowBar() {
     console.log(screenUpper560)
     return (
         <div className={styles.yellowBar}>
-            {screenUpper560 &&
-                <div className={styles.flexYellowBar}>
-                    {
-                        cardContent.map((content, key) => (
-                            <div className={styles.boxCardHome} key={key}>
-                                <div className={styles.boxIconCardHome}>
+            {/* {screenUpper560 && */}
+            <div className={styles.flexYellowBar}>
+                {
+                    cardContent.map((content, key) => (
+                        <div className={styles.boxCardHome} key={key} >
+                            <div className={styles.boxIconCardHome}>
                                 <Image
                                     src={`/assets/${content.icon}-icon.png`}
                                     alt="Icon"
                                     fill={true}
                                     className={styles.imageCard}
                                 />
-                                </div>
-                                <Typography className={styles.boxTitleCardHome}>{content.title}</Typography>
-                                <Typography className={styles.boxTextCardHome}>{content.desc}</Typography>
                             </div>
-                        ))
-                    }
-                </div>
-            }
-            {!screenUpper560 &&
+                            <Typography className={styles.boxTitleCardHome}>{content.title}</Typography>
+                            <Typography className={styles.boxTextCardHome}>{content.desc}</Typography>
+                        </div>
+                    ))
+                }
+            </div>
+            {/* } */}
+            {/* {!screenUpper560 &&
                 <Carousel
                     className={styles.flexYellowBar}
                     swipeable={true}
@@ -64,7 +64,7 @@ export default function YellowBar() {
                         ))
                     }
                 </Carousel>
-            }
+            } */}
         </div>
     );
 }

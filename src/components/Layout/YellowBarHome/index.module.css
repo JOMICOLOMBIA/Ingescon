@@ -72,15 +72,24 @@
   @media (max-width: 576px) {
     .boxCardHome {
       width: 70vw;
-      height: 33vh;
-      margin: 0 auto;
-      gap: 1vh;
+      height: 36vh;
+      gap: 2vh;
+      scroll-snap-align: center;
+      margin-left: 15vw;
+      margin-right: 15vw;
+      padding: auto;
     }
     .flexYellowBar {
       top: -60%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: auto;
+      justify-content: normal;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
     }
     .yellowBar {
-      height: 23vh;
+      height: 25vh;
     }
     .boxTextCardHome {
       width: 45vw;
@@ -88,5 +97,13 @@
     }
     .boxIconCardHome {
       margin-top: 1.2vh;
+      width: 25vw;
+      height: 25vw;
+    }
+    .boxTitleCardHome {
+      font-size: 1rem !important;
+    }
+    .boxTextCardHome {
+      font-size: .8rem !important;
     }
   }
