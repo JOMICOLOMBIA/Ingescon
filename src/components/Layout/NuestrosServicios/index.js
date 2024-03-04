@@ -103,7 +103,6 @@ export const NuestrosServicios = () => {
                             />
                         );
                     }}
-
                 >
                     {
                         contentCard.map((content, key) => {

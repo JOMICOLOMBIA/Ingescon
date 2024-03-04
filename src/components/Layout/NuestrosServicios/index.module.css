@@ -275,7 +275,7 @@
 
     .listCarousel {
         width: 70vw;
-        font-size: 14px;
+        font-size: .8rem;
     }
 
     .boxImageCarousel {
@@ -289,7 +289,7 @@
     .boxCarouselText {
         width: 75%;
         height: auto;
-        margin-top: 5vh;
+        margin-top: 4vh;
         margin-bottom: 3vh;
     }
     .flexCarouselText {
@@ -311,6 +311,7 @@
         font-size: 1.4rem !important;
         margin-bottom: 2vh;
         width: 70vw !important;
+        text-align: start;
     }
 
     .flexNuestrosSectionTitle {
@@ -340,7 +341,7 @@
     .boxControlesCarousel {
         width: 38vw;
         height: 5vh;
-        bottom: 4.2vh;
+
         margin: 0 auto;
         gap: 5vw;
     }
@@ -349,8 +350,21 @@
         width: 3.3vw;
     }
     .indicatorCarousel {
-        width: 5vw;
-        height: 5vw;
-        bottom: -1vh;
+        width: 4.5vw;
+        height: 4.5vw;
+        bottom: -1.9vh;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 576px) {
+
+    .boxControlesCarousel {
+        bottom: 3vh;
+    }
+}
+
+@media (max-width: 397px) {
+    .boxControlesCarousel {
+        bottom: 3.3vh;
     }
 }
