@@ -9,13 +9,6 @@
     position: relative
 }
 
-.flexNuestrosSectionTitle {
-    font-family: "Exo-B" !important;
-    font-size: 3.2rem !important;
-    margin-left: -50% !important;
-    margin-bottom: 10px;
-}
-
 .boxImage {
     position: relative;
     width: 40vw;
@@ -29,6 +22,8 @@
     background-color: rgb(252, 252, 252);
     margin-top: 7vh;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 .boxCarouselContent {
@@ -38,50 +33,28 @@
     align-items: center;
     margin: 0 auto;
     text-align: justify;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .boxImageCarousel {
-    width: 38vw;
-    height: 52vh;
+    width: 30vw;
+    height: 50vh;
     position: relative;
-}
-
-.carouselArrow {
-    position: absolute !important;
-    top: calc(50% - 15px);
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 2;
-    width: 20px;
-    height: 40px;
-    left: 3%;
-}
-
-.carouselArrowR {
-    position: absolute !important;
-    top: calc(50% - 15px);
-    right: 3%;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 2;
-    width: 20px;
-    height: 40px;
-    transform: rotate(-180deg);
-    -webkit-transform: rotate(-180deg);
 }
 
 .headerCarouselContent {
     font-family: "Exo-B";
-    font-size: 2.3rem;
+    font-size: 3rem;
     margin-top: -3vh;
-    margin-bottom: 2vh;
+    position: relative;
+    top: 18vh;
+    margin-left: 10vw;
 }
 
 .textCarouselContent {
     font-family: "Exo" !important;
-    font-size: 22px !important;
+    font-size: 1.6rem !important;
     display: inline;
     border-left: 4px solid rgb(243, 223, 77);
     padding-left: 30px;
@@ -89,7 +62,7 @@
 
 .textCarouselBold {
     font-family: "Exo-SB" !important;
-    font-size: 22px !important;
+    font-size: 1.6rem !important;
     display: inline;
 }
 
@@ -106,8 +79,8 @@
     height: auto;
     display: flex;
     flex-direction: column;
-
-
+    position: relative;
+    top: 9vh;
 }
 
 .boxParagraph {
@@ -142,10 +115,12 @@
 
 @media (max-width: 576px) {
     .boxCarouselContent {
-        flex-direction: column;
+        flex-direction: column-reverse;
         flex-wrap: nowrap;
         height: auto;
         gap: 30px;
+        align-items: start;
+        margin-left: 4vw;
     }
 
     .boxCarousel {
@@ -153,7 +128,7 @@
     }
 
     .boxParagraph {
-        width: 75vw;
+        width: 80vw;
     }
 
     .flexNuestrosSection {
@@ -166,17 +141,19 @@
     }
 
     .boxImageCarousel {
-        width: 87vw;
+        width: 80vw;
         height: 32vh;
     }
 
     .boxCarouselText {
         width: 75%;
         height: auto;
+        top: 1vh;
     }
 
     .textCarouselContent {
         font-size: 14px !important;
+        padding-left: 3vw;
     }
 
     .textCarouselBold {
@@ -186,26 +163,12 @@
     .headerCarouselContent {
         font-size: 1.7rem;
         margin-bottom: 2vh;
-    }
-
-    .flexNuestrosSectionTitle {
-        font-size: 1.7rem !important;
-        margin-left: -37% !important;
-        margin-bottom: 0;
+        top: 0;
+        margin-left: 4vw;
     }
 
     .boxImage {
         width: 100vw;
         height: .7vh;
-    }
-
-    .carouselArrow {
-        width: 15px;
-        height: 35px;
-    }
-
-    .carouselArrowR {
-        width: 15px;
-        height: 35px;
     }
 }

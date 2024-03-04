@@ -30,8 +30,6 @@ export const MainPage = () => {
             fill={true}
             quality={100} // Ajusta la calidad de la imagen
             loading="eager" // Carga la imagen de forma prioritaria
-            style={{ height: "" }}
-
           /></div>
     
         <ContactForm integrationKey={{

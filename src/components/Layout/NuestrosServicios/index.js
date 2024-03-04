@@ -206,7 +206,7 @@ export const NuestrosServicios = () => {
                                                     <h2 className={styles.headerCarouselContent}>{content.title}</h2>
                                                     <div className={styles.boxParagraph}>
                                                         <Typography className={styles.textCarouselContent}><strong className={styles.textCarouselBold}>Interventoría:</strong> Hacemos seguimiento a los estudios y diseños realizados para un determinado proyecto y/o contrato con el fin de hacer cumplir las especificaciones técnicas y actividades de manera adecuada y oportuna. </Typography>
-                                                        <br></br><Typography className={styles.textCarouselContent}><strong className={styles.textCarouselBold}>Supervisión Técnica:</strong> Certificamos y comprobamos que los diseños son ejecutados adecuadamente según los diseños y planos realizados por el diseñador estructural</Typography>
+                                                        <Typography className={styles.textCarouselContent}><strong className={styles.textCarouselBold}>Supervisión Técnica:</strong> Certificamos y comprobamos que los diseños son ejecutados adecuadamente según los diseños y planos realizados por el diseñador estructural</Typography>
                                                     </div>
                                                 </div>
                                             </div>

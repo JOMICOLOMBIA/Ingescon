@@ -18,7 +18,7 @@ export const BasicTheme = createTheme({
           borderWidth: "2px !important"
         },
         sizeSmall: {
-          width: "120px",
+          width: "105px",
           height: "30px",
           margin: "0px",
           fontSize: ".75rem"

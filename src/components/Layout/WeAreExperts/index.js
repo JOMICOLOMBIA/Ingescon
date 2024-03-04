@@ -30,25 +30,24 @@ export const WeAreExperts = ({ onMenuItemClick = () => { } }) => {
             <div
                 className={styles.boxCarousel}
             >
-
+                <h2 className={styles.headerCarouselContent}>{"Somos Expertos"}</h2>
                 {
                     <div key={"weareexperts-boxCarouselContent"} className={styles.boxCarouselContent}>
 
 
                         <div className={styles.boxCarouselText}>
-                            <h2 className={styles.headerCarouselContent}>{"Somos expertos"}</h2>
+
                             <div className={styles.boxParagraph}>
-                                <Typography className={styles.textCarouselContent}>Brindamos<strong className={styles.textCarouselBold}> asesoría y acompañamiento técnicos con profesionales especializados</strong> en las diferentes áreas de la ingeniería como:</Typography>
+                                <Typography className={styles.textCarouselContent}>Somos una<strong className={styles.textCarouselBold}> compañía de diseño y consultoría que ofrece soluciones multidisciplinarias para el área de la Ingeniería civil,</strong> acompañando los proyectos desde etapas de prefactibilidad hasta diseños detallados.</Typography>
                             </div>
                             <div className={styles.flexButtonContactS}>
-                                <div style={{ padding: "50px 30px" }}>
+                                <div style={{ padding: !screenUpper933 ? "50px 30px" : "50px 0px" }}>
                                     <Button
-                                        size={screenUpper933 ? "medium" : "small"}
+                                        size={!screenUpper933 ? "large" : "small"}
                                         type="submit"
                                         value="Send"
-                                        style={{ fontWeight: "bold", width: "270px" }}
+                                        style={{ fontWeight: "bold", width: !screenUpper933 ? "310px" : "200px", padding: "auto 0" }}
                                         onClick={goToServicios}
-
                                     >
                                         {"Conoce nuestros servicios"}
                                     </Button>
@@ -58,7 +57,7 @@ export const WeAreExperts = ({ onMenuItemClick = () => { } }) => {
                         </div>
                         <div className={styles.boxImageCarousel}>
                             <Image
-                                src={`/assets/ns-1.jpg`}
+                                src={`/assets/exper.png`}
                                 fill={true}
                                 alt="imagen proyecto"
                             />
