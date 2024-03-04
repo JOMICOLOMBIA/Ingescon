@@ -31,7 +31,8 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
   }, []);
 
 
-  const screenUpper576 = useMediaQuery("(min-width:930px)");
+  const screenUpper576 = useMediaQuery("(min-width:576px)");
+  const screenUpper933 = useMediaQuery("(min-width:933px)");
   const [formData, setFormData] = useState({
     from_name: "",
     email_id: "",
@@ -93,7 +94,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
         <form onSubmit={sendEmail} className={styles.contactForm}>
         {cardView && (<>
           <div className={styles.formItemBox}>
-            <FormControl className={styles.formOptionBox} required>
+            <FormControl className={styles.formOptionBox} required> 
             
               <TextField
               label={"Nombre y Apellidos*"}
@@ -103,6 +104,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
                 id="from_name"
                 value={formData.from_name}
                 onChange={handleInputChange}
+                size={screenUpper576 ? "medium" : "small"}
               />
             </FormControl>
           </div>
@@ -118,6 +120,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
               id="sent_email"
               value={formData.sent_email}
               onChange={handleInputChange}
+              size={screenUpper576 ? "medium" : "small"}
             />
           </FormControl>
          
@@ -133,6 +136,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
               id="sent_cellphone_number"
               value={formData.sent_cellphone_number}
               onChange={handleInputChange}
+              size={screenUpper576 ? "medium" : "small"}
             />
           </FormControl>
          
@@ -247,10 +251,10 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
          
           <div className={styles.flexButtonContactS}>
             <Button
-              size={screenUpper576 ? "large" : "small"}
+              size={screenUpper933 ? "large" : "medium"}
               type="submit"
               value="Send"
-              style={{ fontWeight:"bold", height:"4vh"}}
+              style={{ fontWeight:"bold", marginBottom: "0px" }}
             >
              {sendButtontext}
             </Button>

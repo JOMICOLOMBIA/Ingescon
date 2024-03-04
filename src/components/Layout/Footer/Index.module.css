@@ -170,7 +170,8 @@
     font-size: .6rem;
   }
   .footer {
-    height: 32vh6
+    height: 32vh;
+    top: 110vh;
   }
   .boxIconContact {
     width: 2vw;
@@ -205,7 +206,7 @@
   }
   .footer {
     height: 40vh;
-    top: 100vh;
+    top: 65vh;
   }
   .boxIconContact {
     display: none;

@@ -26,18 +26,19 @@ export const MainPage = () => {
           <Image
             src={"/assets/FONDO_DE_NECESITAS_ASESORIA.png"}
             alt="Fondo section"
-          
+            sizes="(max-width: 576px) 100vw, (max-width: 2000px) 100vw"
             fill={true}
             quality={100} // Ajusta la calidad de la imagen
             loading="eager" // Carga la imagen de forma prioritaria
-          /></div>
-    
+          />
+        </div>
+
         <ContactForm integrationKey={{
-        service: "service_r3wz6ok",
-        template:"template_t36jaf9",
-        publicKey:"cgAQ725WoCfaP4VLZ"
+          service: "service_r3wz6ok",
+          template: "template_t36jaf9",
+          publicKey: "cgAQ725WoCfaP4VLZ"
         }} title={"Cuéntanos tu idea"} sendButtontext="Contáctanos" LeftComponent={() => {
-          return(
+          return (
             <h2 className={styles.customTextContactSection}>
               ¿Necesitas asesoría para tu proyecto?
             </h2>
@@ -56,16 +57,16 @@ export const MainPage = () => {
       </div>
       <div id="contactSection2" className={styles.bsectionContact2}>
         <ContactForm integrationKey={{
-        service: "service_r3wz6ok",
-        template:"template_ikmvw7b",
-        publicKey:"cgAQ725WoCfaP4VLZ"
+          service: "service_r3wz6ok",
+          template: "template_ikmvw7b",
+          publicKey: "cgAQ725WoCfaP4VLZ"
         }} LeftComponent={() => {
-          return(<div className={styles.customHeaderContainer }><h2 className={styles.customHeader}>
-          HABLEMOS DE TU PROYECTO
-         </h2>
-         <div style={{ borderBottom:"4px solid yellow", paddingBottom:20, marginLeft:20}}>Hablanos de tu ídea, y te mostraremos el camino para hacerla realidad.</div>
-         </div> )
-        }}/>
+          return (<div className={styles.customHeaderContainer}><h2 className={styles.customHeader}>
+            HABLEMOS DE TU PROYECTO
+          </h2>
+            <div style={{ borderBottom: "4px solid yellow", paddingBottom: 20, marginLeft: 20 }}>Hablanos de tu ídea, y te mostraremos el camino para hacerla realidad.</div>
+          </div>)
+        }} />
       </div>
     </>
   );

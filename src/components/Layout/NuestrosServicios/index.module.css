@@ -378,9 +378,9 @@
 
 @media (max-width: 397px) {
     .boxControlesCarousel {
-        bottom: 2.9vh;
+        bottom: 3vh;
     }
     .indicatorCarousel {
-        bottom: -2.3vh;
+        bottom: -2.2vh;
     }
 }
