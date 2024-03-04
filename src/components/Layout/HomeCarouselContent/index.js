@@ -19,7 +19,7 @@ export const HomeCarouselContent = ({ pic }) => {
                 src={
                     screenUpper576
                       ? `/assets/home-slider-${pic}.webp`
-                      : `/assets/test-${pic}.jpg`
+                      : `/assets/testing-${pic}.jpg`
                   }
                 alt="Fondo"
                 fill={true}

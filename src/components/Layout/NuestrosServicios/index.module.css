@@ -131,12 +131,12 @@
 
 .indicatorCarousel {
     background: transparent;
-    width: 1.7vw;
-    height: 3.4vh;
+    width: 1.5vw;
+    height: 3vh;
     display: inline-block;
     margin: 0 8px;
     position: relative;
-    bottom: 0vh;
+    bottom: 1.3vh;
     border-radius: 100%;
     cursor: pointer;
     border: 2px solid rgb(243, 223, 77);
@@ -152,7 +152,7 @@
 .boxControlesCarousel {
     display: flex;
     position: relative;
-    width: 5vw;
+    width: 12vw;
     height: 4vh;
     bottom: 6.8vh;
     /* left: 50%; */
@@ -338,14 +338,19 @@
         right: 2vw;
     }
     .boxControlesCarousel {
-        width: 7vw;
+        width: 38vw;
         height: 5vh;
-        bottom: 1.2vh;
+        bottom: 4.2vh;
         margin: 0 auto;
         gap: 5vw;
     }
     .boxIconControl {
         height: 3.5vh;
         width: 3.3vw;
+    }
+    .indicatorCarousel {
+        width: 5vw;
+        height: 5vw;
+        bottom: -1vh;
     }
 }
