@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from "./index.module.css";
 import Image from "next/image";
 import { IconButton, Typography, useMediaQuery } from "@mui/material";
+import { useState, useEffect } from "react";
 
 
 
@@ -11,7 +12,26 @@ const contentCard = [{ image: 1, title: "Consultorías Técnicas", list: ["Dise�
 
 export const NuestrosServicios = () => {
     const screenUpper1050px = useMediaQuery("(max-width: 1050px");
-    const screenUpper576 = useMediaQuery("(max-width: 576px");
+
+    const [playCarousel, setPlayCarousel] = useState(false);
+
+
+    const handlePlay = () => {
+        if (playCarousel === false) {
+            setPlayCarousel(true)
+        } else {
+            console.log("none")
+        }
+    }
+
+    const handlePause = () => {
+
+        if (playCarousel === true) {
+            setPlayCarousel(false)
+        } else {
+            console.log("none")
+        }
+    }
 
     return (
         <div className={styles.flexNuestrosSection}>
@@ -27,19 +47,16 @@ export const NuestrosServicios = () => {
                 className={styles.boxCarousel}
             >
                 <Carousel
-                    swipeable={!screenUpper1050px ? true : false}
+                    swipeable={false}
                     showThumbs={false}
                     showStatus={false}
                     showIndicators={false}
-                    emulateTouch={true}
-                    swipeScrollTolerance={5}
                     useKeyboardArrows={true}
                     interval={4500}
                     transitionTime={500}
                     infiniteLoop={true}
                     stopOnHover={false}
-                    autoPlay={true}
-                    statusFormatter={(current, total) => `Current slide: ${current} / Total: ${total}`}
+                    autoPlay={playCarousel}
                     renderArrowPrev={(onClickHandler, hasPrev, label) =>
                         hasPrev && (
                             <IconButton type="button" onClick={onClickHandler} title={label} className={styles.carouselArrow}>
@@ -177,6 +194,30 @@ export const NuestrosServicios = () => {
                         })
                     }
                 </Carousel>
+                <div className={styles.boxControlesCarousel}>
+                <div className={styles.boxIconControl}>
+                    <IconButton type="button" className={styles.buttonControles} onClick={handlePlay}>
+                        <Image
+                            src={"/assets/play-button.png"}
+                            alt="play button"
+                            fill={true}
+                            className={styles.imageButtonControl}
+                            sizes="(max-width: 576px) 100vw, (max-width: 2000px) 90vw"
+                        />
+                    </IconButton>
+                </div>
+                <div className={styles.boxIconControl}>
+                    <IconButton type="button" className={styles.buttonControles} onClick={handlePause}>
+                        <Image
+                            src={"/assets/pause-button.png"}
+                            alt="pause button"
+                            fill={true}
+                            className={styles.imageButtonControl}
+                            sizes="(max-width: 576px) 100vw, (max-width: 2000px) 90vw"
+                        />
+                    </IconButton>
+                </div>
+            </div>
             </div>
         </div>
     )

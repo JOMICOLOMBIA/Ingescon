@@ -23,18 +23,18 @@ export const FlexProyectos = () => {
       image: 1,
     },
     {
-      title: "Intersección Sena",
-      description: "Puente en concreto postensado Sena 3 luces",
+      title: "Puente intersección Nogales",
+      description: "Puente curvo en viga cajon metálica longitud 260 m",
       image: 2,
     },
     {
-      title: "Intersección Sena",
-      description: "Puente en concreto postensado Sena 3 luces",
+      title: "Puente intersección Nogales",
+      description: "Puente curvo en viga cajon metálica longitud 260 m",
       image: 2,
     },
     {
-      title: "Intersección Sena",
-      description: "Puente en concreto postensado Sena 3 luces",
+      title: "Peaje La Gómez",
+      description: "Troncal Magdalena 2",
       image: 4,
     },
   ];

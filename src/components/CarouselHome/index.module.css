@@ -57,13 +57,13 @@
 
 @media (max-width: 1050px) and (min-width: 600px) {
     .indicatorCarousel {
-        bottom: 35vh;
+        bottom: 40vh;
         width: 1.9vw;
         height: 3.7vh;
     }
 
     .boxControlesCarousel {
-        top: calc(132.7% - 15px);
+        top: -63.5vh;
         width: 16.3vw;
         left: 41.5%;
     }
@@ -72,6 +72,15 @@
         height: 5vh;
     }
 
+}
+
+/* Adjust box control carousel on small mobile devices when horizontal */
+
+@media (max-width: 741px ) and (min-width: 576px) {
+    .boxControlesCarousel {
+        top: -64.2vh;
+        left: 41.2%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -88,17 +97,13 @@
         height: 3.2vh;
         width: 3vw;
     }
-
-    .imageButtonControl {
-        object-fit: contain;
-    }
 }
 
 @media (min-width: 394px) and (max-width: 576px) {
 
     .boxControlesCarousel {
         width: 37.5vw;
-        bottom: 46.5vh;
+        bottom: 46.2vh;
         left: 29vw;
     }
 }
@@ -107,6 +112,6 @@
     .boxControlesCarousel {
         width: 38vw;
         bottom: 46.8vh;
-        left: 29vw;
+        left: 28vw;
     }
 }

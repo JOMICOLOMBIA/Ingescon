@@ -50,12 +50,12 @@
 
   @media (max-width: 1050px) and (min-width: 600px) {
     .boxTextCardHome {
-      font-size: .7rem !important;
-      width: 15vw;
+      font-size: .72rem !important;
+      width: 18vw;
     }
     .boxCardHome {
       width: 27vw;
-      height: 57vh;
+      height: 58vh;
     }
     .boxIconCardHome {
       width: 70px;
@@ -72,7 +72,7 @@
   @media (max-width: 576px) {
     .boxCardHome {
       width: 70vw;
-      height: 36vh;
+      height: 34vh;
       gap: 2vh;
       scroll-snap-align: center;
       margin-left: 15vw;

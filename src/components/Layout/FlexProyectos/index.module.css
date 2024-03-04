@@ -58,7 +58,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1vh;
+    gap: 1.2vh;
 }
 
 .topBox:hover {
@@ -69,8 +69,11 @@
 .titleCardProyect {
     color: white;
     z-index: 2;
-    margin-top: 80px;
+    margin-top: 11vh;
     font-family: "Exo-B";
+    height: 3vh !important;
+    margin-bottom: 0 !important;
+    font-size: 1.3rem !important;
 }
 .textCardProyect {
     color: white;
@@ -78,6 +81,8 @@
     width: 150px;
     text-align: center;
     font-family: "Exo" !important;
+    height: 10vh;
+    margin-top: 3vh !important;
 }
 
 @media (max-width: 1050px) and (min-width: 600px) {
@@ -112,6 +117,27 @@
     }
     .flexProyectos{
         margin-top: 15vh;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .titleCardProyect {
+        font-size: 1.1rem !important;
+        height: 8vh !important;
+        margin-top: 16vh !important;
+    }
+    .textCardProyect {
+        margin-top: 0 !important;
+        font-size: .9rem !important;
+        height: 13vh;
+    }
+    .bottomBox {
+        width: 32vw;
+        height: 80vh;
+    }
+    .topBox {
+        width: 32vw;
+        height: 80vh;
+        gap: 2vh;
     }
   }
 
@@ -162,5 +188,14 @@
     }
     .topBox {
         width: 70vw;
+    }
+    .titleCardProyect {
+        font-size: 1rem !important;
+        height: 5vh !important;
+        margin-top: 11vh !important;
+    }
+    .textCardProyect {
+        margin-top: 0 !important;
+        font-size: .9rem !important;
     }
 }

@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 7vh;
-    height: 80%;
+    height: 90%;
 }
 
 .flexNuestrosSectionTitle {
@@ -23,16 +23,16 @@
 
 .boxCarousel {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-color: rgb(252, 252, 252);
     margin-top: 7vh;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .boxCarouselContent {
     display: flex;
     width: 90vw;
-    height: 70vh;
+    height: 80vh;
     align-items: center;
     margin: 0 auto;
     text-align: justify;
@@ -129,6 +129,58 @@
     object-fit: contain;
 }
 
+.indicatorCarousel {
+    background: transparent;
+    width: 1.7vw;
+    height: 3.4vh;
+    display: inline-block;
+    margin: 0 8px;
+    position: relative;
+    bottom: 0vh;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 2px solid rgb(243, 223, 77);
+}
+
+
+.indicatorS {
+    background: #FFDC06;
+    border: 0px;
+}
+
+
+.boxControlesCarousel {
+    display: flex;
+    position: relative;
+    width: 5vw;
+    height: 4vh;
+    bottom: 6.8vh;
+    /* left: 50%; */
+    margin: 0 auto;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.buttonControles {
+    width: inherit;
+    height: inherit;
+}
+
+.boxIconControl {
+    width: 1.7vw;
+    height: 4.2vh;
+    position: relative;
+}
+
+.boxIconControl:hover {
+    zoom: 1.1;
+    margin-top: -1px;
+}
+
+.imageButtonControl {
+    object-fit: contain;
+}
+
 @media (max-width: 1050px) and (min-width: 600px) {
 
     .flexNuestrosSectionTitle {
@@ -183,6 +235,17 @@
     }
     .listCarousel {
         width: 35vw;
+    }
+    .boxIconControl {
+        height: 6vh;
+        width: 6vw;
+    }
+    .boxControlesCarousel {
+        width: 7vw;
+        height: 5vh;
+        bottom: 10vh;
+        margin: 0 auto;
+        gap: 2vw;
     }
 }
 
@@ -273,5 +336,16 @@
         height: 32px;
         top: calc(20% - 15px);
         right: 2vw;
+    }
+    .boxControlesCarousel {
+        width: 7vw;
+        height: 5vh;
+        bottom: 1.2vh;
+        margin: 0 auto;
+        gap: 5vw;
+    }
+    .boxIconControl {
+        height: 3.5vh;
+        width: 3.3vw;
     }
 }

@@ -39,10 +39,6 @@ export const CarouselHome = () => {
     }
 
 
-    useEffect(() => {
-        console.log(playCarousel)
-    }, [playCarousel])
-
     return (
         <>
             <Carousel
