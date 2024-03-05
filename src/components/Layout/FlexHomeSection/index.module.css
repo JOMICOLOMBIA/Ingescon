@@ -85,21 +85,25 @@
     width: 65vw;
     height: 46vh;
   }
+  .flexButtonHS {
+    justify-content: center;
+    gap: 2vw;
+  }
 }
 
 @media (max-width: 576px) {
   .flexHomeSectionTitle {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
     zoom: 1.1;
     width: 95vw !important;
     height: 15vh;
   }
   .boldText {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
   }
   
   .semiBoldText {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
   }
 
   .flexHomeSection {
@@ -111,7 +115,7 @@
 
   .flexButtonHS {
     justify-content: start;
-    margin-top: 2vh;
+    margin-top: 3vh;
     gap: 5vw;
   }
 

@@ -180,6 +180,16 @@
 .imageButtonControl {
     object-fit: contain;
 }
+.playButton {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgb(243, 223, 77);
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
 
 @media (max-width: 933px) and (min-width: 600px) {
 
@@ -251,6 +261,13 @@
         width: 2.5vw;
         height: 5vh;
         bottom: 1vh;
+    }
+    .playButton {
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-left: 12px solid rgb(243, 223, 77);
+        top: 25%;
+        right: 5%;
     }
 }
 

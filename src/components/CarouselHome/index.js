@@ -106,6 +106,7 @@ export const CarouselHome = () => {
                     </IconButton>
                 </div>
             </div>
+            {playCarousel && <div id="play-button" className={styles.playButton} />}
         </>
 
     );
