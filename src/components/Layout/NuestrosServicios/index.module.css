@@ -381,6 +381,12 @@
         width: 4.5vw;
         height: 4.5vw;
     }
+    .playButton {
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-left: 12px solid rgb(243, 223, 77);
+        top: 12%;
+    }
 }
 
 @media (min-width: 400px) and (max-width: 576px) {
