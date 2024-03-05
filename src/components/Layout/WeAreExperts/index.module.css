@@ -90,7 +90,7 @@
     flex-direction: column;
 }
 
-@media (max-width: 1050px) and (min-width: 600px) {
+@media (max-width: 933px) and (min-width: 600px) {
     .headerCarouselContent {
         font-size: 1.6rem !important;
     }

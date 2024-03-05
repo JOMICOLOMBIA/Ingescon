@@ -131,7 +131,7 @@
   width: 16vw;
 }
 
-@media (max-width: 1050px) and (min-width: 600px) {
+@media (max-width: 933px) and (min-width: 600px) {
 
   .flexFooter {
     width: 90vw;

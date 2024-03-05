@@ -181,7 +181,7 @@
     object-fit: contain;
 }
 
-@media (max-width: 1050px) and (min-width: 600px) {
+@media (max-width: 933px) and (min-width: 600px) {
 
     .flexNuestrosSectionTitle {
         font-size: 2.2rem !important;

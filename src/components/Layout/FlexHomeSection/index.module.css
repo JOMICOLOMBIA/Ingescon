@@ -55,7 +55,7 @@
   font-size: 1.55rem !important;
 }
 
-@media (max-width: 1050px) and (min-width: 600px) {
+@media (max-width: 933px) and (min-width: 600px) {
   .flexHomeSectionTitle {
     font-size: 1.1rem !important;
     width: 60vw !important;
