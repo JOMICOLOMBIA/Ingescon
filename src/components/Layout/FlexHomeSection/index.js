@@ -31,6 +31,8 @@ export const FlexHomeSection = ({ pic }) => {
   if (pic === 1) {
     return (
       <div className={styles.boxHomeSection}>
+        
+        <div className={styles.flexHomeSection}>
         <div className={styles.boxImageFlex}>
           <Image
             src={`/assets/home-logo-${pic}.webp`} // Ruta relativa a la imagen dentro de la carpeta public
@@ -41,7 +43,6 @@ export const FlexHomeSection = ({ pic }) => {
             priority={true}
           />
         </div>
-        <div className={styles.flexHomeSection}>
           <Typography className={styles.flexHomeSectionTitle}>
             <strong className={styles.boldText}>Descubre el corazón de toda obra civil:</strong><br></br> Especificaciones diseñadas para garantizar<br></br> durabilidad y seguridad.
           </Typography>

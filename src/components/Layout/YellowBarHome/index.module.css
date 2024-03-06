@@ -1,6 +1,6 @@
 .yellowBar {
     width: 100%;
-    height: 25vh;
+    height: 60px;
     background-color: rgb(243, 223, 77);
     position: relative;
     top: -23vh;
@@ -17,6 +17,9 @@
     box-shadow: 0px 3px 5px #3a3a3b;
     align-items: center;
     gap: 2vh;
+    min-height: 200px;
+    justify-content: center;
+    text-align: center;
   }
   .flexYellowBar {
     display: flex;
@@ -55,8 +58,10 @@
       width: 18vw;
     }
     .boxCardHome {
-      width: 27vw;
-      height: 58vh;
+      justify-content: center;
+      text-align: center;
+      width: 150px;
+      height: 300px;
     }
     .boxIconCardHome {
       width: 70px;
@@ -78,6 +83,7 @@
       scroll-snap-align: center;
       margin-left: 15vw;
       margin-right: 15vw;
+      margin-bottom: 30px;
       padding: auto;
     }
     .flexYellowBar {
