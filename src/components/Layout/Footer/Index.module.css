@@ -4,6 +4,7 @@
   height: 22vh;
   background-color: black;
   display: flex;
+  bottom: -50vh;
 }
 
 .flexFooter {

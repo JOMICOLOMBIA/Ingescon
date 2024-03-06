@@ -33,6 +33,7 @@ export const BasicTheme = createTheme({
           width: "240px",
           height: "55px",
           fontSize: "1.2rem",
+          padding: "0",
         }
       },
       variants: [{
