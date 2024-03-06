@@ -41,7 +41,7 @@ export const WeAreExperts = ({ onMenuItemClick = () => { } }) => {
                                 <Typography className={styles.textCarouselContent}>Somos una<strong className={styles.textCarouselBold}> compañía de diseño y consultoría que ofrece soluciones multidisciplinarias para el área de la Ingeniería civil,</strong> acompañando los proyectos desde etapas de prefactibilidad hasta diseños detallados.</Typography>
                             </div>
                             <div className={styles.flexButtonContactS}>
-                                <div style={{ padding: !screenUpper933 ? "50px 30px" : "50px 0px" }}>
+                                <div style={{ marginLeft: !screenUpper933 ? "5vh" : "0", marginBottom: !screenUpper933 ? "0" : "3vh" }}>
                                     <Button
                                         size={!screenUpper933 ? "large" : "small"}
                                         type="submit"

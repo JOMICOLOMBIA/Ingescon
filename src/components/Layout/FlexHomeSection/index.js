@@ -31,18 +31,17 @@ export const FlexHomeSection = ({ pic }) => {
   if (pic === 1) {
     return (
       <div className={styles.boxHomeSection}>
-        
         <div className={styles.flexHomeSection}>
-        <div className={styles.boxImageFlex}>
-          <Image
-            src={`/assets/home-logo-${pic}.webp`} // Ruta relativa a la imagen dentro de la carpeta public
-            alt="Logo inges"
-            fill={true}
-            className={styles.image}
-            sizes="(max-width: 728px) 80vw, (max-width: 2000px) 100vw"
-            priority={true}
-          />
-        </div>
+          <div className={styles.boxImageFlex}>
+            <Image
+              src={`/assets/home-logo-${pic}.webp`} // Ruta relativa a la imagen dentro de la carpeta public
+              alt="Logo inges"
+              fill={true}
+              className={styles.image}
+              sizes="(max-width: 728px) 80vw, (max-width: 2000px) 100vw"
+              priority={true}
+            />
+          </div>
           <Typography className={styles.flexHomeSectionTitle}>
             <strong className={styles.boldText}>Descubre el corazón de toda obra civil:</strong><br></br> Especificaciones diseñadas para garantizar<br></br> durabilidad y seguridad.
           </Typography>
@@ -51,6 +50,7 @@ export const FlexHomeSection = ({ pic }) => {
               className={styles.buttonHomeSection}
               size={screenUpper933 ? "large" : "medium"}
               onClick={goToContact}
+              st
             >
               {" "}
               Contáctanos{" "}
@@ -60,6 +60,7 @@ export const FlexHomeSection = ({ pic }) => {
               size={screenUpper933 ? "large" : "medium"}
               onClick={goToContact}
               variant="outlined"
+              
             >
               {" "}
               Nuestros Servicios{" "}
@@ -71,17 +72,17 @@ export const FlexHomeSection = ({ pic }) => {
   }
   return (
     <div className={styles.boxHomeSection}>
-      <div className={styles.boxImageFlex}>
-        <Image
-          src={`/assets/home-logo-${pic}.png`} // Ruta relativa a la imagen dentro de la carpeta public
-          alt="Foto obra"
-          fill={true}
-          className={styles.image}
-          sizes="(max-width: 728px) 80vw, (max-width: 2000px) 100vw"
-          priority={true}
-        />
-      </div>
       <div className={styles.flexHomeSection}>
+        <div className={styles.boxImageFlex}>
+          <Image
+            src={`/assets/home-logo-${pic}.png`} // Ruta relativa a la imagen dentro de la carpeta public
+            alt="Foto obra"
+            fill={true}
+            className={styles.image}
+            sizes="(max-width: 728px) 80vw, (max-width: 2000px) 100vw"
+            priority={true}
+          />
+        </div>
         <Typography className={styles.flexHomeSectionTitle}>
           <strong className={styles.semiBoldText}>{infoComponent[arrayIndex][0]}</strong>{infoComponent[arrayIndex][1]}
         </Typography>
@@ -105,5 +106,5 @@ export const FlexHomeSection = ({ pic }) => {
       </div>
     </div>
   );
- 
+
 };

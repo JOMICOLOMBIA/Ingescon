@@ -42,8 +42,6 @@
   width: 400px;
   height: 300px;
   position: relative;
-
-
 }
 
 .boldText {
@@ -91,21 +89,21 @@
 
 @media (max-width: 576px) {
   .flexHomeSectionTitle {
-    font-size: 1rem !important;
+    font-size: .9rem !important;
     zoom: 1.1;
-    width: 95vw !important;
+    width: 85vw !important;
     height: 15vh;
   }
   .boldText {
-    font-size: 1rem !important;
+    font-size: .9rem !important;
   }
   
   .semiBoldText {
-    font-size: 1rem !important;
+    font-size: .9rem !important;
   }
 
   .flexHomeSection {
-    width: auto;
+    width: 80vw;
     border-radius: 10px;
     margin: 0;
     gap: 1vh;
@@ -115,18 +113,21 @@
     justify-content: start;
     margin-top: 3vh;
     gap: 5vw;
+    width: 85vw;
   }
 
   .buttonHomeSection {
     margin-top: 15px;
   }
 
-  
-
   .boxHomeSection {
     transform: translate(-50%, -50%);
     top: 39%;
-    left: 52%;
+    left: 42%;
     margin: 0;
+  }
+  .boxImageFlex {
+    width: 85vw;
+    height: 30vh;
   }
 }

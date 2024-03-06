@@ -18,15 +18,16 @@ export const BasicTheme = createTheme({
           borderWidth: "2px !important"
         },
         sizeSmall: {
-          width: "105px",
+          width: "110px",
           height: "30px",
           margin: "0px",
           fontSize: ".75rem"
         },
         sizeMedium: {
-          width: "170px",
+          width: "175px",
           height: "42px",
           fontSize: ".85rem",
+          padding: "0",
         },
         sizeLarge: {
           width: "240px",
@@ -43,7 +44,6 @@ export const BasicTheme = createTheme({
           borderWidth: "2px",
           borderColor: "white !important",
           fontWeight: "bold",
-          padding: "auto",
           marginBottom: "40px",
           marginTop: "0px",
         }
