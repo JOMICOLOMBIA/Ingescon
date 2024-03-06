@@ -30,7 +30,7 @@ export const FlexProyectos = () => {
     {
       title: "Puente intersección Nogales",
       description: "Puente curvo en viga cajon metálica longitud 260 m",
-      image: 2,
+      image: 3,
     },
     {
       title: "Peaje La Gómez",
