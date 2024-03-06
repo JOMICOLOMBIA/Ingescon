@@ -39,10 +39,11 @@
 }
 
 .boxImageFlex {
-  width: 57vw;
-  height: 33vh;
+  width: 400px;
+  height: 300px;
   position: relative;
-  margin-left: -190px;
+  left: 70px;
+
 }
 
 .boldText {
