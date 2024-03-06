@@ -1,5 +1,5 @@
 .image {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .bsectionHome {
@@ -11,10 +11,8 @@
 
 .homeImageBox {
   width: 100%;
-  height: inherit;
+  height: 140vh;
   position: relative;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 @media (max-width: 933px) and (min-width: 600px) {

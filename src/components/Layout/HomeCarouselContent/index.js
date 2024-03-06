@@ -24,7 +24,7 @@ export const HomeCarouselContent = ({ pic }) => {
                 alt="Fondo"
                 fill={true}
                 className={styles.image}
-                sizes="(max-width: 576px) 100vw, (max-width: 1050px) 70vw (max-width: 2000px) 90vw"
+                sizes="(max-width: 576px) 100vw, (max-width: 1050px) 100vw (max-width: 2000px) 90vw"
                 priority={true}
             />
             </div>
