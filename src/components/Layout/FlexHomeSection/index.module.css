@@ -42,7 +42,7 @@
   width: 400px;
   height: 300px;
   position: relative;
-  left: 70px;
+
 
 }
 
@@ -82,10 +82,7 @@
     margin-left: 15vw;
     zoom: .88;
   }
-  .boxImageFlex {
-    width: 65vw;
-    height: 46vh;
-  }
+  
   .flexButtonHS {
     justify-content: center;
     gap: 2vw;
@@ -124,11 +121,7 @@
     margin-top: 15px;
   }
 
-  .boxImageFlex {
-    margin: 0;
-    width: 90vw;
-    height: 30vh;
-  }
+  
 
   .boxHomeSection {
     transform: translate(-50%, -50%);
