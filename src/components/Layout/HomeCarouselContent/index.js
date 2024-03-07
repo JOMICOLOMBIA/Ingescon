@@ -18,7 +18,7 @@ export const HomeCarouselContent = ({ pic }) => {
             <Image
                 src={
                     screenUpper576
-                      ? `/assets/home-slider-${pic}.webp`
+                      ? `/assets/home-slider-${pic}.jpg`
                       : `/assets/testing-${pic}.jpg`
                   }
                 alt="Fondo"
