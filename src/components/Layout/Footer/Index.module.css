@@ -33,6 +33,7 @@
   width: 40vw;
   height: auto;
   align-items: center;
+  position: relative;
 }
 
 .boxImage {
@@ -132,6 +133,25 @@
   width: 16vw;
 }
 
+.boxHoverEffect {
+  display: flex;
+}
+.loginBox {
+  width: 40vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  opacity: 0;
+  background-color: black;
+  align-items: center;
+  align-content: center;
+  bottom: 5vh;
+}
+.loginBox:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
 @media (max-width: 933px) and (min-width: 600px) {
 
   .flexFooter {
