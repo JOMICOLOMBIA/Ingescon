@@ -16,13 +16,12 @@
     object-fit: cover;
 }
 
-.topBox {
+.topBoxNotClicked {
     position: absolute;
     width: 20vw;
     height: 50vh;
     z-index: 1;
     opacity: 0;
-    /* zoom: 0.99; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +29,20 @@
     gap: 1.2vh;
 }
 
-.topBox:hover {
+.topBoxClicked {
+    position: absolute;
+    width: 20vw;
+    height: 50vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2vh;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+.topBoxNotClicked:hover {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
 }
@@ -87,7 +99,13 @@
         width: 70vw;
     }
 
-    .topBox {
+    .topBoxNotClicked {
+        width: 70vw;
+    }
+    .topBoxNotClicked:hover {
+        opacity: 0;
+    }
+    .topBoxClicked {
         width: 70vw;
     }
 
