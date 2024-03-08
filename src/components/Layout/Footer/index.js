@@ -48,7 +48,7 @@ export const Footer = () => {
                   </p>
                 </div>
                 <a>
-                  <Button size="large" style={{marginBottom: "0"}}>
+                  <Button size={screenUpper576 ? "large" : "small"} style={{marginBottom: "0"}}>
                     Ingresar
                   </Button>
                 </a>
@@ -161,20 +161,36 @@ export const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.boxTextoFooter}>
-              <div className={styles.firstBoxFlex}>
-                <div className={styles.boxImage}>
-                  <Image
-                    src="/assets/copyright.png"
-                    alt="icono copyright"
-                    width={100}
-                    height={100}
-                    layout="responsive"
-                  />
+            <div className={styles.boxHoverEffect}>
+              <div className={styles.boxTextoFooter}>
+                <div className={styles.firstBoxFlex}>
+                  <div className={styles.boxImage}>
+                    <Image
+                      src="/assets/copyright.png"
+                      alt="icono copyright"
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                    />
+                  </div>
+                  <Typography className={styles.textRights}>Copyright 2023 por INGES</Typography>
                 </div>
-                <Typography className={styles.textRights}>Copyright 2023 por INGES</Typography>
+                <div className={styles.boxTextRights}>
+                  <Typography className={styles.textRights}>Todos los derechos reservados</Typography>
+                </div>
               </div>
-              <Typography className={styles.textRights}>Todos los derechos reservados</Typography>
+              <div className={styles.loginBox}>
+                <div className={styles.boxTextoIngresar}>
+                  <p className={styles.headerBoxContact}>
+                    Acceso a correo corporativo
+                  </p>
+                </div>
+                <a>
+                  <Button size={!screenUpper576 ? "large" : "small"} style={{marginBottom: "0"}}>
+                    Ingresar
+                  </Button>
+                </a>
+              </div>
             </div>
           </>
         }

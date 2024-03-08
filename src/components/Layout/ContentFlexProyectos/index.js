@@ -13,10 +13,7 @@ export const ContentFlexProyectos = ({key, proyect}) => {
 
 
     const handleTap = () => {
-        
         setIsClicked(!isClicked);
-
-        // if (isClicked === false)
     }
 
 

@@ -84,6 +84,9 @@
   .boptionsNotClicked {
     height: 20px;
   }
+  .textNotClicked {
+    font-size: 1rem !important;
+  }
 
   .foptions {
     gap: 20px;
