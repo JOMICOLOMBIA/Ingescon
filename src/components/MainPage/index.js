@@ -22,7 +22,7 @@ export const MainPage = () => {
       <WeAreExperts />
 
       <div id="contactSection" className={styles.bsectionContact}>
-        <div >
+        <div >  
           <Image
             src={"/assets/FONDO_DE_NECESITAS_ASESORIA.png"}
             alt="Fondo section"

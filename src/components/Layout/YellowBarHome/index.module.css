@@ -1,6 +1,7 @@
 .yellowBar {
     width: 100%;
-    height: 60px;
+    height: 25vh;
+    max-height: 27vh;
     background-color: rgb(243, 223, 77);
     position: relative;
     top: -23vh;
@@ -10,15 +11,16 @@
     background-color: white;
     width: 22vw;
     height: 42vh;
+    max-height: 45vh;
     display: flex;
     flex-direction: column;
     padding: auto;
     box-shadow: 0px 3px 5px #3a3a3b;
     align-items: center;
     gap: 2vh;
-    min-height: 200px;
+    /* min-height: 200px;
     justify-content: center;
-    text-align: center;
+    text-align: center; */
   }
   .flexYellowBar {
     display: flex;
@@ -33,6 +35,7 @@
     height: auto;
     text-align: center;
     font-family: "Exo" !important;
+    font-size: 1vw !important;
   }
 
   .boxTitleCardHome {
@@ -77,7 +80,7 @@
   @media (max-width: 576px) {
     .boxCardHome {
       width: 70vw;
-      height: 34vh;
+      max-height: 34vh;
       gap: 2vh;
       scroll-snap-align: center;
       margin-left: 15vw;

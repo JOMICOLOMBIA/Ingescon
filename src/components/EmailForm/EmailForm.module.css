@@ -6,7 +6,7 @@
   
   position: absolute;
   /* margin-left: 55vw; */
-  margin-top: 50px;
+  margin-top: 2vw;
   flex-direction: row;
   gap: 3vw;
 }
@@ -20,8 +20,7 @@
   width: auto;
   justify-content: space-between;
   padding: 20px;
-  border-radius:8px
-
+  border-radius:8px;
 }
 
 .flexContactSectionTitle {

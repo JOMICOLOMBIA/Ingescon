@@ -3,7 +3,6 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin-top: 7vh;
     height: auto;
 }
 
@@ -73,7 +72,7 @@
     font-family: "Exo-B";
     height: 3vh !important;
     margin-bottom: 0 !important;
-    font-size: 1.3rem !important;
+    font-size: 1.2vw !important;
 }
 .textCardProyect {
     color: white;
@@ -83,6 +82,7 @@
     font-family: "Exo" !important;
     height: 10vh;
     margin-top: 3vh !important;
+    font-size: 1vw;
 }
 
 @media (max-width: 933px) and (min-width: 600px) {
