@@ -3,7 +3,7 @@
 
 .flexContactSection {
   display: flex;
-  
+
   position: absolute;
   /* margin-left: 55vw; */
   margin-top: 2vw;
@@ -17,7 +17,7 @@
   flex-direction: column;
   gap: 2vh;
   height: fit-content;
-  width: auto;
+  width: 50vw;
   justify-content: space-between;
   padding: 20px;
   border-radius:8px;
@@ -70,6 +70,7 @@
   width: 50vw;
   justify-content: space-between;
   padding: 20px;
+  margin-right: 10px;
 }
 
 .flexButtonContactS {
@@ -80,21 +81,21 @@
 
 .formItemBox {
   margin-bottom: 1.5vh;
- 
+
 }
 
-
+/* 
 @media (max-width: 933px) and (min-width: 600px) {
- 
- 
-  
-  .flexContactSection {
+
+
+
+  /* .flexContactSection {
     zoom:0.8;
     width: 100%;
     margin-left: 0vw;
     margin-top: 2vh;
-  }
-}
+  } */
+
 
 /* @media (max-width: 920px)  {
 
@@ -129,21 +130,22 @@
   }
 } */
 
-@media (max-width: 620px)  {
-  
+/* @media (max-width: 900px)  {
+
 
   .contactForm {
     margin-bottom: 0;
- 
+
   }
   .flexContactSection {
     justify-content: center;
     padding: 5px;
     border-radius: 10px;
-    height: 60vh;
+    zoom:0.8;
     margin-top: 3vh;
     display: block;
     flex-direction: column;
+    margin-left: 20px;
   }
 
   .flexContactCardSection{
@@ -153,6 +155,47 @@
   }
   .flexContactSectionTitle {
     font-size: 5vw;
+  }
+
+  .flexContactSectionText {
+    font-size: 11px;
+  }
+  .flexContentContactSection {
+    gap: 2vh;
+    width: auto;
+  }
+  .flexButtonContactS {
+    margin-top: 20px;
+  }
+} */
+
+@media (max-width: 620px)  {
+
+
+  .contactForm {
+    margin-bottom: 0;
+
+  }
+  .flexContactSection {
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    zoom:1;
+    margin-top: 3vh;
+    display: block;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .flexContactCardSection{
+    height: max-content;
+    margin: 0px auto;
+    width: 90vw;
+  }
+  .flexContactSectionTitle {
+    font-size: 5vw;
+    flex-direction: row;
+    display: flex;
   }
 
   .flexContactSectionText {
