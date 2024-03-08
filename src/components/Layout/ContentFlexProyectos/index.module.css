@@ -1,0 +1,104 @@
+.boxHoverEffect {
+    display: flex;
+}
+
+.bottomBox {
+    width: 20vw;
+    height: 50vh;
+    position: relative;
+}
+
+.imageProject {
+    object-fit: fill;
+}
+
+.imageHover {
+    object-fit: cover;
+}
+
+.topBox {
+    position: absolute;
+    width: 20vw;
+    height: 50vh;
+    z-index: 1;
+    opacity: 0;
+    /* zoom: 0.99; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2vh;
+}
+
+.topBox:hover {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.titleCardProyect {
+    color: white;
+    z-index: 2;
+    margin-top: 11vh;
+    font-family: "Exo-B";
+    height: 3vh !important;
+    margin-bottom: 0 !important;
+    font-size: 1.2vw !important;
+}
+
+.textCardProyect {
+    color: white;
+    z-index: 2;
+    width: 150px;
+    text-align: center;
+    font-family: "Exo" !important;
+    height: 10vh;
+    margin-top: 3vh !important;
+    font-size: 1vw;
+}
+
+@media (max-width: 933px) and (min-width: 600px) {
+    .titleCardProyect {
+        font-size: 1.1rem !important;
+        height: 8vh !important;
+        margin-top: 16vh !important;
+    }
+
+    .textCardProyect {
+        margin-top: 0 !important;
+        font-size: .9rem !important;
+        height: 13vh;
+    }
+
+    .bottomBox {
+        width: 32vw;
+        height: 80vh;
+    }
+
+    .topBox {
+        width: 32vw;
+        height: 80vh;
+        gap: 2vh;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .bottomBox {
+        width: 70vw;
+    }
+
+    .topBox {
+        width: 70vw;
+    }
+
+    .titleCardProyect {
+        font-size: 1rem !important;
+        height: 5vh !important;
+        margin-top: 11vh !important;
+    }
+
+    .textCardProyect {
+        margin-top: 0 !important;
+        font-size: .9rem !important;
+    }
+}

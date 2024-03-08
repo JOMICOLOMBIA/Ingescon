@@ -34,6 +34,7 @@
   height: auto;
   align-items: center;
   position: relative;
+  top: 6vh;
 }
 
 .boxImage {
@@ -49,6 +50,7 @@
   font-family: "Exo" !important;
   font-size: 0.9rem !important;
   color: white;
+  text-align: center;
 }
 
 .firstBoxFlex {
@@ -56,6 +58,7 @@
   height: auto;
   display: flex;
   gap: 5px;
+  justify-content: center;
 }
 
 .boxContactFooter {
@@ -135,18 +138,19 @@
 
 .boxHoverEffect {
   display: flex;
+  flex-direction: column;
+  height: 20vh;
 }
 .loginBox {
   width: 40vw;
   height: auto;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   opacity: 0;
   background-color: black;
   align-items: center;
-  align-content: center;
-  bottom: 5vh;
+  top: -3vh;
 }
 .loginBox:hover {
   opacity: 1;
