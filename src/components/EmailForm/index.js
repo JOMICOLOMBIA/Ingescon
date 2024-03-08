@@ -38,6 +38,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
     email_id: "",
     phone: "",
     message: "",
+    country:"Colombia"
   });
 
   const sendEmail = (e) => {
@@ -63,7 +64,9 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
             sent_email:"", 
             country:"", 
             interest_service:"", 
-            message:""
+            message:"", 
+            complete_name:""
+
             });
           toast.success("¡Correo enviado con éxito!");
         },
