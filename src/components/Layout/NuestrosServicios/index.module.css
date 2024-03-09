@@ -133,12 +133,12 @@
 
 .indicatorCarousel {
     background: transparent;
-    width: 1.5vw;
-    height: 3vh;
+    width: 1.3vw;
+    height: 1.3vw;
     display: inline-block;
     margin: 0 8px;
     position: relative;
-    bottom: 1.3vh;
+    top: -0.5vw;
     border-radius: 100%;
     cursor: pointer;
     border: 2px solid rgb(243, 223, 77);
@@ -148,16 +148,17 @@
 .indicatorS {
     background: #FFDC06;
     border: 0px;
+    top: -0.5vw;
 }
 
 
 .boxControlesCarousel {
     display: flex;
     position: relative;
-    width: 12vw;
+    width: 11.5vw;
     height: 4vh;
-    bottom: 6.8vh;
-    /* left: 50%; */
+    top: -3vw;
+    /* left: 45vw; */
     margin: 0 auto;
     justify-content: space-between;
     z-index: 1;
@@ -170,7 +171,7 @@
 
 .boxIconControl {
     width: 1.7vw;
-    height: 4.2vh;
+    height: 1.7vw;
     position: relative;
 }
 
@@ -397,7 +398,8 @@
 @media (min-width: 398px) and (max-width: 576px) {
 
     .boxControlesCarousel {
-        bottom: 4.4vh;
+        /* bottom: 2.4vh !important; */
+        top: -12vw;
     }
     .indicatorCarousel {
         bottom: -1vh;
@@ -406,10 +408,11 @@
 
 @media (max-width: 397px) {
     .boxControlesCarousel {
-        bottom: 6.6vh;
+        top: -14.5vw;
     }
     .indicatorCarousel {
-        bottom: .7vh;
+        /* bottom: .vh; */
+        top: -2vw;
     }
     
     .flexNuestrosSectionTitle {

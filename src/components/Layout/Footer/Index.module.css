@@ -230,7 +230,7 @@
     font-size: 14px;
   }
   .footer {
-    height: 40vh;
+    height: 42vh;
     top: 65vh;
     overflow: hidden;
   }
@@ -294,5 +294,8 @@
   }
   .loginBox {
     width: 60vw;
+  }
+  .boxHoverEffect {
+    height: auto;
   }
 }

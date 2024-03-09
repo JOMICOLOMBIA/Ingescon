@@ -43,6 +43,9 @@
     .flexTrayectoriaSectionTitle {
         font-size: 2.2rem !important;
     }
+    .imagenNuestraT {
+        object-fit: cover;
+    }
 }
 
 

@@ -47,7 +47,7 @@ export const Footer = () => {
                     Acceso a correo corporativo
                   </p>
                 </div>
-                <a href="https://mail.ingesconsultoria.com/SOGo/">
+                <a href="https://mail.ingesconsultoria.com/SOGo/"  target="_blank">
                   <Button size={screenUpper576 ? "large" : "small"} style={{marginBottom: "0"}}>
                     Ingresar
                   </Button>
@@ -81,7 +81,7 @@ export const Footer = () => {
                 <p className={styles.textBoxRedes}>Redes sociales: </p>
                 <div className={styles.flexIconRedes}>
                   <div className={styles.boxIconRedes2}>
-                    <a href="https://www.instagram.com/inges_consultoria/?hl=en">
+                    <a href="https://www.instagram.com/inges_consultoria/?hl=en" target="_blank">
                       <Image
                         src="/assets/icon-insta.png"
                         alt="icono instagram"
