@@ -184,7 +184,7 @@
     margin-top: 3vh;
     display: block;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 0 auto;
   }
 
   .flexContactCardSection{

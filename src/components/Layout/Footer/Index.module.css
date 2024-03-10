@@ -245,6 +245,7 @@
   }
   .headerBoxContact {
     font-size: .9rem !important;
+    margin-top: 0;
   }
   .textRights {
     font-size: .7rem !important;
@@ -272,7 +273,7 @@
   .boxTextoFooter {
     align-items: center;
     margin: 0 auto;
-    top: 4vh;
+    top: 3vh;
 
   }
   .boxContactInfo {

@@ -12,7 +12,7 @@
     display: inline-block;
     margin: 0 8px;
     position: relative;
-    bottom: 16vw;
+    bottom: 31.5vh;
     border-radius: 100%;
     cursor: pointer;
     border: 2px solid rgb(243, 223, 77);
@@ -30,8 +30,8 @@
     position: relative;
     width: 11.7vw;
     height: 4vh;
-    /* bottom: 50.7vh; */
-    bottom: 25.75vw;
+    bottom: 50.7vh;
+    /* bottom: 25.75vw; */
     left: 44.2%;
     justify-content: space-between;
 }
@@ -110,7 +110,7 @@
     .indicatorCarousel {
         width: 5vw;
         height: 5vw;
-        bottom: 68.5vw;
+        bottom: 31.5vh;
     }
 
     .boxIconControl {
@@ -128,16 +128,16 @@
 @media (min-width: 394px) and (max-width: 576px) {
 
     .boxControlesCarousel {
-        width: 38vw;
-        bottom: 46.2vh;
-        left: 29vw;
+        width: 39vw;
+        bottom: 46vh;
+        left: 28.5vw;
     }
 }
 
 @media (max-width: 393px) {
     .boxControlesCarousel {
-        width: 39vw;
-        bottom: 46.8vh;
-        left: 28vw;
+        width: 40vw;
+        bottom: 46.7vh;
+        left: 27.5vw;
     }
 }

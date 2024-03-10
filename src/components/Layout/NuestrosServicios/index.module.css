@@ -138,7 +138,7 @@
     display: inline-block;
     margin: 0 8px;
     position: relative;
-    top: -0.5vw;
+    top: -1vh;
     border-radius: 100%;
     cursor: pointer;
     border: 2px solid rgb(243, 223, 77);
@@ -148,7 +148,7 @@
 .indicatorS {
     background: #FFDC06;
     border: 0px;
-    top: -0.5vw;
+    /* top: -0.5vw; */
 }
 
 
@@ -157,7 +157,7 @@
     position: relative;
     width: 11.5vw;
     height: 4vh;
-    top: -3vw;
+    top: -5.9vh;
     /* left: 45vw; */
     margin: 0 auto;
     justify-content: space-between;
@@ -399,7 +399,7 @@
 
     .boxControlesCarousel {
         /* bottom: 2.4vh !important; */
-        top: -12vw;
+        top: -14vw;
     }
     .indicatorCarousel {
         bottom: -1vh;
