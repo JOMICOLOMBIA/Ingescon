@@ -157,7 +157,7 @@
     position: relative;
     width: 11.5vw;
     height: 4vh;
-    top: -5.9vh;
+    top: -5.05vh;
     /* left: 45vw; */
     margin: 0 auto;
     justify-content: space-between;
@@ -192,6 +192,11 @@
     position: absolute;
     top: 35%;
     right: 5%;
+}
+@media (min-width: 1281px) and (max-width: 1920px) {
+    .boxControlesCarousel {
+        top: -5.9vh;
+    }
 }
 
 @media (max-width: 933px) and (min-width: 600px) and (orientation: landscape) {

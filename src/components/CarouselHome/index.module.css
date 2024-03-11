@@ -12,7 +12,8 @@
     display: inline-block;
     margin: 0 8px;
     position: relative;
-    bottom: 31.5vh;
+    /* bottom: 31.5vh; */
+    top: -31.5vh;
     border-radius: 100%;
     cursor: pointer;
     border: 2px solid rgb(243, 223, 77);
@@ -28,8 +29,8 @@
     position: relative;
     width: 12vw;
     height: 4vh;
-    bottom: 50.7vh;
-    /* bottom: 25.75vw; */
+    /* bottom: 50.7vh; */
+    top: -50.5vh;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -43,6 +44,7 @@
     width: 1.7vw;
     height: 1.7vw;
     position: relative;
+    margin: auto 0;
 }
 
 .boxIconControl:hover {
@@ -65,6 +67,11 @@
     right: 5%;
 }
 
+@media (min-width: 1281px) and (max-width: 1920px) {
+    .boxControlesCarousel {
+        top: -50.9vh;
+    }
+}
 @media (min-width: 1921px) {
     .boxControlesCarousel {
         bottom: 50.3vh;
