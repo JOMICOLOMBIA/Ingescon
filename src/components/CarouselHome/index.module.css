@@ -30,7 +30,7 @@
     width: 12vw;
     height: 4vh;
     /* bottom: 50.7vh; */
-    top: -51vh;
+    top: -52vh;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -69,7 +69,7 @@
 
 @media (min-width: 1281px) and (max-width: 1920px) {
     .boxControlesCarousel {
-        top: -50.7vh;
+        top: -51vh;
     }
 }
 @media (min-width: 1921px) {
