@@ -4,7 +4,7 @@
   height: 22vh;
   background-color: black;
   display: flex;
-  bottom: -50vh;
+  bottom: -51vh;
 }
 
 .flexFooter {
@@ -133,9 +133,8 @@
 }
 .boxTextRights {
   /* margin-left: 0 auto; */
-  width: 16vw;
+  width: 17vw;
 }
-
 .boxHoverEffect {
   display: flex;
   flex-direction: column;
@@ -150,11 +149,19 @@
   opacity: 0;
   background-color: black;
   align-items: center;
-  top: -3vh;
+  top: -8vh;
 }
 .loginBox:hover {
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
+}
+
+@media (min-width: 1281px) and (max-width: 1920px) {
+
+  .loginBox {
+    top: -3vh;
+  }
+
 }
 
 @media(max-width: 1112px) and (min-width:934px )  and (orientation: landscape) {
