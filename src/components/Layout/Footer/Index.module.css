@@ -132,7 +132,7 @@
   height: auto;
 }
 .boxTextRights {
-  margin-left: 0 auto;
+  /* margin-left: 0 auto; */
   width: 16vw;
 }
 
@@ -164,7 +164,7 @@
 
   .footer {
     height: 35vh;
-    top: 70vh;
+    top: 85vh;
   }
   .boxContactFooter {
     gap: 2vh;

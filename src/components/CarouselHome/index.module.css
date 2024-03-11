@@ -18,21 +18,19 @@
     border: 2px solid rgb(243, 223, 77);
 }
 
-
 .indicatorS {
     background: #FFDC06;
     border: 0px;
 }
 
-
 .boxControlesCarousel {
     display: flex;
     position: relative;
-    width: 11.7vw;
+    width: 12vw;
     height: 4vh;
     bottom: 50.7vh;
     /* bottom: 25.75vw; */
-    left: 44.2%;
+    margin: 0 auto;
     justify-content: space-between;
 }
 
@@ -67,6 +65,12 @@
     right: 5%;
 }
 
+@media (min-width: 1921px) {
+    .boxControlesCarousel {
+        bottom: 50.3vh;
+        width: 11vw;
+    }
+}
 
 @media (max-width: 933px) and (min-width: 600px) {
     .indicatorCarousel {
@@ -76,14 +80,14 @@
     }
 
     .boxControlesCarousel {
-        top: -63.5vh;
+        top: -63.1vh;
         width: 16.3vw;
-        left: 41.5%;
     }
 
     .boxIconControl {
         height: 5vh;
     }
+
     .playButton {
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
@@ -97,8 +101,7 @@
 
 @media (max-width: 741px) and (min-width: 576px) {
     .boxControlesCarousel {
-        top: -64.2vh;
-        left: 41.2%;
+        top: -64.6vh;
     }
 }
 
@@ -117,6 +120,7 @@
         height: 5vw;
         width: 5vw;
     }
+
     .playButton {
         border-top: 12px solid transparent;
         border-bottom: 12px solid transparent;
@@ -130,7 +134,6 @@
     .boxControlesCarousel {
         width: 39vw;
         bottom: 46vh;
-        left: 0;
         margin: 0 auto;
     }
 }
@@ -139,7 +142,6 @@
     .boxControlesCarousel {
         width: 40vw;
         bottom: 46.7vh;
-        left: 0;
         margin: 0 auto;
     }
 }

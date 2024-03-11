@@ -87,6 +87,9 @@
   .textNotClicked {
     font-size: 1rem !important;
   }
+  .boptionsNotClicked:hover {
+    height: 2vh;
+  }
 
   .foptions {
     gap: 20px;
