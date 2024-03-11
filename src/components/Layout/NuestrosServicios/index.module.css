@@ -138,7 +138,8 @@
     display: inline-block;
     margin: 0 8px;
     position: relative;
-    top: -1vh;
+    
+    top: .5vh;
     border-radius: 100%;
     cursor: pointer;
     border: 2px solid rgb(243, 223, 77);
@@ -198,7 +199,7 @@
         top: -5.9vh;
     }
     .indicatorCarousel {
-        top: .5vh;
+        top: -1vh;
     }
 }
 
