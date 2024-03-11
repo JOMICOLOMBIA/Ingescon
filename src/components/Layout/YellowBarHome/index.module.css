@@ -10,7 +10,7 @@
   .boxCardHome {
     background-color: white;
     width: 22vw;
-    height: 41vh;
+    height: 37vh;
     max-height: 45vh;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@
     font-size: 1.2rem !important;
     font-family: "Exo-B" !important;
     font-weight: 400 !important;
-    width: 15vw;
+    width: 17vw;
     text-align: center;
   }
 
@@ -47,10 +47,16 @@
     width: 100px;
     height: 100px;
     position: relative;
-    margin-top: 6vh;
+    margin-top: 5vh;
   }
   .imageCard {
     object-fit: contain;
+  }
+
+  @media (min-width: 1281px) and (max-width: 1920px) {
+    .boxCardHome {
+      height: 41vh;
+    }
   }
 
   @media (max-width: 933px) and (min-width: 577px)  and (orientation: landscape) {

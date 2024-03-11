@@ -7,7 +7,7 @@
   width: 100%;
   min-height: 750px;
   position: relative;
-  height: 140vh;
+  height: 115vh;
 }
 
 .homeImageBox {
@@ -15,6 +15,12 @@
   height: 100%;
   position: relative;
   min-height:  900px;
+}
+
+@media (min-width: 1281px) and (max-width: 1920px) {
+  .bsectionHome {
+    height: 140vh;
+  }
 }
 
 @media (max-width: 933px) and (min-width: 600px)  and (orientation: landscape) {
