@@ -156,6 +156,19 @@
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
 }
+
+@media(max-width: 1112px) and (min-width:934px )  and (orientation: landscape) {
+  .loginBox {
+    top: -3.2vh;
+  }
+  .firstBoxFlex {
+    width: 30vw;
+  }
+  .boxTextRights {
+    width: 30vw;
+  }
+}
+
 @media (max-width: 933px) and (min-width: 600px) {
 
   .flexFooter {
@@ -169,7 +182,9 @@
   .boxContactFooter {
     gap: 2vh;
   }
-
+  .flexContactInfo {
+    width: 22vw;
+  }
   .textFooter {
     font-size: .8rem;
   }

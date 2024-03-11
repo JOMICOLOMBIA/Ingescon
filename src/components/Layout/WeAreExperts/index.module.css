@@ -112,11 +112,11 @@
         height: auto;
     }
     .flexNuestrosSection {
-        height: auto;
+        height: fit-content;
       
     }
     .boxCarousel {
-        height: auto;
+        height: 80vh;
     }
 
 }

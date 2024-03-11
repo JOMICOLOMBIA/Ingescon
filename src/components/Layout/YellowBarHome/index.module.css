@@ -10,7 +10,7 @@
   .boxCardHome {
     background-color: white;
     width: 22vw;
-    height: 42vh;
+    height: 41vh;
     max-height: 45vh;
     display: flex;
     flex-direction: column;
@@ -39,6 +39,8 @@
     font-size: 1.2rem !important;
     font-family: "Exo-B" !important;
     font-weight: 400 !important;
+    width: 15vw;
+    text-align: center;
   }
 
   .boxIconCardHome {
@@ -51,24 +53,25 @@
     object-fit: contain;
   }
 
-  @media (max-width: 933px) and (min-width: 577px) {
+  @media (max-width: 933px) and (min-width: 577px)  and (orientation: landscape) {
     .boxTextCardHome {
-      font-size: .72rem !important;
+      font-size: .7rem !important;
       width: 19vw;
     }
     .boxCardHome {
       justify-content: center;
       text-align: center;
-      width: 20vw;
+      width: 25vw;
       height: 50vh;
       max-height: fit-content;
     }
     .boxIconCardHome {
-      width: 70px;
-      height: 70px;
+      width: 14vw;
+      height: 14vh;
     }
     .boxTitleCardHome {
       font-size: .8rem !important;
+      width: 18vw;
     }
     .yellowBar {
       height: 36vh;

@@ -29,8 +29,14 @@
 .image {
     object-fit: cover;
 }
+@media(max-width: 1112px) and (min-width:934px ) {
 
-@media (max-width: 933px) and (min-width: 600px) {
+    .flexHomeSectionTitle {
+        margin-left: -47.5%;
+    }
+}
+
+@media (max-width: 933px) and (min-width: 600px) and (orientation: landscape) {
     .flexProcSection {
         gap: 2px;
         margin-top: 70px;
