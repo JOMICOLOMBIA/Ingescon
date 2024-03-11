@@ -197,6 +197,9 @@
     .boxControlesCarousel {
         top: -5.9vh;
     }
+    .indicatorCarousel {
+        top: .5vh;
+    }
 }
 
 @media (max-width: 933px) and (min-width: 600px) and (orientation: landscape) {
