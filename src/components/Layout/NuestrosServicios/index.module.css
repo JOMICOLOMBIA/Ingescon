@@ -256,7 +256,7 @@
     .boxControlesCarousel {
         width: 21vw;
         height: 5vh;
-        bottom: 10.8vh;
+        top: -10.7vh;
         margin: 0 auto;
         gap: 2vw;
     }
@@ -276,7 +276,7 @@
 
 @media (max-width: 741px) and (min-width: 576px) {
     .boxControlesCarousel {
-        bottom: 12vh !important;
+        top: -12vh;
         width: 22vw !important;
     }
 }
@@ -398,7 +398,6 @@
 @media (min-width: 398px) and (max-width: 576px) {
 
     .boxControlesCarousel {
-        /* bottom: 2.4vh !important; */
         top: -14vw;
     }
     .indicatorCarousel {
@@ -411,7 +410,6 @@
         top: -14.5vw;
     }
     .indicatorCarousel {
-        /* bottom: .vh; */
         top: -2vw;
     }
     

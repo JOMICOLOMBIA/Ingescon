@@ -107,7 +107,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
                 id="from_name"
                 value={formData.from_name}
                 onChange={handleInputChange}
-                size={screenUpper576 ? "medium" : "small"}
+                size={screenUpper933 ? "medium" : "small"}
               />
             </FormControl>
           </div>
@@ -123,7 +123,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
               id="sent_email"
               value={formData.sent_email}
               onChange={handleInputChange}
-              size={screenUpper576 ? "medium" : "small"}
+              size={screenUpper933 ? "medium" : "small"}
             />
           </FormControl>
          
@@ -139,7 +139,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
               id="sent_cellphone_number"
               value={formData.sent_cellphone_number}
               onChange={handleInputChange}
-              size={screenUpper576 ? "medium" : "small"}
+              size={screenUpper933 ? "medium" : "small"}
             />
           </FormControl>
          
@@ -162,6 +162,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
               id="complete_name"
               value={formData.complete_name}
               onChange={handleInputChange}
+              size={screenUpper933 ? "medium" : "small"}
             />
           </FormControl>
          
@@ -180,6 +181,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
               id="sent_cellphone_number"
               value={formData.sent_cellphone_number}
               onChange={handleInputChange}
+              size={screenUpper933 ? "medium" : "small"}
             />
           </FormControl>
          
@@ -197,6 +199,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
     id="country"
     value={formData.country}
     onChange={handleInputChange}
+    size={screenUpper933 ? "medium" : "small"}
   >
     {countries.map((country, index) => (
       <MenuItem key={index} value={country}>{country}</MenuItem>
@@ -218,6 +221,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
               id="sent_email"
               value={formData.sent_email}
               onChange={handleInputChange}
+              size={screenUpper933 ? "medium" : "small"}
             />
           </FormControl>
          
@@ -234,6 +238,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
                 id="interest_service"
                 value={formData.interest_service}
                 onChange={handleInputChange}
+                size={screenUpper933 ? "medium" : "small"}
               />
             </FormControl> 
             
@@ -248,6 +253,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
                 id="message"
                 value={formData.message}
                 onChange={handleInputChange}
+                size={screenUpper933 ? "medium" : "small"}
               />
             </FormControl>
           </div>)}

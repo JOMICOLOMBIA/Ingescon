@@ -6,7 +6,7 @@
 
   position: absolute;
   /* margin-left: 55vw; */
-  margin-top: 1.8vw;
+  margin-top: 1.5vw !important;
   flex-direction: row;
   gap: 3vw;
 }
@@ -84,17 +84,16 @@
 
 }
 
-/* 
 @media (max-width: 933px) and (min-width: 600px) {
 
 
 
-  /* .flexContactSection {
-    zoom:0.8;
-    width: 100%;
-    margin-left: 0vw;
-    margin-top: 2vh;
-  } */
+  .flexContactSection {
+    margin-top: 0 !important;
+  }
+}
+/* 
+
 
 
 /* @media (max-width: 920px)  {

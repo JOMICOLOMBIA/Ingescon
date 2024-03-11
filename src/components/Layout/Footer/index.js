@@ -185,7 +185,7 @@ export const Footer = () => {
                     Acceso a correo corporativo
                   </p>
                 </div>
-                <a>
+                <a href="https://mail.ingesconsultoria.com/SOGo/"  target="_blank">
                   <Button size={!screenUpper576 ? "large" : "small"} style={{marginBottom: "0"}}>
                     Ingresar
                   </Button>

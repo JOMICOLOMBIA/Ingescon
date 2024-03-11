@@ -70,14 +70,14 @@
 
 @media (max-width: 933px) and (min-width: 600px) {
     .titleCardProyect {
-        font-size: 1.1rem !important;
+        font-size: 1rem !important;
         height: 8vh !important;
         margin-top: 16vh !important;
     }
 
     .textCardProyect {
         margin-top: 0 !important;
-        font-size: .9rem !important;
+        font-size: .8rem !important;
         height: 13vh;
     }
 
@@ -86,7 +86,12 @@
         height: 80vh;
     }
 
-    .topBox {
+    .topBoxClicked {
+        width: 32vw;
+        height: 80vh;
+        gap: 2vh;
+    }
+    .topBoxNotClicked {
         width: 32vw;
         height: 80vh;
         gap: 2vh;

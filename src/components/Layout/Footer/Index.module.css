@@ -164,6 +164,7 @@
 
   .footer {
     height: 35vh;
+    top: 70vh;
   }
   .boxContactFooter {
     gap: 2vh;
@@ -175,6 +176,7 @@
   .boxTextoFooter {
     width: 30vw;
     align-items: center;
+    top: 9vh;
   }
   .boxTextRights {
     width: 25vw;
@@ -187,16 +189,13 @@
   }
   .headerBoxContact {
     font-size: .8rem !important;
+    margin-bottom: 0 !important;
   }
   .textContactInfo {
     font-size: .6rem;
   }
   .textBoxRedes {
     font-size: .6rem;
-  }
-  .footer {
-    height: 32vh;
-    top: 110vh;
   }
   .boxIconContact {
     width: 2vw;
@@ -208,6 +207,13 @@
   }
   .boxContactInfo {
     gap: 2vh;
+  }
+  .boxHoverEffect {
+    height: auto;
+    align-items: center;
+  }
+  .loginBox {
+    top: -3vw;
   }
 }
 
