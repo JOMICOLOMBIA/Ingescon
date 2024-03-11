@@ -140,7 +140,8 @@
 
     .boxControlesCarousel {
         width: 39vw;
-        bottom: 46vh;
+        /* bottom: 45vh !important; */
+        top: -46.7vh;
         margin: 0 auto;
     }
 }
@@ -148,7 +149,7 @@
 @media (max-width: 393px) {
     .boxControlesCarousel {
         width: 40vw;
-        bottom: 46.7vh;
+        top: -47.5vh;
         margin: 0 auto;
     }
 }
