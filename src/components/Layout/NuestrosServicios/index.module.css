@@ -186,6 +186,26 @@
 }
 
 
+@media (max-width: 933px) and (min-width: 600px) and (orientation: portrait) {
+
+    .flexNuestrosSectionTitle {
+        margin-left: -250px !important;
+    }
+
+    .boxImageCarousel{
+        height: 35vh;
+    }
+
+    .boxCarouselContent {
+        height:50vh;
+        width: 85vw;
+    }
+
+    
+    
+    
+}   
+
 @media (max-width: 933px) and (min-width: 600px) and (orientation: landscape) {
 
     .flexNuestrosSectionTitle {
