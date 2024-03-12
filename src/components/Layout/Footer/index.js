@@ -92,7 +92,7 @@ export const Footer = () => {
                     </a>
                   </div>
                   <div className={styles.boxIconRedes}>
-                    <a href="https://www.linkedin.com/company/inges-consultoria-y-dise%C3%B1o/">
+                    <a href="https://www.linkedin.com/company/inges-consultoria-y-dise%C3%B1o/" target="_blank">
                       <Image
                         src="/assets/icon-linke.png"
                         alt="icono linke"
@@ -136,7 +136,7 @@ export const Footer = () => {
                 <p className={styles.textBoxRedes}>Redes sociales: </p>
                 <div className={styles.flexIconRedes}>
                   <div className={styles.boxIconRedes2}>
-                    <a href="https://www.instagram.com/inges_consultoria/?hl=en">
+                    <a href="https://www.instagram.com/inges_consultoria/?hl=en" target="_blank">
                       <Image
                         src="/assets/icon-insta.png"
                         alt="icono instagram"
@@ -147,7 +147,7 @@ export const Footer = () => {
                     </a>
                   </div>
                   <div className={styles.boxIconRedes}>
-                    <a href="https://www.linkedin.com/company/inges-consultoria-y-dise%C3%B1o/">
+                    <a href="https://www.linkedin.com/company/inges-consultoria-y-dise%C3%B1o/" target="_blank">
                       <Image
                         src="/assets/icon-linke.png"
                         alt="icono linke"

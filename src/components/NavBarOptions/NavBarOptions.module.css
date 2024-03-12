@@ -46,7 +46,7 @@
   box-shadow: 0px 3px 5px #3a3a3b;
 }
 
-@media (min-width: 600px) and (max-width: 930px)  and (orientation: landscape) {
+@media (min-width: 600px) and (max-width: 930px) and (orientation: landscape) {
 
   .textNotClicked {
     font-size: .55rem !important;

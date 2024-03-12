@@ -82,25 +82,75 @@ export const NuestrosServicios = () => {
                     renderIndicator={(onClickHandler, isSelected, index, label) => {
                         if (isSelected) {
                             return (
-                                <li
-                                    className={`${styles.indicatorCarousel} ${styles.indicatorS}`}
-                                    aria-label={`Selected: ${label} ${index + 1}`}
-                                    title={`Selected: ${label} ${index + 1}`}
-                                />
+                                <>
+                                    {index === 0 &&
+                                        <div className={styles.boxIconControl}>
+                                            <IconButton type="button" className={styles.buttonControles} onClick={() => { handlePlay() }}>
+                                                <Image
+                                                    src={"/assets/play-button.png"}
+                                                    alt="play button"
+                                                    fill={true}
+                                                    className={styles.imageButtonControl}
+                                                />
+                                            </IconButton>
+                                        </div>}
+                                    <li
+                                        className={`${styles.indicatorCarousel} ${styles.indicatorS}`}
+                                        aria-label={`Selected: ${label} ${index + 1}`}
+                                        title={`Selected: ${label} ${index + 1}`}
+                                    />
+                                    {index === 2 &&
+                                        <div className={styles.boxIconControl}>
+                                            <IconButton type="button" className={styles.buttonControles} onClick={handlePause}>
+                                                <Image
+                                                    src={"/assets/pause-button.png"}
+                                                    alt="pause button"
+                                                    fill={true}
+                                                    className={styles.imageButtonControl}
+                                                />
+                                            </IconButton>
+                                        </div>
+                                    }
+                                </>
                             );
                         }
                         return (
-                            <li
-                                className={styles.indicatorCarousel}
-                                onClick={onClickHandler}
-                                onKeyDown={onClickHandler}
-                                value={index}
-                                key={index}
-                                role="button"
-                                tabIndex={0}
-                                title={`${label} ${index + 1}`}
-                                aria-label={`${label} ${index + 1}`}
-                            />
+                            <>
+                                {index === 0 &&
+                                    <div className={styles.boxIconControl}>
+                                        <IconButton type="button" className={styles.buttonControles} onClick={() => { handlePlay() }}>
+                                            <Image
+                                                src={"/assets/play-button.png"}
+                                                alt="play button"
+                                                fill={true}
+                                                className={styles.imageButtonControl}
+                                            />
+                                        </IconButton>
+                                    </div>}
+                                <li
+                                    className={styles.indicatorCarousel}
+                                    onClick={onClickHandler}
+                                    onKeyDown={onClickHandler}
+                                    value={index}
+                                    key={index}
+                                    role="button"
+                                    tabIndex={0}
+                                    title={`${label} ${index + 1}`}
+                                    aria-label={`${label} ${index + 1}`}
+                                />
+                                {index === 2 &&
+                                    <div className={styles.boxIconControl}>
+                                        <IconButton type="button" className={styles.buttonControles} onClick={handlePause}>
+                                            <Image
+                                                src={"/assets/pause-button.png"}
+                                                alt="pause button"
+                                                fill={true}
+                                                className={styles.imageButtonControl}
+                                            />
+                                        </IconButton>
+                                    </div>
+                                }
+                            </>
                         );
                     }}
                 >
@@ -217,7 +267,7 @@ export const NuestrosServicios = () => {
                         })
                     }
                 </Carousel>
-                <div className={styles.boxControlesCarousel}>
+                {/* <div className={styles.boxControlesCarousel}>
                     <div className={styles.boxIconControl}>
                         <IconButton type="button" className={styles.buttonControles} onClick={handlePlay}>
                             <Image
@@ -240,7 +290,7 @@ export const NuestrosServicios = () => {
                             />
                         </IconButton>
                     </div>
-                </div>
+                </div> */}
                 {playCarousel && <div id="play-button" className={styles.playButton} />}
             </div>
         </div>
