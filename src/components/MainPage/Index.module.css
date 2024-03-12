@@ -117,10 +117,11 @@
     top: 0vh;
   }
   .bsectionContact {
-    height: 70vh;
+    height: 100vh;
     justify-content: center;
     top: 0;
     flex-direction: column;
+    align-items: center;
   }
   .bsectionContact2 {
     top: 0vh;
@@ -135,6 +136,10 @@
   }
   .bsectionCases {
     top: 0vh;
+  }
+  .customTextContactSection {
+    width: 70vw;
+    font-size: 7vh;
   }
 }
 

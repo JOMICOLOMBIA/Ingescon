@@ -102,32 +102,31 @@
 
 @media (max-width: 933px) and (min-width: 600px) {
     .titleCardProyect {
-        font-size: 1rem !important;
-        height: 8vh !important;
-        margin-top: 16vh !important;
+        font-size: .8rem !important;
+        height: 10vh !important;
+        width: 18vw !important;
+        margin-top: 14vh !important;
+        text-align: center;
     }
 
     .textCardProyect {
         margin-top: 0 !important;
-        font-size: .8rem !important;
+        font-size: .7rem !important;
         height: 13vh;
     }
 
     .bottomBox {
-        
         height: 80vh;
     }
 
-    /* .topBoxClicked {
-        width: 32vw;
+    .topBoxClicked {
         height: 80vh;
-        gap: 2vh;
+        gap: 5vh;
     }
     .topBoxNotClicked {
-        width: 32vw;
         height: 80vh;
-        gap: 2vh;
-    } */
+        gap: 5vh;
+    }
 }
 
 @media (max-width: 576px) {

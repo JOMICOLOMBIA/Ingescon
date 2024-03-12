@@ -93,13 +93,13 @@
     .indicatorCarousel {
         width: 5vw;
         height: 5vw;
-        bottom: 31.5vh;
+        top: -34.7vh;
     }
 
     .boxIconControl {
-        height: 5vw;
-        width: 5vw;
-        bottom: 31.5vh;
+        height: 6vw;
+        width: 6vw;
+        top: -35.5vh;
     }
 
     .playButton {
@@ -107,6 +107,12 @@
         border-bottom: 12px solid transparent;
         border-left: 12px solid rgb(243, 223, 77);
         top: 12%;
+    }
+}
+
+@media (max-width: 397px) {
+    .indicatorCarousel {
+        top: -35vh;
     }
 }
 

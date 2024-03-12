@@ -199,11 +199,7 @@
     .boxCarouselContent {
         height:50vh;
         width: 85vw;
-    }
-
-    
-    
-    
+    }    
 }   
 
 @media (max-width: 933px) and (min-width: 600px) and (orientation: landscape) {
@@ -262,20 +258,14 @@
         width: 35vw;
     }
     .boxIconControl {
-        height: 5vh;
-        width: 5vw;
-    }
-    .boxControlesCarousel {
-        width: 21vw;
-        height: 5vh;
-        top: -10.9vh;
-        margin: 0 auto;
-        gap: 2vw;
+        height: 2.5vw;
+        width: 2.5vw;
+        top: -.5vh;
     }
     .indicatorCarousel {
         width: 2.5vw;
-        height: 5vh;
-        bottom: 1vh;
+        height: 2.5vw;
+        top: 1.20vh;
     }
     .playButton {
         border-top: 12px solid transparent;
@@ -286,12 +276,6 @@
     }
 }
 
-@media (max-width: 741px) and (min-width: 576px) {
-    .boxControlesCarousel {
-        top: -12.2vh;
-        width: 22vw !important;
-    }
-}
 
 
 @media (max-width: 576px) {
@@ -398,34 +382,13 @@
     .indicatorCarousel {
         width: 4.5vw;
         height: 4.5vw;
+        top: 1.1vh;
+
     }
     .playButton {
         border-top: 12px solid transparent;
         border-bottom: 12px solid transparent;
         border-left: 12px solid rgb(243, 223, 77);
         top: 12%;
-    }
-}
-
-@media (min-width: 398px) and (max-width: 576px) {
-
-    .boxControlesCarousel {
-        top: -10.9vw;
-    }
-    .indicatorCarousel {
-        bottom: -1vh;
-    }
-}
-
-@media (max-width: 397px) {
-    .boxControlesCarousel {
-        top: -14.5vw;
-    }
-    .indicatorCarousel {
-        top: -2vw;
-    }
-    
-    .flexNuestrosSectionTitle {
-        margin-left: -17% !important;
     }
 }

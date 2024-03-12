@@ -193,7 +193,7 @@
 
   .footer {
     height: 35vh;
-    top: 85vh;
+    top: 115vh;
   }
   .boxContactFooter {
     gap: 2vh;
@@ -245,6 +245,12 @@
   }
   .loginBox {
     top: -3vw;
+  }
+}
+
+@media (min-width: 739px) and (max-width: 830px) {
+  .footer {
+    top: 135vh;
   }
 }
 
