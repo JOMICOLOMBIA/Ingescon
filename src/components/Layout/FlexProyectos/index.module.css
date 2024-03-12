@@ -37,7 +37,7 @@
     
 }
 
-@media (max-width: 933px) and (min-width: 600px) and (orientation: portrait) {
+@media (max-width: 920px) and (min-width: 567px) and (orientation: portrait) {
     
     
     .flexProcSection {
@@ -58,7 +58,7 @@
   }
 
 
-@media (max-width: 933px) and (min-width: 600px) and (orientation: landscape) {
+@media (max-width: 933px) and (min-width: 567px) and (orientation: landscape) {
     
     
     .flexProcSection {
