@@ -30,6 +30,18 @@
   }
 }
 
+@media (max-width: 933px) and (min-width: 600px) and (orientation: portrait) {
+  .image {
+    object-fit: cover;
+  }
+  .bsectionHome {
+    height: 120vh;
+  }
+  .homeImageBox {
+    height: inherit;
+  }
+}
+
 @media (max-width: 576px) {
   .homeImageBox {
     width: 100%;

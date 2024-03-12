@@ -118,8 +118,23 @@
     .boxCarousel {
         height: 80vh;
     }
-
 }
+
+@media (max-width: 933px) and (min-width: 600px) and (orientation:portrait) {
+    
+    .boxCarouselContent {
+        margin-top: 10vh;
+        height: 30vh;
+    }
+    .flexNuestrosSection{
+        height: 50vh;
+    }
+    .boxImageCarousel{
+        height: 30vh;
+    }
+}
+
+
 
 @media (max-width: 576px) {
     .boxCarouselContent {

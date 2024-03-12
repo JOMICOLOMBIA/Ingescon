@@ -4,7 +4,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from "./index.module.css"
 import { Button, IconButton, useMediaQuery } from "@mui/material";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
+import { useRef } from "react";
 
 
 
@@ -38,6 +39,9 @@ export const CarouselHome = () => {
             console.log("none")
         }
     }
+    const caruselRef = useRef(null)
+    const [ref, setRef] = useState(null)
+    console.log(caruselRef, "ref");
 
     useEffect(() => {
         console.log(carouselRef)
