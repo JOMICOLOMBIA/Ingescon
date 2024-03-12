@@ -13,7 +13,7 @@ const contentCard = [{ image: 1, title: "Consultorías Técnicas", list: ["Dise�
 export const NuestrosServicios = () => {
     const screenUpper1050px = useMediaQuery("(max-width: 1050px");
 
-    const [playCarousel, setPlayCarousel] = useState(false);
+    const [playCarousel, setPlayCarousel] = useState(true);
 
 
     const handlePlay = () => {

@@ -138,7 +138,7 @@
     display: inline-block;
     margin: 0 8px;
     position: relative;
-    top: .5vh;
+    top: 1.25vh;
     border-radius: 100%;
     cursor: pointer;
     border: 2px solid rgb(243, 223, 77);
@@ -152,18 +152,6 @@
 }
 
 
-.boxControlesCarousel {
-    display: flex;
-    position: relative;
-    width: 11.5vw;
-    height: 4vh;
-    top: -5.5vh;
-    /* left: 45vw; */
-    margin: 0 auto;
-    justify-content: space-between;
-    z-index: 1;
-}
-
 .buttonControles {
     width: inherit;
     height: inherit;
@@ -174,6 +162,7 @@
     height: 1.7vw;
     position: relative;
     top: .5vh;
+    margin: 0 8px;
     display: inline-block;
 }
 

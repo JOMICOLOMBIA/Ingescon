@@ -19,7 +19,7 @@ const carouselContent = [
 export const CarouselHome = () => {
     const screenUpper900 = useMediaQuery("(max-width:933px)");
 
-    const [playCarousel, setPlayCarousel] = useState(false);
+    const [playCarousel, setPlayCarousel] = useState(true);
 
 
     const handlePlay = () => {
@@ -29,7 +29,6 @@ export const CarouselHome = () => {
             console.log("none")
         }
     }
-    const carouselRef = useRef(null);
 
     const handlePause = () => {
 
@@ -39,20 +38,10 @@ export const CarouselHome = () => {
             console.log("none")
         }
     }
-    const caruselRef = useRef(null)
-    const [ref, setRef] = useState(null)
-    console.log(caruselRef, "ref");
-
-    useEffect(() => {
-        console.log(carouselRef)
-        console.log(playCarousel)
-    }, [playCarousel])
-
 
     return (
         <>
             <Carousel
-                ref={carouselRef}
                 swipeable={false}
                 autoPlay={playCarousel}
                 showThumbs={false}
@@ -86,14 +75,16 @@ export const CarouselHome = () => {
                                     title={`Selected: ${label} ${index + 1}`}
                                 />
                                 {index === 2 &&
-                                    <IconButton type="button" className={styles.buttonControles} onClick={handlePause}>
-                                        <Image
-                                            src={"/assets/pause-button.png"}
-                                            alt="pause button"
-                                            fill={true}
-                                            className={styles.imageButtonControl}
-                                        />
-                                    </IconButton>}
+                                    <div className={styles.boxIconControl}>
+                                        <IconButton type="button" className={styles.buttonControles} onClick={handlePause}>
+                                            <Image
+                                                src={"/assets/pause-button.png"}
+                                                alt="pause button"
+                                                fill={true}
+                                                className={styles.imageButtonControl}
+                                            />
+                                        </IconButton>
+                                    </div>}
                             </>
                         );
                     }

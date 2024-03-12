@@ -47,7 +47,7 @@
     width: 100px;
     height: 100px;
     position: relative;
-    margin-top: 5vh;
+    margin-top: 2.5vh;
   }
   .imageCard {
     object-fit: contain;

@@ -24,16 +24,7 @@
     border: 0px;
 }
 
-.boxControlesCarousel {
-    display: flex;
-    position: relative;
-    width: 12vw;
-    height: 4vh;
-    /* bottom: 50.7vh; */
-    top: -52vh;
-    margin: 0 auto;
-    justify-content: space-between;
-}
+
 
 .buttonControles {
     width: inherit;
@@ -44,9 +35,9 @@
     width: 1.7vw;
     height: 1.7vw;
     position: relative;
-    /* margin: 0 8px; */
     display: inline-block;
     top: -32.5vh;
+    margin: 0 8px;
 }
 
 /* .boxIconControl:hover {
@@ -69,33 +60,19 @@
     right: 5%;
 }
 
-@media (min-width: 1281px) and (max-width: 1920px) {
-    .boxControlesCarousel {
-        top: -51vh;
-    }
-}
-@media (min-width: 1921px) {
-    .boxControlesCarousel {
-        bottom: 50.3vh;
-        width: 11vw;
-    }
-}
 
 @media (max-width: 933px) and (min-width: 600px) and (orientation: landscape) {
     .indicatorCarousel {
-        bottom: 40vh;
+        top: -39vh;
         width: 1.9vw;
         height: 3.7vh;
     }
 
-    .boxControlesCarousel {
-        top: -63.1vh;
-        width: 16.3vw;
-    }
 
     .boxIconControl {
-        height: 5vh;
-        bottom: 40vh;
+        width: 1.9vw;
+        height: 3.7vh;
+        top: -40vh;
     }
 
     .playButton {
@@ -107,13 +84,6 @@
 
 }
 
-/* Adjust box control carousel on small mobile devices when horizontal */
-
-@media (max-width: 741px) and (min-width: 576px) {
-    .boxControlesCarousel {
-        top: -64.6vh;
-    }
-}
 
 @media (max-width: 576px) {
     .carouselBox {
@@ -140,20 +110,3 @@
     }
 }
 
-@media (min-width: 394px) and (max-width: 576px) {
-
-    .boxControlesCarousel {
-        width: 39vw;
-        /* bottom: 45vh !important; */
-        top: -46.7vh;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 393px) {
-    .boxControlesCarousel {
-        width: 40vw;
-        top: -47.5vh;
-        margin: 0 auto;
-    }
-}
