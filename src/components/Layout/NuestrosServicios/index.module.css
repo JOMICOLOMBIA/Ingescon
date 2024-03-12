@@ -138,7 +138,6 @@
     display: inline-block;
     margin: 0 8px;
     position: relative;
-    
     top: .5vh;
     border-radius: 100%;
     cursor: pointer;
@@ -174,12 +173,14 @@
     width: 1.7vw;
     height: 1.7vw;
     position: relative;
+    top: .5vh;
+    display: inline-block;
 }
 
-.boxIconControl:hover {
+/* .boxIconControl:hover {
     zoom: 1.1;
     margin-top: -1px;
-}
+} */
 
 .imageButtonControl {
     object-fit: contain;
@@ -194,14 +195,7 @@
     top: 35%;
     right: 5%;
 }
-@media (min-width: 1281px) and (max-width: 1920px) {
-    .boxControlesCarousel {
-        top: -5.9vh;
-    }
-    .indicatorCarousel {
-        top: -1vh;
-    }
-}
+
 
 @media (max-width: 933px) and (min-width: 600px) and (orientation: portrait) {
 

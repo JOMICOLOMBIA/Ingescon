@@ -164,7 +164,7 @@
 
 }
 
-@media(max-width: 1112px) and (min-width:934px )  and (orientation: landscape) {
+@media(max-width: 1112px) and (min-width:934px ) {
   .loginBox {
     top: -3.2vh;
   }

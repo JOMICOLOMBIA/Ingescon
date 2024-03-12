@@ -29,6 +29,7 @@ export const CarouselHome = () => {
             console.log("none")
         }
     }
+    const carouselRef = useRef(null);
 
     const handlePause = () => {
 
@@ -43,14 +44,15 @@ export const CarouselHome = () => {
     console.log(caruselRef, "ref");
 
     useEffect(() => {
-        setRef(caruselRef)
-        console.log(caruselRef, "ref2");
-    },[caruselRef])
+        console.log(carouselRef)
+        console.log(playCarousel)
+    }, [playCarousel])
+
 
     return (
         <>
             <Carousel
-                ref={caruselRef}
+                ref={carouselRef}
                 swipeable={false}
                 autoPlay={playCarousel}
                 showThumbs={false}
@@ -66,16 +68,48 @@ export const CarouselHome = () => {
                     if (isSelected) {
                         return (
                             <>
-                               
+                                {index === 0 &&
+                                    <div className={styles.boxIconControl}>
+                                        <IconButton type="button" className={styles.buttonControles} onClick={() => { handlePlay() }}>
+                                            <Image
+                                                src={"/assets/play-button.png"}
+                                                alt="play button"
+                                                fill={true}
+                                                className={styles.imageButtonControl}
+                                            />
+                                        </IconButton>
+                                    </div>
+                                }
                                 <div
                                     className={`${styles.indicatorCarousel} ${styles.indicatorS}`}
                                     aria-label={`Selected: ${label} ${index + 1}`}
                                     title={`Selected: ${label} ${index + 1}`}
                                 />
+                                {index === 2 &&
+                                    <IconButton type="button" className={styles.buttonControles} onClick={handlePause}>
+                                        <Image
+                                            src={"/assets/pause-button.png"}
+                                            alt="pause button"
+                                            fill={true}
+                                            className={styles.imageButtonControl}
+                                        />
+                                    </IconButton>}
                             </>
                         );
                     }
-                    return (                            
+                    return (
+                        <>
+                            {index === 0 &&
+                                <div className={styles.boxIconControl}>
+                                    <IconButton type="button" className={styles.buttonControles} onClick={() => { handlePlay() }}>
+                                        <Image
+                                            src={"/assets/play-button.png"}
+                                            alt="play button"
+                                            fill={true}
+                                            className={styles.imageButtonControl}
+                                        />
+                                    </IconButton>
+                                </div>}
                             <div
                                 className={styles.indicatorCarousel}
                                 onClick={onClickHandler}
@@ -86,13 +120,26 @@ export const CarouselHome = () => {
                                 tabIndex={0}
                                 title={`${label} ${index + 1}`}
                                 aria-label={`${label} ${index + 1}`}
-                            />                       
+                            />
+                            {index === 2 &&
+                                <div className={styles.boxIconControl}>
+                                    <IconButton type="button" className={styles.buttonControles} onClick={handlePause}>
+                                        <Image
+                                            src={"/assets/pause-button.png"}
+                                            alt="pause button"
+                                            fill={true}
+                                            className={styles.imageButtonControl}
+                                        />
+                                    </IconButton>
+                                </div>
+                            }
+                        </>
                     );
                 }}
             >
                 {carouselContent.map((content, key) => (
 
-                    <HomeCarouselContent pic={content.pic} key={key}/>
+                    <HomeCarouselContent pic={content.pic} key={key} />
 
                 ))}
             </Carousel>
