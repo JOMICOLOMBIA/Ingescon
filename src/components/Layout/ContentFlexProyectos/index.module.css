@@ -68,6 +68,38 @@
     font-size: 1vw;
 }
 
+@media (max-width: 1200px) and (min-width: 600px) and (orientation:portrait) {
+    .titleCardProyect {
+        font-size: 1rem !important;
+        height: 8vh !important;
+        margin-top: 16vh !important;
+    }
+
+    .textCardProyect {
+        margin-top: 0 !important;
+        font-size: .8rem !important;
+        height: 13vh;
+    }
+
+    .bottomBox {
+        width: 500px;
+        height: 80vh;
+    }
+
+    .topBoxClicked {
+        width: 500px;
+        height: 80vh;
+        gap: 2vh;
+    }
+    .topBoxNotClicked {
+        width: 500px;
+        height: 80vh;
+        gap: 2vh;
+    }
+
+  
+}
+
 @media (max-width: 933px) and (min-width: 600px) {
     .titleCardProyect {
         font-size: 1rem !important;
@@ -82,11 +114,11 @@
     }
 
     .bottomBox {
-        width: 32vw;
+        
         height: 80vh;
     }
 
-    .topBoxClicked {
+    /* .topBoxClicked {
         width: 32vw;
         height: 80vh;
         gap: 2vh;
@@ -95,7 +127,7 @@
         width: 32vw;
         height: 80vh;
         gap: 2vh;
-    }
+    } */
 }
 
 @media (max-width: 576px) {

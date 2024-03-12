@@ -70,7 +70,7 @@
   width: 50vw;
   justify-content: space-between;
   padding: 20px;
-  margin-right: 10px;
+  margin-right: 10%;
 }
 
 .flexButtonContactS {
@@ -179,7 +179,9 @@
   }
 } */
 
-@media (max-width: 620px)  {
+
+
+@media (max-width: 920px)  {
 
 
   .contactForm {
@@ -214,6 +216,7 @@
   .flexContentContactSection {
     gap: 2vh;
     width: auto;
+    margin: 0px auto;
   }
   .flexButtonContactS {
     margin-top: 20px;

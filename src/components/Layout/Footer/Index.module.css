@@ -176,6 +176,15 @@
   }
 }
 
+@media (max-width: 933px) and (min-width: 600px) and (orientation:portrait) {
+
+ 
+  .footer {
+    top:-500px
+  }
+  
+}
+
 @media (max-width: 933px) and (min-width: 600px) {
 
   .flexFooter {
