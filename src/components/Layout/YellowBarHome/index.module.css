@@ -10,7 +10,7 @@
   .boxCardHome {
     background-color: white;
     width: 22vw;
-    height: 41vh;
+    height: 310px;
     max-height: 45vh;
     display: flex;
     flex-direction: column;
