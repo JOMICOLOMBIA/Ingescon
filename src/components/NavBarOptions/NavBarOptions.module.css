@@ -88,7 +88,7 @@
     font-size: 1rem !important;
   }
   .boptionsNotClicked:hover {
-    height: 2vh;
+    height: 20px;
   }
 
   .foptions {
