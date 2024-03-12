@@ -46,7 +46,7 @@
   box-shadow: 0px 3px 5px #3a3a3b;
 }
 
-@media (min-width: 600px) and (max-width: 930px) {
+@media (min-width: 600px) and (max-width: 930px)  and (orientation: landscape) {
 
   .textNotClicked {
     font-size: .55rem !important;
@@ -82,6 +82,12 @@
   }
 
   .boptionsNotClicked {
+    height: 20px;
+  }
+  .textNotClicked {
+    font-size: 1rem !important;
+  }
+  .boptionsNotClicked:hover {
     height: 20px;
   }
 

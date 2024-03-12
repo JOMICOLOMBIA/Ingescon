@@ -62,9 +62,9 @@ export const MainPage = () => {
           publicKey: "cgAQ725WoCfaP4VLZ"
         }} LeftComponent={() => {
           return (<div className={styles.customHeaderContainer}><h2 className={styles.customHeader}>
-            HABLEMOS DE TU PROYECTO
+            CUÉNTANOS DE TU PROYECTO
           </h2>
-            <div style={{ borderBottom: "4px solid yellow", paddingBottom: 20, marginLeft: 20 }}>Hablanos de tu ídea, y te mostraremos el camino para hacerla realidad.</div>
+            <div style={{ borderBottom: "4px solid yellow", paddingBottom: 20 }}>Hablanos de tu ídea, y te mostraremos el camino para hacerla realidad.</div>
           </div>)
         }} />
       </div>

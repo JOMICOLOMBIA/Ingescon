@@ -81,13 +81,12 @@
 
 .textCarouselContent {
     font-family: "Exo" !important;
-    font-size: 22px !important;
+    font-size: 1.5vw !important;
     display: inline;
 }
 
 .textCarouselBold {
     font-family: "Exo-SB" !important;
-    font-size: 22px !important;
     display: inline;
 }
 
@@ -96,7 +95,7 @@
     font-family: "Exo";
     list-style: disc;
     text-align: start;
-    font-size: 20px;
+    font-size: 1.4vw;
     width: 40vw;
 }
 
@@ -112,6 +111,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    gap: 3vh;
 }
 
 .flexCarouselText {
@@ -133,12 +133,13 @@
 
 .indicatorCarousel {
     background: transparent;
-    width: 1.5vw;
-    height: 3vh;
+    width: 1.3vw;
+    height: 1.3vw;
     display: inline-block;
     margin: 0 8px;
     position: relative;
-    bottom: 1.3vh;
+    
+    top: .5vh;
     border-radius: 100%;
     cursor: pointer;
     border: 2px solid rgb(243, 223, 77);
@@ -148,16 +149,17 @@
 .indicatorS {
     background: #FFDC06;
     border: 0px;
+    /* top: -0.5vw; */
 }
 
 
 .boxControlesCarousel {
     display: flex;
     position: relative;
-    width: 12vw;
+    width: 11.5vw;
     height: 4vh;
-    bottom: 6.8vh;
-    /* left: 50%; */
+    top: -5.5vh;
+    /* left: 45vw; */
     margin: 0 auto;
     justify-content: space-between;
     z-index: 1;
@@ -170,7 +172,7 @@
 
 .boxIconControl {
     width: 1.7vw;
-    height: 4.2vh;
+    height: 1.7vw;
     position: relative;
 }
 
@@ -192,8 +194,16 @@
     top: 35%;
     right: 5%;
 }
+@media (min-width: 1281px) and (max-width: 1920px) {
+    .boxControlesCarousel {
+        top: -5.9vh;
+    }
+    .indicatorCarousel {
+        top: -1vh;
+    }
+}
 
-@media (max-width: 933px) and (min-width: 600px) {
+@media (max-width: 933px) and (min-width: 600px) and (orientation: landscape) {
 
     .flexNuestrosSectionTitle {
         font-size: 2.2rem !important;
@@ -255,7 +265,7 @@
     .boxControlesCarousel {
         width: 21vw;
         height: 5vh;
-        bottom: 10.8vh;
+        top: -10.9vh;
         margin: 0 auto;
         gap: 2vw;
     }
@@ -275,7 +285,7 @@
 
 @media (max-width: 741px) and (min-width: 576px) {
     .boxControlesCarousel {
-        bottom: 12vh !important;
+        top: -12.2vh;
         width: 22vw !important;
     }
 }
@@ -397,7 +407,7 @@
 @media (min-width: 398px) and (max-width: 576px) {
 
     .boxControlesCarousel {
-        bottom: 4.4vh;
+        top: -10.9vw;
     }
     .indicatorCarousel {
         bottom: -1vh;
@@ -406,9 +416,13 @@
 
 @media (max-width: 397px) {
     .boxControlesCarousel {
-        bottom: 6.6vh;
+        top: -14.5vw;
     }
     .indicatorCarousel {
-        bottom: .7vh;
+        top: -2vw;
+    }
+    
+    .flexNuestrosSectionTitle {
+        margin-left: -17% !important;
     }
 }

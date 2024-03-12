@@ -58,7 +58,7 @@
 }
 
 
-@media (max-width: 933px) and (min-width: 600px) {
+@media (max-width: 933px) and (min-width: 600px)  and (orientation: landscape) {
     .flexAboutusSection {
         gap: 40px;
         margin-top: 70px;

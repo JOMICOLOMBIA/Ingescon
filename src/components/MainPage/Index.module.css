@@ -21,7 +21,7 @@
 
 .bsectionContact {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   background-color: white;
   display: flex;
   zoom: 0.97;
@@ -105,22 +105,25 @@
   letter-spacing: 0.1em;
 }
 
+@media (min-width: 1281px) and (max-width: 1920px) {
+  .bsectionContact {
+    height: 42vh;
+  }
+}
 
-
-@media (max-width: 933px) and (min-width: 600px) {
+@media (max-width: 933px) and (min-width: 600px)  and (orientation: landscape) {
   .bsection {
     height: auto;
     top: 0vh;
   }
   .bsectionContact {
-    height: 60vh;
+    height: 70vh;
     justify-content: center;
     top: 0;
     flex-direction: column;
   }
   .bsectionContact2 {
     top: 0vh;
-    height: max-content;
   }
   .customContainer {
     justify-content: center;
@@ -128,6 +131,7 @@
   .ourServicesSection {
     top: 0vh;
     height: auto;
+    margin-top: 5vh;
   }
   .bsectionCases {
     top: 0vh;

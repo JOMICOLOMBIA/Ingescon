@@ -4,7 +4,7 @@
   height: 22vh;
   background-color: black;
   display: flex;
-  bottom: -50vh;
+  bottom: -51vh;
 }
 
 .flexFooter {
@@ -34,6 +34,7 @@
   height: auto;
   align-items: center;
   position: relative;
+  top: 6vh;
 }
 
 .boxImage {
@@ -49,6 +50,7 @@
   font-family: "Exo" !important;
   font-size: 0.9rem !important;
   color: white;
+  text-align: center;
 }
 
 .firstBoxFlex {
@@ -56,6 +58,7 @@
   height: auto;
   display: flex;
   gap: 5px;
+  justify-content: center;
 }
 
 .boxContactFooter {
@@ -129,29 +132,50 @@
   height: auto;
 }
 .boxTextRights {
-  margin-left: 0 auto;
-  width: 16vw;
+  /* margin-left: 0 auto; */
+  width: 17vw;
 }
-
 .boxHoverEffect {
   display: flex;
+  flex-direction: column;
+  height: 20vh;
 }
 .loginBox {
   width: 40vw;
   height: auto;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   opacity: 0;
   background-color: black;
   align-items: center;
-  align-content: center;
-  bottom: 5vh;
+  top: -8vh;
 }
 .loginBox:hover {
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
 }
+
+@media (min-width: 1281px) and (max-width: 1920px) {
+
+  .loginBox {
+    top: -3vh;
+  }
+
+}
+
+@media(max-width: 1112px) and (min-width:934px )  and (orientation: landscape) {
+  .loginBox {
+    top: -3.2vh;
+  }
+  .firstBoxFlex {
+    width: 30vw;
+  }
+  .boxTextRights {
+    width: 30vw;
+  }
+}
+
 @media (max-width: 933px) and (min-width: 600px) {
 
   .flexFooter {
@@ -160,17 +184,21 @@
 
   .footer {
     height: 35vh;
+    top: 85vh;
   }
   .boxContactFooter {
     gap: 2vh;
   }
-
+  .flexContactInfo {
+    width: 22vw;
+  }
   .textFooter {
     font-size: .8rem;
   }
   .boxTextoFooter {
     width: 30vw;
     align-items: center;
+    top: 9vh;
   }
   .boxTextRights {
     width: 25vw;
@@ -183,16 +211,13 @@
   }
   .headerBoxContact {
     font-size: .8rem !important;
+    margin-bottom: 0 !important;
   }
   .textContactInfo {
     font-size: .6rem;
   }
   .textBoxRedes {
     font-size: .6rem;
-  }
-  .footer {
-    height: 32vh;
-    top: 110vh;
   }
   .boxIconContact {
     width: 2vw;
@@ -204,6 +229,13 @@
   }
   .boxContactInfo {
     gap: 2vh;
+  }
+  .boxHoverEffect {
+    height: auto;
+    align-items: center;
+  }
+  .loginBox {
+    top: -3vw;
   }
 }
 
@@ -226,8 +258,9 @@
     font-size: 14px;
   }
   .footer {
-    height: 40vh;
+    height: 42vh;
     top: 65vh;
+    overflow: hidden;
   }
   .boxIconContact {
     display: none;
@@ -240,6 +273,7 @@
   }
   .headerBoxContact {
     font-size: .9rem !important;
+    margin-top: 0;
   }
   .textRights {
     font-size: .7rem !important;
@@ -266,6 +300,9 @@
   }
   .boxTextoFooter {
     align-items: center;
+    margin: 0 auto;
+    top: 3vh;
+
   }
   .boxContactInfo {
     gap: .1vh;
@@ -280,5 +317,15 @@
   .boxIconRedes2 {
     height: 35px;
     width: 35px;
+  }
+  .boxTextRights {
+    width: 45vw;
+  }
+  .loginBox {
+    width: 60vw;
+    top: -3vh;
+  }
+  .boxHoverEffect {
+    height: auto;
   }
 }

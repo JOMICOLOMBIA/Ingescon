@@ -47,8 +47,8 @@ export const Footer = () => {
                     Acceso a correo corporativo
                   </p>
                 </div>
-                <a>
-                  <Button size="large" style={{marginBottom: "0"}}>
+                <a href="https://mail.ingesconsultoria.com/SOGo/"  target="_blank">
+                  <Button size={screenUpper576 ? "large" : "small"} style={{marginBottom: "0"}}>
                     Ingresar
                   </Button>
                 </a>
@@ -81,7 +81,7 @@ export const Footer = () => {
                 <p className={styles.textBoxRedes}>Redes sociales: </p>
                 <div className={styles.flexIconRedes}>
                   <div className={styles.boxIconRedes2}>
-                    <a href="https://www.instagram.com/inges_consultoria/?hl=en">
+                    <a href="https://www.instagram.com/inges_consultoria/?hl=en" target="_blank">
                       <Image
                         src="/assets/icon-insta.png"
                         alt="icono instagram"
@@ -161,20 +161,36 @@ export const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.boxTextoFooter}>
-              <div className={styles.firstBoxFlex}>
-                <div className={styles.boxImage}>
-                  <Image
-                    src="/assets/copyright.png"
-                    alt="icono copyright"
-                    width={100}
-                    height={100}
-                    layout="responsive"
-                  />
+            <div className={styles.boxHoverEffect}>
+              <div className={styles.boxTextoFooter}>
+                <div className={styles.firstBoxFlex}>
+                  <div className={styles.boxImage}>
+                    <Image
+                      src="/assets/copyright.png"
+                      alt="icono copyright"
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                    />
+                  </div>
+                  <Typography className={styles.textRights}>Copyright 2023 por INGES</Typography>
                 </div>
-                <Typography className={styles.textRights}>Copyright 2023 por INGES</Typography>
+                <div className={styles.boxTextRights}>
+                  <Typography className={styles.textRights}>Todos los derechos reservados</Typography>
+                </div>
               </div>
-              <Typography className={styles.textRights}>Todos los derechos reservados</Typography>
+              <div className={styles.loginBox}>
+                <div className={styles.boxTextoIngresar}>
+                  <p className={styles.headerBoxContact}>
+                    Acceso a correo corporativo
+                  </p>
+                </div>
+                <a href="https://mail.ingesconsultoria.com/SOGo/"  target="_blank">
+                  <Button size={!screenUpper576 ? "large" : "small"} style={{marginBottom: "0"}}>
+                    Ingresar
+                  </Button>
+                </a>
+              </div>
             </div>
           </>
         }

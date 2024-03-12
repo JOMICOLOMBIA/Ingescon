@@ -7,36 +7,31 @@
 
 .indicatorCarousel {
     background: transparent;
-    width: 1.7vw;
-    height: 3.4vh;
+    width: 1.5vw;
+    height: 1.5vw;
     display: inline-block;
     margin: 0 8px;
     position: relative;
-    bottom: 31.5vh;
+    /* bottom: 31.5vh; */
+    top: -31.5vh;
     border-radius: 100%;
     cursor: pointer;
     border: 2px solid rgb(243, 223, 77);
 }
-
-.indicatorCarousel::after {
-    position: relative;
-    content: 000000000;
-}
-
 
 .indicatorS {
     background: #FFDC06;
     border: 0px;
 }
 
-
 .boxControlesCarousel {
     display: flex;
     position: relative;
-    width: 12.8vw;
+    width: 12vw;
     height: 4vh;
-    bottom: 51.4vh;
-    left: 43.5%;
+    /* bottom: 50.7vh; */
+    top: -52vh;
+    margin: 0 auto;
     justify-content: space-between;
 }
 
@@ -47,8 +42,9 @@
 
 .boxIconControl {
     width: 1.7vw;
-    height: 4.2vh;
+    height: 1.7vw;
     position: relative;
+    margin: auto 0;
 }
 
 .boxIconControl:hover {
@@ -71,8 +67,19 @@
     right: 5%;
 }
 
+@media (min-width: 1281px) and (max-width: 1920px) {
+    .boxControlesCarousel {
+        top: -51vh;
+    }
+}
+@media (min-width: 1921px) {
+    .boxControlesCarousel {
+        bottom: 50.3vh;
+        width: 11vw;
+    }
+}
 
-@media (max-width: 933px) and (min-width: 600px) {
+@media (max-width: 933px) and (min-width: 600px) and (orientation: landscape) {
     .indicatorCarousel {
         bottom: 40vh;
         width: 1.9vw;
@@ -80,14 +87,14 @@
     }
 
     .boxControlesCarousel {
-        top: -63.5vh;
+        top: -63.1vh;
         width: 16.3vw;
-        left: 41.5%;
     }
 
     .boxIconControl {
         height: 5vh;
     }
+
     .playButton {
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
@@ -101,8 +108,7 @@
 
 @media (max-width: 741px) and (min-width: 576px) {
     .boxControlesCarousel {
-        top: -64.2vh;
-        left: 41.2%;
+        top: -64.6vh;
     }
 }
 
@@ -114,12 +120,14 @@
     .indicatorCarousel {
         width: 5vw;
         height: 5vw;
+        bottom: 31.5vh;
     }
 
     .boxIconControl {
-        height: 3.2vh;
-        width: 3vw;
+        height: 5vw;
+        width: 5vw;
     }
+
     .playButton {
         border-top: 12px solid transparent;
         border-bottom: 12px solid transparent;
@@ -131,16 +139,17 @@
 @media (min-width: 394px) and (max-width: 576px) {
 
     .boxControlesCarousel {
-        width: 37.5vw;
-        bottom: 46.2vh;
-        left: 29vw;
+        width: 39vw;
+        /* bottom: 45vh !important; */
+        top: -46.7vh;
+        margin: 0 auto;
     }
 }
 
 @media (max-width: 393px) {
     .boxControlesCarousel {
-        width: 38vw;
-        bottom: 46.8vh;
-        left: 28vw;
+        width: 40vw;
+        top: -47.5vh;
+        margin: 0 auto;
     }
 }

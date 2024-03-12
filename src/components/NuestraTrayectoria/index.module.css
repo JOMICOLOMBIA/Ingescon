@@ -30,7 +30,7 @@
     object-fit: contain;
 }
 
-@media (max-width: 933px) and (min-width: 600px) {
+@media (max-width: 933px) and (min-width: 600px)   and (orientation: landscape) {
 
     .boxImage {
         height: 1.5vh;
@@ -42,6 +42,9 @@
     }
     .flexTrayectoriaSectionTitle {
         font-size: 2.2rem !important;
+    }
+    .imagenNuestraT {
+        object-fit: cover;
     }
 }
 
