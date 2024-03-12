@@ -77,6 +77,13 @@
     }
   }
 
+  @media (max-width: 933px) and (min-width: 600px) and (orientation:portrait) {
+    
+    .yellowBar {
+      height: 18vh;
+    }
+  }
+
   @media (max-width: 576px) {
     .boxCardHome {
       width: 70vw;
