@@ -20,8 +20,8 @@ export const FlexProyectos = () => {
       image: 2,
     },
     {
-      title: "Puente intersección Nogales",
-      description: "Puente curvo en viga cajon metálica longitud 260 m",
+      title: "En proceso",
+      description: "Patología, vulnerabilidad y reforzamiento del Edificio de control administrativo CCO Morrison",
       image: 3,
     },
     {
