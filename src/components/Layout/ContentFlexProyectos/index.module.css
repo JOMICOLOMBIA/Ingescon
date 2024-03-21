@@ -154,5 +154,6 @@
     .textCardProyect {
         margin-top: 0 !important;
         font-size: .9rem !important;
+        width: 45vw;
     }
 }
