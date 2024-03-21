@@ -250,7 +250,7 @@ export const ContactForm = ({title="Contáctanos", LeftComponent = () => {}, car
               rows={4} 
                 type="text"
                 name="message"
-                id="message"
+                id="message" 
                 value={formData.message}
                 onChange={handleInputChange}
                 size={screenUpper933 ? "medium" : "small"}
