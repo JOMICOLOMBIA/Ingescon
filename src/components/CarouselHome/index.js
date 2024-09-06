@@ -134,28 +134,6 @@ export const CarouselHome = () => {
 
                 ))}
             </Carousel>
-            {/* <div className={styles.boxControlesCarousel}>
-                <div className={styles.boxIconControl}>
-                    <IconButton type="button" className={styles.buttonControles} onClick={() => { handlePlay() }}>
-                        <Image
-                            src={"/assets/play-button.png"}
-                            alt="play button"
-                            fill={true}
-                            className={styles.imageButtonControl}
-                        />
-                    </IconButton>
-                </div>
-                <div className={styles.boxIconControl}>
-                    <IconButton type="button" className={styles.buttonControles} onClick={handlePause}>
-                        <Image
-                            src={"/assets/pause-button.png"}
-                            alt="pause button"
-                            fill={true}
-                            className={styles.imageButtonControl}
-                        />
-                    </IconButton>
-                </div>
-            </div> */}
             {playCarousel && <div id="play-button" className={styles.playButton} />}
         </>
 
